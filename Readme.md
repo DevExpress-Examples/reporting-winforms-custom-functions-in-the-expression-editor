@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomFormatFunction.cs](./CS/dxSample/Custom Expression Editor Functions/CustomFormatFunction.cs) (VB: [CustomFormatFunction.vb](./VB/dxSample/Custom Expression Editor Functions/CustomFormatFunction.vb))
+* [NewLineFunction.cs](./CS/dxSample/Custom Expression Editor Functions/NewLineFunction.cs) (VB: [NewLineFunction.vb](./VB/dxSample/Custom Expression Editor Functions/NewLineFunction.vb))
+* [Form1.cs](./CS/dxSample/Form1.cs) (VB: [Form1.vb](./VB/dxSample/Form1.vb))
+* [Program.cs](./CS/dxSample/Program.cs) (VB: [Program.vb](./VB/dxSample/Program.vb))
+<!-- default file list end -->
 # Expression Editor - How to implement a custom New Line and Format functions
 
 
