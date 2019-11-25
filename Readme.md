@@ -1,8 +1,8 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [CustomFormatFunction.cs](./CS/dxSample/Custom Expression Editor Functions/CustomFormatFunction.cs) (VB: [CustomFormatFunction.vb](./VB/dxSample/Custom Expression Editor Functions/CustomFormatFunction.vb))
-* [NewLineFunction.cs](./CS/dxSample/Custom Expression Editor Functions/NewLineFunction.cs) (VB: [NewLineFunction.vb](./VB/dxSample/Custom Expression Editor Functions/NewLineFunction.vb))
+* [CustomFormatFunction.cs](.%2FCS%2FdxSample%2FCustom%20Expression%20Editor%20Functions%2FCustomFormatFunction.cs) (VB: [CustomFormatFunction.vb](.%2FVB%2FdxSample%2FCustom%20Expression%20Editor%20Functions%2FCustomFormatFunction.vb))
+* [NewLineFunction.cs](.%2FCS%2FdxSample%2FCustom%20Expression%20Editor%20Functions%2FNewLineFunction.cs) (VB: [NewLineFunction.vb](.%2FVB%2FdxSample%2FCustom%20Expression%20Editor%20Functions%2FNewLineFunction.vb))
 * [Form1.cs](./CS/dxSample/Form1.cs) (VB: [Form1.vb](./VB/dxSample/Form1.vb))
 * [Program.cs](./CS/dxSample/Program.cs) (VB: [Program.vb](./VB/dxSample/Program.vb))
 <!-- default file list end -->
