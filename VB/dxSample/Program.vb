@@ -4,21 +4,19 @@ Imports System.Linq
 Imports System.Windows.Forms
 
 Namespace dxSample
-    Friend NotInheritable Class Program
+	Friend Module Program
+		''' <summary>
+		''' The main entry point for the application.
+		''' </summary>
+		<STAThread>
+		Sub Main()
+			Application.EnableVisualStyles()
+			Application.SetCompatibleTextRenderingDefault(False)
 
-        Private Sub New()
-        End Sub
+			DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(New NewLineConstant())
+			DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(New CustomFormatFunction())
 
-        ''' <summary>
-        ''' The main entry point for the application.
-        ''' </summary>
-        <STAThread> _
-        Shared Sub Main()
-            Application.EnableVisualStyles()
-            Application.SetCompatibleTextRenderingDefault(False)
-            DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(New NewLineConstant())
-            DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(New CustomFormatFunction())
-            Application.Run(New Form1())
-        End Sub
-    End Class
+			Application.Run(New Form2())
+		End Sub
+	End Module
 End Namespace

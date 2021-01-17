@@ -1,4 +1,4 @@
-﻿using DevExpress.Data.Filtering;
+using DevExpress.Data.Filtering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
