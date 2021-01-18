@@ -1,6104 +1,6123 @@
-﻿Namespace dxSample
-	Partial Public Class Form2
-		''' <summary>
-		''' Required designer variable.
-		''' </summary>
-		Private components As System.ComponentModel.IContainer = Nothing
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Form2
+    Inherits System.Windows.Forms.Form
 
-		''' <summary>
-		''' Clean up any resources being used.
-		''' </summary>
-		''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-			If disposing AndAlso (components IsNot Nothing) Then
-				components.Dispose()
-			End If
-			MyBase.Dispose(disposing)
-		End Sub
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
 
-		#Region "Windows Form Designer generated code"
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
 
-		''' <summary>
-		''' Required method for Designer support - do not modify
-		''' the contents of this method with the code editor.
-		''' </summary>
-		Private Sub InitializeComponent()
-			Me.components = New System.ComponentModel.Container()
-			Dim superToolTip1 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem1 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem1 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip2 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem2 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem2 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip3 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem3 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem3 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip4 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem4 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem4 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip5 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem5 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem5 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip6 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem6 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem6 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip7 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem7 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem7 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip8 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem8 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem8 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip9 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem9 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem9 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip10 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem10 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem10 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip11 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem11 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem11 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip12 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem12 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem12 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip13 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem13 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem13 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip14 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem14 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem14 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip15 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem15 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem15 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip16 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem16 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem16 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip17 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem17 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem17 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip18 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem18 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem18 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip19 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem19 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem19 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip20 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem20 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem20 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip21 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem21 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem21 As New DevExpress.Utils.ToolTipItem()
-			Dim resources As New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-			Dim superToolTip22 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem22 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem22 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip23 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem23 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem23 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip24 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem24 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem24 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip25 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem25 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem25 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip26 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem26 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem26 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip27 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem27 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem27 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip28 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem28 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem28 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip29 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem29 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem29 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip30 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem30 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem30 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip31 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem31 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem31 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip32 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem32 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem32 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip33 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem33 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem33 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip34 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem34 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem34 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip35 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem35 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem35 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip36 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem36 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem36 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip37 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem37 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem37 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip38 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem38 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem38 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip39 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem39 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem39 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip40 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem40 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem40 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip41 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem41 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem41 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip42 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem42 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem42 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip43 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem43 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem43 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip44 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem44 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem44 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip45 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem45 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem45 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip46 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem46 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem46 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip47 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem47 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem47 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip48 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem48 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem48 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip49 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem49 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem49 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip50 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem50 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem50 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip51 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem51 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem51 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip52 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem52 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem52 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip53 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem53 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem53 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip54 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem54 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem54 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip55 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem55 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem55 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip56 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem56 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem56 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip57 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem57 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem57 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip58 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem58 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem58 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip59 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem59 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem59 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip60 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem60 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem60 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip61 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem61 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem61 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip62 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem62 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem62 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip63 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem63 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem63 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip64 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem64 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem64 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip65 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem65 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem65 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip66 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem66 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem66 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip67 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem67 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem67 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip68 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem68 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem68 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip69 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem69 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem69 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip70 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem70 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem70 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip71 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem71 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem71 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip72 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem72 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem72 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip73 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem73 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem73 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip74 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem74 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem74 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip75 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem75 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem75 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip76 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem76 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem76 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip77 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem77 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem77 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip78 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem78 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem78 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip79 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem79 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem79 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip80 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem80 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem80 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip81 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem81 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem81 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip82 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem82 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem82 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip83 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem83 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem83 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip84 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem84 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem84 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip85 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem85 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem85 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip86 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem86 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem86 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip87 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem87 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem87 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip88 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem88 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem88 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip89 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem89 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem89 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip90 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem90 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem90 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip91 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem91 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem91 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip92 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem92 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem92 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip93 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem93 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem93 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip94 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem94 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem94 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip95 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem95 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem95 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip96 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem96 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem96 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip97 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem97 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem97 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip98 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem98 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem98 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip99 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem99 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem99 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip100 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem100 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem100 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip101 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem101 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem101 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip102 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem102 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem102 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip103 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem103 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem103 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip104 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem104 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem104 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip105 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem105 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem105 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip106 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem106 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem106 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip107 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem107 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem107 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip108 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem108 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem108 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip109 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem109 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem109 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip110 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem110 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem110 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip111 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem111 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem111 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip112 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem112 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem112 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip113 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem113 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem113 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip114 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem114 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem114 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip115 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem115 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem115 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip116 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem116 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem116 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip117 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem117 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem117 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip118 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem118 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem118 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip119 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem119 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem119 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip120 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem120 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem120 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip121 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem121 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem121 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip122 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem122 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem122 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip123 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem123 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem123 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip124 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem124 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem124 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip125 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem125 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem125 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip126 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem126 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem126 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip127 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem127 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem127 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip128 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem128 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem128 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip129 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem129 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem129 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip130 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem130 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem130 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip131 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem131 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem131 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip132 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem132 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem132 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip133 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem133 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem133 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip134 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem134 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem134 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip135 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem135 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem135 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip136 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem136 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem136 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip137 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem137 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem137 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip138 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem138 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem138 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip139 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem139 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem139 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip140 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem140 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem140 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip141 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem141 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem141 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip142 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem142 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem142 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip143 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem143 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem143 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip144 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem144 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem144 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip145 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem145 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem145 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip146 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem146 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem146 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip147 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem147 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem147 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip148 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem148 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem148 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip149 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem149 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem149 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip150 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem150 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem150 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip151 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem151 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem151 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip152 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem152 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem152 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip153 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem153 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem153 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip154 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem154 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem154 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip155 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem155 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem155 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip156 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem156 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem156 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip157 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem157 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem157 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip158 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem158 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem158 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip159 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem159 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem159 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip160 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem160 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem160 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip161 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem161 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem161 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip162 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem162 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem162 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip163 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem163 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem163 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip164 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem164 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem164 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip165 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem165 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem165 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip166 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem166 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem166 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip167 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem167 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem167 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip168 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem168 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem168 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip169 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem169 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem169 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip170 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem170 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem170 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip171 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem171 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem171 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip172 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem172 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem172 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip173 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem173 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem173 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip174 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem174 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem174 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip175 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem175 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem175 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip176 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem176 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem176 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip177 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem177 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem177 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip178 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem178 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem178 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip179 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem179 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem179 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip180 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem180 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem180 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip181 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem181 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem181 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip182 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem182 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem182 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip183 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem183 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem183 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip184 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem184 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem184 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip185 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem185 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem185 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip186 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem186 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem186 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip187 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem187 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem187 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip188 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem188 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem188 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip189 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem189 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem189 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip190 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem190 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem190 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip191 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem191 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem191 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip192 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem192 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem192 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip193 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem193 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem193 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip194 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem194 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem194 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip195 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem195 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem195 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip196 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem196 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem196 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip197 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem197 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem197 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip198 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem198 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem198 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip199 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem199 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem199 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip200 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem200 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem200 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip201 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem201 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem201 As New DevExpress.Utils.ToolTipItem()
-			Dim superToolTip202 As New DevExpress.Utils.SuperToolTip()
-			Dim toolTipTitleItem202 As New DevExpress.Utils.ToolTipTitleItem()
-			Dim toolTipItem202 As New DevExpress.Utils.ToolTipItem()
-			Dim xrDesignPanelListener1 As New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
-			Dim xrDesignPanelListener2 As New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
-			Dim xrDesignPanelListener3 As New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
-			Dim xrDesignPanelListener4 As New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
-			Dim xrDesignPanelListener5 As New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
-			Dim xrDesignPanelListener6 As New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
-			Dim xrDesignPanelListener7 As New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
-			Dim xrDesignPanelListener8 As New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
-			Me.xrDesignRibbonController1 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonController(Me.components)
-			Me.ribbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
-			Me.applicationMenu1 = New DevExpress.XtraBars.Ribbon.ApplicationMenu(Me.components)
-			Me.commandBarItem6 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem9 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem7 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem8 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem127 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem128 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem1 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem2 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem3 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem4 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem5 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem10 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem11 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem12 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem13 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem14 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem15 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem16 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.barEditItem1 = New DevExpress.XtraBars.BarEditItem()
-			Me.recentlyUsedItemsComboBox1 = New DevExpress.XtraReports.UserDesigner.RecentlyUsedItemsComboBox()
-			Me.barEditItem2 = New DevExpress.XtraBars.BarEditItem()
-			Me.designRepositoryItemComboBox1 = New DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox()
-			Me.barDockPanelsListItem1 = New DevExpress.XtraReports.UserDesigner.BarDockPanelsListItem()
-			Me.xrDesignDockManager1 = New DevExpress.XtraReports.UserDesigner.XRDesignDockManager(Me.components)
-			Me.panelContainer1 = New DevExpress.XtraBars.Docking.DockPanel()
-			Me.panelContainer2 = New DevExpress.XtraBars.Docking.DockPanel()
-			Me.reportExplorerDockPanel1 = New DevExpress.XtraReports.UserDesigner.ReportExplorerDockPanel()
-			Me.reportExplorerDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
-			Me.fieldListDockPanel1 = New DevExpress.XtraReports.UserDesigner.FieldListDockPanel()
-			Me.fieldListDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
-			Me.panelContainer3 = New DevExpress.XtraBars.Docking.DockPanel()
-			Me.propertyGridDockPanel1 = New DevExpress.XtraReports.UserDesigner.PropertyGridDockPanel()
-			Me.propertyGridDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
-			Me.reportGalleryDockPanel1 = New DevExpress.XtraReports.UserDesigner.ReportGalleryDockPanel()
-			Me.reportGalleryDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
-			Me.panelContainer4 = New DevExpress.XtraBars.Docking.DockPanel()
-			Me.groupAndSortDockPanel1 = New DevExpress.XtraReports.UserDesigner.GroupAndSortDockPanel()
-			Me.groupAndSortDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
-			Me.errorListDockPanel1 = New DevExpress.XtraReports.UserDesigner.ErrorListDockPanel()
-			Me.errorListDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
-			Me.commandBarItem17 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem18 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem19 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandColorBarItem1 = New DevExpress.XtraReports.UserDesigner.CommandColorBarItem()
-			Me.commandColorBarItem2 = New DevExpress.XtraReports.UserDesigner.CommandColorBarItem()
-			Me.commandBarItem20 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem21 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem22 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem23 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem24 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem25 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem26 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem27 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem28 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem29 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem30 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem31 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem32 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem33 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem34 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem35 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem36 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem37 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandColorBarItem3 = New DevExpress.XtraReports.UserDesigner.CommandColorBarItem()
-			Me.commandBarItem38 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem39 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem40 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem41 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem42 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem43 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem44 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem45 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem46 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem47 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem48 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem49 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem50 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem51 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem52 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem53 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem54 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem55 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem56 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem57 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem58 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem59 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem60 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem61 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarCheckItem1 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
-			Me.commandBarCheckItem2 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
-			Me.commandBarItem62 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem63 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem64 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem65 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandColorBarItem4 = New DevExpress.XtraReports.UserDesigner.CommandColorBarItem()
-			Me.commandBarItem66 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem67 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem68 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem69 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem70 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem71 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem72 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarEditItem1 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
-			Me.repositoryItemLookUpEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
-			Me.commandBarCheckItem3 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
-			Me.commandBarItem73 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem74 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem75 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem76 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandGalleryBarItem1 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
-			Me.commandGalleryBarItem2 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
-			Me.commandGalleryBarItem3 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
-			Me.commandGalleryBarItem4 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
-			Me.commandGalleryBarItem5 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
-			Me.commandGalleryBarItem6 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
-			Me.commandBarEditItem2 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
-			Me.repositoryItemSpinEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit()
-			Me.commandBarEditItem3 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
-			Me.repositoryItemSpinEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit()
-			Me.commandBarEditItem4 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
-			Me.repositoryItemSpinEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit()
-			Me.commandBarEditItem5 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
-			Me.repositoryItemSpinEdit4 = New DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit()
-			Me.commandBarEditItem6 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
-			Me.repositoryItemImageComboBox1 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
-			Me.commandBarEditItem7 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
-			Me.repositoryItemLookUpEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
-			Me.commandBarEditItem8 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
-			Me.repositoryItemComboBox1 = New DevExpress.XtraEditors.Repository.RepositoryItemComboBox()
-			Me.commandBarItem77 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem78 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem79 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem80 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem81 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem82 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem83 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem84 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem85 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem86 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem87 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem88 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem89 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem90 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem91 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem92 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem93 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem94 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem95 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem96 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem97 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem98 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem99 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem100 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem101 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem102 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem103 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem104 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem105 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem106 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem107 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem108 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem109 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem110 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem111 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem112 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem113 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem114 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem115 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem116 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem117 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem118 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem119 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem120 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem121 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem122 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarCheckItem4 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
-			Me.commandBarCheckItem5 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
-			Me.commandBarCheckItem6 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
-			Me.commandBarCheckItem7 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
-			Me.commandBarCheckItem8 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
-			Me.commandBarCheckItem9 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
-			Me.commandBarItem123 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem124 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem125 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.commandBarItem126 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
-			Me.xrDesignBarButtonGroup1 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup2 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup3 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup4 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup5 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup6 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup7 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup8 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup9 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup10 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup11 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup12 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup13 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.xrDesignBarButtonGroup14 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
-			Me.printPreviewBarItem1 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem2 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem3 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem4 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem5 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem7 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem8 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem9 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem11 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem12 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem13 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem14 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem15 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem16 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem17 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem18 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem19 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem20 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem21 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem22 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem23 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem24 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem25 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem26 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem27 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem28 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem29 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem30 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem31 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem32 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem33 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem34 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem35 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem36 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem37 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem38 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem39 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem40 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem41 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem42 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem43 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem44 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem45 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem46 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem47 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem48 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem49 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem50 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewBarItem51 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewStaticItem1 = New DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem()
-			Me.progressBarEditItem1 = New DevExpress.XtraPrinting.Preview.ProgressBarEditItem()
-			Me.repositoryItemProgressBar1 = New DevExpress.XtraEditors.Repository.RepositoryItemProgressBar()
-			Me.printPreviewBarItem52 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
-			Me.printPreviewStaticItem2 = New DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem()
-			Me.zoomTrackBarEditItem1 = New DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem()
-			Me.repositoryItemZoomTrackBar1 = New DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar()
-			Me.ribbonPageCategory1 = New DevExpress.XtraReports.UserDesigner.XRCharacterCombRibbonPageCategory()
-			Me.ribbonPage6 = New DevExpress.XtraReports.UserDesigner.XRCharacterCombDesignContextRibbonPage()
-			Me.xrDesignRibbonPageGroup20 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPageCategory2 = New DevExpress.XtraReports.UserDesigner.XRTableRibbonPageCategory()
-			Me.ribbonPage7 = New DevExpress.XtraReports.UserDesigner.XRTableDesignContextRibbonPage()
-			Me.xrDesignRibbonPageGroup21 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup22 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup23 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup24 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup25 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPageCategory3 = New DevExpress.XtraReports.UserDesigner.XRChartRibbonPageCategory()
-			Me.ribbonPage8 = New DevExpress.XtraReports.UserDesigner.XRChartDesignContextRibbonPage()
-			Me.xrDesignRibbonPageGroup26 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup27 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup28 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup29 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup30 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPageCategory4 = New DevExpress.XtraReports.UserDesigner.XRPivotGridRibbonPageCategory()
-			Me.ribbonPage9 = New DevExpress.XtraReports.UserDesigner.XRPivotGridDesignContextRibbonPage()
-			Me.xrDesignRibbonPageGroup31 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup32 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup33 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup34 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPageCategory5 = New DevExpress.XtraReports.UserDesigner.XRBarCodeRibbonPageCategory()
-			Me.ribbonPage10 = New DevExpress.XtraReports.UserDesigner.XRBarcodeDesignContextRibbonPage()
-			Me.xrDesignRibbonPageGroup35 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup36 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPageCategory6 = New DevExpress.XtraReports.UserDesigner.XRGaugeRibbonPageCategory()
-			Me.ribbonPage11 = New DevExpress.XtraReports.UserDesigner.XRGaugeDesignContextRibbonPage()
-			Me.xrDesignRibbonPageGroup37 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup38 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPageCategory7 = New DevExpress.XtraReports.UserDesigner.XRSparklineRibbonPageCategory()
-			Me.ribbonPage12 = New DevExpress.XtraReports.UserDesigner.XRSparklineDesignContextRibbonPage()
-			Me.xrDesignRibbonPageGroup39 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup40 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPageCategory8 = New DevExpress.XtraReports.UserDesigner.XRShapeRibbonPageCategory()
-			Me.ribbonPage13 = New DevExpress.XtraReports.UserDesigner.XRShapeDesignContextRibbonPage()
-			Me.xrDesignRibbonPageGroup41 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPageCategory9 = New DevExpress.XtraReports.UserDesigner.XRLabelRibbonPageCategory()
-			Me.ribbonPage14 = New DevExpress.XtraReports.UserDesigner.XRLabelTextContextRibbonPage()
-			Me.xrDesignRibbonPageGroup42 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup43 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPage1 = New DevExpress.XtraReports.UserDesigner.XRHomeRibbonPage()
-			Me.xrDesignRibbonPageGroup1 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup2 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup3 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup4 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup5 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup6 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup7 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPage2 = New DevExpress.XtraReports.UserDesigner.XRLayoutRibbonPage()
-			Me.xrDesignRibbonPageGroup8 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup9 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup10 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup11 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPage3 = New DevExpress.XtraReports.UserDesigner.XRPageRibbonPage()
-			Me.xrDesignRibbonPageGroup12 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup13 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPage4 = New DevExpress.XtraReports.UserDesigner.XRViewRibbonPage()
-			Me.xrDesignRibbonPageGroup14 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup15 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup16 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup17 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.xrDesignRibbonPageGroup18 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPage5 = New DevExpress.XtraReports.UserDesigner.XRScriptsRibbonPage()
-			Me.xrDesignRibbonPageGroup19 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
-			Me.ribbonPage15 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPage()
-			Me.printPreviewRibbonPageGroup1 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
-			Me.printPreviewRibbonPageGroup2 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
-			Me.printPreviewRibbonPageGroup3 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
-			Me.printPreviewRibbonPageGroup4 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
-			Me.printPreviewRibbonPageGroup5 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
-			Me.printPreviewRibbonPageGroup6 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
-			Me.printPreviewRibbonPageGroup7 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
-			Me.printPreviewRibbonPageGroup8 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
-			Me.ribbonStatusBar1 = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
-			Me.reportDesigner1 = New DevExpress.XtraReports.UserDesigner.XRDesignMdiController(Me.components)
-			CType(Me.xrDesignRibbonController1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.applicationMenu1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.recentlyUsedItemsComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.designRepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.xrDesignDockManager1, System.ComponentModel.ISupportInitialize).BeginInit()
-			Me.panelContainer1.SuspendLayout()
-			Me.panelContainer2.SuspendLayout()
-			Me.reportExplorerDockPanel1.SuspendLayout()
-			Me.fieldListDockPanel1.SuspendLayout()
-			Me.panelContainer3.SuspendLayout()
-			Me.propertyGridDockPanel1.SuspendLayout()
-			Me.reportGalleryDockPanel1.SuspendLayout()
-			Me.panelContainer4.SuspendLayout()
-			Me.groupAndSortDockPanel1.SuspendLayout()
-			Me.errorListDockPanel1.SuspendLayout()
-			CType(Me.repositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.repositoryItemSpinEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.repositoryItemSpinEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.repositoryItemSpinEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.repositoryItemSpinEdit4, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.repositoryItemImageComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.repositoryItemLookUpEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.repositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.repositoryItemProgressBar1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.repositoryItemZoomTrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.reportDesigner1, System.ComponentModel.ISupportInitialize).BeginInit()
-			Me.SuspendLayout()
-			' 
-			' xrDesignRibbonController1
-			' 
-			Me.xrDesignRibbonController1.RibbonControl = Me.ribbonControl1
-			Me.xrDesignRibbonController1.RibbonStatusBar = Me.ribbonStatusBar1
-			Me.xrDesignRibbonController1.XRDesignDockManager = Me.xrDesignDockManager1
-			' 
-			' ribbonControl1
-			' 
-			Me.ribbonControl1.ApplicationButtonDropDownControl = Me.applicationMenu1
-			Me.ribbonControl1.AutoHideEmptyItems = True
-			Me.ribbonControl1.AutoSizeItems = True
-			Me.ribbonControl1.ExpandCollapseItem.Id = 0
-			Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.ribbonControl1.ExpandCollapseItem, Me.ribbonControl1.SearchEditItem, Me.commandBarItem1, Me.commandBarItem2, Me.commandBarItem3, Me.commandBarItem4, Me.commandBarItem5, Me.commandBarItem6, Me.commandBarItem7, Me.commandBarItem8, Me.commandBarItem9, Me.commandBarItem10, Me.commandBarItem11, Me.commandBarItem12, Me.commandBarItem13, Me.commandBarItem14, Me.commandBarItem15, Me.commandBarItem16, Me.barEditItem1, Me.barEditItem2, Me.barDockPanelsListItem1, Me.commandBarItem17, Me.commandBarItem18, Me.commandBarItem19, Me.commandColorBarItem1, Me.commandColorBarItem2, Me.commandBarItem20, Me.commandBarItem21, Me.commandBarItem22, Me.commandBarItem23, Me.commandBarItem24, Me.commandBarItem25, Me.commandBarItem26, Me.commandBarItem27, Me.commandBarItem28, Me.commandBarItem29, Me.commandBarItem30, Me.commandBarItem31, Me.commandBarItem32, Me.commandBarItem33, Me.commandBarItem34, Me.commandBarItem35, Me.commandBarItem36, Me.commandBarItem37, Me.commandColorBarItem3, Me.commandBarItem38, Me.commandBarItem39, Me.commandBarItem40, Me.commandBarItem41, Me.commandBarItem42, Me.commandBarItem43, Me.commandBarItem44, Me.commandBarItem45, Me.commandBarItem46, Me.commandBarItem47, Me.commandBarItem48, Me.commandBarItem49, Me.commandBarItem50, Me.commandBarItem51, Me.commandBarItem52, Me.commandBarItem53, Me.commandBarItem54, Me.commandBarItem55, Me.commandBarItem56, Me.commandBarItem57, Me.commandBarItem58, Me.commandBarItem59, Me.commandBarItem60, Me.commandBarItem61, Me.commandBarCheckItem1, Me.commandBarCheckItem2, Me.commandBarItem62, Me.commandBarItem63, Me.commandBarItem64, Me.commandBarItem65, Me.commandColorBarItem4, Me.commandBarItem66, Me.commandBarItem67, Me.commandBarItem68, Me.commandBarItem69, Me.commandBarItem70, Me.commandBarItem71, Me.commandBarItem72, Me.commandBarEditItem1, Me.commandBarCheckItem3, Me.commandBarItem73, Me.commandBarItem74, Me.commandBarItem75, Me.commandBarItem76, Me.commandGalleryBarItem1, Me.commandGalleryBarItem2, Me.commandGalleryBarItem3, Me.commandGalleryBarItem4, Me.commandGalleryBarItem5, Me.commandGalleryBarItem6, Me.commandBarEditItem2, Me.commandBarEditItem3, Me.commandBarEditItem4, Me.commandBarEditItem5, Me.commandBarEditItem6, Me.commandBarEditItem7, Me.commandBarEditItem8, Me.commandBarItem77, Me.commandBarItem78, Me.commandBarItem79, Me.commandBarItem80, Me.commandBarItem81, Me.commandBarItem82, Me.commandBarItem83, Me.commandBarItem84, Me.commandBarItem85, Me.commandBarItem86, Me.commandBarItem87, Me.commandBarItem88, Me.commandBarItem89, Me.commandBarItem90, Me.commandBarItem91, Me.commandBarItem92, Me.commandBarItem93, Me.commandBarItem94, Me.commandBarItem95, Me.commandBarItem96, Me.commandBarItem97, Me.commandBarItem98, Me.commandBarItem99, Me.commandBarItem100, Me.commandBarItem101, Me.commandBarItem102, Me.commandBarItem103, Me.commandBarItem104, Me.commandBarItem105, Me.commandBarItem106, Me.commandBarItem107, Me.commandBarItem108, Me.commandBarItem109, Me.commandBarItem110, Me.commandBarItem111, Me.commandBarItem112, Me.commandBarItem113, Me.commandBarItem114, Me.commandBarItem115, Me.commandBarItem116, Me.commandBarItem117, Me.commandBarItem118, Me.commandBarItem119, Me.commandBarItem120, Me.commandBarItem121, Me.commandBarItem122, Me.commandBarCheckItem4, Me.commandBarCheckItem5, Me.commandBarCheckItem6, Me.commandBarCheckItem7, Me.commandBarCheckItem8, Me.commandBarCheckItem9, Me.commandBarItem123, Me.commandBarItem124, Me.commandBarItem125, Me.commandBarItem126, Me.commandBarItem127, Me.commandBarItem128, Me.xrDesignBarButtonGroup1, Me.xrDesignBarButtonGroup2, Me.xrDesignBarButtonGroup3, Me.xrDesignBarButtonGroup4, Me.xrDesignBarButtonGroup5, Me.xrDesignBarButtonGroup6, Me.xrDesignBarButtonGroup7, Me.xrDesignBarButtonGroup8, Me.xrDesignBarButtonGroup9, Me.xrDesignBarButtonGroup10, Me.xrDesignBarButtonGroup11, Me.xrDesignBarButtonGroup12, Me.xrDesignBarButtonGroup13, Me.xrDesignBarButtonGroup14, Me.printPreviewBarItem1, Me.printPreviewBarItem2, Me.printPreviewBarItem3, Me.printPreviewBarItem4, Me.printPreviewBarItem5, Me.printPreviewBarItem7, Me.printPreviewBarItem8, Me.printPreviewBarItem9, Me.printPreviewBarItem11, Me.printPreviewBarItem12, Me.printPreviewBarItem13, Me.printPreviewBarItem14, Me.printPreviewBarItem15, Me.printPreviewBarItem16, Me.printPreviewBarItem17, Me.printPreviewBarItem18, Me.printPreviewBarItem19, Me.printPreviewBarItem20, Me.printPreviewBarItem21, Me.printPreviewBarItem22, Me.printPreviewBarItem23, Me.printPreviewBarItem24, Me.printPreviewBarItem25, Me.printPreviewBarItem26, Me.printPreviewBarItem27, Me.printPreviewBarItem28, Me.printPreviewBarItem29, Me.printPreviewBarItem30, Me.printPreviewBarItem31, Me.printPreviewBarItem32, Me.printPreviewBarItem33, Me.printPreviewBarItem34, Me.printPreviewBarItem35, Me.printPreviewBarItem36, Me.printPreviewBarItem37, Me.printPreviewBarItem38, Me.printPreviewBarItem39, Me.printPreviewBarItem40, Me.printPreviewBarItem41, Me.printPreviewBarItem42, Me.printPreviewBarItem43, Me.printPreviewBarItem44, Me.printPreviewBarItem45, Me.printPreviewBarItem46, Me.printPreviewBarItem47, Me.printPreviewBarItem48, Me.printPreviewBarItem49, Me.printPreviewBarItem50, Me.printPreviewBarItem51, Me.printPreviewStaticItem1, Me.progressBarEditItem1, Me.printPreviewBarItem52, Me.printPreviewStaticItem2, Me.zoomTrackBarEditItem1})
-			Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
-			Me.ribbonControl1.MaxItemId = 229
-			Me.ribbonControl1.Name = "ribbonControl1"
-			Me.ribbonControl1.PageCategories.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageCategory() { Me.ribbonPageCategory1, Me.ribbonPageCategory2, Me.ribbonPageCategory3, Me.ribbonPageCategory4, Me.ribbonPageCategory5, Me.ribbonPageCategory6, Me.ribbonPageCategory7, Me.ribbonPageCategory8, Me.ribbonPageCategory9})
-			Me.ribbonControl1.PageHeaderItemLinks.Add(Me.commandBarItem1)
-			Me.ribbonControl1.PageHeaderItemLinks.Add(Me.commandBarItem2)
-			Me.ribbonControl1.PageHeaderItemLinks.Add(Me.commandBarItem3)
-			Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage1, Me.ribbonPage2, Me.ribbonPage3, Me.ribbonPage4, Me.ribbonPage5, Me.ribbonPage15})
-			Me.ribbonControl1.QuickToolbarItemLinks.Add(Me.commandBarItem4)
-			Me.ribbonControl1.QuickToolbarItemLinks.Add(Me.commandBarItem5)
-			Me.ribbonControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() { Me.recentlyUsedItemsComboBox1, Me.designRepositoryItemComboBox1, Me.repositoryItemLookUpEdit1, Me.repositoryItemSpinEdit1, Me.repositoryItemSpinEdit2, Me.repositoryItemSpinEdit3, Me.repositoryItemSpinEdit4, Me.repositoryItemImageComboBox1, Me.repositoryItemLookUpEdit2, Me.repositoryItemComboBox1, Me.repositoryItemProgressBar1, Me.repositoryItemZoomTrackBar1})
-			Me.ribbonControl1.ShowItemCaptionsInPageHeader = True
-			Me.ribbonControl1.Size = New System.Drawing.Size(800, 142)
-			Me.ribbonControl1.StatusBar = Me.ribbonStatusBar1
-			Me.ribbonControl1.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.True
-			' 
-			' applicationMenu1
-			' 
-			Me.applicationMenu1.ItemLinks.Add(Me.commandBarItem6)
-			Me.applicationMenu1.ItemLinks.Add(Me.commandBarItem9)
-			Me.applicationMenu1.ItemLinks.Add(Me.commandBarItem7)
-			Me.applicationMenu1.ItemLinks.Add(Me.commandBarItem8)
-			Me.applicationMenu1.ItemLinks.Add(Me.commandBarItem127, True)
-			Me.applicationMenu1.ItemLinks.Add(Me.commandBarItem128, True)
-			Me.applicationMenu1.MenuDrawMode = DevExpress.XtraBars.MenuDrawMode.LargeImagesText
-			Me.applicationMenu1.Name = "applicationMenu1"
-			Me.applicationMenu1.Ribbon = Me.ribbonControl1
-			' 
-			' commandBarItem6
-			' 
-			Me.commandBarItem6.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem6.Caption = "New Report"
-			Me.commandBarItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReport
-			Me.commandBarItem6.Enabled = False
-			Me.commandBarItem6.Id = 6
-			Me.commandBarItem6.Name = "commandBarItem6"
-			superToolTip1.FixedTooltipWidth = True
-			toolTipTitleItem1.Text = "New Blank Report"
-			toolTipItem1.LeftIndent = 6
-			toolTipItem1.Text = "Create a new blank report."
-			superToolTip1.Items.Add(toolTipTitleItem1)
-			superToolTip1.Items.Add(toolTipItem1)
-			superToolTip1.MaxWidth = 210
-			Me.commandBarItem6.SuperTip = superToolTip1
-			' 
-			' commandBarItem9
-			' 
-			Me.commandBarItem9.Caption = "Open..."
-			Me.commandBarItem9.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.OpenFile
-			Me.commandBarItem9.Enabled = False
-			Me.commandBarItem9.Id = 9
-			Me.commandBarItem9.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O))
-			Me.commandBarItem9.Name = "commandBarItem9"
-			superToolTip2.FixedTooltipWidth = True
-			toolTipTitleItem2.Text = "Open Report (Ctrl+O)"
-			toolTipItem2.LeftIndent = 6
-			toolTipItem2.Text = "Open a report."
-			superToolTip2.Items.Add(toolTipTitleItem2)
-			superToolTip2.Items.Add(toolTipItem2)
-			superToolTip2.MaxWidth = 210
-			Me.commandBarItem9.SuperTip = superToolTip2
-			' 
-			' commandBarItem7
-			' 
-			Me.commandBarItem7.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem7.Caption = "Save"
-			Me.commandBarItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFile
-			Me.commandBarItem7.Enabled = False
-			Me.commandBarItem7.Id = 7
-			Me.commandBarItem7.Name = "commandBarItem7"
-			superToolTip3.FixedTooltipWidth = True
-			toolTipTitleItem3.Text = "Save Report"
-			toolTipItem3.LeftIndent = 6
-			toolTipItem3.Text = "Save the current report."
-			superToolTip3.Items.Add(toolTipTitleItem3)
-			superToolTip3.Items.Add(toolTipItem3)
-			superToolTip3.MaxWidth = 210
-			Me.commandBarItem7.SuperTip = superToolTip3
-			' 
-			' commandBarItem8
-			' 
-			Me.commandBarItem8.Caption = "Save All"
-			Me.commandBarItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveAll
-			Me.commandBarItem8.Enabled = False
-			Me.commandBarItem8.Id = 8
-			Me.commandBarItem8.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.L))
-			Me.commandBarItem8.Name = "commandBarItem8"
-			superToolTip4.FixedTooltipWidth = True
-			toolTipTitleItem4.Text = "Save All Reports (Ctrl+L)"
-			toolTipItem4.LeftIndent = 6
-			toolTipItem4.Text = "Save all modified reports."
-			superToolTip4.Items.Add(toolTipTitleItem4)
-			superToolTip4.Items.Add(toolTipItem4)
-			superToolTip4.MaxWidth = 210
-			Me.commandBarItem8.SuperTip = superToolTip4
-			' 
-			' commandBarItem127
-			' 
-			Me.commandBarItem127.Caption = "Close"
-			Me.commandBarItem127.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Close
-			Me.commandBarItem127.Enabled = False
-			Me.commandBarItem127.Id = 157
-			Me.commandBarItem127.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.F4))
-			Me.commandBarItem127.Name = "commandBarItem127"
-			superToolTip5.FixedTooltipWidth = True
-			toolTipTitleItem5.Text = "Close (Ctrl+F4)"
-			toolTipItem5.LeftIndent = 6
-			toolTipItem5.Text = "Close the current report."
-			superToolTip5.Items.Add(toolTipTitleItem5)
-			superToolTip5.Items.Add(toolTipItem5)
-			superToolTip5.MaxWidth = 210
-			Me.commandBarItem127.SuperTip = superToolTip5
-			' 
-			' commandBarItem128
-			' 
-			Me.commandBarItem128.Caption = "Exit"
-			Me.commandBarItem128.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Exit
-			Me.commandBarItem128.Enabled = False
-			Me.commandBarItem128.Id = 158
-			Me.commandBarItem128.Name = "commandBarItem128"
-			superToolTip6.FixedTooltipWidth = True
-			toolTipTitleItem6.Text = "Exit"
-			toolTipItem6.LeftIndent = 6
-			toolTipItem6.Text = "Close the report designer."
-			superToolTip6.Items.Add(toolTipTitleItem6)
-			superToolTip6.Items.Add(toolTipItem6)
-			superToolTip6.MaxWidth = 210
-			Me.commandBarItem128.SuperTip = superToolTip6
-			' 
-			' commandBarItem1
-			' 
-			Me.commandBarItem1.Caption = "Designer"
-			Me.commandBarItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowDesignerTab
-			Me.commandBarItem1.Enabled = False
-			Me.commandBarItem1.Id = 1
-			Me.commandBarItem1.ItemShortcut = New DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F4)
-			Me.commandBarItem1.Name = "commandBarItem1"
-			superToolTip7.FixedTooltipWidth = True
-			toolTipTitleItem7.Text = "Report Designer (F4)"
-			toolTipItem7.LeftIndent = 6
-			toolTipItem7.Text = "Customize the report layout or create a new layout in the feature-rich Report Des" & "igner."
-			superToolTip7.Items.Add(toolTipTitleItem7)
-			superToolTip7.Items.Add(toolTipItem7)
-			superToolTip7.MaxWidth = 210
-			Me.commandBarItem1.SuperTip = superToolTip7
-			' 
-			' commandBarItem2
-			' 
-			Me.commandBarItem2.Caption = "Preview"
-			Me.commandBarItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowPreviewTab
-			Me.commandBarItem2.Enabled = False
-			Me.commandBarItem2.Id = 2
-			Me.commandBarItem2.ItemShortcut = New DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F5)
-			Me.commandBarItem2.Name = "commandBarItem2"
-			superToolTip8.FixedTooltipWidth = True
-			toolTipTitleItem8.Text = "Print Preview (F5)"
-			toolTipItem8.LeftIndent = 6
-			toolTipItem8.Text = "Display a report populated with data and divided into pages, customize its print " & "settings and print or export this report."
-			superToolTip8.Items.Add(toolTipTitleItem8)
-			superToolTip8.Items.Add(toolTipItem8)
-			superToolTip8.MaxWidth = 210
-			Me.commandBarItem2.SuperTip = superToolTip8
-			' 
-			' commandBarItem3
-			' 
-			Me.commandBarItem3.Caption = "Scripts"
-			Me.commandBarItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowScriptsTab
-			Me.commandBarItem3.Enabled = False
-			Me.commandBarItem3.Id = 3
-			Me.commandBarItem3.ItemShortcut = New DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F6)
-			Me.commandBarItem3.Name = "commandBarItem3"
-			superToolTip9.FixedTooltipWidth = True
-			toolTipTitleItem9.Text = "Scripts (F6)"
-			toolTipItem9.LeftIndent = 6
-			toolTipItem9.Text = "Perform custom calculations by handling script events."
-			superToolTip9.Items.Add(toolTipTitleItem9)
-			superToolTip9.Items.Add(toolTipItem9)
-			superToolTip9.MaxWidth = 210
-			Me.commandBarItem3.SuperTip = superToolTip9
-			' 
-			' commandBarItem4
-			' 
-			Me.commandBarItem4.Caption = "Undo"
-			Me.commandBarItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Undo
-			Me.commandBarItem4.Enabled = False
-			Me.commandBarItem4.Id = 4
-			Me.commandBarItem4.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z))
-			Me.commandBarItem4.Name = "commandBarItem4"
-			superToolTip10.FixedTooltipWidth = True
-			toolTipTitleItem10.Text = "Undo (Ctrl+Z)"
-			toolTipItem10.LeftIndent = 6
-			toolTipItem10.Text = "Undo the last operation."
-			superToolTip10.Items.Add(toolTipTitleItem10)
-			superToolTip10.Items.Add(toolTipItem10)
-			superToolTip10.MaxWidth = 210
-			Me.commandBarItem4.SuperTip = superToolTip10
-			' 
-			' commandBarItem5
-			' 
-			Me.commandBarItem5.Caption = "Redo"
-			Me.commandBarItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Redo
-			Me.commandBarItem5.Enabled = False
-			Me.commandBarItem5.Id = 5
-			Me.commandBarItem5.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Y))
-			Me.commandBarItem5.Name = "commandBarItem5"
-			superToolTip11.FixedTooltipWidth = True
-			toolTipTitleItem11.Text = "Redo (Ctrl+Y)"
-			toolTipItem11.LeftIndent = 6
-			toolTipItem11.Text = "Redo the last operation."
-			superToolTip11.Items.Add(toolTipTitleItem11)
-			superToolTip11.Items.Add(toolTipItem11)
-			superToolTip11.MaxWidth = 210
-			Me.commandBarItem5.SuperTip = superToolTip11
-			' 
-			' commandBarItem10
-			' 
-			Me.commandBarItem10.Caption = "New Report"
-			Me.commandBarItem10.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReport
-			Me.commandBarItem10.Description = "Create a new blank report."
-			Me.commandBarItem10.Enabled = False
-			Me.commandBarItem10.Id = 10
-			Me.commandBarItem10.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N))
-			Me.commandBarItem10.Name = "commandBarItem10"
-			superToolTip12.FixedTooltipWidth = True
-			toolTipTitleItem12.Text = "New Blank Report (Ctrl+N)"
-			toolTipItem12.LeftIndent = 6
-			toolTipItem12.Text = "Create a new blank report."
-			superToolTip12.Items.Add(toolTipTitleItem12)
-			superToolTip12.Items.Add(toolTipItem12)
-			superToolTip12.MaxWidth = 210
-			Me.commandBarItem10.SuperTip = superToolTip12
-			' 
-			' commandBarItem11
-			' 
-			Me.commandBarItem11.Caption = "New Report via Wizard..."
-			Me.commandBarItem11.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReportWizard
-			Me.commandBarItem11.Description = "Launch the report wizard to create a new report."
-			Me.commandBarItem11.Enabled = False
-			Me.commandBarItem11.Id = 11
-			Me.commandBarItem11.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.W))
-			Me.commandBarItem11.Name = "commandBarItem11"
-			superToolTip13.FixedTooltipWidth = True
-			toolTipTitleItem13.Text = "New Report via Wizard (Ctrl+W)"
-			toolTipItem13.LeftIndent = 6
-			toolTipItem13.Text = "Launch the report wizard to create a new report."
-			superToolTip13.Items.Add(toolTipTitleItem13)
-			superToolTip13.Items.Add(toolTipItem13)
-			superToolTip13.MaxWidth = 210
-			Me.commandBarItem11.SuperTip = superToolTip13
-			' 
-			' commandBarItem12
-			' 
-			Me.commandBarItem12.Caption = "Save"
-			Me.commandBarItem12.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFile
-			Me.commandBarItem12.Description = "Save the current report."
-			Me.commandBarItem12.Enabled = False
-			Me.commandBarItem12.Id = 12
-			Me.commandBarItem12.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S))
-			Me.commandBarItem12.Name = "commandBarItem12"
-			superToolTip14.FixedTooltipWidth = True
-			toolTipTitleItem14.Text = "Save Report (Ctrl+S)"
-			toolTipItem14.LeftIndent = 6
-			toolTipItem14.Text = "Save the current report."
-			superToolTip14.Items.Add(toolTipTitleItem14)
-			superToolTip14.Items.Add(toolTipItem14)
-			superToolTip14.MaxWidth = 210
-			Me.commandBarItem12.SuperTip = superToolTip14
-			' 
-			' commandBarItem13
-			' 
-			Me.commandBarItem13.Caption = "Save As..."
-			Me.commandBarItem13.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFileAs
-			Me.commandBarItem13.Description = "Save the current report with a new name."
-			Me.commandBarItem13.Enabled = False
-			Me.commandBarItem13.Id = 13
-			Me.commandBarItem13.Name = "commandBarItem13"
-			superToolTip15.FixedTooltipWidth = True
-			toolTipTitleItem15.Text = "Save Report As"
-			toolTipItem15.LeftIndent = 6
-			toolTipItem15.Text = "Save the current report with a new name."
-			superToolTip15.Items.Add(toolTipTitleItem15)
-			superToolTip15.Items.Add(toolTipItem15)
-			superToolTip15.MaxWidth = 210
-			Me.commandBarItem13.SuperTip = superToolTip15
-			' 
-			' commandBarItem14
-			' 
-			Me.commandBarItem14.Caption = "Paste"
-			Me.commandBarItem14.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Paste
-			Me.commandBarItem14.Enabled = False
-			Me.commandBarItem14.Id = 14
-			Me.commandBarItem14.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V))
-			Me.commandBarItem14.Name = "commandBarItem14"
-			superToolTip16.FixedTooltipWidth = True
-			toolTipTitleItem16.Text = "Paste (Ctrl+V)"
-			toolTipItem16.LeftIndent = 6
-			toolTipItem16.Text = "Paste the contents of the Clipboard."
-			superToolTip16.Items.Add(toolTipTitleItem16)
-			superToolTip16.Items.Add(toolTipItem16)
-			superToolTip16.MaxWidth = 210
-			Me.commandBarItem14.SuperTip = superToolTip16
-			' 
-			' commandBarItem15
-			' 
-			Me.commandBarItem15.Caption = "Cut"
-			Me.commandBarItem15.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Cut
-			Me.commandBarItem15.Enabled = False
-			Me.commandBarItem15.Id = 15
-			Me.commandBarItem15.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X))
-			Me.commandBarItem15.Name = "commandBarItem15"
-			Me.commandBarItem15.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
-			superToolTip17.FixedTooltipWidth = True
-			toolTipTitleItem17.Text = "Cut (Ctrl+X)"
-			toolTipItem17.LeftIndent = 6
-			toolTipItem17.Text = "Cut the selected controls from the report and put them on the Clipboard."
-			superToolTip17.Items.Add(toolTipTitleItem17)
-			superToolTip17.Items.Add(toolTipItem17)
-			superToolTip17.MaxWidth = 210
-			Me.commandBarItem15.SuperTip = superToolTip17
-			' 
-			' commandBarItem16
-			' 
-			Me.commandBarItem16.Caption = "Copy"
-			Me.commandBarItem16.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Copy
-			Me.commandBarItem16.Enabled = False
-			Me.commandBarItem16.Id = 16
-			Me.commandBarItem16.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C))
-			Me.commandBarItem16.Name = "commandBarItem16"
-			Me.commandBarItem16.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
-			superToolTip18.FixedTooltipWidth = True
-			toolTipTitleItem18.Text = "Copy (Ctrl+C)"
-			toolTipItem18.LeftIndent = 6
-			toolTipItem18.Text = "Copy the selected controls and put them on the Clipboard."
-			superToolTip18.Items.Add(toolTipTitleItem18)
-			superToolTip18.Items.Add(toolTipItem18)
-			superToolTip18.MaxWidth = 210
-			Me.commandBarItem16.SuperTip = superToolTip18
-			' 
-			' barEditItem1
-			' 
-			Me.barEditItem1.Edit = Me.recentlyUsedItemsComboBox1
-			Me.barEditItem1.EditWidth = 140
-			Me.barEditItem1.Id = 17
-			Me.barEditItem1.Name = "barEditItem1"
-			superToolTip19.FixedTooltipWidth = True
-			toolTipTitleItem19.Text = "Font"
-			toolTipItem19.LeftIndent = 6
-			toolTipItem19.Text = "Change the font face."
-			superToolTip19.Items.Add(toolTipTitleItem19)
-			superToolTip19.Items.Add(toolTipItem19)
-			superToolTip19.MaxWidth = 210
-			Me.barEditItem1.SuperTip = superToolTip19
-			' 
-			' recentlyUsedItemsComboBox1
-			' 
-			Me.recentlyUsedItemsComboBox1.AppearanceDropDown.Font = New System.Drawing.Font("Tahoma", 11.25F)
-			Me.recentlyUsedItemsComboBox1.AppearanceDropDown.Options.UseFont = True
-			Me.recentlyUsedItemsComboBox1.AutoHeight = False
-			Me.recentlyUsedItemsComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-			Me.recentlyUsedItemsComboBox1.Name = "recentlyUsedItemsComboBox1"
-			' 
-			' barEditItem2
-			' 
-			Me.barEditItem2.Edit = Me.designRepositoryItemComboBox1
-			Me.barEditItem2.EditWidth = 55
-			Me.barEditItem2.Id = 18
-			Me.barEditItem2.Name = "barEditItem2"
-			superToolTip20.FixedTooltipWidth = True
-			toolTipTitleItem20.Text = "Font Size"
-			toolTipItem20.LeftIndent = 6
-			toolTipItem20.Text = "Change the font size."
-			superToolTip20.Items.Add(toolTipTitleItem20)
-			superToolTip20.Items.Add(toolTipItem20)
-			superToolTip20.MaxWidth = 210
-			Me.barEditItem2.SuperTip = superToolTip20
-			' 
-			' designRepositoryItemComboBox1
-			' 
-			Me.designRepositoryItemComboBox1.AutoHeight = False
-			Me.designRepositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-			Me.designRepositoryItemComboBox1.Name = "designRepositoryItemComboBox1"
-			' 
-			' barDockPanelsListItem1
-			' 
-			Me.barDockPanelsListItem1.Caption = "Windows"
-			Me.barDockPanelsListItem1.DockManager = Me.xrDesignDockManager1
-			Me.barDockPanelsListItem1.Id = 19
-			Me.barDockPanelsListItem1.Name = "barDockPanelsListItem1"
-			Me.barDockPanelsListItem1.ShowCustomizationItem = False
-			Me.barDockPanelsListItem1.ShowDockPanels = True
-			Me.barDockPanelsListItem1.ShowToolbars = False
-			superToolTip21.FixedTooltipWidth = True
-			toolTipTitleItem21.Text = "Show/Hide Windows"
-			toolTipItem21.LeftIndent = 6
-			toolTipItem21.Text = "Change the visibility of dock panels that assist in report creation."
-			superToolTip21.Items.Add(toolTipTitleItem21)
-			superToolTip21.Items.Add(toolTipItem21)
-			superToolTip21.MaxWidth = 210
-			Me.barDockPanelsListItem1.SuperTip = superToolTip21
-			' 
-			' xrDesignDockManager1
-			' 
-			Me.xrDesignDockManager1.Form = Me
-			Me.xrDesignDockManager1.ImageStream = (CType(resources.GetObject("xrDesignDockManager1.ImageStream"), DevExpress.Utils.ImageCollectionStreamer))
-			Me.xrDesignDockManager1.RootPanels.AddRange(New DevExpress.XtraBars.Docking.DockPanel() { Me.panelContainer1, Me.panelContainer4})
-			Me.xrDesignDockManager1.TopZIndexControls.AddRange(New String() { "DevExpress.XtraBars.BarDockControl", "DevExpress.XtraBars.StandaloneBarDockControl", "System.Windows.Forms.MenuStrip", "System.Windows.Forms.StatusStrip", "System.Windows.Forms.StatusBar", "DevExpress.XtraBars.Ribbon.RibbonStatusBar", "DevExpress.XtraBars.Ribbon.RibbonControl", "DevExpress.XtraBars.Navigation.OfficeNavigationBar", "DevExpress.XtraBars.Navigation.TileNavPane", "DevExpress.XtraBars.TabFormControl", "DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl", "DevExpress.XtraBars.ToolbarForm.ToolbarFormControl"})
-			' 
-			' panelContainer1
-			' 
-			Me.panelContainer1.Controls.Add(Me.panelContainer2)
-			Me.panelContainer1.Controls.Add(Me.panelContainer3)
-			Me.panelContainer1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right
-			Me.panelContainer1.ID = New System.Guid("4afe9d3e-8c1d-46d9-850e-8729843f9ebc")
-			Me.panelContainer1.Location = New System.Drawing.Point(425, 142)
-			Me.panelContainer1.Name = "panelContainer1"
-			Me.panelContainer1.OriginalSize = New System.Drawing.Size(375, 200)
-			Me.panelContainer1.Size = New System.Drawing.Size(375, 280)
-			Me.panelContainer1.Text = "panelContainer1"
-			' 
-			' panelContainer2
-			' 
-			Me.panelContainer2.ActiveChild = Me.reportExplorerDockPanel1
-			Me.panelContainer2.Controls.Add(Me.reportExplorerDockPanel1)
-			Me.panelContainer2.Controls.Add(Me.fieldListDockPanel1)
-			Me.panelContainer2.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
-			Me.panelContainer2.ID = New System.Guid("b0e4c0d4-28a4-445b-adbb-b87a0ad3ce21")
-			Me.panelContainer2.Location = New System.Drawing.Point(0, 0)
-			Me.panelContainer2.Name = "panelContainer2"
-			Me.panelContainer2.OriginalSize = New System.Drawing.Size(200, 200)
-			Me.panelContainer2.Size = New System.Drawing.Size(375, 140)
-			Me.panelContainer2.Tabbed = True
-			Me.panelContainer2.Text = "panelContainer2"
-			' 
-			' reportExplorerDockPanel1
-			' 
-			Me.reportExplorerDockPanel1.Controls.Add(Me.reportExplorerDockPanel1_Container)
-			Me.reportExplorerDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
-			Me.reportExplorerDockPanel1.ID = New System.Guid("fb3ec6cc-3b9b-4b9c-91cf-cff78c1edbf1")
-			Me.reportExplorerDockPanel1.Location = New System.Drawing.Point(1, 21)
-			Me.reportExplorerDockPanel1.Name = "reportExplorerDockPanel1"
-			Me.reportExplorerDockPanel1.OriginalSize = New System.Drawing.Size(200, 200)
-			Me.reportExplorerDockPanel1.Size = New System.Drawing.Size(374, 91)
-			Me.reportExplorerDockPanel1.Text = "Report Explorer"
-			' 
-			' reportExplorerDockPanel1_Container
-			' 
-			Me.reportExplorerDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-			Me.reportExplorerDockPanel1_Container.Name = "reportExplorerDockPanel1_Container"
-			Me.reportExplorerDockPanel1_Container.Size = New System.Drawing.Size(374, 91)
-			Me.reportExplorerDockPanel1_Container.TabIndex = 0
-			' 
-			' fieldListDockPanel1
-			' 
-			Me.fieldListDockPanel1.Controls.Add(Me.fieldListDockPanel1_Container)
-			Me.fieldListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
-			Me.fieldListDockPanel1.ID = New System.Guid("faf69838-a93f-4114-83e8-d0d09cc5ce95")
-			Me.fieldListDockPanel1.Location = New System.Drawing.Point(1, 21)
-			Me.fieldListDockPanel1.Name = "fieldListDockPanel1"
-			Me.fieldListDockPanel1.OriginalSize = New System.Drawing.Size(200, 200)
-			Me.fieldListDockPanel1.Size = New System.Drawing.Size(374, 91)
-			Me.fieldListDockPanel1.Text = "Field List"
-			' 
-			' fieldListDockPanel1_Container
-			' 
-			Me.fieldListDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-			Me.fieldListDockPanel1_Container.Name = "fieldListDockPanel1_Container"
-			Me.fieldListDockPanel1_Container.Size = New System.Drawing.Size(374, 91)
-			Me.fieldListDockPanel1_Container.TabIndex = 0
-			' 
-			' panelContainer3
-			' 
-			Me.panelContainer3.ActiveChild = Me.propertyGridDockPanel1
-			Me.panelContainer3.Controls.Add(Me.propertyGridDockPanel1)
-			Me.panelContainer3.Controls.Add(Me.reportGalleryDockPanel1)
-			Me.panelContainer3.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
-			Me.panelContainer3.ID = New System.Guid("e206d303-eabd-40ff-b0cb-cfa03e6d85a9")
-			Me.panelContainer3.Location = New System.Drawing.Point(0, 140)
-			Me.panelContainer3.Name = "panelContainer3"
-			Me.panelContainer3.OriginalSize = New System.Drawing.Size(200, 200)
-			Me.panelContainer3.Size = New System.Drawing.Size(375, 140)
-			Me.panelContainer3.Tabbed = True
-			Me.panelContainer3.Text = "panelContainer3"
-			' 
-			' propertyGridDockPanel1
-			' 
-			Me.propertyGridDockPanel1.Controls.Add(Me.propertyGridDockPanel1_Container)
-			Me.propertyGridDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
-			Me.propertyGridDockPanel1.ID = New System.Guid("b38d12c3-cd06-4dec-b93d-63a0088e495a")
-			Me.propertyGridDockPanel1.Location = New System.Drawing.Point(1, 22)
-			Me.propertyGridDockPanel1.Name = "propertyGridDockPanel1"
-			Me.propertyGridDockPanel1.OriginalSize = New System.Drawing.Size(200, 200)
-			Me.propertyGridDockPanel1.Size = New System.Drawing.Size(374, 90)
-			Me.propertyGridDockPanel1.Text = "Properties"
-			' 
-			' propertyGridDockPanel1_Container
-			' 
-			Me.propertyGridDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-			Me.propertyGridDockPanel1_Container.Name = "propertyGridDockPanel1_Container"
-			Me.propertyGridDockPanel1_Container.Size = New System.Drawing.Size(374, 90)
-			Me.propertyGridDockPanel1_Container.TabIndex = 0
-			' 
-			' reportGalleryDockPanel1
-			' 
-			Me.reportGalleryDockPanel1.Controls.Add(Me.reportGalleryDockPanel1_Container)
-			Me.reportGalleryDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
-			Me.reportGalleryDockPanel1.ID = New System.Guid("7cd5b1e8-63bb-46f7-af65-af61eb851a38")
-			Me.reportGalleryDockPanel1.Location = New System.Drawing.Point(1, 22)
-			Me.reportGalleryDockPanel1.Name = "reportGalleryDockPanel1"
-			Me.reportGalleryDockPanel1.OriginalSize = New System.Drawing.Size(200, 200)
-			Me.reportGalleryDockPanel1.Size = New System.Drawing.Size(374, 90)
-			Me.reportGalleryDockPanel1.Text = "Report Gallery"
-			' 
-			' reportGalleryDockPanel1_Container
-			' 
-			Me.reportGalleryDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-			Me.reportGalleryDockPanel1_Container.Name = "reportGalleryDockPanel1_Container"
-			Me.reportGalleryDockPanel1_Container.Size = New System.Drawing.Size(374, 90)
-			Me.reportGalleryDockPanel1_Container.TabIndex = 0
-			' 
-			' panelContainer4
-			' 
-			Me.panelContainer4.ActiveChild = Me.groupAndSortDockPanel1
-			Me.panelContainer4.Controls.Add(Me.groupAndSortDockPanel1)
-			Me.panelContainer4.Controls.Add(Me.errorListDockPanel1)
-			Me.panelContainer4.Dock = DevExpress.XtraBars.Docking.DockingStyle.Bottom
-			Me.panelContainer4.ID = New System.Guid("ff9f0f0d-a907-4beb-8d2a-8e681a5ece05")
-			Me.panelContainer4.Location = New System.Drawing.Point(0, 222)
-			Me.panelContainer4.Name = "panelContainer4"
-			Me.panelContainer4.OriginalSize = New System.Drawing.Size(200, 200)
-			Me.panelContainer4.Size = New System.Drawing.Size(425, 200)
-			Me.panelContainer4.Tabbed = True
-			Me.panelContainer4.Text = "panelContainer4"
-			' 
-			' groupAndSortDockPanel1
-			' 
-			Me.groupAndSortDockPanel1.Controls.Add(Me.groupAndSortDockPanel1_Container)
-			Me.groupAndSortDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
-			Me.groupAndSortDockPanel1.ID = New System.Guid("4bab159e-c495-4d67-87dc-f4e895da443e")
-			Me.groupAndSortDockPanel1.Location = New System.Drawing.Point(0, 22)
-			Me.groupAndSortDockPanel1.Name = "groupAndSortDockPanel1"
-			Me.groupAndSortDockPanel1.OriginalSize = New System.Drawing.Size(200, 200)
-			Me.groupAndSortDockPanel1.Size = New System.Drawing.Size(425, 150)
-			Me.groupAndSortDockPanel1.Text = "Group and Sort"
-			' 
-			' groupAndSortDockPanel1_Container
-			' 
-			Me.groupAndSortDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-			Me.groupAndSortDockPanel1_Container.Name = "groupAndSortDockPanel1_Container"
-			Me.groupAndSortDockPanel1_Container.Size = New System.Drawing.Size(425, 150)
-			Me.groupAndSortDockPanel1_Container.TabIndex = 0
-			' 
-			' errorListDockPanel1
-			' 
-			Me.errorListDockPanel1.Controls.Add(Me.errorListDockPanel1_Container)
-			Me.errorListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
-			Me.errorListDockPanel1.ID = New System.Guid("5a9a01fd-6e95-4e81-a8c4-ac63153d7488")
-			Me.errorListDockPanel1.Location = New System.Drawing.Point(0, 22)
-			Me.errorListDockPanel1.Name = "errorListDockPanel1"
-			Me.errorListDockPanel1.OriginalSize = New System.Drawing.Size(200, 80)
-			Me.errorListDockPanel1.Size = New System.Drawing.Size(425, 150)
-			Me.errorListDockPanel1.Text = "Scripts Errors"
-			' 
-			' errorListDockPanel1_Container
-			' 
-			Me.errorListDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
-			Me.errorListDockPanel1_Container.Name = "errorListDockPanel1_Container"
-			Me.errorListDockPanel1_Container.Size = New System.Drawing.Size(425, 150)
-			Me.errorListDockPanel1_Container.TabIndex = 0
-			' 
-			' commandBarItem17
-			' 
-			Me.commandBarItem17.Caption = "Bold"
-			Me.commandBarItem17.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontBold
-			Me.commandBarItem17.Enabled = False
-			Me.commandBarItem17.Id = 20
-			Me.commandBarItem17.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.B))
-			Me.commandBarItem17.Name = "commandBarItem17"
-			superToolTip22.FixedTooltipWidth = True
-			toolTipTitleItem22.Text = "Bold (Ctrl+B)"
-			toolTipItem22.LeftIndent = 6
-			toolTipItem22.Text = "Make the selected text bold."
-			superToolTip22.Items.Add(toolTipTitleItem22)
-			superToolTip22.Items.Add(toolTipItem22)
-			superToolTip22.MaxWidth = 210
-			Me.commandBarItem17.SuperTip = superToolTip22
-			' 
-			' commandBarItem18
-			' 
-			Me.commandBarItem18.Caption = "Italic"
-			Me.commandBarItem18.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontItalic
-			Me.commandBarItem18.Enabled = False
-			Me.commandBarItem18.Id = 21
-			Me.commandBarItem18.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.I))
-			Me.commandBarItem18.Name = "commandBarItem18"
-			superToolTip23.FixedTooltipWidth = True
-			toolTipTitleItem23.Text = "Italic (Ctrl+I)"
-			toolTipItem23.LeftIndent = 6
-			toolTipItem23.Text = "Italicize the text."
-			superToolTip23.Items.Add(toolTipTitleItem23)
-			superToolTip23.Items.Add(toolTipItem23)
-			superToolTip23.MaxWidth = 210
-			Me.commandBarItem18.SuperTip = superToolTip23
-			' 
-			' commandBarItem19
-			' 
-			Me.commandBarItem19.Caption = "Underline"
-			Me.commandBarItem19.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontUnderline
-			Me.commandBarItem19.Enabled = False
-			Me.commandBarItem19.Id = 22
-			Me.commandBarItem19.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.U))
-			Me.commandBarItem19.Name = "commandBarItem19"
-			superToolTip24.FixedTooltipWidth = True
-			toolTipTitleItem24.Text = "Underline (Ctrl+U)"
-			toolTipItem24.LeftIndent = 6
-			toolTipItem24.Text = "Underline the selected text."
-			superToolTip24.Items.Add(toolTipTitleItem24)
-			superToolTip24.Items.Add(toolTipItem24)
-			superToolTip24.MaxWidth = 210
-			Me.commandBarItem19.SuperTip = superToolTip24
-			' 
-			' commandColorBarItem1
-			' 
-			Me.commandColorBarItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandColorBarItem1.Caption = "Foreground Color"
-			Me.commandColorBarItem1.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.False
-			Me.commandColorBarItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ForeColor
-			Me.commandColorBarItem1.Enabled = False
-			Me.commandColorBarItem1.Id = 23
-			Me.commandColorBarItem1.Name = "commandColorBarItem1"
-			superToolTip25.FixedTooltipWidth = True
-			toolTipTitleItem25.Text = "Foreground Color"
-			toolTipItem25.LeftIndent = 6
-			toolTipItem25.Text = "Change the text foreground color."
-			superToolTip25.Items.Add(toolTipTitleItem25)
-			superToolTip25.Items.Add(toolTipItem25)
-			superToolTip25.MaxWidth = 210
-			Me.commandColorBarItem1.SuperTip = superToolTip25
-			' 
-			' commandColorBarItem2
-			' 
-			Me.commandColorBarItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandColorBarItem2.Caption = "Background Color"
-			Me.commandColorBarItem2.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.False
-			Me.commandColorBarItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BackColor
-			Me.commandColorBarItem2.Enabled = False
-			Me.commandColorBarItem2.Id = 24
-			Me.commandColorBarItem2.Name = "commandColorBarItem2"
-			superToolTip26.FixedTooltipWidth = True
-			toolTipTitleItem26.Text = "Background Color"
-			toolTipItem26.LeftIndent = 6
-			toolTipItem26.Text = "Change the text background color."
-			superToolTip26.Items.Add(toolTipTitleItem26)
-			superToolTip26.Items.Add(toolTipItem26)
-			superToolTip26.MaxWidth = 210
-			Me.commandColorBarItem2.SuperTip = superToolTip26
-			' 
-			' commandBarItem20
-			' 
-			Me.commandBarItem20.Caption = "Align Text Left"
-			Me.commandBarItem20.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyLeft
-			Me.commandBarItem20.Enabled = False
-			Me.commandBarItem20.Id = 25
-			Me.commandBarItem20.Name = "commandBarItem20"
-			superToolTip27.FixedTooltipWidth = True
-			toolTipTitleItem27.Text = "Align Text Left"
-			toolTipItem27.LeftIndent = 6
-			toolTipItem27.Text = "Align text to the left."
-			superToolTip27.Items.Add(toolTipTitleItem27)
-			superToolTip27.Items.Add(toolTipItem27)
-			superToolTip27.MaxWidth = 210
-			Me.commandBarItem20.SuperTip = superToolTip27
-			' 
-			' commandBarItem21
-			' 
-			Me.commandBarItem21.Caption = "Center Text"
-			Me.commandBarItem21.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyCenter
-			Me.commandBarItem21.Enabled = False
-			Me.commandBarItem21.Id = 26
-			Me.commandBarItem21.Name = "commandBarItem21"
-			superToolTip28.FixedTooltipWidth = True
-			toolTipTitleItem28.Text = "Center Text"
-			toolTipItem28.LeftIndent = 6
-			toolTipItem28.Text = "Center text between the left and right sides."
-			superToolTip28.Items.Add(toolTipTitleItem28)
-			superToolTip28.Items.Add(toolTipItem28)
-			superToolTip28.MaxWidth = 210
-			Me.commandBarItem21.SuperTip = superToolTip28
-			' 
-			' commandBarItem22
-			' 
-			Me.commandBarItem22.Caption = "Align Text Right"
-			Me.commandBarItem22.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyRight
-			Me.commandBarItem22.Enabled = False
-			Me.commandBarItem22.Id = 27
-			Me.commandBarItem22.Name = "commandBarItem22"
-			superToolTip29.FixedTooltipWidth = True
-			toolTipTitleItem29.Text = "Align Text Right"
-			toolTipItem29.LeftIndent = 6
-			toolTipItem29.Text = "Align text to the right."
-			superToolTip29.Items.Add(toolTipTitleItem29)
-			superToolTip29.Items.Add(toolTipItem29)
-			superToolTip29.MaxWidth = 210
-			Me.commandBarItem22.SuperTip = superToolTip29
-			' 
-			' commandBarItem23
-			' 
-			Me.commandBarItem23.Caption = "Justify"
-			Me.commandBarItem23.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyJustify
-			Me.commandBarItem23.Enabled = False
-			Me.commandBarItem23.Id = 28
-			Me.commandBarItem23.Name = "commandBarItem23"
-			superToolTip30.FixedTooltipWidth = True
-			toolTipTitleItem30.Text = "Justify"
-			toolTipItem30.LeftIndent = 6
-			toolTipItem30.Text = "Distribute text evenly to the left and right sides."
-			superToolTip30.Items.Add(toolTipTitleItem30)
-			superToolTip30.Items.Add(toolTipItem30)
-			superToolTip30.MaxWidth = 210
-			Me.commandBarItem23.SuperTip = superToolTip30
-			' 
-			' commandBarItem24
-			' 
-			Me.commandBarItem24.Caption = "Strikethrough"
-			Me.commandBarItem24.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontStrikeout
-			Me.commandBarItem24.Enabled = False
-			Me.commandBarItem24.Id = 29
-			Me.commandBarItem24.Name = "commandBarItem24"
-			superToolTip31.FixedTooltipWidth = True
-			toolTipTitleItem31.Text = "Strikethrough"
-			toolTipItem31.LeftIndent = 6
-			toolTipItem31.Text = "Cross the selected text out by drawing a line through it."
-			superToolTip31.Items.Add(toolTipTitleItem31)
-			superToolTip31.Items.Add(toolTipItem31)
-			superToolTip31.MaxWidth = 210
-			Me.commandBarItem24.SuperTip = superToolTip31
-			' 
-			' commandBarItem25
-			' 
-			Me.commandBarItem25.Caption = "Align Text Top"
-			Me.commandBarItem25.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignTop
-			Me.commandBarItem25.Enabled = False
-			Me.commandBarItem25.Id = 30
-			Me.commandBarItem25.Name = "commandBarItem25"
-			superToolTip32.FixedTooltipWidth = True
-			toolTipTitleItem32.Text = "Align Text Top"
-			toolTipItem32.LeftIndent = 6
-			toolTipItem32.Text = "Align text to the top."
-			superToolTip32.Items.Add(toolTipTitleItem32)
-			superToolTip32.Items.Add(toolTipItem32)
-			superToolTip32.MaxWidth = 210
-			Me.commandBarItem25.SuperTip = superToolTip32
-			' 
-			' commandBarItem26
-			' 
-			Me.commandBarItem26.Caption = "Align Text Middle"
-			Me.commandBarItem26.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignMiddle
-			Me.commandBarItem26.Enabled = False
-			Me.commandBarItem26.Id = 31
-			Me.commandBarItem26.Name = "commandBarItem26"
-			superToolTip33.FixedTooltipWidth = True
-			toolTipTitleItem33.Text = "Align Text Middle"
-			toolTipItem33.LeftIndent = 6
-			toolTipItem33.Text = "Center text between the top and bottom."
-			superToolTip33.Items.Add(toolTipTitleItem33)
-			superToolTip33.Items.Add(toolTipItem33)
-			superToolTip33.MaxWidth = 210
-			Me.commandBarItem26.SuperTip = superToolTip33
-			' 
-			' commandBarItem27
-			' 
-			Me.commandBarItem27.Caption = "Align Text Bottom"
-			Me.commandBarItem27.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignBottom
-			Me.commandBarItem27.Enabled = False
-			Me.commandBarItem27.Id = 32
-			Me.commandBarItem27.Name = "commandBarItem27"
-			superToolTip34.FixedTooltipWidth = True
-			toolTipTitleItem34.Text = "Align Text Bottom"
-			toolTipItem34.LeftIndent = 6
-			toolTipItem34.Text = "Align text to the bottom."
-			superToolTip34.Items.Add(toolTipTitleItem34)
-			superToolTip34.Items.Add(toolTipItem34)
-			superToolTip34.MaxWidth = 210
-			Me.commandBarItem27.SuperTip = superToolTip34
-			' 
-			' commandBarItem28
-			' 
-			Me.commandBarItem28.Caption = "Add Calculated Field"
-			Me.commandBarItem28.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddCalculatedField
-			Me.commandBarItem28.Enabled = False
-			Me.commandBarItem28.Id = 33
-			Me.commandBarItem28.Name = "commandBarItem28"
-			Me.commandBarItem28.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
-			superToolTip35.FixedTooltipWidth = True
-			toolTipTitleItem35.Text = "Add Calculated Field"
-			toolTipItem35.LeftIndent = 6
-			toolTipItem35.Text = "Create a custom field whose value is evaluated using an expression based on avail" & "able data fields."
-			superToolTip35.Items.Add(toolTipTitleItem35)
-			superToolTip35.Items.Add(toolTipItem35)
-			superToolTip35.MaxWidth = 210
-			Me.commandBarItem28.SuperTip = superToolTip35
-			' 
-			' commandBarItem29
-			' 
-			Me.commandBarItem29.Caption = "Add Parameter"
-			Me.commandBarItem29.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddParameter
-			Me.commandBarItem29.Enabled = False
-			Me.commandBarItem29.Id = 34
-			Me.commandBarItem29.Name = "commandBarItem29"
-			Me.commandBarItem29.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
-			superToolTip36.FixedTooltipWidth = True
-			toolTipTitleItem36.Text = "Add Parameter"
-			toolTipItem36.LeftIndent = 6
-			toolTipItem36.Text = "Create a new parameter to pass dynamic values to your report."
-			superToolTip36.Items.Add(toolTipTitleItem36)
-			superToolTip36.Items.Add(toolTipItem36)
-			superToolTip36.MaxWidth = 210
-			Me.commandBarItem29.SuperTip = superToolTip36
-			' 
-			' commandBarItem30
-			' 
-			Me.commandBarItem30.Caption = "Add Data Source"
-			Me.commandBarItem30.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddNewDataSource
-			Me.commandBarItem30.Enabled = False
-			Me.commandBarItem30.Id = 35
-			Me.commandBarItem30.Name = "commandBarItem30"
-			superToolTip37.FixedTooltipWidth = True
-			toolTipTitleItem37.Text = "Add Data Source"
-			toolTipItem37.LeftIndent = 6
-			toolTipItem37.Text = "Create and set up a new data source for your report."
-			superToolTip37.Items.Add(toolTipTitleItem37)
-			superToolTip37.Items.Add(toolTipItem37)
-			superToolTip37.MaxWidth = 210
-			Me.commandBarItem30.SuperTip = superToolTip37
-			' 
-			' commandBarItem31
-			' 
-			Me.commandBarItem31.Caption = "Extract Style"
-			Me.commandBarItem31.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ExtractStyle
-			Me.commandBarItem31.Enabled = False
-			Me.commandBarItem31.Id = 36
-			Me.commandBarItem31.Name = "commandBarItem31"
-			superToolTip38.FixedTooltipWidth = True
-			toolTipTitleItem38.Text = "Extract Style"
-			toolTipItem38.LeftIndent = 6
-			toolTipItem38.Text = "Create a new style based on the selected control's appearance settings. Apply the" & " created style from the Styles gallery to other controls in your report."
-			superToolTip38.Items.Add(toolTipTitleItem38)
-			superToolTip38.Items.Add(toolTipItem38)
-			superToolTip38.MaxWidth = 210
-			Me.commandBarItem31.SuperTip = superToolTip38
-			' 
-			' commandBarItem32
-			' 
-			Me.commandBarItem32.Caption = "All Borders"
-			Me.commandBarItem32.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BordersAll
-			Me.commandBarItem32.Enabled = False
-			Me.commandBarItem32.Id = 37
-			Me.commandBarItem32.Name = "commandBarItem32"
-			superToolTip39.FixedTooltipWidth = True
-			toolTipTitleItem39.Text = "All Borders"
-			toolTipItem39.LeftIndent = 6
-			toolTipItem39.Text = "Add all borders to the selected controls."
-			superToolTip39.Items.Add(toolTipTitleItem39)
-			superToolTip39.Items.Add(toolTipItem39)
-			superToolTip39.MaxWidth = 210
-			Me.commandBarItem32.SuperTip = superToolTip39
-			' 
-			' commandBarItem33
-			' 
-			Me.commandBarItem33.Caption = "No Border"
-			Me.commandBarItem33.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BordersNone
-			Me.commandBarItem33.Enabled = False
-			Me.commandBarItem33.Id = 38
-			Me.commandBarItem33.Name = "commandBarItem33"
-			superToolTip40.FixedTooltipWidth = True
-			toolTipTitleItem40.Text = "No Border"
-			toolTipItem40.LeftIndent = 6
-			toolTipItem40.Text = "Remove borders from the selected controls."
-			superToolTip40.Items.Add(toolTipTitleItem40)
-			superToolTip40.Items.Add(toolTipItem40)
-			superToolTip40.MaxWidth = 210
-			Me.commandBarItem33.SuperTip = superToolTip40
-			' 
-			' commandBarItem34
-			' 
-			Me.commandBarItem34.Caption = "Left Border"
-			Me.commandBarItem34.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderLeft
-			Me.commandBarItem34.Enabled = False
-			Me.commandBarItem34.Id = 39
-			Me.commandBarItem34.Name = "commandBarItem34"
-			superToolTip41.FixedTooltipWidth = True
-			toolTipTitleItem41.Text = "Left Border"
-			toolTipItem41.LeftIndent = 6
-			toolTipItem41.Text = "Add the left border to the selected controls."
-			superToolTip41.Items.Add(toolTipTitleItem41)
-			superToolTip41.Items.Add(toolTipItem41)
-			superToolTip41.MaxWidth = 210
-			Me.commandBarItem34.SuperTip = superToolTip41
-			' 
-			' commandBarItem35
-			' 
-			Me.commandBarItem35.Caption = "Top Border"
-			Me.commandBarItem35.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderTop
-			Me.commandBarItem35.Enabled = False
-			Me.commandBarItem35.Id = 40
-			Me.commandBarItem35.Name = "commandBarItem35"
-			superToolTip42.FixedTooltipWidth = True
-			toolTipTitleItem42.Text = "Top Border"
-			toolTipItem42.LeftIndent = 6
-			toolTipItem42.Text = "Add the top border to the selected controls."
-			superToolTip42.Items.Add(toolTipTitleItem42)
-			superToolTip42.Items.Add(toolTipItem42)
-			superToolTip42.MaxWidth = 210
-			Me.commandBarItem35.SuperTip = superToolTip42
-			' 
-			' commandBarItem36
-			' 
-			Me.commandBarItem36.Caption = "Right Border"
-			Me.commandBarItem36.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderRight
-			Me.commandBarItem36.Enabled = False
-			Me.commandBarItem36.Id = 41
-			Me.commandBarItem36.Name = "commandBarItem36"
-			superToolTip43.FixedTooltipWidth = True
-			toolTipTitleItem43.Text = "Right Border"
-			toolTipItem43.LeftIndent = 6
-			toolTipItem43.Text = "Add the right border to the selected controls."
-			superToolTip43.Items.Add(toolTipTitleItem43)
-			superToolTip43.Items.Add(toolTipItem43)
-			superToolTip43.MaxWidth = 210
-			Me.commandBarItem36.SuperTip = superToolTip43
-			' 
-			' commandBarItem37
-			' 
-			Me.commandBarItem37.Caption = "Bottom Border"
-			Me.commandBarItem37.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderBottom
-			Me.commandBarItem37.Enabled = False
-			Me.commandBarItem37.Id = 42
-			Me.commandBarItem37.Name = "commandBarItem37"
-			superToolTip44.FixedTooltipWidth = True
-			toolTipTitleItem44.Text = "Bottom Border"
-			toolTipItem44.LeftIndent = 6
-			toolTipItem44.Text = "Add the bottom border to the selected controls."
-			superToolTip44.Items.Add(toolTipTitleItem44)
-			superToolTip44.Items.Add(toolTipItem44)
-			superToolTip44.MaxWidth = 210
-			Me.commandBarItem37.SuperTip = superToolTip44
-			' 
-			' commandColorBarItem3
-			' 
-			Me.commandColorBarItem3.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandColorBarItem3.Caption = "Border Color"
-			Me.commandColorBarItem3.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.False
-			Me.commandColorBarItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderColor
-			Me.commandColorBarItem3.Enabled = False
-			Me.commandColorBarItem3.Id = 43
-			Me.commandColorBarItem3.Name = "commandColorBarItem3"
-			superToolTip45.FixedTooltipWidth = True
-			toolTipTitleItem45.Text = "Border Color"
-			toolTipItem45.LeftIndent = 6
-			toolTipItem45.Text = "Change the border color."
-			superToolTip45.Items.Add(toolTipTitleItem45)
-			superToolTip45.Items.Add(toolTipItem45)
-			superToolTip45.MaxWidth = 210
-			Me.commandColorBarItem3.SuperTip = superToolTip45
-			' 
-			' commandBarItem38
-			' 
-			Me.commandBarItem38.ActAsDropDown = True
-			Me.commandBarItem38.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem38.Caption = "Border Width"
-			Me.commandBarItem38.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderWidth
-			Me.commandBarItem38.Enabled = False
-			Me.commandBarItem38.Id = 44
-			Me.commandBarItem38.Name = "commandBarItem38"
-			superToolTip46.FixedTooltipWidth = True
-			toolTipTitleItem46.Text = "Border Width"
-			toolTipItem46.LeftIndent = 6
-			toolTipItem46.Text = "Change the border width."
-			superToolTip46.Items.Add(toolTipTitleItem46)
-			superToolTip46.Items.Add(toolTipItem46)
-			superToolTip46.MaxWidth = 210
-			Me.commandBarItem38.SuperTip = superToolTip46
-			' 
-			' commandBarItem39
-			' 
-			Me.commandBarItem39.Caption = "Align to Grid"
-			Me.commandBarItem39.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignToGrid
-			Me.commandBarItem39.Enabled = False
-			Me.commandBarItem39.Id = 45
-			Me.commandBarItem39.Name = "commandBarItem39"
-			superToolTip47.FixedTooltipWidth = True
-			toolTipTitleItem47.Text = "Align to Grid"
-			toolTipItem47.LeftIndent = 6
-			toolTipItem47.Text = "Align the positions of the selected controls to the grid."
-			superToolTip47.Items.Add(toolTipTitleItem47)
-			superToolTip47.Items.Add(toolTipItem47)
-			superToolTip47.MaxWidth = 210
-			Me.commandBarItem39.SuperTip = superToolTip47
-			' 
-			' commandBarItem40
-			' 
-			Me.commandBarItem40.Caption = "Align Lefts"
-			Me.commandBarItem40.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignLeft
-			Me.commandBarItem40.Enabled = False
-			Me.commandBarItem40.Id = 46
-			Me.commandBarItem40.Name = "commandBarItem40"
-			superToolTip48.FixedTooltipWidth = True
-			toolTipTitleItem48.Text = "Align Lefts"
-			toolTipItem48.LeftIndent = 6
-			toolTipItem48.Text = "Left align the selected controls."
-			superToolTip48.Items.Add(toolTipTitleItem48)
-			superToolTip48.Items.Add(toolTipItem48)
-			superToolTip48.MaxWidth = 210
-			Me.commandBarItem40.SuperTip = superToolTip48
-			' 
-			' commandBarItem41
-			' 
-			Me.commandBarItem41.Caption = "Align Centers"
-			Me.commandBarItem41.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignVerticalCenters
-			Me.commandBarItem41.Enabled = False
-			Me.commandBarItem41.Id = 47
-			Me.commandBarItem41.Name = "commandBarItem41"
-			superToolTip49.FixedTooltipWidth = True
-			toolTipTitleItem49.Text = "Align Centers"
-			toolTipItem49.LeftIndent = 6
-			toolTipItem49.Text = "Align the centers of the selected controls vertically."
-			superToolTip49.Items.Add(toolTipTitleItem49)
-			superToolTip49.Items.Add(toolTipItem49)
-			superToolTip49.MaxWidth = 210
-			Me.commandBarItem41.SuperTip = superToolTip49
-			' 
-			' commandBarItem42
-			' 
-			Me.commandBarItem42.Caption = "Align Rights"
-			Me.commandBarItem42.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignRight
-			Me.commandBarItem42.Enabled = False
-			Me.commandBarItem42.Id = 48
-			Me.commandBarItem42.Name = "commandBarItem42"
-			superToolTip50.FixedTooltipWidth = True
-			toolTipTitleItem50.Text = "Align Rights"
-			toolTipItem50.LeftIndent = 6
-			toolTipItem50.Text = "Right align the selected controls."
-			superToolTip50.Items.Add(toolTipTitleItem50)
-			superToolTip50.Items.Add(toolTipItem50)
-			superToolTip50.MaxWidth = 210
-			Me.commandBarItem42.SuperTip = superToolTip50
-			' 
-			' commandBarItem43
-			' 
-			Me.commandBarItem43.Caption = "Align Tops"
-			Me.commandBarItem43.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignTop
-			Me.commandBarItem43.Enabled = False
-			Me.commandBarItem43.Id = 49
-			Me.commandBarItem43.Name = "commandBarItem43"
-			superToolTip51.FixedTooltipWidth = True
-			toolTipTitleItem51.Text = "Align Tops"
-			toolTipItem51.LeftIndent = 6
-			toolTipItem51.Text = "Align the tops of the selected controls."
-			superToolTip51.Items.Add(toolTipTitleItem51)
-			superToolTip51.Items.Add(toolTipItem51)
-			superToolTip51.MaxWidth = 210
-			Me.commandBarItem43.SuperTip = superToolTip51
-			' 
-			' commandBarItem44
-			' 
-			Me.commandBarItem44.Caption = "Align Middles"
-			Me.commandBarItem44.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignHorizontalCenters
-			Me.commandBarItem44.Enabled = False
-			Me.commandBarItem44.Id = 50
-			Me.commandBarItem44.Name = "commandBarItem44"
-			superToolTip52.FixedTooltipWidth = True
-			toolTipTitleItem52.Text = "Align Middles"
-			toolTipItem52.LeftIndent = 6
-			toolTipItem52.Text = "Align the centers of the selected controls horizontally."
-			superToolTip52.Items.Add(toolTipTitleItem52)
-			superToolTip52.Items.Add(toolTipItem52)
-			superToolTip52.MaxWidth = 210
-			Me.commandBarItem44.SuperTip = superToolTip52
-			' 
-			' commandBarItem45
-			' 
-			Me.commandBarItem45.Caption = "Align Bottoms"
-			Me.commandBarItem45.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignBottom
-			Me.commandBarItem45.Enabled = False
-			Me.commandBarItem45.Id = 51
-			Me.commandBarItem45.Name = "commandBarItem45"
-			superToolTip53.FixedTooltipWidth = True
-			toolTipTitleItem53.Text = "Align Bottoms"
-			toolTipItem53.LeftIndent = 6
-			toolTipItem53.Text = "Align the bottoms of the selected controls."
-			superToolTip53.Items.Add(toolTipTitleItem53)
-			superToolTip53.Items.Add(toolTipItem53)
-			superToolTip53.MaxWidth = 210
-			Me.commandBarItem45.SuperTip = superToolTip53
-			' 
-			' commandBarItem46
-			' 
-			Me.commandBarItem46.Caption = "Make Same Width"
-			Me.commandBarItem46.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControlWidth
-			Me.commandBarItem46.Enabled = False
-			Me.commandBarItem46.Id = 52
-			Me.commandBarItem46.Name = "commandBarItem46"
-			superToolTip54.FixedTooltipWidth = True
-			toolTipTitleItem54.Text = "Make Same Width"
-			toolTipItem54.LeftIndent = 6
-			toolTipItem54.Text = "Make the selected controls have the same width."
-			superToolTip54.Items.Add(toolTipTitleItem54)
-			superToolTip54.Items.Add(toolTipItem54)
-			superToolTip54.MaxWidth = 210
-			Me.commandBarItem46.SuperTip = superToolTip54
-			' 
-			' commandBarItem47
-			' 
-			Me.commandBarItem47.Caption = "Fit Bounds to Grid"
-			Me.commandBarItem47.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToGrid
-			Me.commandBarItem47.Enabled = False
-			Me.commandBarItem47.Id = 53
-			Me.commandBarItem47.Name = "commandBarItem47"
-			superToolTip55.FixedTooltipWidth = True
-			toolTipTitleItem55.Text = "Size to Grid"
-			toolTipItem55.LeftIndent = 6
-			toolTipItem55.Text = "Adjust the size of the selected controls according to the grid size."
-			superToolTip55.Items.Add(toolTipTitleItem55)
-			superToolTip55.Items.Add(toolTipItem55)
-			superToolTip55.MaxWidth = 210
-			Me.commandBarItem47.SuperTip = superToolTip55
-			' 
-			' commandBarItem48
-			' 
-			Me.commandBarItem48.Caption = "Make Same Height"
-			Me.commandBarItem48.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControlHeight
-			Me.commandBarItem48.Enabled = False
-			Me.commandBarItem48.Id = 54
-			Me.commandBarItem48.Name = "commandBarItem48"
-			superToolTip56.FixedTooltipWidth = True
-			toolTipTitleItem56.Text = "Make Same Height"
-			toolTipItem56.LeftIndent = 6
-			toolTipItem56.Text = "Make the selected controls have the same height."
-			superToolTip56.Items.Add(toolTipTitleItem56)
-			superToolTip56.Items.Add(toolTipItem56)
-			superToolTip56.MaxWidth = 210
-			Me.commandBarItem48.SuperTip = superToolTip56
-			' 
-			' commandBarItem49
-			' 
-			Me.commandBarItem49.Caption = "Make Same Size"
-			Me.commandBarItem49.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControl
-			Me.commandBarItem49.Enabled = False
-			Me.commandBarItem49.Id = 55
-			Me.commandBarItem49.Name = "commandBarItem49"
-			superToolTip57.FixedTooltipWidth = True
-			toolTipTitleItem57.Text = "Make Same Size"
-			toolTipItem57.LeftIndent = 6
-			toolTipItem57.Text = "Make the selected controls have the same size."
-			superToolTip57.Items.Add(toolTipTitleItem57)
-			superToolTip57.Items.Add(toolTipItem57)
-			superToolTip57.MaxWidth = 210
-			Me.commandBarItem49.SuperTip = superToolTip57
-			' 
-			' commandBarItem50
-			' 
-			Me.commandBarItem50.Caption = "Make Horizontal Spacing Equal"
-			Me.commandBarItem50.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceMakeEqual
-			Me.commandBarItem50.Enabled = False
-			Me.commandBarItem50.Id = 56
-			Me.commandBarItem50.Name = "commandBarItem50"
-			superToolTip58.FixedTooltipWidth = True
-			toolTipTitleItem58.Text = "Make Horizontal Spacing Equal"
-			toolTipItem58.LeftIndent = 6
-			toolTipItem58.Text = "Make the horizontal spacing between the selected controls equal."
-			superToolTip58.Items.Add(toolTipTitleItem58)
-			superToolTip58.Items.Add(toolTipItem58)
-			superToolTip58.MaxWidth = 210
-			Me.commandBarItem50.SuperTip = superToolTip58
-			' 
-			' commandBarItem51
-			' 
-			Me.commandBarItem51.Caption = "Increase Horizontal Spacing"
-			Me.commandBarItem51.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceIncrease
-			Me.commandBarItem51.Enabled = False
-			Me.commandBarItem51.Id = 57
-			Me.commandBarItem51.Name = "commandBarItem51"
-			superToolTip59.FixedTooltipWidth = True
-			toolTipTitleItem59.Text = "Increase Horizontal Spacing"
-			toolTipItem59.LeftIndent = 6
-			toolTipItem59.Text = "Increase the horizontal spacing between the selected controls."
-			superToolTip59.Items.Add(toolTipTitleItem59)
-			superToolTip59.Items.Add(toolTipItem59)
-			superToolTip59.MaxWidth = 210
-			Me.commandBarItem51.SuperTip = superToolTip59
-			' 
-			' commandBarItem52
-			' 
-			Me.commandBarItem52.Caption = "Decrease Horizontal Spacing"
-			Me.commandBarItem52.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceDecrease
-			Me.commandBarItem52.Enabled = False
-			Me.commandBarItem52.Id = 58
-			Me.commandBarItem52.Name = "commandBarItem52"
-			superToolTip60.FixedTooltipWidth = True
-			toolTipTitleItem60.Text = "Decrease Horizontal Spacing"
-			toolTipItem60.LeftIndent = 6
-			toolTipItem60.Text = "Decrease the horizontal spacing between the selected controls."
-			superToolTip60.Items.Add(toolTipTitleItem60)
-			superToolTip60.Items.Add(toolTipItem60)
-			superToolTip60.MaxWidth = 210
-			Me.commandBarItem52.SuperTip = superToolTip60
-			' 
-			' commandBarItem53
-			' 
-			Me.commandBarItem53.Caption = "Remove Horizontal Spacing"
-			Me.commandBarItem53.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceConcatenate
-			Me.commandBarItem53.Enabled = False
-			Me.commandBarItem53.Id = 59
-			Me.commandBarItem53.Name = "commandBarItem53"
-			superToolTip61.FixedTooltipWidth = True
-			toolTipTitleItem61.Text = "Remove Horizontal Spacing"
-			toolTipItem61.LeftIndent = 6
-			toolTipItem61.Text = "Remove the horizontal spacing between the selected controls."
-			superToolTip61.Items.Add(toolTipTitleItem61)
-			superToolTip61.Items.Add(toolTipItem61)
-			superToolTip61.MaxWidth = 210
-			Me.commandBarItem53.SuperTip = superToolTip61
-			' 
-			' commandBarItem54
-			' 
-			Me.commandBarItem54.Caption = "Make Vertical Spacing Equal"
-			Me.commandBarItem54.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceMakeEqual
-			Me.commandBarItem54.Enabled = False
-			Me.commandBarItem54.Id = 60
-			Me.commandBarItem54.Name = "commandBarItem54"
-			superToolTip62.FixedTooltipWidth = True
-			toolTipTitleItem62.Text = "Make Vertical Spacing Equal"
-			toolTipItem62.LeftIndent = 6
-			toolTipItem62.Text = "Make the vertical spacing between the selected controls equal."
-			superToolTip62.Items.Add(toolTipTitleItem62)
-			superToolTip62.Items.Add(toolTipItem62)
-			superToolTip62.MaxWidth = 210
-			Me.commandBarItem54.SuperTip = superToolTip62
-			' 
-			' commandBarItem55
-			' 
-			Me.commandBarItem55.Caption = "Increase Vertical Spacing"
-			Me.commandBarItem55.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceIncrease
-			Me.commandBarItem55.Enabled = False
-			Me.commandBarItem55.Id = 61
-			Me.commandBarItem55.Name = "commandBarItem55"
-			superToolTip63.FixedTooltipWidth = True
-			toolTipTitleItem63.Text = "Increase Vertical Spacing"
-			toolTipItem63.LeftIndent = 6
-			toolTipItem63.Text = "Increase the vertical spacing between the selected controls."
-			superToolTip63.Items.Add(toolTipTitleItem63)
-			superToolTip63.Items.Add(toolTipItem63)
-			superToolTip63.MaxWidth = 210
-			Me.commandBarItem55.SuperTip = superToolTip63
-			' 
-			' commandBarItem56
-			' 
-			Me.commandBarItem56.Caption = "Decrease Vertical Spacing"
-			Me.commandBarItem56.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceDecrease
-			Me.commandBarItem56.Enabled = False
-			Me.commandBarItem56.Id = 62
-			Me.commandBarItem56.Name = "commandBarItem56"
-			superToolTip64.FixedTooltipWidth = True
-			toolTipTitleItem64.Text = "Decrease Vertical Spacing"
-			toolTipItem64.LeftIndent = 6
-			toolTipItem64.Text = "Decrease the vertical spacing between the selected controls."
-			superToolTip64.Items.Add(toolTipTitleItem64)
-			superToolTip64.Items.Add(toolTipItem64)
-			superToolTip64.MaxWidth = 210
-			Me.commandBarItem56.SuperTip = superToolTip64
-			' 
-			' commandBarItem57
-			' 
-			Me.commandBarItem57.Caption = "Remove Vertical Spacing"
-			Me.commandBarItem57.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceConcatenate
-			Me.commandBarItem57.Enabled = False
-			Me.commandBarItem57.Id = 63
-			Me.commandBarItem57.Name = "commandBarItem57"
-			superToolTip65.FixedTooltipWidth = True
-			toolTipTitleItem65.Text = "Remove Vertical Spacing"
-			toolTipItem65.LeftIndent = 6
-			toolTipItem65.Text = "Remove the vertical spacing between the selected controls."
-			superToolTip65.Items.Add(toolTipTitleItem65)
-			superToolTip65.Items.Add(toolTipItem65)
-			superToolTip65.MaxWidth = 210
-			Me.commandBarItem57.SuperTip = superToolTip65
-			' 
-			' commandBarItem58
-			' 
-			Me.commandBarItem58.Caption = "Center Horizontally"
-			Me.commandBarItem58.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CenterHorizontally
-			Me.commandBarItem58.Enabled = False
-			Me.commandBarItem58.Id = 64
-			Me.commandBarItem58.Name = "commandBarItem58"
-			superToolTip66.FixedTooltipWidth = True
-			toolTipTitleItem66.Text = "Center Horizontally"
-			toolTipItem66.LeftIndent = 6
-			toolTipItem66.Text = "Horizontally center the selected controls within a band."
-			superToolTip66.Items.Add(toolTipTitleItem66)
-			superToolTip66.Items.Add(toolTipItem66)
-			superToolTip66.MaxWidth = 210
-			Me.commandBarItem58.SuperTip = superToolTip66
-			' 
-			' commandBarItem59
-			' 
-			Me.commandBarItem59.Caption = "Center Vertically"
-			Me.commandBarItem59.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CenterVertically
-			Me.commandBarItem59.Enabled = False
-			Me.commandBarItem59.Id = 65
-			Me.commandBarItem59.Name = "commandBarItem59"
-			superToolTip67.FixedTooltipWidth = True
-			toolTipTitleItem67.Text = "Center Vertically"
-			toolTipItem67.LeftIndent = 6
-			toolTipItem67.Text = "Vertically center the selected controls within a band."
-			superToolTip67.Items.Add(toolTipTitleItem67)
-			superToolTip67.Items.Add(toolTipItem67)
-			superToolTip67.MaxWidth = 210
-			Me.commandBarItem59.SuperTip = superToolTip67
-			' 
-			' commandBarItem60
-			' 
-			Me.commandBarItem60.Caption = "Bring to Front"
-			Me.commandBarItem60.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BringToFront
-			Me.commandBarItem60.Enabled = False
-			Me.commandBarItem60.Id = 66
-			Me.commandBarItem60.Name = "commandBarItem60"
-			superToolTip68.FixedTooltipWidth = True
-			toolTipTitleItem68.Text = "Bring to Front"
-			toolTipItem68.LeftIndent = 6
-			toolTipItem68.Text = "Bring the selected controls to the front."
-			superToolTip68.Items.Add(toolTipTitleItem68)
-			superToolTip68.Items.Add(toolTipItem68)
-			superToolTip68.MaxWidth = 210
-			Me.commandBarItem60.SuperTip = superToolTip68
-			' 
-			' commandBarItem61
-			' 
-			Me.commandBarItem61.Caption = "Send to Back"
-			Me.commandBarItem61.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SendToBack
-			Me.commandBarItem61.Enabled = False
-			Me.commandBarItem61.Id = 67
-			Me.commandBarItem61.Name = "commandBarItem61"
-			superToolTip69.FixedTooltipWidth = True
-			toolTipTitleItem69.Text = "Send to Back"
-			toolTipItem69.LeftIndent = 6
-			toolTipItem69.Text = "Move the selected controls to the back."
-			superToolTip69.Items.Add(toolTipTitleItem69)
-			superToolTip69.Items.Add(toolTipItem69)
-			superToolTip69.MaxWidth = 210
-			Me.commandBarItem61.SuperTip = superToolTip69
-			' 
-			' commandBarCheckItem1
-			' 
-			Me.commandBarCheckItem1.Caption = "Snap to Grid"
-			Me.commandBarCheckItem1.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
-			Me.commandBarCheckItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SnapToGrid
-			Me.commandBarCheckItem1.Enabled = False
-			Me.commandBarCheckItem1.Id = 68
-			Me.commandBarCheckItem1.Name = "commandBarCheckItem1"
-			superToolTip70.FixedTooltipWidth = True
-			toolTipTitleItem70.Text = "Snap to Grid"
-			toolTipItem70.LeftIndent = 6
-			toolTipItem70.Text = "Enable snapping to the snap grid."
-			superToolTip70.Items.Add(toolTipTitleItem70)
-			superToolTip70.Items.Add(toolTipItem70)
-			superToolTip70.MaxWidth = 210
-			Me.commandBarCheckItem1.SuperTip = superToolTip70
-			' 
-			' commandBarCheckItem2
-			' 
-			Me.commandBarCheckItem2.Caption = "Snap Lines"
-			Me.commandBarCheckItem2.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
-			Me.commandBarCheckItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SnapLines
-			Me.commandBarCheckItem2.Enabled = False
-			Me.commandBarCheckItem2.Id = 69
-			Me.commandBarCheckItem2.Name = "commandBarCheckItem2"
-			superToolTip71.FixedTooltipWidth = True
-			toolTipTitleItem71.Text = "Snap Lines"
-			toolTipItem71.LeftIndent = 6
-			toolTipItem71.Text = "Enable snapping to snap lines."
-			superToolTip71.Items.Add(toolTipTitleItem71)
-			superToolTip71.Items.Add(toolTipItem71)
-			superToolTip71.MaxWidth = 210
-			Me.commandBarCheckItem2.SuperTip = superToolTip71
-			' 
-			' commandBarItem62
-			' 
-			Me.commandBarItem62.Caption = "Fit Bounds to Container"
-			Me.commandBarItem62.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitBoundsToContainer
-			Me.commandBarItem62.Enabled = False
-			Me.commandBarItem62.Id = 70
-			Me.commandBarItem62.Name = "commandBarItem62"
-			superToolTip72.FixedTooltipWidth = True
-			toolTipTitleItem72.Text = "Fit Bounds to Container"
-			toolTipItem72.LeftIndent = 6
-			toolTipItem72.Text = "Adjust the control size to occupy all the available container space."
-			superToolTip72.Items.Add(toolTipTitleItem72)
-			superToolTip72.Items.Add(toolTipItem72)
-			superToolTip72.MaxWidth = 210
-			Me.commandBarItem62.SuperTip = superToolTip72
-			' 
-			' commandBarItem63
-			' 
-			Me.commandBarItem63.ActAsDropDown = True
-			Me.commandBarItem63.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem63.Caption = "Size"
-			Me.commandBarItem63.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageSize
-			Me.commandBarItem63.Enabled = False
-			Me.commandBarItem63.Id = 71
-			Me.commandBarItem63.Name = "commandBarItem63"
-			superToolTip73.FixedTooltipWidth = True
-			toolTipTitleItem73.Text = "Choose Page Size"
-			toolTipItem73.LeftIndent = 6
-			toolTipItem73.Text = "Choose a commonly used paper size for a report or click More Paper Sizes to defin" & "e your own size."
-			superToolTip73.Items.Add(toolTipTitleItem73)
-			superToolTip73.Items.Add(toolTipItem73)
-			superToolTip73.MaxWidth = 210
-			Me.commandBarItem63.SuperTip = superToolTip73
-			' 
-			' commandBarItem64
-			' 
-			Me.commandBarItem64.ActAsDropDown = True
-			Me.commandBarItem64.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem64.Caption = "Orientation"
-			Me.commandBarItem64.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageOrientation
-			Me.commandBarItem64.Enabled = False
-			Me.commandBarItem64.Id = 72
-			Me.commandBarItem64.Name = "commandBarItem64"
-			superToolTip74.FixedTooltipWidth = True
-			toolTipTitleItem74.Text = "Change Page Orientation"
-			toolTipItem74.LeftIndent = 6
-			toolTipItem74.Text = "Switch between portrait and landscape page layouts."
-			superToolTip74.Items.Add(toolTipTitleItem74)
-			superToolTip74.Items.Add(toolTipItem74)
-			superToolTip74.MaxWidth = 210
-			Me.commandBarItem64.SuperTip = superToolTip74
-			' 
-			' commandBarItem65
-			' 
-			Me.commandBarItem65.ActAsDropDown = True
-			Me.commandBarItem65.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem65.Caption = "Margins"
-			Me.commandBarItem65.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageMargins
-			Me.commandBarItem65.Enabled = False
-			Me.commandBarItem65.Id = 73
-			Me.commandBarItem65.Name = "commandBarItem65"
-			superToolTip75.FixedTooltipWidth = True
-			toolTipTitleItem75.Text = "Adjust Margins"
-			toolTipItem75.LeftIndent = 6
-			toolTipItem75.Text = "Set margin sizes for a report. Choose from several commonly used formats or click" & " Custom Margins to define your own format."
-			superToolTip75.Items.Add(toolTipTitleItem75)
-			superToolTip75.Items.Add(toolTipItem75)
-			superToolTip75.MaxWidth = 210
-			Me.commandBarItem65.SuperTip = superToolTip75
-			' 
-			' commandColorBarItem4
-			' 
-			Me.commandColorBarItem4.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandColorBarItem4.Caption = "Page Color"
-			Me.commandColorBarItem4.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.False
-			Me.commandColorBarItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageColor
-			Me.commandColorBarItem4.Enabled = False
-			Me.commandColorBarItem4.Id = 74
-			Me.commandColorBarItem4.Name = "commandColorBarItem4"
-			superToolTip76.FixedTooltipWidth = True
-			toolTipTitleItem76.Text = "Choose Page Color"
-			toolTipItem76.LeftIndent = 6
-			toolTipItem76.Text = "Select the background color for report pages."
-			superToolTip76.Items.Add(toolTipTitleItem76)
-			superToolTip76.Items.Add(toolTipItem76)
-			superToolTip76.MaxWidth = 210
-			Me.commandColorBarItem4.SuperTip = superToolTip76
-			' 
-			' commandBarItem66
-			' 
-			Me.commandBarItem66.Caption = "Watermark"
-			Me.commandBarItem66.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageWatermark
-			Me.commandBarItem66.Enabled = False
-			Me.commandBarItem66.Id = 75
-			Me.commandBarItem66.Name = "commandBarItem66"
-			superToolTip77.FixedTooltipWidth = True
-			toolTipTitleItem77.Text = "Add Watermark"
-			toolTipItem77.LeftIndent = 6
-			toolTipItem77.Text = "Insert ghost text or image behind the page content to indicate that a report requ" & "ires special treatment. Use the View tab to display a watermark at design time a" & "nd use it as a template for a report."
-			superToolTip77.Items.Add(toolTipTitleItem77)
-			superToolTip77.Items.Add(toolTipItem77)
-			superToolTip77.MaxWidth = 210
-			Me.commandBarItem66.SuperTip = superToolTip77
-			' 
-			' commandBarItem67
-			' 
-			Me.commandBarItem67.Caption = "Printing Warnings"
-			Me.commandBarItem67.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowPrintingWarnings
-			Me.commandBarItem67.Enabled = False
-			Me.commandBarItem67.Id = 76
-			Me.commandBarItem67.Name = "commandBarItem67"
-			superToolTip78.FixedTooltipWidth = True
-			toolTipTitleItem78.Text = "Show Printing Warnings"
-			toolTipItem78.LeftIndent = 6
-			toolTipItem78.Text = "Highlight report controls that overrun the right page margin to warn you about ex" & "tra pages when printing the document."
-			superToolTip78.Items.Add(toolTipTitleItem78)
-			superToolTip78.Items.Add(toolTipItem78)
-			superToolTip78.MaxWidth = 210
-			Me.commandBarItem67.SuperTip = superToolTip78
-			' 
-			' commandBarItem68
-			' 
-			Me.commandBarItem68.Caption = "Export Warnings"
-			Me.commandBarItem68.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowExportWarnings
-			Me.commandBarItem68.Enabled = False
-			Me.commandBarItem68.Id = 77
-			Me.commandBarItem68.Name = "commandBarItem68"
-			superToolTip79.FixedTooltipWidth = True
-			toolTipTitleItem79.Text = "Show Export Warnings"
-			toolTipItem79.LeftIndent = 6
-			toolTipItem79.Text = "Highlight intersecting report controls to warn you about the possibility of corru" & "pting the document layout when exporting the document to specific formats."
-			superToolTip79.Items.Add(toolTipTitleItem79)
-			superToolTip79.Items.Add(toolTipItem79)
-			superToolTip79.MaxWidth = 210
-			Me.commandBarItem68.SuperTip = superToolTip79
-			' 
-			' commandBarItem69
-			' 
-			Me.commandBarItem69.Caption = "Watermark"
-			Me.commandBarItem69.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.DrawWatermark
-			Me.commandBarItem69.Enabled = False
-			Me.commandBarItem69.Id = 78
-			Me.commandBarItem69.Name = "commandBarItem69"
-			Me.commandBarItem69.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
-			superToolTip80.FixedTooltipWidth = True
-			toolTipTitleItem80.Text = "Show Watermark"
-			toolTipItem80.LeftIndent = 6
-			toolTipItem80.Text = "Display the document's watermark on the design surface for the better design expe" & "rience. Specify watermark settings in the Page tab."
-			superToolTip80.Items.Add(toolTipTitleItem80)
-			superToolTip80.Items.Add(toolTipItem80)
-			superToolTip80.MaxWidth = 210
-			Me.commandBarItem69.SuperTip = superToolTip80
-			' 
-			' commandBarItem70
-			' 
-			Me.commandBarItem70.Caption = "Grid Lines"
-			Me.commandBarItem70.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.DrawGridLines
-			Me.commandBarItem70.Enabled = False
-			Me.commandBarItem70.Id = 79
-			Me.commandBarItem70.Name = "commandBarItem70"
-			Me.commandBarItem70.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
-			superToolTip81.FixedTooltipWidth = True
-			toolTipTitleItem81.Text = "Show Grid Lines"
-			toolTipItem81.LeftIndent = 6
-			toolTipItem81.Text = "Show gridlines on the report surface for perfect control placement."
-			superToolTip81.Items.Add(toolTipTitleItem81)
-			superToolTip81.Items.Add(toolTipItem81)
-			superToolTip81.MaxWidth = 210
-			Me.commandBarItem70.SuperTip = superToolTip81
-			' 
-			' commandBarItem71
-			' 
-			Me.commandBarItem71.Caption = "Expand All"
-			Me.commandBarItem71.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BandExpandAll
-			Me.commandBarItem71.Enabled = False
-			Me.commandBarItem71.Id = 80
-			Me.commandBarItem71.Name = "commandBarItem71"
-			superToolTip82.FixedTooltipWidth = True
-			toolTipTitleItem82.Text = "Expand All Bands"
-			toolTipItem82.LeftIndent = 6
-			toolTipItem82.Text = "Expand all bands on the design surface."
-			superToolTip82.Items.Add(toolTipTitleItem82)
-			superToolTip82.Items.Add(toolTipItem82)
-			superToolTip82.MaxWidth = 210
-			Me.commandBarItem71.SuperTip = superToolTip82
-			' 
-			' commandBarItem72
-			' 
-			Me.commandBarItem72.Caption = "Collapse All"
-			Me.commandBarItem72.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BandCollapseAll
-			Me.commandBarItem72.Enabled = False
-			Me.commandBarItem72.Id = 81
-			Me.commandBarItem72.Name = "commandBarItem72"
-			superToolTip83.FixedTooltipWidth = True
-			toolTipTitleItem83.Text = "Collapse All Bands"
-			toolTipItem83.LeftIndent = 6
-			toolTipItem83.Text = "Collapse all bands on the design surface."
-			superToolTip83.Items.Add(toolTipTitleItem83)
-			superToolTip83.Items.Add(toolTipItem83)
-			superToolTip83.MaxWidth = 210
-			Me.commandBarItem72.SuperTip = superToolTip83
-			' 
-			' commandBarEditItem1
-			' 
-			Me.commandBarEditItem1.Caption = "Language"
-			Me.commandBarEditItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Language
-			Me.commandBarEditItem1.Edit = Me.repositoryItemLookUpEdit1
-			Me.commandBarEditItem1.EditWidth = 140
-			Me.commandBarEditItem1.Enabled = False
-			Me.commandBarEditItem1.Id = 82
-			Me.commandBarEditItem1.Name = "commandBarEditItem1"
-			superToolTip84.FixedTooltipWidth = True
-			toolTipTitleItem84.Text = "Language"
-			toolTipItem84.LeftIndent = 6
-			toolTipItem84.Text = "Specifies the language associated with the localizable property values. Every lan" & "guage can have its own set of property values."
-			superToolTip84.Items.Add(toolTipTitleItem84)
-			superToolTip84.Items.Add(toolTipItem84)
-			superToolTip84.MaxWidth = 210
-			Me.commandBarEditItem1.SuperTip = superToolTip84
-			' 
-			' repositoryItemLookUpEdit1
-			' 
-			Me.repositoryItemLookUpEdit1.AutoHeight = False
-			Me.repositoryItemLookUpEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-			Me.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1"
-			' 
-			' commandBarCheckItem3
-			' 
-			Me.commandBarCheckItem3.Caption = "Show Localizable Properties"
-			Me.commandBarCheckItem3.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
-			Me.commandBarCheckItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowLocalizableProperties
-			Me.commandBarCheckItem3.Enabled = False
-			Me.commandBarCheckItem3.Id = 83
-			Me.commandBarCheckItem3.Name = "commandBarCheckItem3"
-			superToolTip85.FixedTooltipWidth = True
-			toolTipTitleItem85.Text = "Show Localizable Properties"
-			toolTipItem85.LeftIndent = 6
-			toolTipItem85.Text = "Filters the Properties window to display only localizable properties."
-			superToolTip85.Items.Add(toolTipTitleItem85)
-			superToolTip85.Items.Add(toolTipItem85)
-			superToolTip85.MaxWidth = 210
-			Me.commandBarCheckItem3.SuperTip = superToolTip85
-			' 
-			' commandBarItem73
-			' 
-			Me.commandBarItem73.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem73.Caption = "Zoom"
-			Me.commandBarItem73.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Zoom
-			Me.commandBarItem73.Enabled = False
-			Me.commandBarItem73.Id = 84
-			Me.commandBarItem73.Name = "commandBarItem73"
-			superToolTip86.FixedTooltipWidth = True
-			toolTipTitleItem86.Text = "Zoom"
-			toolTipItem86.LeftIndent = 6
-			toolTipItem86.Text = "Change the zoom level of the document designer."
-			superToolTip86.Items.Add(toolTipTitleItem86)
-			superToolTip86.Items.Add(toolTipItem86)
-			superToolTip86.MaxWidth = 210
-			Me.commandBarItem73.SuperTip = superToolTip86
-			' 
-			' commandBarItem74
-			' 
-			Me.commandBarItem74.Caption = "Zoom In"
-			Me.commandBarItem74.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ZoomIn
-			Me.commandBarItem74.Enabled = False
-			Me.commandBarItem74.Id = 85
-			Me.commandBarItem74.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Add))
-			Me.commandBarItem74.Name = "commandBarItem74"
-			superToolTip87.FixedTooltipWidth = True
-			toolTipTitleItem87.Text = "Zoom In (Ctrl+Add)"
-			toolTipItem87.LeftIndent = 6
-			toolTipItem87.Text = "Zoom in to get a close-up view of the report."
-			superToolTip87.Items.Add(toolTipTitleItem87)
-			superToolTip87.Items.Add(toolTipItem87)
-			superToolTip87.MaxWidth = 210
-			Me.commandBarItem74.SuperTip = superToolTip87
-			' 
-			' commandBarItem75
-			' 
-			Me.commandBarItem75.Caption = "Zoom Out"
-			Me.commandBarItem75.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ZoomOut
-			Me.commandBarItem75.Enabled = False
-			Me.commandBarItem75.Id = 86
-			Me.commandBarItem75.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Subtract))
-			Me.commandBarItem75.Name = "commandBarItem75"
-			superToolTip88.FixedTooltipWidth = True
-			toolTipTitleItem88.Text = "Zoom Out (Ctrl+Subtract)"
-			toolTipItem88.LeftIndent = 6
-			toolTipItem88.Text = "Zoom out to see more of the report at a reduced size."
-			superToolTip88.Items.Add(toolTipTitleItem88)
-			superToolTip88.Items.Add(toolTipItem88)
-			superToolTip88.MaxWidth = 210
-			Me.commandBarItem75.SuperTip = superToolTip88
-			' 
-			' commandBarItem76
-			' 
-			Me.commandBarItem76.Caption = "Validate"
-			Me.commandBarItem76.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsValidate
-			Me.commandBarItem76.Enabled = False
-			Me.commandBarItem76.Id = 87
-			Me.commandBarItem76.Name = "commandBarItem76"
-			superToolTip89.FixedTooltipWidth = True
-			toolTipTitleItem89.Text = "Validate Scripts"
-			toolTipItem89.LeftIndent = 6
-			toolTipItem89.Text = "Check whether report scripts contain errors. If errors are found, they are listed" & " in the Scripts Errors panel."
-			superToolTip89.Items.Add(toolTipTitleItem89)
-			superToolTip89.Items.Add(toolTipItem89)
-			superToolTip89.MaxWidth = 210
-			Me.commandBarItem76.SuperTip = superToolTip89
-			' 
-			' commandGalleryBarItem1
-			' 
-			Me.commandGalleryBarItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.StyleName
-			Me.commandGalleryBarItem1.Enabled = False
-			' 
-			' 
-			' 
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.Options.UseTextOptions = True
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Hovered.Options.UseTextOptions = True
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Hovered.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Normal.Options.UseTextOptions = True
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Normal.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Pressed.Options.UseTextOptions = True
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
-			Me.commandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Pressed.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
-			Me.commandGalleryBarItem1.Gallery.ColumnCount = 7
-			Me.commandGalleryBarItem1.Gallery.ImageSize = New System.Drawing.Size(75, 30)
-			Me.commandGalleryBarItem1.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleCheck
-			Me.commandGalleryBarItem1.Gallery.ShowItemText = True
-			Me.commandGalleryBarItem1.Id = 88
-			Me.commandGalleryBarItem1.Name = "commandGalleryBarItem1"
-			' 
-			' commandGalleryBarItem2
-			' 
-			Me.commandGalleryBarItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeSymbology
-			Me.commandGalleryBarItem2.Enabled = False
-			' 
-			' 
-			' 
-			Me.commandGalleryBarItem2.Gallery.ColumnCount = 8
-			Me.commandGalleryBarItem2.Gallery.ImageSize = New System.Drawing.Size(100, 33)
-			Me.commandGalleryBarItem2.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
-			Me.commandGalleryBarItem2.Gallery.ShowItemText = True
-			Me.commandGalleryBarItem2.Id = 89
-			Me.commandGalleryBarItem2.Name = "commandGalleryBarItem2"
-			' 
-			' commandGalleryBarItem3
-			' 
-			Me.commandGalleryBarItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAppearanceName
-			Me.commandGalleryBarItem3.Enabled = False
-			' 
-			' 
-			' 
-			Me.commandGalleryBarItem3.Gallery.ColumnCount = 7
-			Me.commandGalleryBarItem3.Gallery.ImageSize = New System.Drawing.Size(75, 45)
-			Me.commandGalleryBarItem3.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
-			Me.commandGalleryBarItem3.Id = 90
-			Me.commandGalleryBarItem3.Name = "commandGalleryBarItem3"
-			' 
-			' commandGalleryBarItem4
-			' 
-			Me.commandGalleryBarItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SparklineView
-			Me.commandGalleryBarItem4.Enabled = False
-			' 
-			' 
-			' 
-			Me.commandGalleryBarItem4.Gallery.ColumnCount = 4
-			Me.commandGalleryBarItem4.Gallery.ImageSize = New System.Drawing.Size(48, 48)
-			Me.commandGalleryBarItem4.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
-			Me.commandGalleryBarItem4.Id = 91
-			Me.commandGalleryBarItem4.Name = "commandGalleryBarItem4"
-			' 
-			' commandGalleryBarItem5
-			' 
-			Me.commandGalleryBarItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewTypeStyle
-			Me.commandGalleryBarItem5.Enabled = False
-			' 
-			' 
-			' 
-			Me.commandGalleryBarItem5.Gallery.ColumnCount = 7
-			Me.commandGalleryBarItem5.Gallery.ImageSize = New System.Drawing.Size(48, 48)
-			Me.commandGalleryBarItem5.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
-			Me.commandGalleryBarItem5.Id = 92
-			Me.commandGalleryBarItem5.Name = "commandGalleryBarItem5"
-			' 
-			' commandGalleryBarItem6
-			' 
-			Me.commandGalleryBarItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShapeType
-			Me.commandGalleryBarItem6.Enabled = False
-			' 
-			' 
-			' 
-			Me.commandGalleryBarItem6.Gallery.ColumnCount = 12
-			Me.commandGalleryBarItem6.Gallery.ImageSize = New System.Drawing.Size(30, 18)
-			Me.commandGalleryBarItem6.Id = 93
-			Me.commandGalleryBarItem6.Name = "commandGalleryBarItem6"
-			' 
-			' commandBarEditItem2
-			' 
-			Me.commandBarEditItem2.Caption = "Width: "
-			Me.commandBarEditItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellWidth
-			Me.commandBarEditItem2.Edit = Me.repositoryItemSpinEdit1
-			Me.commandBarEditItem2.EditWidth = 50
-			Me.commandBarEditItem2.Enabled = False
-			Me.commandBarEditItem2.Id = 94
-			Me.commandBarEditItem2.Name = "commandBarEditItem2"
-			superToolTip90.FixedTooltipWidth = True
-			toolTipTitleItem90.Text = "Cell Width"
-			toolTipItem90.LeftIndent = 6
-			toolTipItem90.Text = "Set the cell width."
-			superToolTip90.Items.Add(toolTipTitleItem90)
-			superToolTip90.Items.Add(toolTipItem90)
-			superToolTip90.MaxWidth = 210
-			Me.commandBarEditItem2.SuperTip = superToolTip90
-			' 
-			' repositoryItemSpinEdit1
-			' 
-			Me.repositoryItemSpinEdit1.AutoHeight = False
-			Me.repositoryItemSpinEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-			Me.repositoryItemSpinEdit1.MaxValue = New Decimal(New Integer() { -1, -1, -1, 0})
-			Me.repositoryItemSpinEdit1.Name = "repositoryItemSpinEdit1"
-			' 
-			' commandBarEditItem3
-			' 
-			Me.commandBarEditItem3.Caption = "Height: "
-			Me.commandBarEditItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellHeight
-			Me.commandBarEditItem3.Edit = Me.repositoryItemSpinEdit2
-			Me.commandBarEditItem3.EditWidth = 50
-			Me.commandBarEditItem3.Enabled = False
-			Me.commandBarEditItem3.Id = 95
-			Me.commandBarEditItem3.Name = "commandBarEditItem3"
-			superToolTip91.FixedTooltipWidth = True
-			toolTipTitleItem91.Text = "Cell Height"
-			toolTipItem91.LeftIndent = 6
-			toolTipItem91.Text = "Set the cell height."
-			superToolTip91.Items.Add(toolTipTitleItem91)
-			superToolTip91.Items.Add(toolTipItem91)
-			superToolTip91.MaxWidth = 210
-			Me.commandBarEditItem3.SuperTip = superToolTip91
-			' 
-			' repositoryItemSpinEdit2
-			' 
-			Me.repositoryItemSpinEdit2.AutoHeight = False
-			Me.repositoryItemSpinEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-			Me.repositoryItemSpinEdit2.MaxValue = New Decimal(New Integer() { -1, -1, -1, 0})
-			Me.repositoryItemSpinEdit2.Name = "repositoryItemSpinEdit2"
-			' 
-			' commandBarEditItem4
-			' 
-			Me.commandBarEditItem4.Caption = "Horizontal Spacing: "
-			Me.commandBarEditItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellHorizontalSpacing
-			Me.commandBarEditItem4.Edit = Me.repositoryItemSpinEdit3
-			Me.commandBarEditItem4.EditWidth = 50
-			Me.commandBarEditItem4.Enabled = False
-			Me.commandBarEditItem4.Id = 96
-			Me.commandBarEditItem4.Name = "commandBarEditItem4"
-			superToolTip92.FixedTooltipWidth = True
-			toolTipTitleItem92.Text = "Cell Horizontal Spacing"
-			toolTipItem92.LeftIndent = 6
-			toolTipItem92.Text = "Set the horizontal spacing between adjacent cells."
-			superToolTip92.Items.Add(toolTipTitleItem92)
-			superToolTip92.Items.Add(toolTipItem92)
-			superToolTip92.MaxWidth = 210
-			Me.commandBarEditItem4.SuperTip = superToolTip92
-			' 
-			' repositoryItemSpinEdit3
-			' 
-			Me.repositoryItemSpinEdit3.AutoHeight = False
-			Me.repositoryItemSpinEdit3.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-			Me.repositoryItemSpinEdit3.MaxValue = New Decimal(New Integer() { -1, -1, -1, 0})
-			Me.repositoryItemSpinEdit3.Name = "repositoryItemSpinEdit3"
-			' 
-			' commandBarEditItem5
-			' 
-			Me.commandBarEditItem5.Caption = "Vertical Spacing: "
-			Me.commandBarEditItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellVerticalSpacing
-			Me.commandBarEditItem5.Edit = Me.repositoryItemSpinEdit4
-			Me.commandBarEditItem5.EditWidth = 50
-			Me.commandBarEditItem5.Enabled = False
-			Me.commandBarEditItem5.Id = 97
-			Me.commandBarEditItem5.Name = "commandBarEditItem5"
-			superToolTip93.FixedTooltipWidth = True
-			toolTipTitleItem93.Text = "Cell Vertical Spacing"
-			toolTipItem93.LeftIndent = 6
-			toolTipItem93.Text = "Set the vertical spacing between adjacent cells."
-			superToolTip93.Items.Add(toolTipTitleItem93)
-			superToolTip93.Items.Add(toolTipItem93)
-			superToolTip93.MaxWidth = 210
-			Me.commandBarEditItem5.SuperTip = superToolTip93
-			' 
-			' repositoryItemSpinEdit4
-			' 
-			Me.repositoryItemSpinEdit4.AutoHeight = False
-			Me.repositoryItemSpinEdit4.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-			Me.repositoryItemSpinEdit4.MaxValue = New Decimal(New Integer() { -1, -1, -1, 0})
-			Me.repositoryItemSpinEdit4.Name = "repositoryItemSpinEdit4"
-			' 
-			' commandBarEditItem6
-			' 
-			Me.commandBarEditItem6.Caption = "Border Dash Style"
-			Me.commandBarEditItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderDashStyle
-			Me.commandBarEditItem6.Edit = Me.repositoryItemImageComboBox1
-			Me.commandBarEditItem6.EditWidth = 86
-			Me.commandBarEditItem6.Enabled = False
-			Me.commandBarEditItem6.Id = 98
-			Me.commandBarEditItem6.Name = "commandBarEditItem6"
-			superToolTip94.FixedTooltipWidth = True
-			toolTipTitleItem94.Text = "Border Dash Style"
-			toolTipItem94.LeftIndent = 6
-			toolTipItem94.Text = "Change the border dash style."
-			superToolTip94.Items.Add(toolTipTitleItem94)
-			superToolTip94.Items.Add(toolTipItem94)
-			superToolTip94.MaxWidth = 210
-			Me.commandBarEditItem6.SuperTip = superToolTip94
-			' 
-			' repositoryItemImageComboBox1
-			' 
-			Me.repositoryItemImageComboBox1.AutoHeight = False
-			Me.repositoryItemImageComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-			Me.repositoryItemImageComboBox1.Name = "repositoryItemImageComboBox1"
-			' 
-			' commandBarEditItem7
-			' 
-			Me.commandBarEditItem7.Caption = "Control: "
-			Me.commandBarEditItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsSelectControl
-			Me.commandBarEditItem7.Edit = Me.repositoryItemLookUpEdit2
-			Me.commandBarEditItem7.EditWidth = 300
-			Me.commandBarEditItem7.Enabled = False
-			Me.commandBarEditItem7.Id = 99
-			Me.commandBarEditItem7.Name = "commandBarEditItem7"
-			superToolTip95.FixedTooltipWidth = True
-			toolTipTitleItem95.Text = "Control"
-			toolTipItem95.LeftIndent = 6
-			toolTipItem95.Text = "Select a required control for specifying an event."
-			superToolTip95.Items.Add(toolTipTitleItem95)
-			superToolTip95.Items.Add(toolTipItem95)
-			superToolTip95.MaxWidth = 210
-			Me.commandBarEditItem7.SuperTip = superToolTip95
-			' 
-			' repositoryItemLookUpEdit2
-			' 
-			Me.repositoryItemLookUpEdit2.AutoHeight = False
-			Me.repositoryItemLookUpEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-			Me.repositoryItemLookUpEdit2.Name = "repositoryItemLookUpEdit2"
-			' 
-			' commandBarEditItem8
-			' 
-			Me.commandBarEditItem8.Caption = "Event: "
-			Me.commandBarEditItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsSelectEvent
-			Me.commandBarEditItem8.Edit = Me.repositoryItemComboBox1
-			Me.commandBarEditItem8.EditWidth = 300
-			Me.commandBarEditItem8.Enabled = False
-			Me.commandBarEditItem8.Id = 100
-			Me.commandBarEditItem8.Name = "commandBarEditItem8"
-			superToolTip96.FixedTooltipWidth = True
-			toolTipTitleItem96.Text = "Event"
-			toolTipItem96.LeftIndent = 6
-			toolTipItem96.Text = "Select one of the available events."
-			superToolTip96.Items.Add(toolTipTitleItem96)
-			superToolTip96.Items.Add(toolTipItem96)
-			superToolTip96.MaxWidth = 210
-			Me.commandBarEditItem8.SuperTip = superToolTip96
-			' 
-			' repositoryItemComboBox1
-			' 
-			Me.repositoryItemComboBox1.AutoHeight = False
-			Me.repositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-			Me.repositoryItemComboBox1.Name = "repositoryItemComboBox1"
-			' 
-			' commandBarItem77
-			' 
-			Me.commandBarItem77.Caption = "Table"
-			Me.commandBarItem77.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectTable
-			Me.commandBarItem77.Enabled = False
-			Me.commandBarItem77.Id = 101
-			Me.commandBarItem77.Name = "commandBarItem77"
-			superToolTip97.FixedTooltipWidth = True
-			toolTipTitleItem97.Text = "Select Table"
-			toolTipItem97.LeftIndent = 6
-			toolTipItem97.Text = "Select the entire table."
-			superToolTip97.Items.Add(toolTipTitleItem97)
-			superToolTip97.Items.Add(toolTipItem97)
-			superToolTip97.MaxWidth = 210
-			Me.commandBarItem77.SuperTip = superToolTip97
-			' 
-			' commandBarItem78
-			' 
-			Me.commandBarItem78.Caption = "Row"
-			Me.commandBarItem78.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectRow
-			Me.commandBarItem78.Enabled = False
-			Me.commandBarItem78.Id = 102
-			Me.commandBarItem78.Name = "commandBarItem78"
-			superToolTip98.FixedTooltipWidth = True
-			toolTipTitleItem98.Text = "Select Row"
-			toolTipItem98.LeftIndent = 6
-			toolTipItem98.Text = "Select the current row."
-			superToolTip98.Items.Add(toolTipTitleItem98)
-			superToolTip98.Items.Add(toolTipItem98)
-			superToolTip98.MaxWidth = 210
-			Me.commandBarItem78.SuperTip = superToolTip98
-			' 
-			' commandBarItem79
-			' 
-			Me.commandBarItem79.Caption = "Column"
-			Me.commandBarItem79.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectColumn
-			Me.commandBarItem79.Enabled = False
-			Me.commandBarItem79.Id = 103
-			Me.commandBarItem79.Name = "commandBarItem79"
-			superToolTip99.FixedTooltipWidth = True
-			toolTipTitleItem99.Text = "Select Column"
-			toolTipItem99.LeftIndent = 6
-			toolTipItem99.Text = "Select the current column."
-			superToolTip99.Items.Add(toolTipTitleItem99)
-			superToolTip99.Items.Add(toolTipItem99)
-			superToolTip99.MaxWidth = 210
-			Me.commandBarItem79.SuperTip = superToolTip99
-			' 
-			' commandBarItem80
-			' 
-			Me.commandBarItem80.Caption = "Cell"
-			Me.commandBarItem80.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteCell
-			Me.commandBarItem80.Enabled = False
-			Me.commandBarItem80.Id = 104
-			Me.commandBarItem80.Name = "commandBarItem80"
-			superToolTip100.FixedTooltipWidth = True
-			toolTipTitleItem100.Text = "Delete Cell"
-			toolTipItem100.LeftIndent = 6
-			toolTipItem100.Text = "Delete the current cell."
-			superToolTip100.Items.Add(toolTipTitleItem100)
-			superToolTip100.Items.Add(toolTipItem100)
-			superToolTip100.MaxWidth = 210
-			Me.commandBarItem80.SuperTip = superToolTip100
-			' 
-			' commandBarItem81
-			' 
-			Me.commandBarItem81.Caption = "Row"
-			Me.commandBarItem81.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteRow
-			Me.commandBarItem81.Enabled = False
-			Me.commandBarItem81.Id = 105
-			Me.commandBarItem81.Name = "commandBarItem81"
-			superToolTip101.FixedTooltipWidth = True
-			toolTipTitleItem101.Text = "Delete Row"
-			toolTipItem101.LeftIndent = 6
-			toolTipItem101.Text = "Delete the current row."
-			superToolTip101.Items.Add(toolTipTitleItem101)
-			superToolTip101.Items.Add(toolTipItem101)
-			superToolTip101.MaxWidth = 210
-			Me.commandBarItem81.SuperTip = superToolTip101
-			' 
-			' commandBarItem82
-			' 
-			Me.commandBarItem82.Caption = "Column"
-			Me.commandBarItem82.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteColumn
-			Me.commandBarItem82.Enabled = False
-			Me.commandBarItem82.Id = 106
-			Me.commandBarItem82.Name = "commandBarItem82"
-			superToolTip102.FixedTooltipWidth = True
-			toolTipTitleItem102.Text = "Delete Column"
-			toolTipItem102.LeftIndent = 6
-			toolTipItem102.Text = "Delete the current column."
-			superToolTip102.Items.Add(toolTipTitleItem102)
-			superToolTip102.Items.Add(toolTipItem102)
-			superToolTip102.MaxWidth = 210
-			Me.commandBarItem82.SuperTip = superToolTip102
-			' 
-			' commandBarItem83
-			' 
-			Me.commandBarItem83.Caption = "Table"
-			Me.commandBarItem83.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteTable
-			Me.commandBarItem83.Enabled = False
-			Me.commandBarItem83.Id = 107
-			Me.commandBarItem83.Name = "commandBarItem83"
-			superToolTip103.FixedTooltipWidth = True
-			toolTipTitleItem103.Text = "Delete Table"
-			toolTipItem103.LeftIndent = 6
-			toolTipItem103.Text = "Delete the entire table."
-			superToolTip103.Items.Add(toolTipTitleItem103)
-			superToolTip103.Items.Add(toolTipItem103)
-			superToolTip103.MaxWidth = 210
-			Me.commandBarItem83.SuperTip = superToolTip103
-			' 
-			' commandBarItem84
-			' 
-			Me.commandBarItem84.Caption = "Row Above"
-			Me.commandBarItem84.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertRowAbove
-			Me.commandBarItem84.Enabled = False
-			Me.commandBarItem84.Id = 108
-			Me.commandBarItem84.Name = "commandBarItem84"
-			superToolTip104.FixedTooltipWidth = True
-			toolTipTitleItem104.Text = "Insert Row Above"
-			toolTipItem104.LeftIndent = 6
-			toolTipItem104.Text = "Add a new row directly above the current row."
-			superToolTip104.Items.Add(toolTipTitleItem104)
-			superToolTip104.Items.Add(toolTipItem104)
-			superToolTip104.MaxWidth = 210
-			Me.commandBarItem84.SuperTip = superToolTip104
-			' 
-			' commandBarItem85
-			' 
-			Me.commandBarItem85.Caption = "Row Below"
-			Me.commandBarItem85.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertRowBelow
-			Me.commandBarItem85.Enabled = False
-			Me.commandBarItem85.Id = 109
-			Me.commandBarItem85.Name = "commandBarItem85"
-			superToolTip105.FixedTooltipWidth = True
-			toolTipTitleItem105.Text = "Insert Row Below"
-			toolTipItem105.LeftIndent = 6
-			toolTipItem105.Text = "Add a new row directly below the current row."
-			superToolTip105.Items.Add(toolTipTitleItem105)
-			superToolTip105.Items.Add(toolTipItem105)
-			superToolTip105.MaxWidth = 210
-			Me.commandBarItem85.SuperTip = superToolTip105
-			' 
-			' commandBarItem86
-			' 
-			Me.commandBarItem86.Caption = "Column to Left"
-			Me.commandBarItem86.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertColumnToLeft
-			Me.commandBarItem86.Enabled = False
-			Me.commandBarItem86.Id = 110
-			Me.commandBarItem86.Name = "commandBarItem86"
-			superToolTip106.FixedTooltipWidth = True
-			toolTipTitleItem106.Text = "Insert Column to Left"
-			toolTipItem106.LeftIndent = 6
-			toolTipItem106.Text = "Add a new column directly to the left of the current column."
-			superToolTip106.Items.Add(toolTipTitleItem106)
-			superToolTip106.Items.Add(toolTipItem106)
-			superToolTip106.MaxWidth = 210
-			Me.commandBarItem86.SuperTip = superToolTip106
-			' 
-			' commandBarItem87
-			' 
-			Me.commandBarItem87.Caption = "Column to Right"
-			Me.commandBarItem87.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertColumnToRight
-			Me.commandBarItem87.Enabled = False
-			Me.commandBarItem87.Id = 111
-			Me.commandBarItem87.Name = "commandBarItem87"
-			superToolTip107.FixedTooltipWidth = True
-			toolTipTitleItem107.Text = "Insert Column to Right"
-			toolTipItem107.LeftIndent = 6
-			toolTipItem107.Text = "Add a new column directly to the right of the current column."
-			superToolTip107.Items.Add(toolTipTitleItem107)
-			superToolTip107.Items.Add(toolTipItem107)
-			superToolTip107.MaxWidth = 210
-			Me.commandBarItem87.SuperTip = superToolTip107
-			' 
-			' commandBarItem88
-			' 
-			Me.commandBarItem88.Caption = "Rows"
-			Me.commandBarItem88.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDistributeRowsEvenly
-			Me.commandBarItem88.Enabled = False
-			Me.commandBarItem88.Id = 112
-			Me.commandBarItem88.Name = "commandBarItem88"
-			superToolTip108.FixedTooltipWidth = True
-			toolTipTitleItem108.Text = "Distribute Rows Evenly"
-			toolTipItem108.LeftIndent = 6
-			toolTipItem108.Text = "Distribute the height of the selected rows equally between them."
-			superToolTip108.Items.Add(toolTipTitleItem108)
-			superToolTip108.Items.Add(toolTipItem108)
-			superToolTip108.MaxWidth = 210
-			Me.commandBarItem88.SuperTip = superToolTip108
-			' 
-			' commandBarItem89
-			' 
-			Me.commandBarItem89.Caption = "Columns"
-			Me.commandBarItem89.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDistributeColumnsEvenly
-			Me.commandBarItem89.Enabled = False
-			Me.commandBarItem89.Id = 113
-			Me.commandBarItem89.Name = "commandBarItem89"
-			superToolTip109.FixedTooltipWidth = True
-			toolTipTitleItem109.Text = "Distribute Columns Evenly"
-			toolTipItem109.LeftIndent = 6
-			toolTipItem109.Text = "Distribute the width of the selected columns equally between them."
-			superToolTip109.Items.Add(toolTipTitleItem109)
-			superToolTip109.Items.Add(toolTipItem109)
-			superToolTip109.MaxWidth = 210
-			Me.commandBarItem89.SuperTip = superToolTip109
-			' 
-			' commandBarItem90
-			' 
-			Me.commandBarItem90.Caption = "Merge Cells"
-			Me.commandBarItem90.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableMergeCells
-			Me.commandBarItem90.Enabled = False
-			Me.commandBarItem90.Id = 114
-			Me.commandBarItem90.Name = "commandBarItem90"
-			superToolTip110.FixedTooltipWidth = True
-			toolTipTitleItem110.Text = "Merge Cells"
-			toolTipItem110.LeftIndent = 6
-			toolTipItem110.Text = "Merge the selected cells into one cell."
-			superToolTip110.Items.Add(toolTipTitleItem110)
-			superToolTip110.Items.Add(toolTipItem110)
-			superToolTip110.MaxWidth = 210
-			Me.commandBarItem90.SuperTip = superToolTip110
-			' 
-			' commandBarItem91
-			' 
-			Me.commandBarItem91.Caption = "Split Cells"
-			Me.commandBarItem91.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSplitCells
-			Me.commandBarItem91.Enabled = False
-			Me.commandBarItem91.Id = 115
-			Me.commandBarItem91.Name = "commandBarItem91"
-			superToolTip111.FixedTooltipWidth = True
-			toolTipTitleItem111.Text = "Split Cells"
-			toolTipItem111.LeftIndent = 6
-			toolTipItem111.Text = "Split the selected cells into the specified number of rows or columns."
-			superToolTip111.Items.Add(toolTipTitleItem111)
-			superToolTip111.Items.Add(toolTipItem111)
-			superToolTip111.MaxWidth = 210
-			Me.commandBarItem91.SuperTip = superToolTip111
-			' 
-			' commandBarItem92
-			' 
-			Me.commandBarItem92.Caption = "Run Designer"
-			Me.commandBarItem92.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRunDesigner
-			Me.commandBarItem92.Enabled = False
-			Me.commandBarItem92.Id = 116
-			Me.commandBarItem92.Name = "commandBarItem92"
-			superToolTip112.FixedTooltipWidth = True
-			toolTipTitleItem112.Text = "Run Designer"
-			toolTipItem112.LeftIndent = 6
-			toolTipItem112.Text = "Run the Pivot Grid Designer that allows customizing fields, the control's layout," & " appearance settings and printing options."
-			superToolTip112.Items.Add(toolTipTitleItem112)
-			superToolTip112.Items.Add(toolTipItem112)
-			superToolTip112.MaxWidth = 210
-			Me.commandBarItem92.SuperTip = superToolTip112
-			' 
-			' commandBarItem93
-			' 
-			Me.commandBarItem93.Caption = "Add Data Source"
-			Me.commandBarItem93.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridAddDataSource
-			Me.commandBarItem93.Enabled = False
-			Me.commandBarItem93.Id = 117
-			Me.commandBarItem93.Name = "commandBarItem93"
-			superToolTip113.FixedTooltipWidth = True
-			toolTipTitleItem113.Text = "Add Data Source"
-			toolTipItem113.LeftIndent = 6
-			toolTipItem113.Text = "Set up a data source for a Pivot Grid."
-			superToolTip113.Items.Add(toolTipTitleItem113)
-			superToolTip113.Items.Add(toolTipItem113)
-			superToolTip113.MaxWidth = 210
-			Me.commandBarItem93.SuperTip = superToolTip113
-			' 
-			' commandBarItem94
-			' 
-			Me.commandBarItem94.Caption = "Remove Field"
-			Me.commandBarItem94.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRemoveField
-			Me.commandBarItem94.Enabled = False
-			Me.commandBarItem94.Id = 118
-			Me.commandBarItem94.Name = "commandBarItem94"
-			superToolTip114.FixedTooltipWidth = True
-			toolTipTitleItem114.Text = "Remove Field"
-			toolTipItem114.LeftIndent = 6
-			toolTipItem114.Text = "Remove the selected Pivot Grid field."
-			superToolTip114.Items.Add(toolTipTitleItem114)
-			superToolTip114.Items.Add(toolTipItem114)
-			superToolTip114.MaxWidth = 210
-			Me.commandBarItem94.SuperTip = superToolTip114
-			' 
-			' commandBarItem95
-			' 
-			Me.commandBarItem95.ActAsDropDown = True
-			Me.commandBarItem95.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem95.Caption = "Add Field"
-			Me.commandBarItem95.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridAddField
-			Me.commandBarItem95.Enabled = False
-			Me.commandBarItem95.Id = 119
-			Me.commandBarItem95.Name = "commandBarItem95"
-			superToolTip115.FixedTooltipWidth = True
-			toolTipTitleItem115.Text = "Add Field"
-			toolTipItem115.LeftIndent = 6
-			toolTipItem115.Text = "Add a new Pivot Grid field to a required header area."
-			superToolTip115.Items.Add(toolTipTitleItem115)
-			superToolTip115.Items.Add(toolTipItem115)
-			superToolTip115.MaxWidth = 210
-			Me.commandBarItem95.SuperTip = superToolTip115
-			' 
-			' commandBarItem96
-			' 
-			Me.commandBarItem96.Caption = "Vertical Lines"
-			Me.commandBarItem96.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridVerticalLines
-			Me.commandBarItem96.Enabled = False
-			Me.commandBarItem96.Id = 120
-			Me.commandBarItem96.Name = "commandBarItem96"
-			superToolTip116.FixedTooltipWidth = True
-			toolTipTitleItem116.Text = "Print Vertical Lines"
-			toolTipItem116.LeftIndent = 6
-			toolTipItem116.Text = "Print vertical grid lines."
-			superToolTip116.Items.Add(toolTipTitleItem116)
-			superToolTip116.Items.Add(toolTipItem116)
-			superToolTip116.MaxWidth = 210
-			Me.commandBarItem96.SuperTip = superToolTip116
-			' 
-			' commandBarItem97
-			' 
-			Me.commandBarItem97.Caption = "Horizontal Lines"
-			Me.commandBarItem97.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridHorizontalLines
-			Me.commandBarItem97.Enabled = False
-			Me.commandBarItem97.Id = 121
-			Me.commandBarItem97.Name = "commandBarItem97"
-			superToolTip117.FixedTooltipWidth = True
-			toolTipTitleItem117.Text = "Print Horizontal Lines"
-			toolTipItem117.LeftIndent = 6
-			toolTipItem117.Text = "Print horizontal grid lines."
-			superToolTip117.Items.Add(toolTipTitleItem117)
-			superToolTip117.Items.Add(toolTipItem117)
-			superToolTip117.MaxWidth = 210
-			Me.commandBarItem97.SuperTip = superToolTip117
-			' 
-			' commandBarItem98
-			' 
-			Me.commandBarItem98.Caption = "Data Headers"
-			Me.commandBarItem98.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridDataHeaders
-			Me.commandBarItem98.Enabled = False
-			Me.commandBarItem98.Id = 122
-			Me.commandBarItem98.Name = "commandBarItem98"
-			superToolTip118.FixedTooltipWidth = True
-			toolTipTitleItem118.Text = "Print Data Headers"
-			toolTipItem118.LeftIndent = 6
-			toolTipItem118.Text = "Print data field headers."
-			superToolTip118.Items.Add(toolTipTitleItem118)
-			superToolTip118.Items.Add(toolTipItem118)
-			superToolTip118.MaxWidth = 210
-			Me.commandBarItem98.SuperTip = superToolTip118
-			' 
-			' commandBarItem99
-			' 
-			Me.commandBarItem99.Caption = "Column Headers"
-			Me.commandBarItem99.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridColumnHeaders
-			Me.commandBarItem99.Enabled = False
-			Me.commandBarItem99.Id = 123
-			Me.commandBarItem99.Name = "commandBarItem99"
-			superToolTip119.FixedTooltipWidth = True
-			toolTipTitleItem119.Text = "Print Column Headers"
-			toolTipItem119.LeftIndent = 6
-			toolTipItem119.Text = "Print column field headers."
-			superToolTip119.Items.Add(toolTipTitleItem119)
-			superToolTip119.Items.Add(toolTipItem119)
-			superToolTip119.MaxWidth = 210
-			Me.commandBarItem99.SuperTip = superToolTip119
-			' 
-			' commandBarItem100
-			' 
-			Me.commandBarItem100.Caption = "Row Headers"
-			Me.commandBarItem100.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRowHeaders
-			Me.commandBarItem100.Enabled = False
-			Me.commandBarItem100.Id = 124
-			Me.commandBarItem100.Name = "commandBarItem100"
-			superToolTip120.FixedTooltipWidth = True
-			toolTipTitleItem120.Text = "Print Row Headers"
-			toolTipItem120.LeftIndent = 6
-			toolTipItem120.Text = "Print row field headers."
-			superToolTip120.Items.Add(toolTipTitleItem120)
-			superToolTip120.Items.Add(toolTipItem120)
-			superToolTip120.MaxWidth = 210
-			Me.commandBarItem100.SuperTip = superToolTip120
-			' 
-			' commandBarItem101
-			' 
-			Me.commandBarItem101.Caption = "Column Area On Every Page"
-			Me.commandBarItem101.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridColumnAreaOnEveryPage
-			Me.commandBarItem101.Enabled = False
-			Me.commandBarItem101.Id = 125
-			Me.commandBarItem101.Name = "commandBarItem101"
-			Me.commandBarItem101.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
-			superToolTip121.FixedTooltipWidth = True
-			toolTipTitleItem121.Text = "Print Column Area On Every Page"
-			toolTipItem121.LeftIndent = 6
-			toolTipItem121.Text = "Print column area on every page."
-			superToolTip121.Items.Add(toolTipTitleItem121)
-			superToolTip121.Items.Add(toolTipItem121)
-			superToolTip121.MaxWidth = 210
-			Me.commandBarItem101.SuperTip = superToolTip121
-			' 
-			' commandBarItem102
-			' 
-			Me.commandBarItem102.Caption = "Row Area On Every Page"
-			Me.commandBarItem102.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRowAreaOnEveryPage
-			Me.commandBarItem102.Enabled = False
-			Me.commandBarItem102.Id = 126
-			Me.commandBarItem102.Name = "commandBarItem102"
-			Me.commandBarItem102.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
-			superToolTip122.FixedTooltipWidth = True
-			toolTipTitleItem122.Text = "Print Row Area On Every Page"
-			toolTipItem122.LeftIndent = 6
-			toolTipItem122.Text = "Print row area on every page."
-			superToolTip122.Items.Add(toolTipTitleItem122)
-			superToolTip122.Items.Add(toolTipItem122)
-			superToolTip122.MaxWidth = 210
-			Me.commandBarItem102.SuperTip = superToolTip122
-			' 
-			' commandBarItem103
-			' 
-			Me.commandBarItem103.Caption = "Load..."
-			Me.commandBarItem103.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartLoad
-			Me.commandBarItem103.Enabled = False
-			Me.commandBarItem103.Id = 127
-			Me.commandBarItem103.Name = "commandBarItem103"
-			Me.commandBarItem103.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
-			superToolTip123.FixedTooltipWidth = True
-			toolTipTitleItem123.Text = "Load"
-			toolTipItem123.LeftIndent = 6
-			toolTipItem123.Text = "Load a chart from an XML file."
-			superToolTip123.Items.Add(toolTipTitleItem123)
-			superToolTip123.Items.Add(toolTipItem123)
-			superToolTip123.MaxWidth = 210
-			Me.commandBarItem103.SuperTip = superToolTip123
-			' 
-			' commandBarItem104
-			' 
-			Me.commandBarItem104.Caption = "Save..."
-			Me.commandBarItem104.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartSave
-			Me.commandBarItem104.Enabled = False
-			Me.commandBarItem104.Id = 128
-			Me.commandBarItem104.Name = "commandBarItem104"
-			Me.commandBarItem104.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
-			superToolTip124.FixedTooltipWidth = True
-			toolTipTitleItem124.Text = "Save"
-			toolTipItem124.LeftIndent = 6
-			toolTipItem124.Text = "Save a chart to an XML file."
-			superToolTip124.Items.Add(toolTipTitleItem124)
-			superToolTip124.Items.Add(toolTipItem124)
-			superToolTip124.MaxWidth = 210
-			Me.commandBarItem104.SuperTip = superToolTip124
-			' 
-			' commandBarItem105
-			' 
-			Me.commandBarItem105.Caption = "Run Designer"
-			Me.commandBarItem105.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRunDesigner
-			Me.commandBarItem105.Enabled = False
-			Me.commandBarItem105.Id = 129
-			Me.commandBarItem105.Name = "commandBarItem105"
-			superToolTip125.FixedTooltipWidth = True
-			toolTipTitleItem125.Text = "Run Designer"
-			toolTipItem125.LeftIndent = 6
-			toolTipItem125.Text = "Run the Chart Designer that allows creating and editing properties of a chart and" & " its elements."
-			superToolTip125.Items.Add(toolTipTitleItem125)
-			superToolTip125.Items.Add(toolTipItem125)
-			superToolTip125.MaxWidth = 210
-			Me.commandBarItem105.SuperTip = superToolTip125
-			' 
-			' commandBarItem106
-			' 
-			Me.commandBarItem106.Caption = "Add Data Source"
-			Me.commandBarItem106.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddDataSource
-			Me.commandBarItem106.Enabled = False
-			Me.commandBarItem106.Id = 130
-			Me.commandBarItem106.Name = "commandBarItem106"
-			superToolTip126.FixedTooltipWidth = True
-			toolTipTitleItem126.Text = "Add Data Source"
-			toolTipItem126.LeftIndent = 6
-			toolTipItem126.Text = "Set up a data source for a chart."
-			superToolTip126.Items.Add(toolTipTitleItem126)
-			superToolTip126.Items.Add(toolTipItem126)
-			superToolTip126.MaxWidth = 210
-			Me.commandBarItem106.SuperTip = superToolTip126
-			' 
-			' commandBarItem107
-			' 
-			Me.commandBarItem107.ActAsDropDown = True
-			Me.commandBarItem107.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem107.Caption = "Palette"
-			Me.commandBarItem107.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartPaletteName
-			Me.commandBarItem107.Enabled = False
-			Me.commandBarItem107.Id = 131
-			Me.commandBarItem107.Name = "commandBarItem107"
-			superToolTip127.FixedTooltipWidth = True
-			toolTipTitleItem127.Text = "Palette"
-			toolTipItem127.LeftIndent = 6
-			toolTipItem127.Text = "Select a palette for painting a chart's series."
-			superToolTip127.Items.Add(toolTipTitleItem127)
-			superToolTip127.Items.Add(toolTipItem127)
-			superToolTip127.MaxWidth = 210
-			Me.commandBarItem107.SuperTip = superToolTip127
-			' 
-			' commandBarItem108
-			' 
-			Me.commandBarItem108.ActAsDropDown = True
-			Me.commandBarItem108.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem108.Caption = "Bar"
-			Me.commandBarItem108.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewBar
-			Me.commandBarItem108.Enabled = False
-			Me.commandBarItem108.Id = 132
-			Me.commandBarItem108.Name = "commandBarItem108"
-			superToolTip128.FixedTooltipWidth = True
-			toolTipTitleItem128.Text = "Bar Series"
-			toolTipItem128.LeftIndent = 6
-			toolTipItem128.Text = "Add a bar series to display values as vertical columns grouped by categories."
-			superToolTip128.Items.Add(toolTipTitleItem128)
-			superToolTip128.Items.Add(toolTipItem128)
-			superToolTip128.MaxWidth = 210
-			Me.commandBarItem108.SuperTip = superToolTip128
-			' 
-			' commandBarItem109
-			' 
-			Me.commandBarItem109.ActAsDropDown = True
-			Me.commandBarItem109.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem109.Caption = "Line"
-			Me.commandBarItem109.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewLine
-			Me.commandBarItem109.Enabled = False
-			Me.commandBarItem109.Id = 133
-			Me.commandBarItem109.Name = "commandBarItem109"
-			superToolTip129.FixedTooltipWidth = True
-			toolTipTitleItem129.Text = "Line Series"
-			toolTipItem129.LeftIndent = 6
-			toolTipItem129.Text = "Add a line series to show line trends over time or categories."
-			superToolTip129.Items.Add(toolTipTitleItem129)
-			superToolTip129.Items.Add(toolTipItem129)
-			superToolTip129.MaxWidth = 210
-			Me.commandBarItem109.SuperTip = superToolTip129
-			' 
-			' commandBarItem110
-			' 
-			Me.commandBarItem110.ActAsDropDown = True
-			Me.commandBarItem110.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem110.Caption = "Area"
-			Me.commandBarItem110.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewArea
-			Me.commandBarItem110.Enabled = False
-			Me.commandBarItem110.Id = 134
-			Me.commandBarItem110.Name = "commandBarItem110"
-			superToolTip130.FixedTooltipWidth = True
-			toolTipTitleItem130.Text = "Area Series"
-			toolTipItem130.LeftIndent = 6
-			toolTipItem130.Text = "Add an area series to display values as a filled area with peaks and hollows."
-			superToolTip130.Items.Add(toolTipTitleItem130)
-			superToolTip130.Items.Add(toolTipItem130)
-			superToolTip130.MaxWidth = 210
-			Me.commandBarItem110.SuperTip = superToolTip130
-			' 
-			' commandBarItem111
-			' 
-			Me.commandBarItem111.ActAsDropDown = True
-			Me.commandBarItem111.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem111.Caption = "Range"
-			Me.commandBarItem111.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewRange
-			Me.commandBarItem111.Enabled = False
-			Me.commandBarItem111.Id = 135
-			Me.commandBarItem111.Name = "commandBarItem111"
-			superToolTip131.FixedTooltipWidth = True
-			toolTipTitleItem131.Text = "Range Series"
-			toolTipItem131.LeftIndent = 6
-			toolTipItem131.Text = "Add a series to display a range of values with the minimum and maximum limits. "
-			superToolTip131.Items.Add(toolTipTitleItem131)
-			superToolTip131.Items.Add(toolTipItem131)
-			superToolTip131.MaxWidth = 210
-			Me.commandBarItem111.SuperTip = superToolTip131
-			' 
-			' commandBarItem112
-			' 
-			Me.commandBarItem112.ActAsDropDown = True
-			Me.commandBarItem112.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem112.Caption = "Pie and Doughnut"
-			Me.commandBarItem112.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewPieAndDoughnut
-			Me.commandBarItem112.Enabled = False
-			Me.commandBarItem112.Id = 136
-			Me.commandBarItem112.Name = "commandBarItem112"
-			superToolTip132.FixedTooltipWidth = True
-			toolTipTitleItem132.Text = "Pie And Doughnut Series"
-			toolTipItem132.LeftIndent = 6
-			toolTipItem132.Text = "Add a series to display the percentage values of different point arguments to com" & "pare their significance."
-			superToolTip132.Items.Add(toolTipTitleItem132)
-			superToolTip132.Items.Add(toolTipItem132)
-			superToolTip132.MaxWidth = 210
-			Me.commandBarItem112.SuperTip = superToolTip132
-			' 
-			' commandBarItem113
-			' 
-			Me.commandBarItem113.ActAsDropDown = True
-			Me.commandBarItem113.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem113.Caption = "Radar and Polar"
-			Me.commandBarItem113.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewRadarAndPolar
-			Me.commandBarItem113.Enabled = False
-			Me.commandBarItem113.Id = 137
-			Me.commandBarItem113.Name = "commandBarItem113"
-			superToolTip133.FixedTooltipWidth = True
-			toolTipTitleItem133.Text = "Radar And Polar Series"
-			toolTipItem133.LeftIndent = 6
-			toolTipItem133.Text = "Add a series to display values as a circular graph."
-			superToolTip133.Items.Add(toolTipTitleItem133)
-			superToolTip133.Items.Add(toolTipItem133)
-			superToolTip133.MaxWidth = 210
-			Me.commandBarItem113.SuperTip = superToolTip133
-			' 
-			' commandBarItem114
-			' 
-			Me.commandBarItem114.ActAsDropDown = True
-			Me.commandBarItem114.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.commandBarItem114.Caption = "Other Series"
-			Me.commandBarItem114.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewOther
-			Me.commandBarItem114.Enabled = False
-			Me.commandBarItem114.Id = 138
-			Me.commandBarItem114.Name = "commandBarItem114"
-			superToolTip134.FixedTooltipWidth = True
-			toolTipTitleItem134.Text = "Other Series"
-			toolTipItem134.LeftIndent = 6
-			toolTipItem134.Text = "Choose a chart type to display your data."
-			superToolTip134.Items.Add(toolTipTitleItem134)
-			superToolTip134.Items.Add(toolTipItem134)
-			superToolTip134.MaxWidth = 210
-			Me.commandBarItem114.SuperTip = superToolTip134
-			' 
-			' commandBarItem115
-			' 
-			Me.commandBarItem115.Caption = "Remove Series"
-			Me.commandBarItem115.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRemoveSeries
-			Me.commandBarItem115.Enabled = False
-			Me.commandBarItem115.Id = 139
-			Me.commandBarItem115.Name = "commandBarItem115"
-			superToolTip135.FixedTooltipWidth = True
-			toolTipTitleItem135.Text = "Remove Series"
-			toolTipItem135.LeftIndent = 6
-			toolTipItem135.Text = "Remove the selected series."
-			superToolTip135.Items.Add(toolTipTitleItem135)
-			superToolTip135.Items.Add(toolTipItem135)
-			superToolTip135.MaxWidth = 210
-			Me.commandBarItem115.SuperTip = superToolTip135
-			' 
-			' commandBarItem116
-			' 
-			Me.commandBarItem116.Caption = "Add Text Annotation"
-			Me.commandBarItem116.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddTextAnnotation
-			Me.commandBarItem116.Enabled = False
-			Me.commandBarItem116.Id = 140
-			Me.commandBarItem116.Name = "commandBarItem116"
-			superToolTip136.FixedTooltipWidth = True
-			toolTipTitleItem136.Text = "Add Text Annotation"
-			toolTipItem136.LeftIndent = 6
-			toolTipItem136.Text = "Add a text annotation to a chart."
-			superToolTip136.Items.Add(toolTipTitleItem136)
-			superToolTip136.Items.Add(toolTipItem136)
-			superToolTip136.MaxWidth = 210
-			Me.commandBarItem116.SuperTip = superToolTip136
-			' 
-			' commandBarItem117
-			' 
-			Me.commandBarItem117.Caption = "Add Image Annotation"
-			Me.commandBarItem117.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddImageAnnotation
-			Me.commandBarItem117.Enabled = False
-			Me.commandBarItem117.Id = 141
-			Me.commandBarItem117.Name = "commandBarItem117"
-			superToolTip137.FixedTooltipWidth = True
-			toolTipTitleItem137.Text = "Add Image Annotation"
-			toolTipItem137.LeftIndent = 6
-			toolTipItem137.Text = "Add an image annotation to a chart."
-			superToolTip137.Items.Add(toolTipTitleItem137)
-			superToolTip137.Items.Add(toolTipItem137)
-			superToolTip137.MaxWidth = 210
-			Me.commandBarItem117.SuperTip = superToolTip137
-			' 
-			' commandBarItem118
-			' 
-			Me.commandBarItem118.Caption = "Remove Annotation"
-			Me.commandBarItem118.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRemoveAnnotation
-			Me.commandBarItem118.Enabled = False
-			Me.commandBarItem118.Id = 142
-			Me.commandBarItem118.Name = "commandBarItem118"
-			superToolTip138.FixedTooltipWidth = True
-			toolTipTitleItem138.Text = "Remove Annotation"
-			toolTipItem138.LeftIndent = 6
-			toolTipItem138.Text = "Remove the selected annotation."
-			superToolTip138.Items.Add(toolTipTitleItem138)
-			superToolTip138.Items.Add(toolTipItem138)
-			superToolTip138.MaxWidth = 210
-			Me.commandBarItem118.SuperTip = superToolTip138
-			' 
-			' commandBarItem119
-			' 
-			Me.commandBarItem119.Caption = "Auto Module"
-			Me.commandBarItem119.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeAutoModule
-			Me.commandBarItem119.Enabled = False
-			Me.commandBarItem119.Id = 143
-			Me.commandBarItem119.Name = "commandBarItem119"
-			superToolTip139.FixedTooltipWidth = True
-			toolTipTitleItem139.Text = "Auto Module"
-			toolTipItem139.LeftIndent = 6
-			toolTipItem139.Text = "Automatically calculate the bar width based on bar code dimensions."
-			superToolTip139.Items.Add(toolTipTitleItem139)
-			superToolTip139.Items.Add(toolTipItem139)
-			superToolTip139.MaxWidth = 210
-			Me.commandBarItem119.SuperTip = superToolTip139
-			' 
-			' commandBarItem120
-			' 
-			Me.commandBarItem120.Caption = "Show Text"
-			Me.commandBarItem120.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeShowText
-			Me.commandBarItem120.Enabled = False
-			Me.commandBarItem120.Id = 144
-			Me.commandBarItem120.Name = "commandBarItem120"
-			superToolTip140.FixedTooltipWidth = True
-			toolTipTitleItem140.Text = "Show Text"
-			toolTipItem140.LeftIndent = 6
-			toolTipItem140.Text = "Display accompanying text in a bar code."
-			superToolTip140.Items.Add(toolTipTitleItem140)
-			superToolTip140.Items.Add(toolTipItem140)
-			superToolTip140.MaxWidth = 210
-			Me.commandBarItem120.SuperTip = superToolTip140
-			' 
-			' commandBarItem121
-			' 
-			Me.commandBarItem121.Caption = "Fit Bounds to Text"
-			Me.commandBarItem121.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitBoundsToText
-			Me.commandBarItem121.Enabled = False
-			Me.commandBarItem121.Id = 145
-			Me.commandBarItem121.Name = "commandBarItem121"
-			superToolTip141.FixedTooltipWidth = True
-			toolTipTitleItem141.Text = "Fit Bounds to Text"
-			toolTipItem141.LeftIndent = 6
-			toolTipItem141.Text = "Adjust the size of the selected controls to fit their text."
-			superToolTip141.Items.Add(toolTipTitleItem141)
-			superToolTip141.Items.Add(toolTipItem141)
-			superToolTip141.MaxWidth = 210
-			Me.commandBarItem121.SuperTip = superToolTip141
-			' 
-			' commandBarItem122
-			' 
-			Me.commandBarItem122.Caption = "Fit Text to Bounds"
-			Me.commandBarItem122.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitTextToBounds
-			Me.commandBarItem122.Enabled = False
-			Me.commandBarItem122.Id = 146
-			Me.commandBarItem122.Name = "commandBarItem122"
-			superToolTip142.FixedTooltipWidth = True
-			toolTipTitleItem142.Text = "Fit Text to Bounds"
-			toolTipItem142.LeftIndent = 6
-			toolTipItem142.Text = "Adjust the font size of the selected controls to fit their entire area."
-			superToolTip142.Items.Add(toolTipTitleItem142)
-			superToolTip142.Items.Add(toolTipItem142)
-			superToolTip142.MaxWidth = 210
-			Me.commandBarItem122.SuperTip = superToolTip142
-			' 
-			' commandBarCheckItem4
-			' 
-			Me.commandBarCheckItem4.Caption = "Auto Width"
-			Me.commandBarCheckItem4.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
-			Me.commandBarCheckItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelAutoWidth
-			Me.commandBarCheckItem4.Enabled = False
-			Me.commandBarCheckItem4.Id = 147
-			Me.commandBarCheckItem4.Name = "commandBarCheckItem4"
-			superToolTip143.FixedTooltipWidth = True
-			toolTipTitleItem143.Text = "Auto Width"
-			toolTipItem143.LeftIndent = 6
-			toolTipItem143.Text = "Enable the selected controls to adjust their width to fit their content."
-			superToolTip143.Items.Add(toolTipTitleItem143)
-			superToolTip143.Items.Add(toolTipItem143)
-			superToolTip143.MaxWidth = 210
-			Me.commandBarCheckItem4.SuperTip = superToolTip143
-			' 
-			' commandBarCheckItem5
-			' 
-			Me.commandBarCheckItem5.Caption = "Word Wrap"
-			Me.commandBarCheckItem5.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
-			Me.commandBarCheckItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelWordWrap
-			Me.commandBarCheckItem5.Enabled = False
-			Me.commandBarCheckItem5.Id = 148
-			Me.commandBarCheckItem5.Name = "commandBarCheckItem5"
-			superToolTip144.FixedTooltipWidth = True
-			toolTipTitleItem144.Text = "Word Wrap"
-			toolTipItem144.LeftIndent = 6
-			toolTipItem144.Text = "Enable the selected controls to wrap their text if it does not fit a line."
-			superToolTip144.Items.Add(toolTipTitleItem144)
-			superToolTip144.Items.Add(toolTipItem144)
-			superToolTip144.MaxWidth = 210
-			Me.commandBarCheckItem5.SuperTip = superToolTip144
-			' 
-			' commandBarCheckItem6
-			' 
-			Me.commandBarCheckItem6.Caption = "Can Shrink"
-			Me.commandBarCheckItem6.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
-			Me.commandBarCheckItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelCanShrink
-			Me.commandBarCheckItem6.Enabled = False
-			Me.commandBarCheckItem6.Id = 149
-			Me.commandBarCheckItem6.Name = "commandBarCheckItem6"
-			superToolTip145.FixedTooltipWidth = True
-			toolTipTitleItem145.Text = "Can Shrink"
-			toolTipItem145.LeftIndent = 6
-			toolTipItem145.Text = "Enable the selected controls to decrease their height to fit their content."
-			superToolTip145.Items.Add(toolTipTitleItem145)
-			superToolTip145.Items.Add(toolTipItem145)
-			superToolTip145.MaxWidth = 210
-			Me.commandBarCheckItem6.SuperTip = superToolTip145
-			' 
-			' commandBarCheckItem7
-			' 
-			Me.commandBarCheckItem7.Caption = "Can Grow"
-			Me.commandBarCheckItem7.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
-			Me.commandBarCheckItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelCanGrow
-			Me.commandBarCheckItem7.Enabled = False
-			Me.commandBarCheckItem7.Id = 150
-			Me.commandBarCheckItem7.Name = "commandBarCheckItem7"
-			superToolTip146.FixedTooltipWidth = True
-			toolTipTitleItem146.Text = "Can Grow"
-			toolTipItem146.LeftIndent = 6
-			toolTipItem146.Text = "Enable the selected controls to increase their height to fit their content."
-			superToolTip146.Items.Add(toolTipTitleItem146)
-			superToolTip146.Items.Add(toolTipItem146)
-			superToolTip146.MaxWidth = 210
-			Me.commandBarCheckItem7.SuperTip = superToolTip146
-			' 
-			' commandBarCheckItem8
-			' 
-			Me.commandBarCheckItem8.Caption = "Auto Width"
-			Me.commandBarCheckItem8.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
-			Me.commandBarCheckItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellAutoWidth
-			Me.commandBarCheckItem8.Enabled = False
-			Me.commandBarCheckItem8.Id = 151
-			Me.commandBarCheckItem8.Name = "commandBarCheckItem8"
-			superToolTip147.FixedTooltipWidth = True
-			toolTipTitleItem147.Text = "Cell Auto Width"
-			toolTipItem147.LeftIndent = 6
-			toolTipItem147.Text = "Automatically adjust the cell width depending on the current font size."
-			superToolTip147.Items.Add(toolTipTitleItem147)
-			superToolTip147.Items.Add(toolTipItem147)
-			superToolTip147.MaxWidth = 210
-			Me.commandBarCheckItem8.SuperTip = superToolTip147
-			' 
-			' commandBarCheckItem9
-			' 
-			Me.commandBarCheckItem9.Caption = "Auto Height"
-			Me.commandBarCheckItem9.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
-			Me.commandBarCheckItem9.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellAutoHeight
-			Me.commandBarCheckItem9.Enabled = False
-			Me.commandBarCheckItem9.Id = 152
-			Me.commandBarCheckItem9.Name = "commandBarCheckItem9"
-			superToolTip148.FixedTooltipWidth = True
-			toolTipTitleItem148.Text = "Cell Auto Height"
-			toolTipItem148.LeftIndent = 6
-			toolTipItem148.Text = "Automatically adjust the cell height depending on the current font size."
-			superToolTip148.Items.Add(toolTipTitleItem148)
-			superToolTip148.Items.Add(toolTipItem148)
-			superToolTip148.MaxWidth = 210
-			Me.commandBarCheckItem9.SuperTip = superToolTip148
-			' 
-			' commandBarItem123
-			' 
-			Me.commandBarItem123.Caption = "Add Data Source"
-			Me.commandBarItem123.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SparklineAddDataSource
-			Me.commandBarItem123.Enabled = False
-			Me.commandBarItem123.Id = 153
-			Me.commandBarItem123.Name = "commandBarItem123"
-			superToolTip149.FixedTooltipWidth = True
-			toolTipTitleItem149.Text = "Add Data Source"
-			toolTipItem149.LeftIndent = 6
-			toolTipItem149.Text = "Set up a data source for a sparkline."
-			superToolTip149.Items.Add(toolTipTitleItem149)
-			superToolTip149.Items.Add(toolTipItem149)
-			superToolTip149.MaxWidth = 210
-			Me.commandBarItem123.SuperTip = superToolTip149
-			' 
-			' commandBarItem124
-			' 
-			Me.commandBarItem124.Caption = "Flat Light"
-			Me.commandBarItem124.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewThemeLight
-			Me.commandBarItem124.Enabled = False
-			Me.commandBarItem124.Id = 154
-			Me.commandBarItem124.Name = "commandBarItem124"
-			superToolTip150.FixedTooltipWidth = True
-			toolTipTitleItem150.Text = "Flat Light Theme"
-			toolTipItem150.LeftIndent = 6
-			toolTipItem150.Text = "Set the Flat Light color theme for a gauge."
-			superToolTip150.Items.Add(toolTipTitleItem150)
-			superToolTip150.Items.Add(toolTipItem150)
-			superToolTip150.MaxWidth = 210
-			Me.commandBarItem124.SuperTip = superToolTip150
-			' 
-			' commandBarItem125
-			' 
-			Me.commandBarItem125.Caption = "Flat Dark"
-			Me.commandBarItem125.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewThemeDark
-			Me.commandBarItem125.Enabled = False
-			Me.commandBarItem125.Id = 155
-			Me.commandBarItem125.Name = "commandBarItem125"
-			superToolTip151.FixedTooltipWidth = True
-			toolTipTitleItem151.Text = "Flat Dark Theme"
-			toolTipItem151.LeftIndent = 6
-			toolTipItem151.Text = "Set the Flat Dark color theme for a gauge."
-			superToolTip151.Items.Add(toolTipTitleItem151)
-			superToolTip151.Items.Add(toolTipItem151)
-			superToolTip151.MaxWidth = 210
-			Me.commandBarItem125.SuperTip = superToolTip151
-			' 
-			' commandBarItem126
-			' 
-			Me.commandBarItem126.Caption = "Stretch"
-			Me.commandBarItem126.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShapeStretch
-			Me.commandBarItem126.Enabled = False
-			Me.commandBarItem126.Id = 156
-			Me.commandBarItem126.Name = "commandBarItem126"
-			superToolTip152.FixedTooltipWidth = True
-			toolTipTitleItem152.Text = "Stretch"
-			toolTipItem152.LeftIndent = 6
-			toolTipItem152.Text = "Stretch a shape to fill its entire area when it is rotated."
-			superToolTip152.Items.Add(toolTipTitleItem152)
-			superToolTip152.Items.Add(toolTipItem152)
-			superToolTip152.MaxWidth = 210
-			Me.commandBarItem126.SuperTip = superToolTip152
-			' 
-			' xrDesignBarButtonGroup1
-			' 
-			Me.xrDesignBarButtonGroup1.Id = 159
-			Me.xrDesignBarButtonGroup1.ItemLinks.Add(Me.barEditItem1)
-			Me.xrDesignBarButtonGroup1.ItemLinks.Add(Me.barEditItem2)
-			Me.xrDesignBarButtonGroup1.Name = "xrDesignBarButtonGroup1"
-			' 
-			' xrDesignBarButtonGroup2
-			' 
-			Me.xrDesignBarButtonGroup2.Id = 160
-			Me.xrDesignBarButtonGroup2.ItemLinks.Add(Me.commandBarItem17)
-			Me.xrDesignBarButtonGroup2.ItemLinks.Add(Me.commandBarItem18)
-			Me.xrDesignBarButtonGroup2.ItemLinks.Add(Me.commandBarItem19)
-			Me.xrDesignBarButtonGroup2.ItemLinks.Add(Me.commandBarItem24)
-			Me.xrDesignBarButtonGroup2.Name = "xrDesignBarButtonGroup2"
-			' 
-			' xrDesignBarButtonGroup3
-			' 
-			Me.xrDesignBarButtonGroup3.Id = 161
-			Me.xrDesignBarButtonGroup3.ItemLinks.Add(Me.commandColorBarItem2)
-			Me.xrDesignBarButtonGroup3.ItemLinks.Add(Me.commandColorBarItem1)
-			Me.xrDesignBarButtonGroup3.Name = "xrDesignBarButtonGroup3"
-			' 
-			' xrDesignBarButtonGroup4
-			' 
-			Me.xrDesignBarButtonGroup4.Id = 162
-			Me.xrDesignBarButtonGroup4.ItemLinks.Add(Me.commandBarItem25)
-			Me.xrDesignBarButtonGroup4.ItemLinks.Add(Me.commandBarItem26)
-			Me.xrDesignBarButtonGroup4.ItemLinks.Add(Me.commandBarItem27)
-			Me.xrDesignBarButtonGroup4.Name = "xrDesignBarButtonGroup4"
-			' 
-			' xrDesignBarButtonGroup5
-			' 
-			Me.xrDesignBarButtonGroup5.Id = 163
-			Me.xrDesignBarButtonGroup5.ItemLinks.Add(Me.commandBarItem20)
-			Me.xrDesignBarButtonGroup5.ItemLinks.Add(Me.commandBarItem21)
-			Me.xrDesignBarButtonGroup5.ItemLinks.Add(Me.commandBarItem22)
-			Me.xrDesignBarButtonGroup5.ItemLinks.Add(Me.commandBarItem23)
-			Me.xrDesignBarButtonGroup5.Name = "xrDesignBarButtonGroup5"
-			' 
-			' xrDesignBarButtonGroup6
-			' 
-			Me.xrDesignBarButtonGroup6.Id = 164
-			Me.xrDesignBarButtonGroup6.ItemLinks.Add(Me.commandBarItem32)
-			Me.xrDesignBarButtonGroup6.ItemLinks.Add(Me.commandBarItem33)
-			Me.xrDesignBarButtonGroup6.Name = "xrDesignBarButtonGroup6"
-			' 
-			' xrDesignBarButtonGroup7
-			' 
-			Me.xrDesignBarButtonGroup7.Id = 165
-			Me.xrDesignBarButtonGroup7.ItemLinks.Add(Me.commandBarItem34)
-			Me.xrDesignBarButtonGroup7.ItemLinks.Add(Me.commandBarItem35)
-			Me.xrDesignBarButtonGroup7.ItemLinks.Add(Me.commandBarItem36)
-			Me.xrDesignBarButtonGroup7.ItemLinks.Add(Me.commandBarItem37)
-			Me.xrDesignBarButtonGroup7.Name = "xrDesignBarButtonGroup7"
-			' 
-			' xrDesignBarButtonGroup8
-			' 
-			Me.xrDesignBarButtonGroup8.Id = 166
-			Me.xrDesignBarButtonGroup8.ItemLinks.Add(Me.commandColorBarItem3)
-			Me.xrDesignBarButtonGroup8.ItemLinks.Add(Me.commandBarItem38)
-			Me.xrDesignBarButtonGroup8.ItemLinks.Add(Me.commandBarEditItem6)
-			Me.xrDesignBarButtonGroup8.Name = "xrDesignBarButtonGroup8"
-			' 
-			' xrDesignBarButtonGroup9
-			' 
-			Me.xrDesignBarButtonGroup9.Id = 167
-			Me.xrDesignBarButtonGroup9.ItemLinks.Add(Me.commandBarItem40)
-			Me.xrDesignBarButtonGroup9.ItemLinks.Add(Me.commandBarItem41)
-			Me.xrDesignBarButtonGroup9.ItemLinks.Add(Me.commandBarItem42)
-			Me.xrDesignBarButtonGroup9.Name = "xrDesignBarButtonGroup9"
-			' 
-			' xrDesignBarButtonGroup10
-			' 
-			Me.xrDesignBarButtonGroup10.Id = 168
-			Me.xrDesignBarButtonGroup10.ItemLinks.Add(Me.commandBarItem43)
-			Me.xrDesignBarButtonGroup10.ItemLinks.Add(Me.commandBarItem44)
-			Me.xrDesignBarButtonGroup10.ItemLinks.Add(Me.commandBarItem45)
-			Me.xrDesignBarButtonGroup10.Name = "xrDesignBarButtonGroup10"
-			' 
-			' xrDesignBarButtonGroup11
-			' 
-			Me.xrDesignBarButtonGroup11.Id = 169
-			Me.xrDesignBarButtonGroup11.ItemLinks.Add(Me.commandBarItem50)
-			Me.xrDesignBarButtonGroup11.ItemLinks.Add(Me.commandBarItem51)
-			Me.xrDesignBarButtonGroup11.ItemLinks.Add(Me.commandBarItem52)
-			Me.xrDesignBarButtonGroup11.ItemLinks.Add(Me.commandBarItem53)
-			Me.xrDesignBarButtonGroup11.Name = "xrDesignBarButtonGroup11"
-			' 
-			' xrDesignBarButtonGroup12
-			' 
-			Me.xrDesignBarButtonGroup12.Id = 170
-			Me.xrDesignBarButtonGroup12.ItemLinks.Add(Me.commandBarItem46)
-			Me.xrDesignBarButtonGroup12.ItemLinks.Add(Me.commandBarItem48)
-			Me.xrDesignBarButtonGroup12.ItemLinks.Add(Me.commandBarItem49)
-			Me.xrDesignBarButtonGroup12.Name = "xrDesignBarButtonGroup12"
-			' 
-			' xrDesignBarButtonGroup13
-			' 
-			Me.xrDesignBarButtonGroup13.Id = 171
-			Me.xrDesignBarButtonGroup13.ItemLinks.Add(Me.commandBarItem54)
-			Me.xrDesignBarButtonGroup13.ItemLinks.Add(Me.commandBarItem55)
-			Me.xrDesignBarButtonGroup13.ItemLinks.Add(Me.commandBarItem56)
-			Me.xrDesignBarButtonGroup13.ItemLinks.Add(Me.commandBarItem57)
-			Me.xrDesignBarButtonGroup13.Name = "xrDesignBarButtonGroup13"
-			' 
-			' xrDesignBarButtonGroup14
-			' 
-			Me.xrDesignBarButtonGroup14.Id = 172
-			Me.xrDesignBarButtonGroup14.ItemLinks.Add(Me.commandBarItem58)
-			Me.xrDesignBarButtonGroup14.ItemLinks.Add(Me.commandBarItem59)
-			Me.xrDesignBarButtonGroup14.Name = "xrDesignBarButtonGroup14"
-			' 
-			' printPreviewBarItem1
-			' 
-			Me.printPreviewBarItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
-			Me.printPreviewBarItem1.Caption = "Editing Fields"
-			Me.printPreviewBarItem1.Command = DevExpress.XtraPrinting.PrintingSystemCommand.HighlightEditingFields
-			Me.printPreviewBarItem1.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem1.Enabled = False
-			Me.printPreviewBarItem1.Id = 173
-			Me.printPreviewBarItem1.Name = "printPreviewBarItem1"
-			superToolTip153.FixedTooltipWidth = True
-			toolTipTitleItem153.Text = "Highlight Editing Fields"
-			toolTipItem153.LeftIndent = 6
-			toolTipItem153.Text = "Highlight all editing fields to quickly discover which of the document elements a" & "re editable."
-			superToolTip153.Items.Add(toolTipTitleItem153)
-			superToolTip153.Items.Add(toolTipItem153)
-			superToolTip153.MaxWidth = 210
-			Me.printPreviewBarItem1.SuperTip = superToolTip153
-			' 
-			' printPreviewBarItem2
-			' 
-			Me.printPreviewBarItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
-			Me.printPreviewBarItem2.Caption = "Bookmarks"
-			Me.printPreviewBarItem2.Command = DevExpress.XtraPrinting.PrintingSystemCommand.DocumentMap
-			Me.printPreviewBarItem2.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem2.Enabled = False
-			Me.printPreviewBarItem2.Id = 174
-			Me.printPreviewBarItem2.Name = "printPreviewBarItem2"
-			superToolTip154.FixedTooltipWidth = True
-			toolTipTitleItem154.Text = "Document Map"
-			toolTipItem154.LeftIndent = 6
-			toolTipItem154.Text = "Open the Document Map, which allows you to navigate through a structural view of " & "the document."
-			superToolTip154.Items.Add(toolTipTitleItem154)
-			superToolTip154.Items.Add(toolTipItem154)
-			superToolTip154.MaxWidth = 210
-			Me.printPreviewBarItem2.SuperTip = superToolTip154
-			' 
-			' printPreviewBarItem3
-			' 
-			Me.printPreviewBarItem3.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
-			Me.printPreviewBarItem3.Caption = "Parameters"
-			Me.printPreviewBarItem3.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Parameters
-			Me.printPreviewBarItem3.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem3.Enabled = False
-			Me.printPreviewBarItem3.Id = 175
-			Me.printPreviewBarItem3.Name = "printPreviewBarItem3"
-			superToolTip155.FixedTooltipWidth = True
-			toolTipTitleItem155.Text = "Parameters"
-			toolTipItem155.LeftIndent = 6
-			toolTipItem155.Text = "Open the Parameters pane, which allows you to enter values for report parameters." & ""
-			superToolTip155.Items.Add(toolTipTitleItem155)
-			superToolTip155.Items.Add(toolTipItem155)
-			superToolTip155.MaxWidth = 210
-			Me.printPreviewBarItem3.SuperTip = superToolTip155
-			' 
-			' printPreviewBarItem4
-			' 
-			Me.printPreviewBarItem4.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
-			Me.printPreviewBarItem4.Caption = "Find"
-			Me.printPreviewBarItem4.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Find
-			Me.printPreviewBarItem4.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem4.Enabled = False
-			Me.printPreviewBarItem4.Id = 176
-			Me.printPreviewBarItem4.Name = "printPreviewBarItem4"
-			superToolTip156.FixedTooltipWidth = True
-			toolTipTitleItem156.Text = "Find"
-			toolTipItem156.LeftIndent = 6
-			toolTipItem156.Text = "Show the Find dialog to find text in the document."
-			superToolTip156.Items.Add(toolTipTitleItem156)
-			superToolTip156.Items.Add(toolTipItem156)
-			superToolTip156.MaxWidth = 210
-			Me.printPreviewBarItem4.SuperTip = superToolTip156
-			' 
-			' printPreviewBarItem5
-			' 
-			Me.printPreviewBarItem5.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
-			Me.printPreviewBarItem5.Caption = "Thumbnails"
-			Me.printPreviewBarItem5.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Thumbnails
-			Me.printPreviewBarItem5.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem5.Enabled = False
-			Me.printPreviewBarItem5.Id = 177
-			Me.printPreviewBarItem5.Name = "printPreviewBarItem5"
-			superToolTip157.FixedTooltipWidth = True
-			toolTipTitleItem157.Text = "Thumbnails"
-			toolTipItem157.LeftIndent = 6
-			toolTipItem157.Text = "Open the Thumbnails, which allows you to navigate through the document."
-			superToolTip157.Items.Add(toolTipTitleItem157)
-			superToolTip157.Items.Add(toolTipItem157)
-			superToolTip157.MaxWidth = 210
-			Me.printPreviewBarItem5.SuperTip = superToolTip157
-			' 
-			' printPreviewBarItem7
-			' 
-			Me.printPreviewBarItem7.Caption = "Print"
-			Me.printPreviewBarItem7.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Print
-			Me.printPreviewBarItem7.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem7.Enabled = False
-			Me.printPreviewBarItem7.Id = 179
-			Me.printPreviewBarItem7.Name = "printPreviewBarItem7"
-			superToolTip158.FixedTooltipWidth = True
-			toolTipTitleItem158.Text = "Print (Ctrl+P)"
-			toolTipItem158.LeftIndent = 6
-			toolTipItem158.Text = "Select a printer, number of copies and other printing options before printing."
-			superToolTip158.Items.Add(toolTipTitleItem158)
-			superToolTip158.Items.Add(toolTipItem158)
-			superToolTip158.MaxWidth = 210
-			Me.printPreviewBarItem7.SuperTip = superToolTip158
-			' 
-			' printPreviewBarItem8
-			' 
-			Me.printPreviewBarItem8.Caption = "Quick Print"
-			Me.printPreviewBarItem8.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PrintDirect
-			Me.printPreviewBarItem8.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem8.Enabled = False
-			Me.printPreviewBarItem8.Id = 180
-			Me.printPreviewBarItem8.Name = "printPreviewBarItem8"
-			superToolTip159.FixedTooltipWidth = True
-			toolTipTitleItem159.Text = "Quick Print"
-			toolTipItem159.LeftIndent = 6
-			toolTipItem159.Text = "Send the document directly to the default printer without making changes."
-			superToolTip159.Items.Add(toolTipTitleItem159)
-			superToolTip159.Items.Add(toolTipItem159)
-			superToolTip159.MaxWidth = 210
-			Me.printPreviewBarItem8.SuperTip = superToolTip159
-			' 
-			' printPreviewBarItem9
-			' 
-			Me.printPreviewBarItem9.Caption = "Custom Margins..."
-			Me.printPreviewBarItem9.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageSetup
-			Me.printPreviewBarItem9.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem9.Enabled = False
-			Me.printPreviewBarItem9.Id = 181
-			Me.printPreviewBarItem9.Name = "printPreviewBarItem9"
-			superToolTip160.FixedTooltipWidth = True
-			toolTipTitleItem160.Text = "Page Setup"
-			toolTipItem160.LeftIndent = 6
-			toolTipItem160.Text = "Show the Page Setup dialog."
-			superToolTip160.Items.Add(toolTipTitleItem160)
-			superToolTip160.Items.Add(toolTipItem160)
-			superToolTip160.MaxWidth = 210
-			Me.printPreviewBarItem9.SuperTip = superToolTip160
-			' 
-			' printPreviewBarItem11
-			' 
-			Me.printPreviewBarItem11.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.printPreviewBarItem11.Caption = "Scale"
-			Me.printPreviewBarItem11.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Scale
-			Me.printPreviewBarItem11.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem11.Enabled = False
-			Me.printPreviewBarItem11.Id = 183
-			Me.printPreviewBarItem11.Name = "printPreviewBarItem11"
-			superToolTip161.FixedTooltipWidth = True
-			toolTipTitleItem161.Text = "Scale"
-			toolTipItem161.LeftIndent = 6
-			toolTipItem161.Text = "Stretch or shrink the printed output to a percentage of its actual size."
-			superToolTip161.Items.Add(toolTipTitleItem161)
-			superToolTip161.Items.Add(toolTipItem161)
-			superToolTip161.MaxWidth = 210
-			Me.printPreviewBarItem11.SuperTip = superToolTip161
-			' 
-			' printPreviewBarItem12
-			' 
-			Me.printPreviewBarItem12.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
-			Me.printPreviewBarItem12.Caption = "Pointer"
-			Me.printPreviewBarItem12.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Pointer
-			Me.printPreviewBarItem12.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem12.Enabled = False
-			Me.printPreviewBarItem12.GroupIndex = 1
-			Me.printPreviewBarItem12.Id = 184
-			Me.printPreviewBarItem12.Name = "printPreviewBarItem12"
-			Me.printPreviewBarItem12.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText
-			superToolTip162.FixedTooltipWidth = True
-			toolTipTitleItem162.Text = "Mouse Pointer"
-			toolTipItem162.LeftIndent = 6
-			toolTipItem162.Text = "Show the mouse pointer."
-			superToolTip162.Items.Add(toolTipTitleItem162)
-			superToolTip162.Items.Add(toolTipItem162)
-			superToolTip162.MaxWidth = 210
-			Me.printPreviewBarItem12.SuperTip = superToolTip162
-			' 
-			' printPreviewBarItem13
-			' 
-			Me.printPreviewBarItem13.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
-			Me.printPreviewBarItem13.Caption = "Hand Tool"
-			Me.printPreviewBarItem13.Command = DevExpress.XtraPrinting.PrintingSystemCommand.HandTool
-			Me.printPreviewBarItem13.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem13.Enabled = False
-			Me.printPreviewBarItem13.GroupIndex = 1
-			Me.printPreviewBarItem13.Id = 185
-			Me.printPreviewBarItem13.Name = "printPreviewBarItem13"
-			Me.printPreviewBarItem13.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText
-			superToolTip163.FixedTooltipWidth = True
-			toolTipTitleItem163.Text = "Hand Tool"
-			toolTipItem163.LeftIndent = 6
-			toolTipItem163.Text = "Invoke the Hand tool to manually scroll through pages."
-			superToolTip163.Items.Add(toolTipTitleItem163)
-			superToolTip163.Items.Add(toolTipItem163)
-			superToolTip163.MaxWidth = 210
-			Me.printPreviewBarItem13.SuperTip = superToolTip163
-			' 
-			' printPreviewBarItem14
-			' 
-			Me.printPreviewBarItem14.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
-			Me.printPreviewBarItem14.Caption = "Magnifier"
-			Me.printPreviewBarItem14.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Magnifier
-			Me.printPreviewBarItem14.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem14.Enabled = False
-			Me.printPreviewBarItem14.GroupIndex = 1
-			Me.printPreviewBarItem14.Id = 186
-			Me.printPreviewBarItem14.Name = "printPreviewBarItem14"
-			Me.printPreviewBarItem14.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText
-			superToolTip164.FixedTooltipWidth = True
-			toolTipTitleItem164.Text = "Magnifier"
-			toolTipItem164.LeftIndent = 6
-			toolTipItem164.Text = "Invoke the Magnifier tool." & vbCrLf & vbCrLf & "Clicking once on a document zooms it so that a sing" & "le page becomes entirely visible, while clicking another time zooms it to 100% o" & "f the normal size."
-			superToolTip164.Items.Add(toolTipTitleItem164)
-			superToolTip164.Items.Add(toolTipItem164)
-			superToolTip164.MaxWidth = 210
-			Me.printPreviewBarItem14.SuperTip = superToolTip164
-			' 
-			' printPreviewBarItem15
-			' 
-			Me.printPreviewBarItem15.Caption = "Zoom Out"
-			Me.printPreviewBarItem15.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomOut
-			Me.printPreviewBarItem15.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem15.Enabled = False
-			Me.printPreviewBarItem15.Id = 187
-			Me.printPreviewBarItem15.Name = "printPreviewBarItem15"
-			superToolTip165.FixedTooltipWidth = True
-			toolTipTitleItem165.Text = "Zoom Out"
-			toolTipItem165.LeftIndent = 6
-			toolTipItem165.Text = "Zoom out to see more of the page at a reduced size."
-			superToolTip165.Items.Add(toolTipTitleItem165)
-			superToolTip165.Items.Add(toolTipItem165)
-			superToolTip165.MaxWidth = 210
-			Me.printPreviewBarItem15.SuperTip = superToolTip165
-			' 
-			' printPreviewBarItem16
-			' 
-			Me.printPreviewBarItem16.Caption = "Zoom In"
-			Me.printPreviewBarItem16.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomIn
-			Me.printPreviewBarItem16.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem16.Enabled = False
-			Me.printPreviewBarItem16.Id = 188
-			Me.printPreviewBarItem16.Name = "printPreviewBarItem16"
-			superToolTip166.FixedTooltipWidth = True
-			toolTipTitleItem166.Text = "Zoom In"
-			toolTipItem166.LeftIndent = 6
-			toolTipItem166.Text = "Zoom in to get a close-up view of the document."
-			superToolTip166.Items.Add(toolTipTitleItem166)
-			superToolTip166.Items.Add(toolTipItem166)
-			superToolTip166.MaxWidth = 210
-			Me.printPreviewBarItem16.SuperTip = superToolTip166
-			' 
-			' printPreviewBarItem17
-			' 
-			Me.printPreviewBarItem17.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.printPreviewBarItem17.Caption = "Zoom"
-			Me.printPreviewBarItem17.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Zoom
-			Me.printPreviewBarItem17.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem17.Enabled = False
-			Me.printPreviewBarItem17.Id = 189
-			Me.printPreviewBarItem17.Name = "printPreviewBarItem17"
-			superToolTip167.FixedTooltipWidth = True
-			toolTipTitleItem167.Text = "Zoom"
-			toolTipItem167.LeftIndent = 6
-			toolTipItem167.Text = "Change the zoom level of the document preview."
-			superToolTip167.Items.Add(toolTipTitleItem167)
-			superToolTip167.Items.Add(toolTipItem167)
-			superToolTip167.MaxWidth = 210
-			Me.printPreviewBarItem17.SuperTip = superToolTip167
-			' 
-			' printPreviewBarItem18
-			' 
-			Me.printPreviewBarItem18.Caption = "First Page"
-			Me.printPreviewBarItem18.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowFirstPage
-			Me.printPreviewBarItem18.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem18.Enabled = False
-			Me.printPreviewBarItem18.Id = 190
-			Me.printPreviewBarItem18.Name = "printPreviewBarItem18"
-			superToolTip168.FixedTooltipWidth = True
-			toolTipTitleItem168.Text = "First Page (Home)"
-			toolTipItem168.LeftIndent = 6
-			toolTipItem168.Text = "Navigate to the first page of the document."
-			superToolTip168.Items.Add(toolTipTitleItem168)
-			superToolTip168.Items.Add(toolTipItem168)
-			superToolTip168.MaxWidth = 210
-			Me.printPreviewBarItem18.SuperTip = superToolTip168
-			' 
-			' printPreviewBarItem19
-			' 
-			Me.printPreviewBarItem19.Caption = "Previous Page"
-			Me.printPreviewBarItem19.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowPrevPage
-			Me.printPreviewBarItem19.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem19.Enabled = False
-			Me.printPreviewBarItem19.Id = 191
-			Me.printPreviewBarItem19.Name = "printPreviewBarItem19"
-			superToolTip169.FixedTooltipWidth = True
-			toolTipTitleItem169.Text = "Previous Page (Left Arrow)"
-			toolTipItem169.LeftIndent = 6
-			toolTipItem169.Text = "Navigate to the previous page of the document."
-			superToolTip169.Items.Add(toolTipTitleItem169)
-			superToolTip169.Items.Add(toolTipItem169)
-			superToolTip169.MaxWidth = 210
-			Me.printPreviewBarItem19.SuperTip = superToolTip169
-			' 
-			' printPreviewBarItem20
-			' 
-			Me.printPreviewBarItem20.Caption = "Next  Page "
-			Me.printPreviewBarItem20.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowNextPage
-			Me.printPreviewBarItem20.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem20.Enabled = False
-			Me.printPreviewBarItem20.Id = 192
-			Me.printPreviewBarItem20.Name = "printPreviewBarItem20"
-			superToolTip170.FixedTooltipWidth = True
-			toolTipTitleItem170.Text = "Next Page (Right Arrow)"
-			toolTipItem170.LeftIndent = 6
-			toolTipItem170.Text = "Navigate to the next page of the document."
-			superToolTip170.Items.Add(toolTipTitleItem170)
-			superToolTip170.Items.Add(toolTipItem170)
-			superToolTip170.MaxWidth = 210
-			Me.printPreviewBarItem20.SuperTip = superToolTip170
-			' 
-			' printPreviewBarItem21
-			' 
-			Me.printPreviewBarItem21.Caption = "Last  Page "
-			Me.printPreviewBarItem21.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowLastPage
-			Me.printPreviewBarItem21.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem21.Enabled = False
-			Me.printPreviewBarItem21.Id = 193
-			Me.printPreviewBarItem21.Name = "printPreviewBarItem21"
-			superToolTip171.FixedTooltipWidth = True
-			toolTipTitleItem171.Text = "Last Page (End)"
-			toolTipItem171.LeftIndent = 6
-			toolTipItem171.Text = "Navigate to the last page of the document."
-			superToolTip171.Items.Add(toolTipTitleItem171)
-			superToolTip171.Items.Add(toolTipItem171)
-			superToolTip171.MaxWidth = 210
-			Me.printPreviewBarItem21.SuperTip = superToolTip171
-			' 
-			' printPreviewBarItem22
-			' 
-			Me.printPreviewBarItem22.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.printPreviewBarItem22.Caption = "Many Pages"
-			Me.printPreviewBarItem22.Command = DevExpress.XtraPrinting.PrintingSystemCommand.MultiplePages
-			Me.printPreviewBarItem22.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem22.Enabled = False
-			Me.printPreviewBarItem22.Id = 194
-			Me.printPreviewBarItem22.Name = "printPreviewBarItem22"
-			superToolTip172.FixedTooltipWidth = True
-			toolTipTitleItem172.Text = "View Many Pages"
-			toolTipItem172.LeftIndent = 6
-			toolTipItem172.Text = "Choose the page layout to arrange the document pages in preview."
-			superToolTip172.Items.Add(toolTipTitleItem172)
-			superToolTip172.Items.Add(toolTipItem172)
-			superToolTip172.MaxWidth = 210
-			Me.printPreviewBarItem22.SuperTip = superToolTip172
-			' 
-			' printPreviewBarItem23
-			' 
-			Me.printPreviewBarItem23.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.printPreviewBarItem23.Caption = "Page Color"
-			Me.printPreviewBarItem23.Command = DevExpress.XtraPrinting.PrintingSystemCommand.FillBackground
-			Me.printPreviewBarItem23.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem23.Enabled = False
-			Me.printPreviewBarItem23.Id = 195
-			Me.printPreviewBarItem23.Name = "printPreviewBarItem23"
-			superToolTip173.FixedTooltipWidth = True
-			toolTipTitleItem173.Text = "Background Color"
-			toolTipItem173.LeftIndent = 6
-			toolTipItem173.Text = "Choose a color for the background of the document pages."
-			superToolTip173.Items.Add(toolTipTitleItem173)
-			superToolTip173.Items.Add(toolTipItem173)
-			superToolTip173.MaxWidth = 210
-			Me.printPreviewBarItem23.SuperTip = superToolTip173
-			' 
-			' printPreviewBarItem24
-			' 
-			Me.printPreviewBarItem24.Caption = "Watermark"
-			Me.printPreviewBarItem24.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Watermark
-			Me.printPreviewBarItem24.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem24.Enabled = False
-			Me.printPreviewBarItem24.Id = 196
-			Me.printPreviewBarItem24.Name = "printPreviewBarItem24"
-			superToolTip174.FixedTooltipWidth = True
-			toolTipTitleItem174.Text = "Watermark"
-			toolTipItem174.LeftIndent = 6
-			toolTipItem174.Text = "Insert ghosted text or image behind the content of a page." & vbCrLf & vbCrLf & "This is often used " & "to indicate that a document is to be treated specially."
-			superToolTip174.Items.Add(toolTipTitleItem174)
-			superToolTip174.Items.Add(toolTipItem174)
-			superToolTip174.MaxWidth = 210
-			Me.printPreviewBarItem24.SuperTip = superToolTip174
-			' 
-			' printPreviewBarItem25
-			' 
-			Me.printPreviewBarItem25.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.printPreviewBarItem25.Caption = "Export To"
-			Me.printPreviewBarItem25.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportFile
-			Me.printPreviewBarItem25.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem25.Enabled = False
-			Me.printPreviewBarItem25.Id = 197
-			Me.printPreviewBarItem25.Name = "printPreviewBarItem25"
-			superToolTip175.FixedTooltipWidth = True
-			toolTipTitleItem175.Text = "Export To..."
-			toolTipItem175.LeftIndent = 6
-			toolTipItem175.Text = "Export the current document in one of the available formats, and save it to the f" & "ile on a disk."
-			superToolTip175.Items.Add(toolTipTitleItem175)
-			superToolTip175.Items.Add(toolTipItem175)
-			superToolTip175.MaxWidth = 210
-			Me.printPreviewBarItem25.SuperTip = superToolTip175
-			' 
-			' printPreviewBarItem26
-			' 
-			Me.printPreviewBarItem26.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.printPreviewBarItem26.Caption = "E-Mail As"
-			Me.printPreviewBarItem26.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendFile
-			Me.printPreviewBarItem26.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem26.Enabled = False
-			Me.printPreviewBarItem26.Id = 198
-			Me.printPreviewBarItem26.Name = "printPreviewBarItem26"
-			superToolTip176.FixedTooltipWidth = True
-			toolTipTitleItem176.Text = "E-Mail As..."
-			toolTipItem176.LeftIndent = 6
-			toolTipItem176.Text = "Export the current document in one of the available formats, and attach it to the" & " e-mail."
-			superToolTip176.Items.Add(toolTipTitleItem176)
-			superToolTip176.Items.Add(toolTipItem176)
-			superToolTip176.MaxWidth = 210
-			Me.printPreviewBarItem26.SuperTip = superToolTip176
-			' 
-			' printPreviewBarItem27
-			' 
-			Me.printPreviewBarItem27.Caption = "Close"
-			Me.printPreviewBarItem27.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ClosePreview
-			Me.printPreviewBarItem27.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem27.Enabled = False
-			Me.printPreviewBarItem27.Id = 199
-			Me.printPreviewBarItem27.Name = "printPreviewBarItem27"
-			superToolTip177.FixedTooltipWidth = True
-			toolTipTitleItem177.Text = "Close Print Preview"
-			toolTipItem177.LeftIndent = 6
-			toolTipItem177.Text = "Close Print Preview of the document."
-			superToolTip177.Items.Add(toolTipTitleItem177)
-			superToolTip177.Items.Add(toolTipItem177)
-			superToolTip177.MaxWidth = 210
-			Me.printPreviewBarItem27.SuperTip = superToolTip177
-			' 
-			' printPreviewBarItem28
-			' 
-			Me.printPreviewBarItem28.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.printPreviewBarItem28.Caption = "Orientation"
-			Me.printPreviewBarItem28.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageOrientation
-			Me.printPreviewBarItem28.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem28.Enabled = False
-			Me.printPreviewBarItem28.Id = 200
-			Me.printPreviewBarItem28.Name = "printPreviewBarItem28"
-			superToolTip178.FixedTooltipWidth = True
-			toolTipTitleItem178.Text = "Page Orientation"
-			toolTipItem178.LeftIndent = 6
-			toolTipItem178.Text = "Switch the pages between portrait and landscape layouts."
-			superToolTip178.Items.Add(toolTipTitleItem178)
-			superToolTip178.Items.Add(toolTipItem178)
-			superToolTip178.MaxWidth = 210
-			Me.printPreviewBarItem28.SuperTip = superToolTip178
-			' 
-			' printPreviewBarItem29
-			' 
-			Me.printPreviewBarItem29.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.printPreviewBarItem29.Caption = "Size"
-			Me.printPreviewBarItem29.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PaperSize
-			Me.printPreviewBarItem29.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem29.Enabled = False
-			Me.printPreviewBarItem29.Id = 201
-			Me.printPreviewBarItem29.Name = "printPreviewBarItem29"
-			superToolTip179.FixedTooltipWidth = True
-			toolTipTitleItem179.Text = "Page Size"
-			toolTipItem179.LeftIndent = 6
-			toolTipItem179.Text = "Choose the paper size of the document."
-			superToolTip179.Items.Add(toolTipTitleItem179)
-			superToolTip179.Items.Add(toolTipItem179)
-			superToolTip179.MaxWidth = 210
-			Me.printPreviewBarItem29.SuperTip = superToolTip179
-			' 
-			' printPreviewBarItem30
-			' 
-			Me.printPreviewBarItem30.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
-			Me.printPreviewBarItem30.Caption = "Margins"
-			Me.printPreviewBarItem30.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageMargins
-			Me.printPreviewBarItem30.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem30.Enabled = False
-			Me.printPreviewBarItem30.Id = 202
-			Me.printPreviewBarItem30.Name = "printPreviewBarItem30"
-			superToolTip180.FixedTooltipWidth = True
-			toolTipTitleItem180.Text = "Page Margins"
-			toolTipItem180.LeftIndent = 6
-			toolTipItem180.Text = "Select the margin sizes for the entire document." & vbCrLf & vbCrLf & "To apply specific margin size" & "s to the document, click Custom Margins."
-			superToolTip180.Items.Add(toolTipTitleItem180)
-			superToolTip180.Items.Add(toolTipItem180)
-			superToolTip180.MaxWidth = 210
-			Me.printPreviewBarItem30.SuperTip = superToolTip180
-			' 
-			' printPreviewBarItem31
-			' 
-			Me.printPreviewBarItem31.Caption = "PDF File"
-			Me.printPreviewBarItem31.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendPdf
-			Me.printPreviewBarItem31.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem31.Enabled = False
-			Me.printPreviewBarItem31.Id = 203
-			Me.printPreviewBarItem31.Name = "printPreviewBarItem31"
-			superToolTip181.FixedTooltipWidth = True
-			toolTipTitleItem181.Text = "E-Mail As PDF"
-			toolTipItem181.LeftIndent = 6
-			toolTipItem181.Text = "Export the document to PDF and attach it to the e-mail."
-			superToolTip181.Items.Add(toolTipTitleItem181)
-			superToolTip181.Items.Add(toolTipItem181)
-			superToolTip181.MaxWidth = 210
-			Me.printPreviewBarItem31.SuperTip = superToolTip181
-			' 
-			' printPreviewBarItem32
-			' 
-			Me.printPreviewBarItem32.Caption = "Text File"
-			Me.printPreviewBarItem32.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendTxt
-			Me.printPreviewBarItem32.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem32.Enabled = False
-			Me.printPreviewBarItem32.Id = 204
-			Me.printPreviewBarItem32.Name = "printPreviewBarItem32"
-			superToolTip182.FixedTooltipWidth = True
-			toolTipTitleItem182.Text = "E-Mail As Text"
-			toolTipItem182.LeftIndent = 6
-			toolTipItem182.Text = "Export the document to Text and attach it to the e-mail."
-			superToolTip182.Items.Add(toolTipTitleItem182)
-			superToolTip182.Items.Add(toolTipItem182)
-			superToolTip182.MaxWidth = 210
-			Me.printPreviewBarItem32.SuperTip = superToolTip182
-			' 
-			' printPreviewBarItem33
-			' 
-			Me.printPreviewBarItem33.Caption = "CSV File"
-			Me.printPreviewBarItem33.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendCsv
-			Me.printPreviewBarItem33.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem33.Enabled = False
-			Me.printPreviewBarItem33.Id = 205
-			Me.printPreviewBarItem33.Name = "printPreviewBarItem33"
-			superToolTip183.FixedTooltipWidth = True
-			toolTipTitleItem183.Text = "E-Mail As CSV"
-			toolTipItem183.LeftIndent = 6
-			toolTipItem183.Text = "Export the document to CSV and attach it to the e-mail."
-			superToolTip183.Items.Add(toolTipTitleItem183)
-			superToolTip183.Items.Add(toolTipItem183)
-			superToolTip183.MaxWidth = 210
-			Me.printPreviewBarItem33.SuperTip = superToolTip183
-			' 
-			' printPreviewBarItem34
-			' 
-			Me.printPreviewBarItem34.Caption = "MHT File"
-			Me.printPreviewBarItem34.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendMht
-			Me.printPreviewBarItem34.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem34.Enabled = False
-			Me.printPreviewBarItem34.Id = 206
-			Me.printPreviewBarItem34.Name = "printPreviewBarItem34"
-			superToolTip184.FixedTooltipWidth = True
-			toolTipTitleItem184.Text = "E-Mail As MHT"
-			toolTipItem184.LeftIndent = 6
-			toolTipItem184.Text = "Export the document to MHT and attach it to the e-mail."
-			superToolTip184.Items.Add(toolTipTitleItem184)
-			superToolTip184.Items.Add(toolTipItem184)
-			superToolTip184.MaxWidth = 210
-			Me.printPreviewBarItem34.SuperTip = superToolTip184
-			' 
-			' printPreviewBarItem35
-			' 
-			Me.printPreviewBarItem35.Caption = "XLS File"
-			Me.printPreviewBarItem35.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendXls
-			Me.printPreviewBarItem35.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem35.Enabled = False
-			Me.printPreviewBarItem35.Id = 207
-			Me.printPreviewBarItem35.Name = "printPreviewBarItem35"
-			superToolTip185.FixedTooltipWidth = True
-			toolTipTitleItem185.Text = "E-Mail As XLS"
-			toolTipItem185.LeftIndent = 6
-			toolTipItem185.Text = "Export the document to XLS and attach it to the e-mail."
-			superToolTip185.Items.Add(toolTipTitleItem185)
-			superToolTip185.Items.Add(toolTipItem185)
-			superToolTip185.MaxWidth = 210
-			Me.printPreviewBarItem35.SuperTip = superToolTip185
-			' 
-			' printPreviewBarItem36
-			' 
-			Me.printPreviewBarItem36.Caption = "XLSX File"
-			Me.printPreviewBarItem36.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendXlsx
-			Me.printPreviewBarItem36.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem36.Enabled = False
-			Me.printPreviewBarItem36.Id = 208
-			Me.printPreviewBarItem36.Name = "printPreviewBarItem36"
-			superToolTip186.FixedTooltipWidth = True
-			toolTipTitleItem186.Text = "E-Mail As XLSX"
-			toolTipItem186.LeftIndent = 6
-			toolTipItem186.Text = "Export the document to XLSX and attach it to the e-mail."
-			superToolTip186.Items.Add(toolTipTitleItem186)
-			superToolTip186.Items.Add(toolTipItem186)
-			superToolTip186.MaxWidth = 210
-			Me.printPreviewBarItem36.SuperTip = superToolTip186
-			' 
-			' printPreviewBarItem37
-			' 
-			Me.printPreviewBarItem37.Caption = "RTF File"
-			Me.printPreviewBarItem37.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendRtf
-			Me.printPreviewBarItem37.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem37.Enabled = False
-			Me.printPreviewBarItem37.Id = 209
-			Me.printPreviewBarItem37.Name = "printPreviewBarItem37"
-			superToolTip187.FixedTooltipWidth = True
-			toolTipTitleItem187.Text = "E-Mail As RTF"
-			toolTipItem187.LeftIndent = 6
-			toolTipItem187.Text = "Export the document to RTF and attach it to the e-mail."
-			superToolTip187.Items.Add(toolTipTitleItem187)
-			superToolTip187.Items.Add(toolTipItem187)
-			superToolTip187.MaxWidth = 210
-			Me.printPreviewBarItem37.SuperTip = superToolTip187
-			' 
-			' printPreviewBarItem38
-			' 
-			Me.printPreviewBarItem38.Caption = "DOCX File"
-			Me.printPreviewBarItem38.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendDocx
-			Me.printPreviewBarItem38.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem38.Enabled = False
-			Me.printPreviewBarItem38.Id = 210
-			Me.printPreviewBarItem38.Name = "printPreviewBarItem38"
-			superToolTip188.FixedTooltipWidth = True
-			toolTipTitleItem188.Text = "E-Mail As DOCX"
-			toolTipItem188.LeftIndent = 6
-			toolTipItem188.Text = "Export the document to DOCX and attach it to the e-mail."
-			superToolTip188.Items.Add(toolTipTitleItem188)
-			superToolTip188.Items.Add(toolTipItem188)
-			superToolTip188.MaxWidth = 210
-			Me.printPreviewBarItem38.SuperTip = superToolTip188
-			' 
-			' printPreviewBarItem39
-			' 
-			Me.printPreviewBarItem39.Caption = "Image File"
-			Me.printPreviewBarItem39.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendGraphic
-			Me.printPreviewBarItem39.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem39.Enabled = False
-			Me.printPreviewBarItem39.Id = 211
-			Me.printPreviewBarItem39.Name = "printPreviewBarItem39"
-			superToolTip189.FixedTooltipWidth = True
-			toolTipTitleItem189.Text = "E-Mail As Image"
-			toolTipItem189.LeftIndent = 6
-			toolTipItem189.Text = "Export the document to Image and attach it to the e-mail."
-			superToolTip189.Items.Add(toolTipTitleItem189)
-			superToolTip189.Items.Add(toolTipItem189)
-			superToolTip189.MaxWidth = 210
-			Me.printPreviewBarItem39.SuperTip = superToolTip189
-			' 
-			' printPreviewBarItem40
-			' 
-			Me.printPreviewBarItem40.Caption = "PDF File"
-			Me.printPreviewBarItem40.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportPdf
-			Me.printPreviewBarItem40.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem40.Enabled = False
-			Me.printPreviewBarItem40.Id = 212
-			Me.printPreviewBarItem40.Name = "printPreviewBarItem40"
-			superToolTip190.FixedTooltipWidth = True
-			toolTipTitleItem190.Text = "Export to PDF"
-			toolTipItem190.LeftIndent = 6
-			toolTipItem190.Text = "Export the document to PDF and save it to the file on a disk."
-			superToolTip190.Items.Add(toolTipTitleItem190)
-			superToolTip190.Items.Add(toolTipItem190)
-			superToolTip190.MaxWidth = 210
-			Me.printPreviewBarItem40.SuperTip = superToolTip190
-			' 
-			' printPreviewBarItem41
-			' 
-			Me.printPreviewBarItem41.Caption = "HTML File"
-			Me.printPreviewBarItem41.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportHtm
-			Me.printPreviewBarItem41.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem41.Enabled = False
-			Me.printPreviewBarItem41.Id = 213
-			Me.printPreviewBarItem41.Name = "printPreviewBarItem41"
-			superToolTip191.FixedTooltipWidth = True
-			toolTipTitleItem191.Text = "Export to HTML"
-			toolTipItem191.LeftIndent = 6
-			toolTipItem191.Text = "Export the document to HTML and save it to the file on a disk."
-			superToolTip191.Items.Add(toolTipTitleItem191)
-			superToolTip191.Items.Add(toolTipItem191)
-			superToolTip191.MaxWidth = 210
-			Me.printPreviewBarItem41.SuperTip = superToolTip191
-			' 
-			' printPreviewBarItem42
-			' 
-			Me.printPreviewBarItem42.Caption = "Text File"
-			Me.printPreviewBarItem42.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportTxt
-			Me.printPreviewBarItem42.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem42.Enabled = False
-			Me.printPreviewBarItem42.Id = 214
-			Me.printPreviewBarItem42.Name = "printPreviewBarItem42"
-			superToolTip192.FixedTooltipWidth = True
-			toolTipTitleItem192.Text = "Export to Text"
-			toolTipItem192.LeftIndent = 6
-			toolTipItem192.Text = "Export the document to Text and save it to the file on a disk."
-			superToolTip192.Items.Add(toolTipTitleItem192)
-			superToolTip192.Items.Add(toolTipItem192)
-			superToolTip192.MaxWidth = 210
-			Me.printPreviewBarItem42.SuperTip = superToolTip192
-			' 
-			' printPreviewBarItem43
-			' 
-			Me.printPreviewBarItem43.Caption = "CSV File"
-			Me.printPreviewBarItem43.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportCsv
-			Me.printPreviewBarItem43.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem43.Enabled = False
-			Me.printPreviewBarItem43.Id = 215
-			Me.printPreviewBarItem43.Name = "printPreviewBarItem43"
-			superToolTip193.FixedTooltipWidth = True
-			toolTipTitleItem193.Text = "Export to CSV"
-			toolTipItem193.LeftIndent = 6
-			toolTipItem193.Text = "Export the document to CSV and save it to the file on a disk."
-			superToolTip193.Items.Add(toolTipTitleItem193)
-			superToolTip193.Items.Add(toolTipItem193)
-			superToolTip193.MaxWidth = 210
-			Me.printPreviewBarItem43.SuperTip = superToolTip193
-			' 
-			' printPreviewBarItem44
-			' 
-			Me.printPreviewBarItem44.Caption = "MHT File"
-			Me.printPreviewBarItem44.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportMht
-			Me.printPreviewBarItem44.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem44.Enabled = False
-			Me.printPreviewBarItem44.Id = 216
-			Me.printPreviewBarItem44.Name = "printPreviewBarItem44"
-			superToolTip194.FixedTooltipWidth = True
-			toolTipTitleItem194.Text = "Export to MHT"
-			toolTipItem194.LeftIndent = 6
-			toolTipItem194.Text = "Export the document to MHT and save it to the file on a disk."
-			superToolTip194.Items.Add(toolTipTitleItem194)
-			superToolTip194.Items.Add(toolTipItem194)
-			superToolTip194.MaxWidth = 210
-			Me.printPreviewBarItem44.SuperTip = superToolTip194
-			' 
-			' printPreviewBarItem45
-			' 
-			Me.printPreviewBarItem45.Caption = "XLS File"
-			Me.printPreviewBarItem45.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportXls
-			Me.printPreviewBarItem45.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem45.Enabled = False
-			Me.printPreviewBarItem45.Id = 217
-			Me.printPreviewBarItem45.Name = "printPreviewBarItem45"
-			superToolTip195.FixedTooltipWidth = True
-			toolTipTitleItem195.Text = "Export to XLS"
-			toolTipItem195.LeftIndent = 6
-			toolTipItem195.Text = "Export the document to XLS and save it to the file on a disk."
-			superToolTip195.Items.Add(toolTipTitleItem195)
-			superToolTip195.Items.Add(toolTipItem195)
-			superToolTip195.MaxWidth = 210
-			Me.printPreviewBarItem45.SuperTip = superToolTip195
-			' 
-			' printPreviewBarItem46
-			' 
-			Me.printPreviewBarItem46.Caption = "XLSX File"
-			Me.printPreviewBarItem46.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportXlsx
-			Me.printPreviewBarItem46.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem46.Enabled = False
-			Me.printPreviewBarItem46.Id = 218
-			Me.printPreviewBarItem46.Name = "printPreviewBarItem46"
-			superToolTip196.FixedTooltipWidth = True
-			toolTipTitleItem196.Text = "Export to XLSX"
-			toolTipItem196.LeftIndent = 6
-			toolTipItem196.Text = "Export the document to XLSX and save it to the file on a disk."
-			superToolTip196.Items.Add(toolTipTitleItem196)
-			superToolTip196.Items.Add(toolTipItem196)
-			superToolTip196.MaxWidth = 210
-			Me.printPreviewBarItem46.SuperTip = superToolTip196
-			' 
-			' printPreviewBarItem47
-			' 
-			Me.printPreviewBarItem47.Caption = "RTF File"
-			Me.printPreviewBarItem47.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportRtf
-			Me.printPreviewBarItem47.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem47.Enabled = False
-			Me.printPreviewBarItem47.Id = 219
-			Me.printPreviewBarItem47.Name = "printPreviewBarItem47"
-			superToolTip197.FixedTooltipWidth = True
-			toolTipTitleItem197.Text = "Export to RTF"
-			toolTipItem197.LeftIndent = 6
-			toolTipItem197.Text = "Export the document to RTF and save it to the file on a disk."
-			superToolTip197.Items.Add(toolTipTitleItem197)
-			superToolTip197.Items.Add(toolTipItem197)
-			superToolTip197.MaxWidth = 210
-			Me.printPreviewBarItem47.SuperTip = superToolTip197
-			' 
-			' printPreviewBarItem48
-			' 
-			Me.printPreviewBarItem48.Caption = "DOCX File"
-			Me.printPreviewBarItem48.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportDocx
-			Me.printPreviewBarItem48.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem48.Enabled = False
-			Me.printPreviewBarItem48.Id = 220
-			Me.printPreviewBarItem48.Name = "printPreviewBarItem48"
-			superToolTip198.FixedTooltipWidth = True
-			toolTipTitleItem198.Text = "Export to DOCX"
-			toolTipItem198.LeftIndent = 6
-			toolTipItem198.Text = "Export the document to DOCX and save it to the file on a disk."
-			superToolTip198.Items.Add(toolTipTitleItem198)
-			superToolTip198.Items.Add(toolTipItem198)
-			superToolTip198.MaxWidth = 210
-			Me.printPreviewBarItem48.SuperTip = superToolTip198
-			' 
-			' printPreviewBarItem49
-			' 
-			Me.printPreviewBarItem49.Caption = "Image File"
-			Me.printPreviewBarItem49.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportGraphic
-			Me.printPreviewBarItem49.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem49.Enabled = False
-			Me.printPreviewBarItem49.Id = 221
-			Me.printPreviewBarItem49.Name = "printPreviewBarItem49"
-			superToolTip199.FixedTooltipWidth = True
-			toolTipTitleItem199.Text = "Export to Image"
-			toolTipItem199.LeftIndent = 6
-			toolTipItem199.Text = "Export the document to Image and save it to the file on a disk."
-			superToolTip199.Items.Add(toolTipTitleItem199)
-			superToolTip199.Items.Add(toolTipItem199)
-			superToolTip199.MaxWidth = 210
-			Me.printPreviewBarItem49.SuperTip = superToolTip199
-			' 
-			' printPreviewBarItem50
-			' 
-			Me.printPreviewBarItem50.Caption = "Open"
-			Me.printPreviewBarItem50.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Open
-			Me.printPreviewBarItem50.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem50.Enabled = False
-			Me.printPreviewBarItem50.Id = 222
-			Me.printPreviewBarItem50.Name = "printPreviewBarItem50"
-			superToolTip200.FixedTooltipWidth = True
-			toolTipTitleItem200.Text = "Open (Ctrl + O)"
-			toolTipItem200.LeftIndent = 6
-			toolTipItem200.Text = "Open a document."
-			superToolTip200.Items.Add(toolTipTitleItem200)
-			superToolTip200.Items.Add(toolTipItem200)
-			superToolTip200.MaxWidth = 210
-			Me.printPreviewBarItem50.SuperTip = superToolTip200
-			' 
-			' printPreviewBarItem51
-			' 
-			Me.printPreviewBarItem51.Caption = "Save"
-			Me.printPreviewBarItem51.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Save
-			Me.printPreviewBarItem51.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem51.Enabled = False
-			Me.printPreviewBarItem51.Id = 223
-			Me.printPreviewBarItem51.Name = "printPreviewBarItem51"
-			superToolTip201.FixedTooltipWidth = True
-			toolTipTitleItem201.Text = "Save (Ctrl + S)"
-			toolTipItem201.LeftIndent = 6
-			toolTipItem201.Text = "Save the document."
-			superToolTip201.Items.Add(toolTipTitleItem201)
-			superToolTip201.Items.Add(toolTipItem201)
-			superToolTip201.MaxWidth = 210
-			Me.printPreviewBarItem51.SuperTip = superToolTip201
-			' 
-			' printPreviewStaticItem1
-			' 
-			Me.printPreviewStaticItem1.Caption = "Nothing"
-			Me.printPreviewStaticItem1.Id = 224
-			Me.printPreviewStaticItem1.LeftIndent = 1
-			Me.printPreviewStaticItem1.Name = "printPreviewStaticItem1"
-			Me.printPreviewStaticItem1.RightIndent = 1
-			Me.printPreviewStaticItem1.Type = "PageOfPages"
-			' 
-			' progressBarEditItem1
-			' 
-			Me.progressBarEditItem1.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.progressBarEditItem1.Edit = Me.repositoryItemProgressBar1
-			Me.progressBarEditItem1.EditHeight = 12
-			Me.progressBarEditItem1.EditWidth = 150
-			Me.progressBarEditItem1.Id = 225
-			Me.progressBarEditItem1.Name = "progressBarEditItem1"
-			Me.progressBarEditItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
-			' 
-			' repositoryItemProgressBar1
-			' 
-			Me.repositoryItemProgressBar1.Name = "repositoryItemProgressBar1"
-			' 
-			' printPreviewBarItem52
-			' 
-			Me.printPreviewBarItem52.Caption = "Stop"
-			Me.printPreviewBarItem52.Command = DevExpress.XtraPrinting.PrintingSystemCommand.StopPageBuilding
-			Me.printPreviewBarItem52.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewBarItem52.Enabled = False
-			Me.printPreviewBarItem52.Hint = "Stop"
-			Me.printPreviewBarItem52.Id = 226
-			Me.printPreviewBarItem52.Name = "printPreviewBarItem52"
-			Me.printPreviewBarItem52.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
-			' 
-			' printPreviewStaticItem2
-			' 
-			Me.printPreviewStaticItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
-			Me.printPreviewStaticItem2.AutoSize = DevExpress.XtraBars.BarStaticItemSize.None
-			Me.printPreviewStaticItem2.Caption = "100%"
-			Me.printPreviewStaticItem2.Id = 227
-			Me.printPreviewStaticItem2.Name = "printPreviewStaticItem2"
-			Me.printPreviewStaticItem2.Type = "ZoomFactorText"
-			' 
-			' zoomTrackBarEditItem1
-			' 
-			Me.zoomTrackBarEditItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
-			Me.zoomTrackBarEditItem1.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.zoomTrackBarEditItem1.Edit = Me.repositoryItemZoomTrackBar1
-			Me.zoomTrackBarEditItem1.EditWidth = 140
-			Me.zoomTrackBarEditItem1.Enabled = False
-			Me.zoomTrackBarEditItem1.Id = 228
-			Me.zoomTrackBarEditItem1.Name = "zoomTrackBarEditItem1"
-			Me.zoomTrackBarEditItem1.Range = New Integer() { 10, 500}
-			' 
-			' repositoryItemZoomTrackBar1
-			' 
-			Me.repositoryItemZoomTrackBar1.Alignment = DevExpress.Utils.VertAlignment.Center
-			Me.repositoryItemZoomTrackBar1.AllowFocused = False
-			Me.repositoryItemZoomTrackBar1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
-			Me.repositoryItemZoomTrackBar1.Maximum = 180
-			Me.repositoryItemZoomTrackBar1.Name = "repositoryItemZoomTrackBar1"
-			' 
-			' ribbonPageCategory1
-			' 
-			Me.ribbonPageCategory1.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(147)))), (CInt((CByte(94)))), (CInt((CByte(211)))))
-			Me.ribbonPageCategory1.Appearance.Options.UseBackColor = True
-			Me.ribbonPageCategory1.AutoStretchPageHeaders = True
-			Me.ribbonPageCategory1.Name = "ribbonPageCategory1"
-			Me.ribbonPageCategory1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage6})
-			Me.ribbonPageCategory1.Text = "Character Comb Tools"
-			Me.ribbonPageCategory1.Visible = False
-			' 
-			' ribbonPage6
-			' 
-			Me.ribbonPage6.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup20})
-			Me.ribbonPage6.Name = "ribbonPage6"
-			Me.ribbonPage6.Text = "Design"
-			Me.ribbonPage6.Visible = False
-			' 
-			' xrDesignRibbonPageGroup20
-			' 
-			Me.xrDesignRibbonPageGroup20.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup20.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup20.ItemLinks.Add(Me.commandBarCheckItem8)
-			Me.xrDesignRibbonPageGroup20.ItemLinks.Add(Me.commandBarCheckItem9)
-			Me.xrDesignRibbonPageGroup20.ItemLinks.Add(Me.commandBarEditItem2, True)
-			Me.xrDesignRibbonPageGroup20.ItemLinks.Add(Me.commandBarEditItem3)
-			Me.xrDesignRibbonPageGroup20.ItemLinks.Add(Me.commandBarEditItem4, True)
-			Me.xrDesignRibbonPageGroup20.ItemLinks.Add(Me.commandBarEditItem5)
-			Me.xrDesignRibbonPageGroup20.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.CellSize
-			Me.xrDesignRibbonPageGroup20.Name = "xrDesignRibbonPageGroup20"
-			Me.xrDesignRibbonPageGroup20.Text = "Cell Size"
-			' 
-			' ribbonPageCategory2
-			' 
-			Me.ribbonPageCategory2.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(242)))), (CInt((CByte(203)))), (CInt((CByte(29)))))
-			Me.ribbonPageCategory2.Appearance.Options.UseBackColor = True
-			Me.ribbonPageCategory2.AutoStretchPageHeaders = True
-			Me.ribbonPageCategory2.Name = "ribbonPageCategory2"
-			Me.ribbonPageCategory2.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage7})
-			Me.ribbonPageCategory2.Text = "Table Tools"
-			Me.ribbonPageCategory2.Visible = False
-			' 
-			' ribbonPage7
-			' 
-			Me.ribbonPage7.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup21, Me.xrDesignRibbonPageGroup22, Me.xrDesignRibbonPageGroup23, Me.xrDesignRibbonPageGroup24, Me.xrDesignRibbonPageGroup25})
-			Me.ribbonPage7.Name = "ribbonPage7"
-			Me.ribbonPage7.Text = "Design"
-			Me.ribbonPage7.Visible = False
-			' 
-			' xrDesignRibbonPageGroup21
-			' 
-			Me.xrDesignRibbonPageGroup21.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup21.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup21.ItemLinks.Add(Me.commandBarItem78)
-			Me.xrDesignRibbonPageGroup21.ItemLinks.Add(Me.commandBarItem79)
-			Me.xrDesignRibbonPageGroup21.ItemLinks.Add(Me.commandBarItem77)
-			Me.xrDesignRibbonPageGroup21.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Select
-			Me.xrDesignRibbonPageGroup21.Name = "xrDesignRibbonPageGroup21"
-			Me.xrDesignRibbonPageGroup21.Text = "Select"
-			' 
-			' xrDesignRibbonPageGroup22
-			' 
-			Me.xrDesignRibbonPageGroup22.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup22.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup22.ItemLinks.Add(Me.commandBarItem84)
-			Me.xrDesignRibbonPageGroup22.ItemLinks.Add(Me.commandBarItem85)
-			Me.xrDesignRibbonPageGroup22.ItemLinks.Add(Me.commandBarItem86)
-			Me.xrDesignRibbonPageGroup22.ItemLinks.Add(Me.commandBarItem87)
-			Me.xrDesignRibbonPageGroup22.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Insert
-			Me.xrDesignRibbonPageGroup22.Name = "xrDesignRibbonPageGroup22"
-			Me.xrDesignRibbonPageGroup22.Text = "Insert"
-			' 
-			' xrDesignRibbonPageGroup23
-			' 
-			Me.xrDesignRibbonPageGroup23.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup23.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup23.ItemLinks.Add(Me.commandBarItem80)
-			Me.xrDesignRibbonPageGroup23.ItemLinks.Add(Me.commandBarItem81)
-			Me.xrDesignRibbonPageGroup23.ItemLinks.Add(Me.commandBarItem82)
-			Me.xrDesignRibbonPageGroup23.ItemLinks.Add(Me.commandBarItem83)
-			Me.xrDesignRibbonPageGroup23.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Delete
-			Me.xrDesignRibbonPageGroup23.Name = "xrDesignRibbonPageGroup23"
-			Me.xrDesignRibbonPageGroup23.Text = "Delete"
-			' 
-			' xrDesignRibbonPageGroup24
-			' 
-			Me.xrDesignRibbonPageGroup24.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup24.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup24.ItemLinks.Add(Me.commandBarItem90)
-			Me.xrDesignRibbonPageGroup24.ItemLinks.Add(Me.commandBarItem91)
-			Me.xrDesignRibbonPageGroup24.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Merge
-			Me.xrDesignRibbonPageGroup24.Name = "xrDesignRibbonPageGroup24"
-			Me.xrDesignRibbonPageGroup24.Text = "Merge"
-			' 
-			' xrDesignRibbonPageGroup25
-			' 
-			Me.xrDesignRibbonPageGroup25.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup25.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup25.ItemLinks.Add(Me.commandBarItem88)
-			Me.xrDesignRibbonPageGroup25.ItemLinks.Add(Me.commandBarItem89)
-			Me.xrDesignRibbonPageGroup25.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Distribute
-			Me.xrDesignRibbonPageGroup25.Name = "xrDesignRibbonPageGroup25"
-			Me.xrDesignRibbonPageGroup25.Text = "Distribute"
-			' 
-			' ribbonPageCategory3
-			' 
-			Me.ribbonPageCategory3.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(73)))), (CInt((CByte(163)))), (CInt((CByte(73)))))
-			Me.ribbonPageCategory3.Appearance.Options.UseBackColor = True
-			Me.ribbonPageCategory3.AutoStretchPageHeaders = True
-			Me.ribbonPageCategory3.Name = "ribbonPageCategory3"
-			Me.ribbonPageCategory3.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage8})
-			Me.ribbonPageCategory3.Text = "Chart Tools"
-			Me.ribbonPageCategory3.Visible = False
-			' 
-			' ribbonPage8
-			' 
-			Me.ribbonPage8.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup26, Me.xrDesignRibbonPageGroup27, Me.xrDesignRibbonPageGroup28, Me.xrDesignRibbonPageGroup29, Me.xrDesignRibbonPageGroup30})
-			Me.ribbonPage8.Name = "ribbonPage8"
-			Me.ribbonPage8.Text = "Design"
-			Me.ribbonPage8.Visible = False
-			' 
-			' xrDesignRibbonPageGroup26
-			' 
-			Me.xrDesignRibbonPageGroup26.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup26.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup26.ItemLinks.Add(Me.commandBarItem105)
-			Me.xrDesignRibbonPageGroup26.ItemLinks.Add(Me.commandBarItem104)
-			Me.xrDesignRibbonPageGroup26.ItemLinks.Add(Me.commandBarItem103)
-			Me.xrDesignRibbonPageGroup26.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Layout
-			Me.xrDesignRibbonPageGroup26.Name = "xrDesignRibbonPageGroup26"
-			Me.xrDesignRibbonPageGroup26.Text = "Layout"
-			' 
-			' xrDesignRibbonPageGroup27
-			' 
-			Me.xrDesignRibbonPageGroup27.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup27.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup27.ItemLinks.Add(Me.commandBarItem106)
-			Me.xrDesignRibbonPageGroup27.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
-			Me.xrDesignRibbonPageGroup27.Name = "xrDesignRibbonPageGroup27"
-			Me.xrDesignRibbonPageGroup27.Text = "Data"
-			' 
-			' xrDesignRibbonPageGroup28
-			' 
-			Me.xrDesignRibbonPageGroup28.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup28.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.True
-			Me.xrDesignRibbonPageGroup28.ItemLinks.Add(Me.commandBarItem108)
-			Me.xrDesignRibbonPageGroup28.ItemLinks.Add(Me.commandBarItem109)
-			Me.xrDesignRibbonPageGroup28.ItemLinks.Add(Me.commandBarItem110)
-			Me.xrDesignRibbonPageGroup28.ItemLinks.Add(Me.commandBarItem111)
-			Me.xrDesignRibbonPageGroup28.ItemLinks.Add(Me.commandBarItem112)
-			Me.xrDesignRibbonPageGroup28.ItemLinks.Add(Me.commandBarItem113)
-			Me.xrDesignRibbonPageGroup28.ItemLinks.Add(Me.commandBarItem114)
-			Me.xrDesignRibbonPageGroup28.ItemLinks.Add(Me.commandBarItem115)
-			Me.xrDesignRibbonPageGroup28.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Series
-			Me.xrDesignRibbonPageGroup28.Name = "xrDesignRibbonPageGroup28"
-			Me.xrDesignRibbonPageGroup28.Text = "Series"
-			' 
-			' xrDesignRibbonPageGroup29
-			' 
-			Me.xrDesignRibbonPageGroup29.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup29.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.True
-			Me.xrDesignRibbonPageGroup29.ItemLinks.Add(Me.commandBarItem116)
-			Me.xrDesignRibbonPageGroup29.ItemLinks.Add(Me.commandBarItem117)
-			Me.xrDesignRibbonPageGroup29.ItemLinks.Add(Me.commandBarItem118)
-			Me.xrDesignRibbonPageGroup29.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Annotations
-			Me.xrDesignRibbonPageGroup29.Name = "xrDesignRibbonPageGroup29"
-			Me.xrDesignRibbonPageGroup29.Text = "Annotations"
-			' 
-			' xrDesignRibbonPageGroup30
-			' 
-			Me.xrDesignRibbonPageGroup30.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup30.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.True
-			Me.xrDesignRibbonPageGroup30.ItemLinks.Add(Me.commandBarItem107)
-			Me.xrDesignRibbonPageGroup30.ItemLinks.Add(Me.commandGalleryBarItem3)
-			Me.xrDesignRibbonPageGroup30.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Appearance
-			Me.xrDesignRibbonPageGroup30.Name = "xrDesignRibbonPageGroup30"
-			Me.xrDesignRibbonPageGroup30.Text = "Appearance"
-			' 
-			' ribbonPageCategory4
-			' 
-			Me.ribbonPageCategory4.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(201)))), (CInt((CByte(89)))), (CInt((CByte(156)))))
-			Me.ribbonPageCategory4.Appearance.Options.UseBackColor = True
-			Me.ribbonPageCategory4.AutoStretchPageHeaders = True
-			Me.ribbonPageCategory4.Name = "ribbonPageCategory4"
-			Me.ribbonPageCategory4.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage9})
-			Me.ribbonPageCategory4.Text = "Pivot Grid Tools"
-			Me.ribbonPageCategory4.Visible = False
-			' 
-			' ribbonPage9
-			' 
-			Me.ribbonPage9.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup31, Me.xrDesignRibbonPageGroup32, Me.xrDesignRibbonPageGroup33, Me.xrDesignRibbonPageGroup34})
-			Me.ribbonPage9.Name = "ribbonPage9"
-			Me.ribbonPage9.Text = "Design"
-			Me.ribbonPage9.Visible = False
-			' 
-			' xrDesignRibbonPageGroup31
-			' 
-			Me.xrDesignRibbonPageGroup31.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup31.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup31.ItemLinks.Add(Me.commandBarItem92)
-			Me.xrDesignRibbonPageGroup31.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Layout
-			Me.xrDesignRibbonPageGroup31.Name = "xrDesignRibbonPageGroup31"
-			Me.xrDesignRibbonPageGroup31.Text = "Layout"
-			' 
-			' xrDesignRibbonPageGroup32
-			' 
-			Me.xrDesignRibbonPageGroup32.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup32.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup32.ItemLinks.Add(Me.commandBarItem93)
-			Me.xrDesignRibbonPageGroup32.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
-			Me.xrDesignRibbonPageGroup32.Name = "xrDesignRibbonPageGroup32"
-			Me.xrDesignRibbonPageGroup32.Text = "Data"
-			' 
-			' xrDesignRibbonPageGroup33
-			' 
-			Me.xrDesignRibbonPageGroup33.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup33.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup33.ItemLinks.Add(Me.commandBarItem95)
-			Me.xrDesignRibbonPageGroup33.ItemLinks.Add(Me.commandBarItem94)
-			Me.xrDesignRibbonPageGroup33.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PivotFields
-			Me.xrDesignRibbonPageGroup33.Name = "xrDesignRibbonPageGroup33"
-			Me.xrDesignRibbonPageGroup33.Text = "Fields"
-			' 
-			' xrDesignRibbonPageGroup34
-			' 
-			Me.xrDesignRibbonPageGroup34.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup34.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup34.ItemLinks.Add(Me.commandBarItem96)
-			Me.xrDesignRibbonPageGroup34.ItemLinks.Add(Me.commandBarItem97)
-			Me.xrDesignRibbonPageGroup34.ItemLinks.Add(Me.commandBarItem100, True)
-			Me.xrDesignRibbonPageGroup34.ItemLinks.Add(Me.commandBarItem99)
-			Me.xrDesignRibbonPageGroup34.ItemLinks.Add(Me.commandBarItem98)
-			Me.xrDesignRibbonPageGroup34.ItemLinks.Add(Me.commandBarItem101, True)
-			Me.xrDesignRibbonPageGroup34.ItemLinks.Add(Me.commandBarItem102)
-			Me.xrDesignRibbonPageGroup34.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PivotPrintOptions
-			Me.xrDesignRibbonPageGroup34.Name = "xrDesignRibbonPageGroup34"
-			Me.xrDesignRibbonPageGroup34.Text = "Print Options"
-			' 
-			' ribbonPageCategory5
-			' 
-			Me.ribbonPageCategory5.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(147)))), (CInt((CByte(94)))), (CInt((CByte(211)))))
-			Me.ribbonPageCategory5.Appearance.Options.UseBackColor = True
-			Me.ribbonPageCategory5.AutoStretchPageHeaders = True
-			Me.ribbonPageCategory5.Name = "ribbonPageCategory5"
-			Me.ribbonPageCategory5.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage10})
-			Me.ribbonPageCategory5.Text = "Bar Code Tools"
-			Me.ribbonPageCategory5.Visible = False
-			' 
-			' ribbonPage10
-			' 
-			Me.ribbonPage10.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup35, Me.xrDesignRibbonPageGroup36})
-			Me.ribbonPage10.Name = "ribbonPage10"
-			Me.ribbonPage10.Text = "Design"
-			Me.ribbonPage10.Visible = False
-			' 
-			' xrDesignRibbonPageGroup35
-			' 
-			Me.xrDesignRibbonPageGroup35.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup35.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup35.ItemLinks.Add(Me.commandBarItem119)
-			Me.xrDesignRibbonPageGroup35.ItemLinks.Add(Me.commandBarItem120)
-			Me.xrDesignRibbonPageGroup35.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
-			Me.xrDesignRibbonPageGroup35.Name = "xrDesignRibbonPageGroup35"
-			Me.xrDesignRibbonPageGroup35.Text = "View"
-			' 
-			' xrDesignRibbonPageGroup36
-			' 
-			Me.xrDesignRibbonPageGroup36.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup36.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup36.ItemLinks.Add(Me.commandGalleryBarItem2)
-			Me.xrDesignRibbonPageGroup36.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Symbology
-			Me.xrDesignRibbonPageGroup36.Name = "xrDesignRibbonPageGroup36"
-			Me.xrDesignRibbonPageGroup36.Text = "Symbology"
-			' 
-			' ribbonPageCategory6
-			' 
-			Me.ribbonPageCategory6.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(255)))), (CInt((CByte(157)))), (CInt((CByte(0)))))
-			Me.ribbonPageCategory6.Appearance.Options.UseBackColor = True
-			Me.ribbonPageCategory6.AutoStretchPageHeaders = True
-			Me.ribbonPageCategory6.Name = "ribbonPageCategory6"
-			Me.ribbonPageCategory6.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage11})
-			Me.ribbonPageCategory6.Text = "Gauge Tools"
-			Me.ribbonPageCategory6.Visible = False
-			' 
-			' ribbonPage11
-			' 
-			Me.ribbonPage11.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup37, Me.xrDesignRibbonPageGroup38})
-			Me.ribbonPage11.Name = "ribbonPage11"
-			Me.ribbonPage11.Text = "Design"
-			Me.ribbonPage11.Visible = False
-			' 
-			' xrDesignRibbonPageGroup37
-			' 
-			Me.xrDesignRibbonPageGroup37.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup37.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup37.ItemLinks.Add(Me.commandGalleryBarItem5)
-			Me.xrDesignRibbonPageGroup37.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
-			Me.xrDesignRibbonPageGroup37.Name = "xrDesignRibbonPageGroup37"
-			Me.xrDesignRibbonPageGroup37.Text = "View"
-			' 
-			' xrDesignRibbonPageGroup38
-			' 
-			Me.xrDesignRibbonPageGroup38.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup38.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup38.ItemLinks.Add(Me.commandBarItem124)
-			Me.xrDesignRibbonPageGroup38.ItemLinks.Add(Me.commandBarItem125)
-			Me.xrDesignRibbonPageGroup38.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Theme
-			Me.xrDesignRibbonPageGroup38.Name = "xrDesignRibbonPageGroup38"
-			Me.xrDesignRibbonPageGroup38.Text = "Theme"
-			' 
-			' ribbonPageCategory7
-			' 
-			Me.ribbonPageCategory7.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(73)))), (CInt((CByte(163)))), (CInt((CByte(73)))))
-			Me.ribbonPageCategory7.Appearance.Options.UseBackColor = True
-			Me.ribbonPageCategory7.AutoStretchPageHeaders = True
-			Me.ribbonPageCategory7.Name = "ribbonPageCategory7"
-			Me.ribbonPageCategory7.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage12})
-			Me.ribbonPageCategory7.Text = "Sparkline Tools"
-			Me.ribbonPageCategory7.Visible = False
-			' 
-			' ribbonPage12
-			' 
-			Me.ribbonPage12.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup39, Me.xrDesignRibbonPageGroup40})
-			Me.ribbonPage12.Name = "ribbonPage12"
-			Me.ribbonPage12.Text = "Design"
-			Me.ribbonPage12.Visible = False
-			' 
-			' xrDesignRibbonPageGroup39
-			' 
-			Me.xrDesignRibbonPageGroup39.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup39.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup39.ItemLinks.Add(Me.commandBarItem123)
-			Me.xrDesignRibbonPageGroup39.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
-			Me.xrDesignRibbonPageGroup39.Name = "xrDesignRibbonPageGroup39"
-			Me.xrDesignRibbonPageGroup39.Text = "Data"
-			' 
-			' xrDesignRibbonPageGroup40
-			' 
-			Me.xrDesignRibbonPageGroup40.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup40.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup40.ItemLinks.Add(Me.commandGalleryBarItem4)
-			Me.xrDesignRibbonPageGroup40.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
-			Me.xrDesignRibbonPageGroup40.Name = "xrDesignRibbonPageGroup40"
-			Me.xrDesignRibbonPageGroup40.Text = "View"
-			' 
-			' ribbonPageCategory8
-			' 
-			Me.ribbonPageCategory8.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(255)))), (CInt((CByte(157)))), (CInt((CByte(0)))))
-			Me.ribbonPageCategory8.Appearance.Options.UseBackColor = True
-			Me.ribbonPageCategory8.AutoStretchPageHeaders = True
-			Me.ribbonPageCategory8.Name = "ribbonPageCategory8"
-			Me.ribbonPageCategory8.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage13})
-			Me.ribbonPageCategory8.Text = "Shape Tools"
-			Me.ribbonPageCategory8.Visible = False
-			' 
-			' ribbonPage13
-			' 
-			Me.ribbonPage13.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup41})
-			Me.ribbonPage13.Name = "ribbonPage13"
-			Me.ribbonPage13.Text = "Design"
-			Me.ribbonPage13.Visible = False
-			' 
-			' xrDesignRibbonPageGroup41
-			' 
-			Me.xrDesignRibbonPageGroup41.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup41.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup41.ItemLinks.Add(Me.commandBarItem126)
-			Me.xrDesignRibbonPageGroup41.ItemLinks.Add(Me.commandGalleryBarItem6)
-			Me.xrDesignRibbonPageGroup41.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
-			Me.xrDesignRibbonPageGroup41.Name = "xrDesignRibbonPageGroup41"
-			Me.xrDesignRibbonPageGroup41.Text = "View"
-			' 
-			' ribbonPageCategory9
-			' 
-			Me.ribbonPageCategory9.Appearance.BackColor = System.Drawing.Color.FromArgb((CInt((CByte(158)))), (CInt((CByte(197)))), (CInt((CByte(126)))))
-			Me.ribbonPageCategory9.Appearance.Options.UseBackColor = True
-			Me.ribbonPageCategory9.AutoStretchPageHeaders = True
-			Me.ribbonPageCategory9.Name = "ribbonPageCategory9"
-			Me.ribbonPageCategory9.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage14})
-			Me.ribbonPageCategory9.Text = "Text Tools"
-			Me.ribbonPageCategory9.Visible = False
-			' 
-			' ribbonPage14
-			' 
-			Me.ribbonPage14.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup42, Me.xrDesignRibbonPageGroup43})
-			Me.ribbonPage14.Name = "ribbonPage14"
-			Me.ribbonPage14.Text = "Text"
-			Me.ribbonPage14.Visible = False
-			' 
-			' xrDesignRibbonPageGroup42
-			' 
-			Me.xrDesignRibbonPageGroup42.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup42.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup42.ItemLinks.Add(Me.commandBarItem121)
-			Me.xrDesignRibbonPageGroup42.ItemLinks.Add(Me.commandBarItem122)
-			Me.xrDesignRibbonPageGroup42.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Design
-			Me.xrDesignRibbonPageGroup42.Name = "xrDesignRibbonPageGroup42"
-			Me.xrDesignRibbonPageGroup42.Text = "Design"
-			' 
-			' xrDesignRibbonPageGroup43
-			' 
-			Me.xrDesignRibbonPageGroup43.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup43.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup43.ItemLinks.Add(Me.commandBarCheckItem4)
-			Me.xrDesignRibbonPageGroup43.ItemLinks.Add(Me.commandBarCheckItem5)
-			Me.xrDesignRibbonPageGroup43.ItemLinks.Add(Me.commandBarCheckItem6, True)
-			Me.xrDesignRibbonPageGroup43.ItemLinks.Add(Me.commandBarCheckItem7)
-			Me.xrDesignRibbonPageGroup43.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Behavior
-			Me.xrDesignRibbonPageGroup43.Name = "xrDesignRibbonPageGroup43"
-			Me.xrDesignRibbonPageGroup43.Text = "Behavior"
-			' 
-			' ribbonPage1
-			' 
-			Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup1, Me.xrDesignRibbonPageGroup2, Me.xrDesignRibbonPageGroup3, Me.xrDesignRibbonPageGroup4, Me.xrDesignRibbonPageGroup5, Me.xrDesignRibbonPageGroup6, Me.xrDesignRibbonPageGroup7})
-			Me.ribbonPage1.Name = "ribbonPage1"
-			Me.ribbonPage1.Text = "Home"
-			' 
-			' xrDesignRibbonPageGroup1
-			' 
-			Me.xrDesignRibbonPageGroup1.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup1.ItemLinks.Add(Me.commandBarItem6)
-			Me.xrDesignRibbonPageGroup1.ItemLinks.Add(Me.commandBarItem9)
-			Me.xrDesignRibbonPageGroup1.ItemLinks.Add(Me.commandBarItem7)
-			Me.xrDesignRibbonPageGroup1.ItemLinks.Add(Me.commandBarItem8)
-			Me.xrDesignRibbonPageGroup1.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Report
-			Me.xrDesignRibbonPageGroup1.Name = "xrDesignRibbonPageGroup1"
-			Me.xrDesignRibbonPageGroup1.Text = "Report"
-			' 
-			' xrDesignRibbonPageGroup2
-			' 
-			Me.xrDesignRibbonPageGroup2.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup2.ItemLinks.Add(Me.commandBarItem30)
-			Me.xrDesignRibbonPageGroup2.ItemLinks.Add(Me.commandBarItem28)
-			Me.xrDesignRibbonPageGroup2.ItemLinks.Add(Me.commandBarItem29)
-			Me.xrDesignRibbonPageGroup2.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
-			Me.xrDesignRibbonPageGroup2.Name = "xrDesignRibbonPageGroup2"
-			Me.xrDesignRibbonPageGroup2.Text = "Data"
-			' 
-			' xrDesignRibbonPageGroup3
-			' 
-			Me.xrDesignRibbonPageGroup3.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup3.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup3.ItemLinks.Add(Me.commandBarItem14)
-			Me.xrDesignRibbonPageGroup3.ItemLinks.Add(Me.commandBarItem15)
-			Me.xrDesignRibbonPageGroup3.ItemLinks.Add(Me.commandBarItem16)
-			Me.xrDesignRibbonPageGroup3.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Clipboard
-			Me.xrDesignRibbonPageGroup3.Name = "xrDesignRibbonPageGroup3"
-			Me.xrDesignRibbonPageGroup3.Text = "Clipboard"
-			' 
-			' xrDesignRibbonPageGroup4
-			' 
-			Me.xrDesignRibbonPageGroup4.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup4.ItemLinks.Add(Me.xrDesignBarButtonGroup1)
-			Me.xrDesignRibbonPageGroup4.ItemLinks.Add(Me.xrDesignBarButtonGroup2)
-			Me.xrDesignRibbonPageGroup4.ItemLinks.Add(Me.xrDesignBarButtonGroup3)
-			Me.xrDesignRibbonPageGroup4.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Font
-			Me.xrDesignRibbonPageGroup4.Name = "xrDesignRibbonPageGroup4"
-			Me.xrDesignRibbonPageGroup4.Text = "Font"
-			' 
-			' xrDesignRibbonPageGroup5
-			' 
-			Me.xrDesignRibbonPageGroup5.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup5.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup5.ItemLinks.Add(Me.xrDesignBarButtonGroup4)
-			Me.xrDesignRibbonPageGroup5.ItemLinks.Add(Me.xrDesignBarButtonGroup5)
-			Me.xrDesignRibbonPageGroup5.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.TextAlignment
-			Me.xrDesignRibbonPageGroup5.Name = "xrDesignRibbonPageGroup5"
-			Me.xrDesignRibbonPageGroup5.Text = "Alignment"
-			' 
-			' xrDesignRibbonPageGroup6
-			' 
-			Me.xrDesignRibbonPageGroup6.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup6.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup6.ItemLinks.Add(Me.xrDesignBarButtonGroup6)
-			Me.xrDesignRibbonPageGroup6.ItemLinks.Add(Me.xrDesignBarButtonGroup7)
-			Me.xrDesignRibbonPageGroup6.ItemLinks.Add(Me.xrDesignBarButtonGroup8)
-			Me.xrDesignRibbonPageGroup6.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Borders
-			Me.xrDesignRibbonPageGroup6.Name = "xrDesignRibbonPageGroup6"
-			Me.xrDesignRibbonPageGroup6.Text = "Borders"
-			' 
-			' xrDesignRibbonPageGroup7
-			' 
-			Me.xrDesignRibbonPageGroup7.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup7.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.True
-			Me.xrDesignRibbonPageGroup7.ItemLinks.Add(Me.commandBarItem31)
-			Me.xrDesignRibbonPageGroup7.ItemLinks.Add(Me.commandGalleryBarItem1)
-			Me.xrDesignRibbonPageGroup7.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Styles
-			Me.xrDesignRibbonPageGroup7.Name = "xrDesignRibbonPageGroup7"
-			Me.xrDesignRibbonPageGroup7.Text = "Styles"
-			' 
-			' ribbonPage2
-			' 
-			Me.ribbonPage2.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup8, Me.xrDesignRibbonPageGroup9, Me.xrDesignRibbonPageGroup10, Me.xrDesignRibbonPageGroup11})
-			Me.ribbonPage2.Name = "ribbonPage2"
-			Me.ribbonPage2.Text = "Layout"
-			' 
-			' xrDesignRibbonPageGroup8
-			' 
-			Me.xrDesignRibbonPageGroup8.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup8.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup8.ItemLinks.Add(Me.xrDesignBarButtonGroup9)
-			Me.xrDesignRibbonPageGroup8.ItemLinks.Add(Me.xrDesignBarButtonGroup10)
-			Me.xrDesignRibbonPageGroup8.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Alignment
-			Me.xrDesignRibbonPageGroup8.Name = "xrDesignRibbonPageGroup8"
-			Me.xrDesignRibbonPageGroup8.Text = "Alignment"
-			' 
-			' xrDesignRibbonPageGroup9
-			' 
-			Me.xrDesignRibbonPageGroup9.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup9.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup9.ItemLinks.Add(Me.commandBarItem39)
-			Me.xrDesignRibbonPageGroup9.ItemLinks.Add(Me.commandBarItem47)
-			Me.xrDesignRibbonPageGroup9.ItemLinks.Add(Me.commandBarItem62)
-			Me.xrDesignRibbonPageGroup9.ItemLinks.Add(Me.xrDesignBarButtonGroup11)
-			Me.xrDesignRibbonPageGroup9.ItemLinks.Add(Me.xrDesignBarButtonGroup12)
-			Me.xrDesignRibbonPageGroup9.ItemLinks.Add(Me.xrDesignBarButtonGroup13)
-			Me.xrDesignRibbonPageGroup9.ItemLinks.Add(Me.xrDesignBarButtonGroup14)
-			Me.xrDesignRibbonPageGroup9.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.SizeAndLayout
-			Me.xrDesignRibbonPageGroup9.Name = "xrDesignRibbonPageGroup9"
-			Me.xrDesignRibbonPageGroup9.Text = "Layout"
-			' 
-			' xrDesignRibbonPageGroup10
-			' 
-			Me.xrDesignRibbonPageGroup10.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup10.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup10.ItemLinks.Add(Me.commandBarItem60)
-			Me.xrDesignRibbonPageGroup10.ItemLinks.Add(Me.commandBarItem61)
-			Me.xrDesignRibbonPageGroup10.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Arranging
-			Me.xrDesignRibbonPageGroup10.Name = "xrDesignRibbonPageGroup10"
-			Me.xrDesignRibbonPageGroup10.Text = "Arranging"
-			' 
-			' xrDesignRibbonPageGroup11
-			' 
-			Me.xrDesignRibbonPageGroup11.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup11.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup11.ItemLinks.Add(Me.commandBarCheckItem1)
-			Me.xrDesignRibbonPageGroup11.ItemLinks.Add(Me.commandBarCheckItem2)
-			Me.xrDesignRibbonPageGroup11.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Snapping
-			Me.xrDesignRibbonPageGroup11.Name = "xrDesignRibbonPageGroup11"
-			Me.xrDesignRibbonPageGroup11.Text = "Snapping"
-			' 
-			' ribbonPage3
-			' 
-			Me.ribbonPage3.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup12, Me.xrDesignRibbonPageGroup13})
-			Me.ribbonPage3.Name = "ribbonPage3"
-			Me.ribbonPage3.Text = "Page"
-			' 
-			' xrDesignRibbonPageGroup12
-			' 
-			Me.xrDesignRibbonPageGroup12.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup12.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.True
-			Me.xrDesignRibbonPageGroup12.ItemLinks.Add(Me.commandBarItem65)
-			Me.xrDesignRibbonPageGroup12.ItemLinks.Add(Me.commandBarItem64)
-			Me.xrDesignRibbonPageGroup12.ItemLinks.Add(Me.commandBarItem63)
-			Me.xrDesignRibbonPageGroup12.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PageSetup
-			Me.xrDesignRibbonPageGroup12.Name = "xrDesignRibbonPageGroup12"
-			Me.xrDesignRibbonPageGroup12.Text = "Page Setup"
-			' 
-			' xrDesignRibbonPageGroup13
-			' 
-			Me.xrDesignRibbonPageGroup13.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup13.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup13.ItemLinks.Add(Me.commandColorBarItem4)
-			Me.xrDesignRibbonPageGroup13.ItemLinks.Add(Me.commandBarItem66)
-			Me.xrDesignRibbonPageGroup13.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Appearance
-			Me.xrDesignRibbonPageGroup13.Name = "xrDesignRibbonPageGroup13"
-			Me.xrDesignRibbonPageGroup13.Text = "Appearance"
-			' 
-			' ribbonPage4
-			' 
-			Me.ribbonPage4.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup14, Me.xrDesignRibbonPageGroup15, Me.xrDesignRibbonPageGroup16, Me.xrDesignRibbonPageGroup17, Me.xrDesignRibbonPageGroup18})
-			Me.ribbonPage4.Name = "ribbonPage4"
-			Me.ribbonPage4.Text = "View"
-			' 
-			' xrDesignRibbonPageGroup14
-			' 
-			Me.xrDesignRibbonPageGroup14.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup14.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup14.ItemLinks.Add(Me.commandBarItem67)
-			Me.xrDesignRibbonPageGroup14.ItemLinks.Add(Me.commandBarItem68)
-			Me.xrDesignRibbonPageGroup14.ItemLinks.Add(Me.commandBarItem69, True)
-			Me.xrDesignRibbonPageGroup14.ItemLinks.Add(Me.commandBarItem70)
-			Me.xrDesignRibbonPageGroup14.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Show
-			Me.xrDesignRibbonPageGroup14.Name = "xrDesignRibbonPageGroup14"
-			Me.xrDesignRibbonPageGroup14.Text = "Show"
-			' 
-			' xrDesignRibbonPageGroup15
-			' 
-			Me.xrDesignRibbonPageGroup15.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup15.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup15.ItemLinks.Add(Me.commandBarItem71)
-			Me.xrDesignRibbonPageGroup15.ItemLinks.Add(Me.commandBarItem72)
-			Me.xrDesignRibbonPageGroup15.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Bands
-			Me.xrDesignRibbonPageGroup15.Name = "xrDesignRibbonPageGroup15"
-			Me.xrDesignRibbonPageGroup15.Text = "Bands"
-			' 
-			' xrDesignRibbonPageGroup16
-			' 
-			Me.xrDesignRibbonPageGroup16.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup16.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.True
-			Me.xrDesignRibbonPageGroup16.ItemLinks.Add(Me.commandBarEditItem1)
-			Me.xrDesignRibbonPageGroup16.ItemLinks.Add(Me.commandBarCheckItem3)
-			Me.xrDesignRibbonPageGroup16.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Localization
-			Me.xrDesignRibbonPageGroup16.Name = "xrDesignRibbonPageGroup16"
-			Me.xrDesignRibbonPageGroup16.Text = "Localization"
-			' 
-			' xrDesignRibbonPageGroup17
-			' 
-			Me.xrDesignRibbonPageGroup17.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup17.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup17.ItemLinks.Add(Me.commandBarItem75)
-			Me.xrDesignRibbonPageGroup17.ItemLinks.Add(Me.commandBarItem73)
-			Me.xrDesignRibbonPageGroup17.ItemLinks.Add(Me.commandBarItem74)
-			Me.xrDesignRibbonPageGroup17.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Zoom
-			Me.xrDesignRibbonPageGroup17.Name = "xrDesignRibbonPageGroup17"
-			Me.xrDesignRibbonPageGroup17.Text = "Zoom"
-			' 
-			' xrDesignRibbonPageGroup18
-			' 
-			Me.xrDesignRibbonPageGroup18.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup18.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup18.ItemLinks.Add(Me.barDockPanelsListItem1)
-			Me.xrDesignRibbonPageGroup18.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
-			Me.xrDesignRibbonPageGroup18.Name = "xrDesignRibbonPageGroup18"
-			Me.xrDesignRibbonPageGroup18.Text = "View"
-			' 
-			' ribbonPage5
-			' 
-			Me.ribbonPage5.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.xrDesignRibbonPageGroup19})
-			Me.ribbonPage5.Name = "ribbonPage5"
-			Me.ribbonPage5.Text = "Scripts"
-			Me.ribbonPage5.Visible = False
-			' 
-			' xrDesignRibbonPageGroup19
-			' 
-			Me.xrDesignRibbonPageGroup19.AllowTextClipping = False
-			Me.xrDesignRibbonPageGroup19.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.xrDesignRibbonPageGroup19.ItemLinks.Add(Me.commandBarEditItem7)
-			Me.xrDesignRibbonPageGroup19.ItemLinks.Add(Me.commandBarEditItem8)
-			Me.xrDesignRibbonPageGroup19.ItemLinks.Add(Me.commandBarItem76)
-			Me.xrDesignRibbonPageGroup19.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Edit
-			Me.xrDesignRibbonPageGroup19.Name = "xrDesignRibbonPageGroup19"
-			Me.xrDesignRibbonPageGroup19.Text = "Edit"
-			' 
-			' ribbonPage15
-			' 
-			Me.ribbonPage15.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.ribbonPage15.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.printPreviewRibbonPageGroup1, Me.printPreviewRibbonPageGroup2, Me.printPreviewRibbonPageGroup3, Me.printPreviewRibbonPageGroup4, Me.printPreviewRibbonPageGroup5, Me.printPreviewRibbonPageGroup6, Me.printPreviewRibbonPageGroup7, Me.printPreviewRibbonPageGroup8})
-			Me.ribbonPage15.Name = "ribbonPage15"
-			Me.ribbonPage15.Text = "Home"
-			Me.ribbonPage15.Visible = False
-			' 
-			' printPreviewRibbonPageGroup1
-			' 
-			Me.printPreviewRibbonPageGroup1.AllowTextClipping = False
-			Me.printPreviewRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.printPreviewRibbonPageGroup1.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewRibbonPageGroup1.ItemLinks.Add(Me.printPreviewBarItem50)
-			Me.printPreviewRibbonPageGroup1.ItemLinks.Add(Me.printPreviewBarItem51)
-			Me.printPreviewRibbonPageGroup1.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Document
-			Me.printPreviewRibbonPageGroup1.Name = "printPreviewRibbonPageGroup1"
-			Me.printPreviewRibbonPageGroup1.Text = "Document"
-			' 
-			' printPreviewRibbonPageGroup2
-			' 
-			Me.printPreviewRibbonPageGroup2.AllowTextClipping = False
-			Me.printPreviewRibbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.printPreviewRibbonPageGroup2.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewRibbonPageGroup2.ItemLinks.Add(Me.printPreviewBarItem7)
-			Me.printPreviewRibbonPageGroup2.ItemLinks.Add(Me.printPreviewBarItem8)
-			Me.printPreviewRibbonPageGroup2.ItemLinks.Add(Me.printPreviewBarItem3)
-			Me.printPreviewRibbonPageGroup2.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Print
-			Me.printPreviewRibbonPageGroup2.Name = "printPreviewRibbonPageGroup2"
-			Me.printPreviewRibbonPageGroup2.Text = "Print"
-			' 
-			' printPreviewRibbonPageGroup3
-			' 
-			Me.printPreviewRibbonPageGroup3.AllowTextClipping = False
-			Me.printPreviewRibbonPageGroup3.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.True
-			Me.printPreviewRibbonPageGroup3.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewRibbonPageGroup3.ItemLinks.Add(Me.printPreviewBarItem11)
-			Me.printPreviewRibbonPageGroup3.ItemLinks.Add(Me.printPreviewBarItem30)
-			Me.printPreviewRibbonPageGroup3.ItemLinks.Add(Me.printPreviewBarItem28)
-			Me.printPreviewRibbonPageGroup3.ItemLinks.Add(Me.printPreviewBarItem29)
-			Me.printPreviewRibbonPageGroup3.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.PageSetup
-			Me.printPreviewRibbonPageGroup3.Name = "printPreviewRibbonPageGroup3"
-			superToolTip202.FixedTooltipWidth = True
-			toolTipTitleItem202.Text = "Page Setup"
-			toolTipItem202.LeftIndent = 6
-			toolTipItem202.Text = "Show the Page Setup dialog."
-			superToolTip202.Items.Add(toolTipTitleItem202)
-			superToolTip202.Items.Add(toolTipItem202)
-			superToolTip202.MaxWidth = 210
-			Me.printPreviewRibbonPageGroup3.SuperTip = superToolTip202
-			Me.printPreviewRibbonPageGroup3.Text = "Page Setup"
-			' 
-			' printPreviewRibbonPageGroup4
-			' 
-			Me.printPreviewRibbonPageGroup4.AllowTextClipping = False
-			Me.printPreviewRibbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.printPreviewRibbonPageGroup4.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem4)
-			Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem5)
-			Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem2)
-			Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem1)
-			Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem18, True)
-			Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem19)
-			Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem20)
-			Me.printPreviewRibbonPageGroup4.ItemLinks.Add(Me.printPreviewBarItem21)
-			Me.printPreviewRibbonPageGroup4.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Navigation
-			Me.printPreviewRibbonPageGroup4.Name = "printPreviewRibbonPageGroup4"
-			Me.printPreviewRibbonPageGroup4.Text = "Navigation"
-			' 
-			' printPreviewRibbonPageGroup5
-			' 
-			Me.printPreviewRibbonPageGroup5.AllowTextClipping = False
-			Me.printPreviewRibbonPageGroup5.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.printPreviewRibbonPageGroup5.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewRibbonPageGroup5.ItemLinks.Add(Me.printPreviewBarItem12)
-			Me.printPreviewRibbonPageGroup5.ItemLinks.Add(Me.printPreviewBarItem13)
-			Me.printPreviewRibbonPageGroup5.ItemLinks.Add(Me.printPreviewBarItem14)
-			Me.printPreviewRibbonPageGroup5.ItemLinks.Add(Me.printPreviewBarItem22)
-			Me.printPreviewRibbonPageGroup5.ItemLinks.Add(Me.printPreviewBarItem15)
-			Me.printPreviewRibbonPageGroup5.ItemLinks.Add(Me.printPreviewBarItem17)
-			Me.printPreviewRibbonPageGroup5.ItemLinks.Add(Me.printPreviewBarItem16)
-			Me.printPreviewRibbonPageGroup5.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Zoom
-			Me.printPreviewRibbonPageGroup5.Name = "printPreviewRibbonPageGroup5"
-			Me.printPreviewRibbonPageGroup5.Text = "Zoom"
-			' 
-			' printPreviewRibbonPageGroup6
-			' 
-			Me.printPreviewRibbonPageGroup6.AllowTextClipping = False
-			Me.printPreviewRibbonPageGroup6.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.printPreviewRibbonPageGroup6.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewRibbonPageGroup6.ItemLinks.Add(Me.printPreviewBarItem23)
-			Me.printPreviewRibbonPageGroup6.ItemLinks.Add(Me.printPreviewBarItem24)
-			Me.printPreviewRibbonPageGroup6.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Background
-			Me.printPreviewRibbonPageGroup6.Name = "printPreviewRibbonPageGroup6"
-			Me.printPreviewRibbonPageGroup6.Text = "Page Background"
-			' 
-			' printPreviewRibbonPageGroup7
-			' 
-			Me.printPreviewRibbonPageGroup7.AllowTextClipping = False
-			Me.printPreviewRibbonPageGroup7.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.printPreviewRibbonPageGroup7.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewRibbonPageGroup7.ItemLinks.Add(Me.printPreviewBarItem25)
-			Me.printPreviewRibbonPageGroup7.ItemLinks.Add(Me.printPreviewBarItem26)
-			Me.printPreviewRibbonPageGroup7.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Export
-			Me.printPreviewRibbonPageGroup7.Name = "printPreviewRibbonPageGroup7"
-			Me.printPreviewRibbonPageGroup7.Text = "Export"
-			' 
-			' printPreviewRibbonPageGroup8
-			' 
-			Me.printPreviewRibbonPageGroup8.AllowTextClipping = False
-			Me.printPreviewRibbonPageGroup8.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False
-			Me.printPreviewRibbonPageGroup8.ContextSpecifier = Me.xrDesignRibbonController1
-			Me.printPreviewRibbonPageGroup8.ItemLinks.Add(Me.printPreviewBarItem27)
-			Me.printPreviewRibbonPageGroup8.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Close
-			Me.printPreviewRibbonPageGroup8.Name = "printPreviewRibbonPageGroup8"
-			Me.printPreviewRibbonPageGroup8.Text = "Close"
-			' 
-			' ribbonStatusBar1
-			' 
-			Me.ribbonStatusBar1.ItemLinks.Add(Me.printPreviewStaticItem1)
-			Me.ribbonStatusBar1.ItemLinks.Add(Me.progressBarEditItem1)
-			Me.ribbonStatusBar1.ItemLinks.Add(Me.printPreviewBarItem52)
-			Me.ribbonStatusBar1.ItemLinks.Add(Me.printPreviewStaticItem2)
-			Me.ribbonStatusBar1.ItemLinks.Add(Me.zoomTrackBarEditItem1)
-			Me.ribbonStatusBar1.Location = New System.Drawing.Point(0, 422)
-			Me.ribbonStatusBar1.Name = "ribbonStatusBar1"
-			Me.ribbonStatusBar1.Ribbon = Me.ribbonControl1
-			Me.ribbonStatusBar1.Size = New System.Drawing.Size(800, 28)
-			' 
-			' reportDesigner1
-			' 
-			Me.reportDesigner1.ContainerControl = Nothing
-			xrDesignPanelListener1.DesignControl = Me.xrDesignRibbonController1
-			xrDesignPanelListener2.DesignControl = Me.xrDesignDockManager1
-			xrDesignPanelListener3.DesignControl = Me.fieldListDockPanel1
-			xrDesignPanelListener4.DesignControl = Me.propertyGridDockPanel1
-			xrDesignPanelListener5.DesignControl = Me.reportExplorerDockPanel1
-			xrDesignPanelListener6.DesignControl = Me.reportGalleryDockPanel1
-			xrDesignPanelListener7.DesignControl = Me.groupAndSortDockPanel1
-			xrDesignPanelListener8.DesignControl = Me.errorListDockPanel1
-			Me.reportDesigner1.DesignPanelListeners.AddRange(New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener() { xrDesignPanelListener1, xrDesignPanelListener2, xrDesignPanelListener3, xrDesignPanelListener4, xrDesignPanelListener5, xrDesignPanelListener6, xrDesignPanelListener7, xrDesignPanelListener8})
-			Me.reportDesigner1.Form = Me
-			' 
-			' Form2
-			' 
-			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
-			Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-			Me.ClientSize = New System.Drawing.Size(800, 450)
-			Me.Controls.Add(Me.panelContainer4)
-			Me.Controls.Add(Me.panelContainer1)
-			Me.Controls.Add(Me.ribbonStatusBar1)
-			Me.Controls.Add(Me.ribbonControl1)
-			Me.Name = "Form2"
-			Me.Text = "Form2"
-			Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
-'ORIGINAL LINE: this.Load += new System.EventHandler(this.Form2_Load);
-			CType(Me.xrDesignRibbonController1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.applicationMenu1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.recentlyUsedItemsComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.designRepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.xrDesignDockManager1, System.ComponentModel.ISupportInitialize).EndInit()
-			Me.panelContainer1.ResumeLayout(False)
-			Me.panelContainer2.ResumeLayout(False)
-			Me.reportExplorerDockPanel1.ResumeLayout(False)
-			Me.fieldListDockPanel1.ResumeLayout(False)
-			Me.panelContainer3.ResumeLayout(False)
-			Me.propertyGridDockPanel1.ResumeLayout(False)
-			Me.reportGalleryDockPanel1.ResumeLayout(False)
-			Me.panelContainer4.ResumeLayout(False)
-			Me.groupAndSortDockPanel1.ResumeLayout(False)
-			Me.errorListDockPanel1.ResumeLayout(False)
-			CType(Me.repositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.repositoryItemSpinEdit1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.repositoryItemSpinEdit2, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.repositoryItemSpinEdit3, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.repositoryItemSpinEdit4, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.repositoryItemImageComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.repositoryItemLookUpEdit2, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.repositoryItemComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.repositoryItemProgressBar1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.repositoryItemZoomTrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.reportDesigner1, System.ComponentModel.ISupportInitialize).EndInit()
-			Me.ResumeLayout(False)
-			Me.PerformLayout()
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim SuperToolTip1 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem1 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem1 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip2 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem2 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem2 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip3 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem3 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem3 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip4 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem4 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem4 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip5 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem5 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem5 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip6 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem6 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem6 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip7 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem7 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem7 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip8 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem8 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem8 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip9 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem9 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem9 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip10 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem10 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem10 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip11 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem11 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem11 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip12 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem12 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem12 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip13 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem13 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem13 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip14 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem14 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem14 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip15 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem15 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem15 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip16 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem16 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem16 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip17 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem17 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem17 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip18 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem18 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem18 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip19 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem19 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem19 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip20 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem20 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem20 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip21 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem21 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem21 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
+        Dim SuperToolTip22 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem22 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem22 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip23 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem23 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem23 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip24 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem24 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem24 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip25 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem25 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem25 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip26 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem26 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem26 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip27 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem27 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem27 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip28 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem28 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem28 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip29 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem29 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem29 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip30 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem30 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem30 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip31 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem31 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem31 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip32 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem32 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem32 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip33 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem33 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem33 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip34 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem34 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem34 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip35 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem35 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem35 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip36 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem36 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem36 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip37 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem37 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem37 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip38 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem38 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem38 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip39 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem39 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem39 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip40 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem40 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem40 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip41 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem41 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem41 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip42 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem42 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem42 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip43 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem43 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem43 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip44 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem44 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem44 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip45 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem45 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem45 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip46 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem46 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem46 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip47 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem47 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem47 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip48 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem48 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem48 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip49 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem49 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem49 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip50 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem50 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem50 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip51 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem51 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem51 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip52 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem52 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem52 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip53 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem53 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem53 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip54 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem54 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem54 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip55 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem55 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem55 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip56 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem56 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem56 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip57 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem57 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem57 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip58 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem58 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem58 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip59 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem59 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem59 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip60 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem60 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem60 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip61 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem61 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem61 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip62 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem62 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem62 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip63 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem63 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem63 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip64 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem64 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem64 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip65 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem65 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem65 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip66 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem66 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem66 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip67 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem67 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem67 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip68 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem68 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem68 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip69 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem69 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem69 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip70 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem70 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem70 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip71 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem71 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem71 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip72 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem72 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem72 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip73 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem73 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem73 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip74 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem74 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem74 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip75 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem75 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem75 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip76 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem76 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem76 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip77 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem77 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem77 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip78 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem78 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem78 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip79 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem79 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem79 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip80 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem80 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem80 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip81 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem81 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem81 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip82 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem82 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem82 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip83 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem83 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem83 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip84 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem84 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem84 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip85 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem85 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem85 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip86 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem86 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem86 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip87 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem87 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem87 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip88 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem88 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem88 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip89 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem89 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem89 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip90 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem90 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem90 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip91 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem91 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem91 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip92 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem92 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem92 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip93 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem93 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem93 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip94 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem94 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem94 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip95 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem95 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem95 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip96 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem96 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem96 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip97 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem97 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem97 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip98 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem98 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem98 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip99 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem99 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem99 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip100 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem100 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem100 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip101 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem101 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem101 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip102 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem102 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem102 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip103 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem103 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem103 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip104 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem104 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem104 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip105 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem105 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem105 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip106 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem106 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem106 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip107 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem107 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem107 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip108 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem108 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem108 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip109 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem109 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem109 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip110 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem110 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem110 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip111 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem111 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem111 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip112 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem112 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem112 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip113 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem113 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem113 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip114 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem114 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem114 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip115 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem115 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem115 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip116 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem116 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem116 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip117 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem117 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem117 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip118 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem118 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem118 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip119 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem119 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem119 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip120 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem120 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem120 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip121 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem121 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem121 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip122 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem122 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem122 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip123 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem123 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem123 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip124 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem124 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem124 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip125 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem125 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem125 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip126 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem126 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem126 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip127 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem127 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem127 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip128 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem128 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem128 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip129 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem129 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem129 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip130 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem130 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem130 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip131 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem131 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem131 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip132 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem132 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem132 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip133 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem133 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem133 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip134 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem134 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem134 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip135 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem135 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem135 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip136 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem136 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem136 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip137 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem137 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem137 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip138 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem138 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem138 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip139 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem139 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem139 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip140 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem140 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem140 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip141 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem141 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem141 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip142 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem142 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem142 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip143 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem143 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem143 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip144 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem144 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem144 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip145 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem145 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem145 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip146 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem146 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem146 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip147 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem147 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem147 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip148 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem148 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem148 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip149 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem149 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem149 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip150 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem150 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem150 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip151 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem151 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem151 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip152 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem152 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem152 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip153 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem153 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem153 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip154 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem154 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem154 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip155 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem155 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem155 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip156 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem156 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem156 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip157 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem157 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem157 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip158 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem158 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem158 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip159 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem159 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem159 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip160 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem160 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem160 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip161 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem161 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem161 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip162 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem162 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem162 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip163 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem163 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem163 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip164 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem164 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem164 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip165 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem165 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem165 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip166 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem166 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem166 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip167 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem167 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem167 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip168 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem168 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem168 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip169 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem169 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem169 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip170 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem170 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem170 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip171 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem171 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem171 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip172 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem172 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem172 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip173 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem173 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem173 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip174 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem174 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem174 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip175 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem175 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem175 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip176 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem176 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem176 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip177 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem177 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem177 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip178 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem178 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem178 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip179 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem179 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem179 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip180 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem180 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem180 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip181 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem181 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem181 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip182 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem182 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem182 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip183 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem183 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem183 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip184 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem184 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem184 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip185 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem185 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem185 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip186 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem186 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem186 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip187 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem187 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem187 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip188 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem188 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem188 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip189 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem189 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem189 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip190 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem190 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem190 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip191 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem191 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem191 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip192 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem192 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem192 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip193 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem193 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem193 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip194 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem194 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem194 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip195 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem195 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem195 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip196 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem196 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem196 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip197 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem197 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem197 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip198 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem198 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem198 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip199 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem199 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem199 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip200 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem200 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem200 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip201 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem201 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem201 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim SuperToolTip202 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem202 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
+        Dim ToolTipItem202 As DevExpress.Utils.ToolTipItem = New DevExpress.Utils.ToolTipItem()
+        Dim XrDesignPanelListener1 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
+        Dim XrDesignPanelListener2 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
+        Dim XrDesignPanelListener3 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
+        Dim XrDesignPanelListener4 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
+        Dim XrDesignPanelListener5 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
+        Dim XrDesignPanelListener6 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
+        Dim XrDesignPanelListener7 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
+        Dim XrDesignPanelListener8 As DevExpress.XtraReports.UserDesigner.XRDesignPanelListener = New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener()
+        Me.XrDesignRibbonController1 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonController(Me.components)
+        Me.RibbonControl1 = New DevExpress.XtraBars.Ribbon.RibbonControl()
+        Me.ApplicationMenu1 = New DevExpress.XtraBars.Ribbon.ApplicationMenu(Me.components)
+        Me.CommandBarItem6 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem9 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem7 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem8 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem127 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem128 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem1 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem2 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem3 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem4 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem5 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem10 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem11 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem12 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem13 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem14 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem15 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem16 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.BarEditItem1 = New DevExpress.XtraBars.BarEditItem()
+        Me.RecentlyUsedItemsComboBox1 = New DevExpress.XtraReports.UserDesigner.RecentlyUsedItemsComboBox()
+        Me.BarEditItem2 = New DevExpress.XtraBars.BarEditItem()
+        Me.DesignRepositoryItemComboBox1 = New DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox()
+        Me.BarDockPanelsListItem1 = New DevExpress.XtraReports.UserDesigner.BarDockPanelsListItem()
+        Me.XrDesignDockManager1 = New DevExpress.XtraReports.UserDesigner.XRDesignDockManager(Me.components)
+        Me.panelContainer1 = New DevExpress.XtraBars.Docking.DockPanel()
+        Me.panelContainer2 = New DevExpress.XtraBars.Docking.DockPanel()
+        Me.ReportExplorerDockPanel1 = New DevExpress.XtraReports.UserDesigner.ReportExplorerDockPanel()
+        Me.ReportExplorerDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
+        Me.FieldListDockPanel1 = New DevExpress.XtraReports.UserDesigner.FieldListDockPanel()
+        Me.FieldListDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
+        Me.panelContainer3 = New DevExpress.XtraBars.Docking.DockPanel()
+        Me.PropertyGridDockPanel1 = New DevExpress.XtraReports.UserDesigner.PropertyGridDockPanel()
+        Me.PropertyGridDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
+        Me.ReportGalleryDockPanel1 = New DevExpress.XtraReports.UserDesigner.ReportGalleryDockPanel()
+        Me.ReportGalleryDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
+        Me.panelContainer4 = New DevExpress.XtraBars.Docking.DockPanel()
+        Me.GroupAndSortDockPanel1 = New DevExpress.XtraReports.UserDesigner.GroupAndSortDockPanel()
+        Me.GroupAndSortDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
+        Me.ErrorListDockPanel1 = New DevExpress.XtraReports.UserDesigner.ErrorListDockPanel()
+        Me.ErrorListDockPanel1_Container = New DevExpress.XtraReports.UserDesigner.DesignControlContainer()
+        Me.CommandBarItem17 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem18 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem19 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandColorBarItem1 = New DevExpress.XtraReports.UserDesigner.CommandColorBarItem()
+        Me.CommandColorBarItem2 = New DevExpress.XtraReports.UserDesigner.CommandColorBarItem()
+        Me.CommandBarItem20 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem21 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem22 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem23 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem24 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem25 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem26 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem27 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem28 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem29 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem30 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem31 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem32 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem33 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem34 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem35 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem36 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem37 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandColorBarItem3 = New DevExpress.XtraReports.UserDesigner.CommandColorBarItem()
+        Me.CommandBarItem38 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem39 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem40 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem41 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem42 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem43 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem44 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem45 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem46 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem47 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem48 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem49 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem50 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem51 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem52 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem53 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem54 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem55 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem56 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem57 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem58 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem59 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem60 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem61 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarCheckItem1 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
+        Me.CommandBarCheckItem2 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
+        Me.CommandBarItem62 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem63 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem64 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem65 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandColorBarItem4 = New DevExpress.XtraReports.UserDesigner.CommandColorBarItem()
+        Me.CommandBarItem66 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem67 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem68 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem69 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem70 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem71 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem72 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarEditItem1 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
+        Me.RepositoryItemLookUpEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
+        Me.CommandBarCheckItem3 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
+        Me.CommandBarItem73 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem74 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem75 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem76 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandGalleryBarItem1 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
+        Me.CommandGalleryBarItem2 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
+        Me.CommandGalleryBarItem3 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
+        Me.CommandGalleryBarItem4 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
+        Me.CommandGalleryBarItem5 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
+        Me.CommandGalleryBarItem6 = New DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem()
+        Me.CommandBarEditItem2 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
+        Me.RepositoryItemSpinEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit()
+        Me.CommandBarEditItem3 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
+        Me.RepositoryItemSpinEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit()
+        Me.CommandBarEditItem4 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
+        Me.RepositoryItemSpinEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit()
+        Me.CommandBarEditItem5 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
+        Me.RepositoryItemSpinEdit4 = New DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit()
+        Me.CommandBarEditItem6 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
+        Me.RepositoryItemImageComboBox1 = New DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox()
+        Me.CommandBarEditItem7 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
+        Me.RepositoryItemLookUpEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
+        Me.CommandBarEditItem8 = New DevExpress.XtraReports.UserDesigner.CommandBarEditItem()
+        Me.RepositoryItemComboBox1 = New DevExpress.XtraEditors.Repository.RepositoryItemComboBox()
+        Me.CommandBarItem77 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem78 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem79 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem80 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem81 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem82 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem83 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem84 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem85 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem86 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem87 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem88 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem89 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem90 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem91 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem92 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem93 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem94 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem95 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem96 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem97 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem98 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem99 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem100 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem101 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem102 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem103 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem104 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem105 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem106 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem107 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem108 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem109 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem110 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem111 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem112 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem113 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem114 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem115 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem116 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem117 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem118 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem119 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem120 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem121 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem122 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarCheckItem4 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
+        Me.CommandBarCheckItem5 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
+        Me.CommandBarCheckItem6 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
+        Me.CommandBarCheckItem7 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
+        Me.CommandBarCheckItem8 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
+        Me.CommandBarCheckItem9 = New DevExpress.XtraReports.UserDesigner.CommandBarCheckItem()
+        Me.CommandBarItem123 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem124 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem125 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.CommandBarItem126 = New DevExpress.XtraReports.UserDesigner.CommandBarItem()
+        Me.XrDesignBarButtonGroup1 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup2 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup3 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup4 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup5 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup6 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup7 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup8 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup9 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup10 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup11 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup12 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup13 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.XrDesignBarButtonGroup14 = New DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup()
+        Me.PrintPreviewBarItem1 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem2 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem3 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem4 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem5 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem7 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem8 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem9 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem11 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem12 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem13 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem14 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem15 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem16 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem17 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem18 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem19 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem20 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem21 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem22 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem23 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem24 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem25 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem26 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem27 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem28 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem29 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem30 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem31 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem32 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem33 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem34 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem35 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem36 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem37 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem38 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem39 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem40 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem41 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem42 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem43 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem44 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem45 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem46 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem47 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem48 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem49 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem50 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewBarItem51 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewStaticItem1 = New DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem()
+        Me.ProgressBarEditItem1 = New DevExpress.XtraPrinting.Preview.ProgressBarEditItem()
+        Me.RepositoryItemProgressBar1 = New DevExpress.XtraEditors.Repository.RepositoryItemProgressBar()
+        Me.PrintPreviewBarItem52 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarItem()
+        Me.PrintPreviewStaticItem2 = New DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem()
+        Me.ZoomTrackBarEditItem1 = New DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem()
+        Me.RepositoryItemZoomTrackBar1 = New DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar()
+        Me.RibbonPageCategory1 = New DevExpress.XtraReports.UserDesigner.XRCharacterCombRibbonPageCategory()
+        Me.RibbonPage6 = New DevExpress.XtraReports.UserDesigner.XRCharacterCombDesignContextRibbonPage()
+        Me.XrDesignRibbonPageGroup20 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPageCategory2 = New DevExpress.XtraReports.UserDesigner.XRTableRibbonPageCategory()
+        Me.RibbonPage7 = New DevExpress.XtraReports.UserDesigner.XRTableDesignContextRibbonPage()
+        Me.XrDesignRibbonPageGroup21 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup22 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup23 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup24 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup25 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPageCategory3 = New DevExpress.XtraReports.UserDesigner.XRChartRibbonPageCategory()
+        Me.RibbonPage8 = New DevExpress.XtraReports.UserDesigner.XRChartDesignContextRibbonPage()
+        Me.XrDesignRibbonPageGroup26 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup27 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup28 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup29 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup30 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPageCategory4 = New DevExpress.XtraReports.UserDesigner.XRPivotGridRibbonPageCategory()
+        Me.RibbonPage9 = New DevExpress.XtraReports.UserDesigner.XRPivotGridDesignContextRibbonPage()
+        Me.XrDesignRibbonPageGroup31 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup32 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup33 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup34 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPageCategory5 = New DevExpress.XtraReports.UserDesigner.XRBarCodeRibbonPageCategory()
+        Me.RibbonPage10 = New DevExpress.XtraReports.UserDesigner.XRBarcodeDesignContextRibbonPage()
+        Me.XrDesignRibbonPageGroup35 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup36 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPageCategory6 = New DevExpress.XtraReports.UserDesigner.XRGaugeRibbonPageCategory()
+        Me.RibbonPage11 = New DevExpress.XtraReports.UserDesigner.XRGaugeDesignContextRibbonPage()
+        Me.XrDesignRibbonPageGroup37 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup38 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPageCategory7 = New DevExpress.XtraReports.UserDesigner.XRSparklineRibbonPageCategory()
+        Me.RibbonPage12 = New DevExpress.XtraReports.UserDesigner.XRSparklineDesignContextRibbonPage()
+        Me.XrDesignRibbonPageGroup39 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup40 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPageCategory8 = New DevExpress.XtraReports.UserDesigner.XRShapeRibbonPageCategory()
+        Me.RibbonPage13 = New DevExpress.XtraReports.UserDesigner.XRShapeDesignContextRibbonPage()
+        Me.XrDesignRibbonPageGroup41 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPageCategory9 = New DevExpress.XtraReports.UserDesigner.XRLabelRibbonPageCategory()
+        Me.RibbonPage14 = New DevExpress.XtraReports.UserDesigner.XRLabelTextContextRibbonPage()
+        Me.XrDesignRibbonPageGroup42 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup43 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPage1 = New DevExpress.XtraReports.UserDesigner.XRHomeRibbonPage()
+        Me.XrDesignRibbonPageGroup1 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup2 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup3 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup4 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup5 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup6 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup7 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPage2 = New DevExpress.XtraReports.UserDesigner.XRLayoutRibbonPage()
+        Me.XrDesignRibbonPageGroup8 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup9 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup10 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup11 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPage3 = New DevExpress.XtraReports.UserDesigner.XRPageRibbonPage()
+        Me.XrDesignRibbonPageGroup12 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup13 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPage4 = New DevExpress.XtraReports.UserDesigner.XRViewRibbonPage()
+        Me.XrDesignRibbonPageGroup14 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup15 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup16 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup17 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.XrDesignRibbonPageGroup18 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPage5 = New DevExpress.XtraReports.UserDesigner.XRScriptsRibbonPage()
+        Me.XrDesignRibbonPageGroup19 = New DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup()
+        Me.RibbonPage15 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPage()
+        Me.PrintPreviewRibbonPageGroup1 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
+        Me.PrintPreviewRibbonPageGroup2 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
+        Me.PrintPreviewRibbonPageGroup3 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
+        Me.PrintPreviewRibbonPageGroup4 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
+        Me.PrintPreviewRibbonPageGroup5 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
+        Me.PrintPreviewRibbonPageGroup6 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
+        Me.PrintPreviewRibbonPageGroup7 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
+        Me.PrintPreviewRibbonPageGroup8 = New DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup()
+        Me.RibbonStatusBar1 = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
+        Me.ReportDesigner1 = New DevExpress.XtraReports.UserDesigner.XRDesignMdiController(Me.components)
+        CType(Me.XrDesignRibbonController1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ApplicationMenu1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RecentlyUsedItemsComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DesignRepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.XrDesignDockManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelContainer1.SuspendLayout()
+        Me.panelContainer2.SuspendLayout()
+        Me.ReportExplorerDockPanel1.SuspendLayout()
+        Me.FieldListDockPanel1.SuspendLayout()
+        Me.panelContainer3.SuspendLayout()
+        Me.PropertyGridDockPanel1.SuspendLayout()
+        Me.ReportGalleryDockPanel1.SuspendLayout()
+        Me.panelContainer4.SuspendLayout()
+        Me.GroupAndSortDockPanel1.SuspendLayout()
+        Me.ErrorListDockPanel1.SuspendLayout()
+        CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemSpinEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemSpinEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemSpinEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemSpinEdit4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemImageComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemLookUpEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemProgressBar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemZoomTrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ReportDesigner1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'XrDesignRibbonController1
+        '
+        Me.XrDesignRibbonController1.RibbonControl = Me.RibbonControl1
+        Me.XrDesignRibbonController1.RibbonStatusBar = Me.RibbonStatusBar1
+        Me.XrDesignRibbonController1.XRDesignDockManager = Me.XrDesignDockManager1
+        '
+        'RibbonControl1
+        '
+        Me.RibbonControl1.ApplicationButtonDropDownControl = Me.ApplicationMenu1
+        Me.RibbonControl1.AutoHideEmptyItems = True
+        Me.RibbonControl1.AutoSizeItems = True
+        Me.RibbonControl1.ExpandCollapseItem.Id = 0
+        Me.RibbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl1.ExpandCollapseItem, Me.RibbonControl1.SearchEditItem, Me.CommandBarItem1, Me.CommandBarItem2, Me.CommandBarItem3, Me.CommandBarItem4, Me.CommandBarItem5, Me.CommandBarItem6, Me.CommandBarItem7, Me.CommandBarItem8, Me.CommandBarItem9, Me.CommandBarItem10, Me.CommandBarItem11, Me.CommandBarItem12, Me.CommandBarItem13, Me.CommandBarItem14, Me.CommandBarItem15, Me.CommandBarItem16, Me.BarEditItem1, Me.BarEditItem2, Me.BarDockPanelsListItem1, Me.CommandBarItem17, Me.CommandBarItem18, Me.CommandBarItem19, Me.CommandColorBarItem1, Me.CommandColorBarItem2, Me.CommandBarItem20, Me.CommandBarItem21, Me.CommandBarItem22, Me.CommandBarItem23, Me.CommandBarItem24, Me.CommandBarItem25, Me.CommandBarItem26, Me.CommandBarItem27, Me.CommandBarItem28, Me.CommandBarItem29, Me.CommandBarItem30, Me.CommandBarItem31, Me.CommandBarItem32, Me.CommandBarItem33, Me.CommandBarItem34, Me.CommandBarItem35, Me.CommandBarItem36, Me.CommandBarItem37, Me.CommandColorBarItem3, Me.CommandBarItem38, Me.CommandBarItem39, Me.CommandBarItem40, Me.CommandBarItem41, Me.CommandBarItem42, Me.CommandBarItem43, Me.CommandBarItem44, Me.CommandBarItem45, Me.CommandBarItem46, Me.CommandBarItem47, Me.CommandBarItem48, Me.CommandBarItem49, Me.CommandBarItem50, Me.CommandBarItem51, Me.CommandBarItem52, Me.CommandBarItem53, Me.CommandBarItem54, Me.CommandBarItem55, Me.CommandBarItem56, Me.CommandBarItem57, Me.CommandBarItem58, Me.CommandBarItem59, Me.CommandBarItem60, Me.CommandBarItem61, Me.CommandBarCheckItem1, Me.CommandBarCheckItem2, Me.CommandBarItem62, Me.CommandBarItem63, Me.CommandBarItem64, Me.CommandBarItem65, Me.CommandColorBarItem4, Me.CommandBarItem66, Me.CommandBarItem67, Me.CommandBarItem68, Me.CommandBarItem69, Me.CommandBarItem70, Me.CommandBarItem71, Me.CommandBarItem72, Me.CommandBarEditItem1, Me.CommandBarCheckItem3, Me.CommandBarItem73, Me.CommandBarItem74, Me.CommandBarItem75, Me.CommandBarItem76, Me.CommandGalleryBarItem1, Me.CommandGalleryBarItem2, Me.CommandGalleryBarItem3, Me.CommandGalleryBarItem4, Me.CommandGalleryBarItem5, Me.CommandGalleryBarItem6, Me.CommandBarEditItem2, Me.CommandBarEditItem3, Me.CommandBarEditItem4, Me.CommandBarEditItem5, Me.CommandBarEditItem6, Me.CommandBarEditItem7, Me.CommandBarEditItem8, Me.CommandBarItem77, Me.CommandBarItem78, Me.CommandBarItem79, Me.CommandBarItem80, Me.CommandBarItem81, Me.CommandBarItem82, Me.CommandBarItem83, Me.CommandBarItem84, Me.CommandBarItem85, Me.CommandBarItem86, Me.CommandBarItem87, Me.CommandBarItem88, Me.CommandBarItem89, Me.CommandBarItem90, Me.CommandBarItem91, Me.CommandBarItem92, Me.CommandBarItem93, Me.CommandBarItem94, Me.CommandBarItem95, Me.CommandBarItem96, Me.CommandBarItem97, Me.CommandBarItem98, Me.CommandBarItem99, Me.CommandBarItem100, Me.CommandBarItem101, Me.CommandBarItem102, Me.CommandBarItem103, Me.CommandBarItem104, Me.CommandBarItem105, Me.CommandBarItem106, Me.CommandBarItem107, Me.CommandBarItem108, Me.CommandBarItem109, Me.CommandBarItem110, Me.CommandBarItem111, Me.CommandBarItem112, Me.CommandBarItem113, Me.CommandBarItem114, Me.CommandBarItem115, Me.CommandBarItem116, Me.CommandBarItem117, Me.CommandBarItem118, Me.CommandBarItem119, Me.CommandBarItem120, Me.CommandBarItem121, Me.CommandBarItem122, Me.CommandBarCheckItem4, Me.CommandBarCheckItem5, Me.CommandBarCheckItem6, Me.CommandBarCheckItem7, Me.CommandBarCheckItem8, Me.CommandBarCheckItem9, Me.CommandBarItem123, Me.CommandBarItem124, Me.CommandBarItem125, Me.CommandBarItem126, Me.CommandBarItem127, Me.CommandBarItem128, Me.XrDesignBarButtonGroup1, Me.XrDesignBarButtonGroup2, Me.XrDesignBarButtonGroup3, Me.XrDesignBarButtonGroup4, Me.XrDesignBarButtonGroup5, Me.XrDesignBarButtonGroup6, Me.XrDesignBarButtonGroup7, Me.XrDesignBarButtonGroup8, Me.XrDesignBarButtonGroup9, Me.XrDesignBarButtonGroup10, Me.XrDesignBarButtonGroup11, Me.XrDesignBarButtonGroup12, Me.XrDesignBarButtonGroup13, Me.XrDesignBarButtonGroup14, Me.PrintPreviewBarItem1, Me.PrintPreviewBarItem2, Me.PrintPreviewBarItem3, Me.PrintPreviewBarItem4, Me.PrintPreviewBarItem5, Me.PrintPreviewBarItem7, Me.PrintPreviewBarItem8, Me.PrintPreviewBarItem9, Me.PrintPreviewBarItem11, Me.PrintPreviewBarItem12, Me.PrintPreviewBarItem13, Me.PrintPreviewBarItem14, Me.PrintPreviewBarItem15, Me.PrintPreviewBarItem16, Me.PrintPreviewBarItem17, Me.PrintPreviewBarItem18, Me.PrintPreviewBarItem19, Me.PrintPreviewBarItem20, Me.PrintPreviewBarItem21, Me.PrintPreviewBarItem22, Me.PrintPreviewBarItem23, Me.PrintPreviewBarItem24, Me.PrintPreviewBarItem25, Me.PrintPreviewBarItem26, Me.PrintPreviewBarItem27, Me.PrintPreviewBarItem28, Me.PrintPreviewBarItem29, Me.PrintPreviewBarItem30, Me.PrintPreviewBarItem31, Me.PrintPreviewBarItem32, Me.PrintPreviewBarItem33, Me.PrintPreviewBarItem34, Me.PrintPreviewBarItem35, Me.PrintPreviewBarItem36, Me.PrintPreviewBarItem37, Me.PrintPreviewBarItem38, Me.PrintPreviewBarItem39, Me.PrintPreviewBarItem40, Me.PrintPreviewBarItem41, Me.PrintPreviewBarItem42, Me.PrintPreviewBarItem43, Me.PrintPreviewBarItem44, Me.PrintPreviewBarItem45, Me.PrintPreviewBarItem46, Me.PrintPreviewBarItem47, Me.PrintPreviewBarItem48, Me.PrintPreviewBarItem49, Me.PrintPreviewBarItem50, Me.PrintPreviewBarItem51, Me.PrintPreviewStaticItem1, Me.ProgressBarEditItem1, Me.PrintPreviewBarItem52, Me.PrintPreviewStaticItem2, Me.ZoomTrackBarEditItem1})
+        Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
+        Me.RibbonControl1.MaxItemId = 229
+        Me.RibbonControl1.Name = "RibbonControl1"
+        Me.RibbonControl1.PageCategories.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageCategory() {Me.RibbonPageCategory1, Me.RibbonPageCategory2, Me.RibbonPageCategory3, Me.RibbonPageCategory4, Me.RibbonPageCategory5, Me.RibbonPageCategory6, Me.RibbonPageCategory7, Me.RibbonPageCategory8, Me.RibbonPageCategory9})
+        Me.RibbonControl1.PageHeaderItemLinks.Add(Me.CommandBarItem1)
+        Me.RibbonControl1.PageHeaderItemLinks.Add(Me.CommandBarItem2)
+        Me.RibbonControl1.PageHeaderItemLinks.Add(Me.CommandBarItem3)
+        Me.RibbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage1, Me.RibbonPage2, Me.RibbonPage3, Me.RibbonPage4, Me.RibbonPage5, Me.RibbonPage15})
+        Me.RibbonControl1.QuickToolbarItemLinks.Add(Me.CommandBarItem4)
+        Me.RibbonControl1.QuickToolbarItemLinks.Add(Me.CommandBarItem5)
+        Me.RibbonControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RecentlyUsedItemsComboBox1, Me.DesignRepositoryItemComboBox1, Me.RepositoryItemLookUpEdit1, Me.RepositoryItemSpinEdit1, Me.RepositoryItemSpinEdit2, Me.RepositoryItemSpinEdit3, Me.RepositoryItemSpinEdit4, Me.RepositoryItemImageComboBox1, Me.RepositoryItemLookUpEdit2, Me.RepositoryItemComboBox1, Me.RepositoryItemProgressBar1, Me.RepositoryItemZoomTrackBar1})
+        Me.RibbonControl1.ShowItemCaptionsInPageHeader = True
+        Me.RibbonControl1.Size = New System.Drawing.Size(800, 150)
+        Me.RibbonControl1.StatusBar = Me.RibbonStatusBar1
+        Me.RibbonControl1.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.[True]
+        '
+        'ApplicationMenu1
+        '
+        Me.ApplicationMenu1.ItemLinks.Add(Me.CommandBarItem6)
+        Me.ApplicationMenu1.ItemLinks.Add(Me.CommandBarItem9)
+        Me.ApplicationMenu1.ItemLinks.Add(Me.CommandBarItem7)
+        Me.ApplicationMenu1.ItemLinks.Add(Me.CommandBarItem8)
+        Me.ApplicationMenu1.ItemLinks.Add(Me.CommandBarItem127, True)
+        Me.ApplicationMenu1.ItemLinks.Add(Me.CommandBarItem128, True)
+        Me.ApplicationMenu1.MenuDrawMode = DevExpress.XtraBars.MenuDrawMode.LargeImagesText
+        Me.ApplicationMenu1.Name = "ApplicationMenu1"
+        Me.ApplicationMenu1.Ribbon = Me.RibbonControl1
+        '
+        'CommandBarItem6
+        '
+        Me.CommandBarItem6.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem6.Caption = "New Report"
+        Me.CommandBarItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReport
+        Me.CommandBarItem6.Enabled = False
+        Me.CommandBarItem6.Id = 6
+        Me.CommandBarItem6.Name = "CommandBarItem6"
+        SuperToolTip1.FixedTooltipWidth = True
+        ToolTipTitleItem1.Text = "New Blank Report"
+        ToolTipItem1.LeftIndent = 6
+        ToolTipItem1.Text = "Create a new blank report."
+        SuperToolTip1.Items.Add(ToolTipTitleItem1)
+        SuperToolTip1.Items.Add(ToolTipItem1)
+        SuperToolTip1.MaxWidth = 210
+        Me.CommandBarItem6.SuperTip = SuperToolTip1
+        '
+        'CommandBarItem9
+        '
+        Me.CommandBarItem9.Caption = "Open..."
+        Me.CommandBarItem9.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.OpenFile
+        Me.CommandBarItem9.Enabled = False
+        Me.CommandBarItem9.Id = 9
+        Me.CommandBarItem9.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O))
+        Me.CommandBarItem9.Name = "CommandBarItem9"
+        SuperToolTip2.FixedTooltipWidth = True
+        ToolTipTitleItem2.Text = "Open Report (Ctrl+O)"
+        ToolTipItem2.LeftIndent = 6
+        ToolTipItem2.Text = "Open a report."
+        SuperToolTip2.Items.Add(ToolTipTitleItem2)
+        SuperToolTip2.Items.Add(ToolTipItem2)
+        SuperToolTip2.MaxWidth = 210
+        Me.CommandBarItem9.SuperTip = SuperToolTip2
+        '
+        'CommandBarItem7
+        '
+        Me.CommandBarItem7.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem7.Caption = "Save"
+        Me.CommandBarItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFile
+        Me.CommandBarItem7.Enabled = False
+        Me.CommandBarItem7.Id = 7
+        Me.CommandBarItem7.Name = "CommandBarItem7"
+        SuperToolTip3.FixedTooltipWidth = True
+        ToolTipTitleItem3.Text = "Save Report"
+        ToolTipItem3.LeftIndent = 6
+        ToolTipItem3.Text = "Save the current report."
+        SuperToolTip3.Items.Add(ToolTipTitleItem3)
+        SuperToolTip3.Items.Add(ToolTipItem3)
+        SuperToolTip3.MaxWidth = 210
+        Me.CommandBarItem7.SuperTip = SuperToolTip3
+        '
+        'CommandBarItem8
+        '
+        Me.CommandBarItem8.Caption = "Save All"
+        Me.CommandBarItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveAll
+        Me.CommandBarItem8.Enabled = False
+        Me.CommandBarItem8.Id = 8
+        Me.CommandBarItem8.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.L))
+        Me.CommandBarItem8.Name = "CommandBarItem8"
+        SuperToolTip4.FixedTooltipWidth = True
+        ToolTipTitleItem4.Text = "Save All Reports (Ctrl+L)"
+        ToolTipItem4.LeftIndent = 6
+        ToolTipItem4.Text = "Save all modified reports."
+        SuperToolTip4.Items.Add(ToolTipTitleItem4)
+        SuperToolTip4.Items.Add(ToolTipItem4)
+        SuperToolTip4.MaxWidth = 210
+        Me.CommandBarItem8.SuperTip = SuperToolTip4
+        '
+        'CommandBarItem127
+        '
+        Me.CommandBarItem127.Caption = "Close"
+        Me.CommandBarItem127.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Close
+        Me.CommandBarItem127.Enabled = False
+        Me.CommandBarItem127.Id = 157
+        Me.CommandBarItem127.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.F4))
+        Me.CommandBarItem127.Name = "CommandBarItem127"
+        SuperToolTip5.FixedTooltipWidth = True
+        ToolTipTitleItem5.Text = "Close (Ctrl+F4)"
+        ToolTipItem5.LeftIndent = 6
+        ToolTipItem5.Text = "Close the current report."
+        SuperToolTip5.Items.Add(ToolTipTitleItem5)
+        SuperToolTip5.Items.Add(ToolTipItem5)
+        SuperToolTip5.MaxWidth = 210
+        Me.CommandBarItem127.SuperTip = SuperToolTip5
+        '
+        'CommandBarItem128
+        '
+        Me.CommandBarItem128.Caption = "Exit"
+        Me.CommandBarItem128.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.[Exit]
+        Me.CommandBarItem128.Enabled = False
+        Me.CommandBarItem128.Id = 158
+        Me.CommandBarItem128.Name = "CommandBarItem128"
+        SuperToolTip6.FixedTooltipWidth = True
+        ToolTipTitleItem6.Text = "Exit"
+        ToolTipItem6.LeftIndent = 6
+        ToolTipItem6.Text = "Close the report designer."
+        SuperToolTip6.Items.Add(ToolTipTitleItem6)
+        SuperToolTip6.Items.Add(ToolTipItem6)
+        SuperToolTip6.MaxWidth = 210
+        Me.CommandBarItem128.SuperTip = SuperToolTip6
+        '
+        'CommandBarItem1
+        '
+        Me.CommandBarItem1.Caption = "Designer"
+        Me.CommandBarItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowDesignerTab
+        Me.CommandBarItem1.Enabled = False
+        Me.CommandBarItem1.Id = 1
+        Me.CommandBarItem1.ItemShortcut = New DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F4)
+        Me.CommandBarItem1.Name = "CommandBarItem1"
+        SuperToolTip7.FixedTooltipWidth = True
+        ToolTipTitleItem7.Text = "Report Designer (F4)"
+        ToolTipItem7.LeftIndent = 6
+        ToolTipItem7.Text = "Customize the report layout or create a new layout in the feature-rich Report Des" &
+    "igner."
+        SuperToolTip7.Items.Add(ToolTipTitleItem7)
+        SuperToolTip7.Items.Add(ToolTipItem7)
+        SuperToolTip7.MaxWidth = 210
+        Me.CommandBarItem1.SuperTip = SuperToolTip7
+        '
+        'CommandBarItem2
+        '
+        Me.CommandBarItem2.Caption = "Preview"
+        Me.CommandBarItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowPreviewTab
+        Me.CommandBarItem2.Enabled = False
+        Me.CommandBarItem2.Id = 2
+        Me.CommandBarItem2.ItemShortcut = New DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F5)
+        Me.CommandBarItem2.Name = "CommandBarItem2"
+        SuperToolTip8.FixedTooltipWidth = True
+        ToolTipTitleItem8.Text = "Print Preview (F5)"
+        ToolTipItem8.LeftIndent = 6
+        ToolTipItem8.Text = "Display a report populated with data and divided into pages, customize its print " &
+    "settings and print or export this report."
+        SuperToolTip8.Items.Add(ToolTipTitleItem8)
+        SuperToolTip8.Items.Add(ToolTipItem8)
+        SuperToolTip8.MaxWidth = 210
+        Me.CommandBarItem2.SuperTip = SuperToolTip8
+        '
+        'CommandBarItem3
+        '
+        Me.CommandBarItem3.Caption = "Scripts"
+        Me.CommandBarItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowScriptsTab
+        Me.CommandBarItem3.Enabled = False
+        Me.CommandBarItem3.Id = 3
+        Me.CommandBarItem3.ItemShortcut = New DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F6)
+        Me.CommandBarItem3.Name = "CommandBarItem3"
+        SuperToolTip9.FixedTooltipWidth = True
+        ToolTipTitleItem9.Text = "Scripts (F6)"
+        ToolTipItem9.LeftIndent = 6
+        ToolTipItem9.Text = "Perform custom calculations by handling script events."
+        SuperToolTip9.Items.Add(ToolTipTitleItem9)
+        SuperToolTip9.Items.Add(ToolTipItem9)
+        SuperToolTip9.MaxWidth = 210
+        Me.CommandBarItem3.SuperTip = SuperToolTip9
+        '
+        'CommandBarItem4
+        '
+        Me.CommandBarItem4.Caption = "Undo"
+        Me.CommandBarItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Undo
+        Me.CommandBarItem4.Enabled = False
+        Me.CommandBarItem4.Id = 4
+        Me.CommandBarItem4.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z))
+        Me.CommandBarItem4.Name = "CommandBarItem4"
+        SuperToolTip10.FixedTooltipWidth = True
+        ToolTipTitleItem10.Text = "Undo (Ctrl+Z)"
+        ToolTipItem10.LeftIndent = 6
+        ToolTipItem10.Text = "Undo the last operation."
+        SuperToolTip10.Items.Add(ToolTipTitleItem10)
+        SuperToolTip10.Items.Add(ToolTipItem10)
+        SuperToolTip10.MaxWidth = 210
+        Me.CommandBarItem4.SuperTip = SuperToolTip10
+        '
+        'CommandBarItem5
+        '
+        Me.CommandBarItem5.Caption = "Redo"
+        Me.CommandBarItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Redo
+        Me.CommandBarItem5.Enabled = False
+        Me.CommandBarItem5.Id = 5
+        Me.CommandBarItem5.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Y))
+        Me.CommandBarItem5.Name = "CommandBarItem5"
+        SuperToolTip11.FixedTooltipWidth = True
+        ToolTipTitleItem11.Text = "Redo (Ctrl+Y)"
+        ToolTipItem11.LeftIndent = 6
+        ToolTipItem11.Text = "Redo the last operation."
+        SuperToolTip11.Items.Add(ToolTipTitleItem11)
+        SuperToolTip11.Items.Add(ToolTipItem11)
+        SuperToolTip11.MaxWidth = 210
+        Me.CommandBarItem5.SuperTip = SuperToolTip11
+        '
+        'CommandBarItem10
+        '
+        Me.CommandBarItem10.Caption = "New Report"
+        Me.CommandBarItem10.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReport
+        Me.CommandBarItem10.Description = "Create a new blank report."
+        Me.CommandBarItem10.Enabled = False
+        Me.CommandBarItem10.Id = 10
+        Me.CommandBarItem10.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N))
+        Me.CommandBarItem10.Name = "CommandBarItem10"
+        SuperToolTip12.FixedTooltipWidth = True
+        ToolTipTitleItem12.Text = "New Blank Report (Ctrl+N)"
+        ToolTipItem12.LeftIndent = 6
+        ToolTipItem12.Text = "Create a new blank report."
+        SuperToolTip12.Items.Add(ToolTipTitleItem12)
+        SuperToolTip12.Items.Add(ToolTipItem12)
+        SuperToolTip12.MaxWidth = 210
+        Me.CommandBarItem10.SuperTip = SuperToolTip12
+        '
+        'CommandBarItem11
+        '
+        Me.CommandBarItem11.Caption = "New Report via Wizard..."
+        Me.CommandBarItem11.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.NewReportWizard
+        Me.CommandBarItem11.Description = "Launch the report wizard to create a new report."
+        Me.CommandBarItem11.Enabled = False
+        Me.CommandBarItem11.Id = 11
+        Me.CommandBarItem11.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.W))
+        Me.CommandBarItem11.Name = "CommandBarItem11"
+        SuperToolTip13.FixedTooltipWidth = True
+        ToolTipTitleItem13.Text = "New Report via Wizard (Ctrl+W)"
+        ToolTipItem13.LeftIndent = 6
+        ToolTipItem13.Text = "Launch the report wizard to create a new report."
+        SuperToolTip13.Items.Add(ToolTipTitleItem13)
+        SuperToolTip13.Items.Add(ToolTipItem13)
+        SuperToolTip13.MaxWidth = 210
+        Me.CommandBarItem11.SuperTip = SuperToolTip13
+        '
+        'CommandBarItem12
+        '
+        Me.CommandBarItem12.Caption = "Save"
+        Me.CommandBarItem12.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFile
+        Me.CommandBarItem12.Description = "Save the current report."
+        Me.CommandBarItem12.Enabled = False
+        Me.CommandBarItem12.Id = 12
+        Me.CommandBarItem12.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S))
+        Me.CommandBarItem12.Name = "CommandBarItem12"
+        SuperToolTip14.FixedTooltipWidth = True
+        ToolTipTitleItem14.Text = "Save Report (Ctrl+S)"
+        ToolTipItem14.LeftIndent = 6
+        ToolTipItem14.Text = "Save the current report."
+        SuperToolTip14.Items.Add(ToolTipTitleItem14)
+        SuperToolTip14.Items.Add(ToolTipItem14)
+        SuperToolTip14.MaxWidth = 210
+        Me.CommandBarItem12.SuperTip = SuperToolTip14
+        '
+        'CommandBarItem13
+        '
+        Me.CommandBarItem13.Caption = "Save As..."
+        Me.CommandBarItem13.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SaveFileAs
+        Me.CommandBarItem13.Description = "Save the current report with a new name."
+        Me.CommandBarItem13.Enabled = False
+        Me.CommandBarItem13.Id = 13
+        Me.CommandBarItem13.Name = "CommandBarItem13"
+        SuperToolTip15.FixedTooltipWidth = True
+        ToolTipTitleItem15.Text = "Save Report As"
+        ToolTipItem15.LeftIndent = 6
+        ToolTipItem15.Text = "Save the current report with a new name."
+        SuperToolTip15.Items.Add(ToolTipTitleItem15)
+        SuperToolTip15.Items.Add(ToolTipItem15)
+        SuperToolTip15.MaxWidth = 210
+        Me.CommandBarItem13.SuperTip = SuperToolTip15
+        '
+        'CommandBarItem14
+        '
+        Me.CommandBarItem14.Caption = "Paste"
+        Me.CommandBarItem14.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Paste
+        Me.CommandBarItem14.Enabled = False
+        Me.CommandBarItem14.Id = 14
+        Me.CommandBarItem14.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V))
+        Me.CommandBarItem14.Name = "CommandBarItem14"
+        SuperToolTip16.FixedTooltipWidth = True
+        ToolTipTitleItem16.Text = "Paste (Ctrl+V)"
+        ToolTipItem16.LeftIndent = 6
+        ToolTipItem16.Text = "Paste the contents of the Clipboard."
+        SuperToolTip16.Items.Add(ToolTipTitleItem16)
+        SuperToolTip16.Items.Add(ToolTipItem16)
+        SuperToolTip16.MaxWidth = 210
+        Me.CommandBarItem14.SuperTip = SuperToolTip16
+        '
+        'CommandBarItem15
+        '
+        Me.CommandBarItem15.Caption = "Cut"
+        Me.CommandBarItem15.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Cut
+        Me.CommandBarItem15.Enabled = False
+        Me.CommandBarItem15.Id = 15
+        Me.CommandBarItem15.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X))
+        Me.CommandBarItem15.Name = "CommandBarItem15"
+        Me.CommandBarItem15.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
+        SuperToolTip17.FixedTooltipWidth = True
+        ToolTipTitleItem17.Text = "Cut (Ctrl+X)"
+        ToolTipItem17.LeftIndent = 6
+        ToolTipItem17.Text = "Cut the selected controls from the report and put them on the Clipboard."
+        SuperToolTip17.Items.Add(ToolTipTitleItem17)
+        SuperToolTip17.Items.Add(ToolTipItem17)
+        SuperToolTip17.MaxWidth = 210
+        Me.CommandBarItem15.SuperTip = SuperToolTip17
+        '
+        'CommandBarItem16
+        '
+        Me.CommandBarItem16.Caption = "Copy"
+        Me.CommandBarItem16.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Copy
+        Me.CommandBarItem16.Enabled = False
+        Me.CommandBarItem16.Id = 16
+        Me.CommandBarItem16.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C))
+        Me.CommandBarItem16.Name = "CommandBarItem16"
+        Me.CommandBarItem16.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
+        SuperToolTip18.FixedTooltipWidth = True
+        ToolTipTitleItem18.Text = "Copy (Ctrl+C)"
+        ToolTipItem18.LeftIndent = 6
+        ToolTipItem18.Text = "Copy the selected controls and put them on the Clipboard."
+        SuperToolTip18.Items.Add(ToolTipTitleItem18)
+        SuperToolTip18.Items.Add(ToolTipItem18)
+        SuperToolTip18.MaxWidth = 210
+        Me.CommandBarItem16.SuperTip = SuperToolTip18
+        '
+        'BarEditItem1
+        '
+        Me.BarEditItem1.Edit = Me.RecentlyUsedItemsComboBox1
+        Me.BarEditItem1.EditWidth = 140
+        Me.BarEditItem1.Id = 17
+        Me.BarEditItem1.Name = "BarEditItem1"
+        SuperToolTip19.FixedTooltipWidth = True
+        ToolTipTitleItem19.Text = "Font"
+        ToolTipItem19.LeftIndent = 6
+        ToolTipItem19.Text = "Change the font face."
+        SuperToolTip19.Items.Add(ToolTipTitleItem19)
+        SuperToolTip19.Items.Add(ToolTipItem19)
+        SuperToolTip19.MaxWidth = 210
+        Me.BarEditItem1.SuperTip = SuperToolTip19
+        '
+        'RecentlyUsedItemsComboBox1
+        '
+        Me.RecentlyUsedItemsComboBox1.AppearanceDropDown.Font = New System.Drawing.Font("Tahoma", 11.25!)
+        Me.RecentlyUsedItemsComboBox1.AppearanceDropDown.Options.UseFont = True
+        Me.RecentlyUsedItemsComboBox1.AutoHeight = False
+        Me.RecentlyUsedItemsComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RecentlyUsedItemsComboBox1.Name = "RecentlyUsedItemsComboBox1"
+        '
+        'BarEditItem2
+        '
+        Me.BarEditItem2.Edit = Me.DesignRepositoryItemComboBox1
+        Me.BarEditItem2.EditWidth = 55
+        Me.BarEditItem2.Id = 18
+        Me.BarEditItem2.Name = "BarEditItem2"
+        SuperToolTip20.FixedTooltipWidth = True
+        ToolTipTitleItem20.Text = "Font Size"
+        ToolTipItem20.LeftIndent = 6
+        ToolTipItem20.Text = "Change the font size."
+        SuperToolTip20.Items.Add(ToolTipTitleItem20)
+        SuperToolTip20.Items.Add(ToolTipItem20)
+        SuperToolTip20.MaxWidth = 210
+        Me.BarEditItem2.SuperTip = SuperToolTip20
+        '
+        'DesignRepositoryItemComboBox1
+        '
+        Me.DesignRepositoryItemComboBox1.AutoHeight = False
+        Me.DesignRepositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DesignRepositoryItemComboBox1.Name = "DesignRepositoryItemComboBox1"
+        '
+        'BarDockPanelsListItem1
+        '
+        Me.BarDockPanelsListItem1.Caption = "Windows"
+        Me.BarDockPanelsListItem1.DockManager = Me.XrDesignDockManager1
+        Me.BarDockPanelsListItem1.Id = 19
+        Me.BarDockPanelsListItem1.Name = "BarDockPanelsListItem1"
+        Me.BarDockPanelsListItem1.ShowCustomizationItem = False
+        Me.BarDockPanelsListItem1.ShowDockPanels = True
+        Me.BarDockPanelsListItem1.ShowToolbars = False
+        SuperToolTip21.FixedTooltipWidth = True
+        ToolTipTitleItem21.Text = "Show/Hide Windows"
+        ToolTipItem21.LeftIndent = 6
+        ToolTipItem21.Text = "Change the visibility of dock panels that assist in report creation."
+        SuperToolTip21.Items.Add(ToolTipTitleItem21)
+        SuperToolTip21.Items.Add(ToolTipItem21)
+        SuperToolTip21.MaxWidth = 210
+        Me.BarDockPanelsListItem1.SuperTip = SuperToolTip21
+        '
+        'XrDesignDockManager1
+        '
+        Me.XrDesignDockManager1.Form = Me
+        Me.XrDesignDockManager1.ImageStream = CType(resources.GetObject("XrDesignDockManager1.ImageStream"), DevExpress.Utils.ImageCollectionStreamer)
+        Me.XrDesignDockManager1.RootPanels.AddRange(New DevExpress.XtraBars.Docking.DockPanel() {Me.panelContainer1, Me.panelContainer4})
+        Me.XrDesignDockManager1.TopZIndexControls.AddRange(New String() {"DevExpress.XtraBars.BarDockControl", "DevExpress.XtraBars.StandaloneBarDockControl", "System.Windows.Forms.MenuStrip", "System.Windows.Forms.StatusStrip", "System.Windows.Forms.StatusBar", "DevExpress.XtraBars.Ribbon.RibbonStatusBar", "DevExpress.XtraBars.Ribbon.RibbonControl", "DevExpress.XtraBars.Navigation.OfficeNavigationBar", "DevExpress.XtraBars.Navigation.TileNavPane", "DevExpress.XtraBars.TabFormControl", "DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl", "DevExpress.XtraBars.ToolbarForm.ToolbarFormControl"})
+        '
+        'panelContainer1
+        '
+        Me.panelContainer1.Controls.Add(Me.panelContainer2)
+        Me.panelContainer1.Controls.Add(Me.panelContainer3)
+        Me.panelContainer1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right
+        Me.panelContainer1.ID = New System.Guid("84c0d0da-109c-4095-9f08-23695eb1fcb9")
+        Me.panelContainer1.Location = New System.Drawing.Point(425, 150)
+        Me.panelContainer1.Name = "panelContainer1"
+        Me.panelContainer1.OriginalSize = New System.Drawing.Size(375, 200)
+        Me.panelContainer1.Size = New System.Drawing.Size(375, 273)
+        Me.panelContainer1.Text = "panelContainer1"
+        '
+        'panelContainer2
+        '
+        Me.panelContainer2.ActiveChild = Me.ReportExplorerDockPanel1
+        Me.panelContainer2.Controls.Add(Me.ReportExplorerDockPanel1)
+        Me.panelContainer2.Controls.Add(Me.FieldListDockPanel1)
+        Me.panelContainer2.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
+        Me.panelContainer2.ID = New System.Guid("ced58208-5b33-4441-a5dd-85314eb2a58b")
+        Me.panelContainer2.Location = New System.Drawing.Point(0, 0)
+        Me.panelContainer2.Name = "panelContainer2"
+        Me.panelContainer2.OriginalSize = New System.Drawing.Size(200, 200)
+        Me.panelContainer2.Size = New System.Drawing.Size(375, 137)
+        Me.panelContainer2.Tabbed = True
+        Me.panelContainer2.Text = "panelContainer2"
+        '
+        'ReportExplorerDockPanel1
+        '
+        Me.ReportExplorerDockPanel1.Controls.Add(Me.ReportExplorerDockPanel1_Container)
+        Me.ReportExplorerDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
+        Me.ReportExplorerDockPanel1.ID = New System.Guid("fb3ec6cc-3b9b-4b9c-91cf-cff78c1edbf1")
+        Me.ReportExplorerDockPanel1.Location = New System.Drawing.Point(1, 23)
+        Me.ReportExplorerDockPanel1.Name = "ReportExplorerDockPanel1"
+        Me.ReportExplorerDockPanel1.OriginalSize = New System.Drawing.Size(200, 200)
+        Me.ReportExplorerDockPanel1.Size = New System.Drawing.Size(374, 87)
+        Me.ReportExplorerDockPanel1.Text = "Report Explorer"
+        '
+        'ReportExplorerDockPanel1_Container
+        '
+        Me.ReportExplorerDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
+        Me.ReportExplorerDockPanel1_Container.Name = "ReportExplorerDockPanel1_Container"
+        Me.ReportExplorerDockPanel1_Container.Size = New System.Drawing.Size(374, 87)
+        Me.ReportExplorerDockPanel1_Container.TabIndex = 0
+        '
+        'FieldListDockPanel1
+        '
+        Me.FieldListDockPanel1.Controls.Add(Me.FieldListDockPanel1_Container)
+        Me.FieldListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
+        Me.FieldListDockPanel1.ID = New System.Guid("faf69838-a93f-4114-83e8-d0d09cc5ce95")
+        Me.FieldListDockPanel1.Location = New System.Drawing.Point(1, 23)
+        Me.FieldListDockPanel1.Name = "FieldListDockPanel1"
+        Me.FieldListDockPanel1.OriginalSize = New System.Drawing.Size(200, 200)
+        Me.FieldListDockPanel1.Size = New System.Drawing.Size(374, 87)
+        Me.FieldListDockPanel1.Text = "Field List"
+        '
+        'FieldListDockPanel1_Container
+        '
+        Me.FieldListDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
+        Me.FieldListDockPanel1_Container.Name = "FieldListDockPanel1_Container"
+        Me.FieldListDockPanel1_Container.Size = New System.Drawing.Size(374, 87)
+        Me.FieldListDockPanel1_Container.TabIndex = 0
+        '
+        'panelContainer3
+        '
+        Me.panelContainer3.ActiveChild = Me.PropertyGridDockPanel1
+        Me.panelContainer3.Controls.Add(Me.PropertyGridDockPanel1)
+        Me.panelContainer3.Controls.Add(Me.ReportGalleryDockPanel1)
+        Me.panelContainer3.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
+        Me.panelContainer3.ID = New System.Guid("c5e9ae0b-f868-42f1-ab89-9422ae0d8814")
+        Me.panelContainer3.Location = New System.Drawing.Point(0, 137)
+        Me.panelContainer3.Name = "panelContainer3"
+        Me.panelContainer3.OriginalSize = New System.Drawing.Size(200, 200)
+        Me.panelContainer3.Size = New System.Drawing.Size(375, 136)
+        Me.panelContainer3.Tabbed = True
+        Me.panelContainer3.Text = "panelContainer3"
+        '
+        'PropertyGridDockPanel1
+        '
+        Me.PropertyGridDockPanel1.Controls.Add(Me.PropertyGridDockPanel1_Container)
+        Me.PropertyGridDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
+        Me.PropertyGridDockPanel1.ID = New System.Guid("b38d12c3-cd06-4dec-b93d-63a0088e495a")
+        Me.PropertyGridDockPanel1.Location = New System.Drawing.Point(1, 24)
+        Me.PropertyGridDockPanel1.Name = "PropertyGridDockPanel1"
+        Me.PropertyGridDockPanel1.OriginalSize = New System.Drawing.Size(200, 200)
+        Me.PropertyGridDockPanel1.Size = New System.Drawing.Size(374, 85)
+        Me.PropertyGridDockPanel1.Text = "Properties"
+        '
+        'PropertyGridDockPanel1_Container
+        '
+        Me.PropertyGridDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
+        Me.PropertyGridDockPanel1_Container.Name = "PropertyGridDockPanel1_Container"
+        Me.PropertyGridDockPanel1_Container.Size = New System.Drawing.Size(374, 85)
+        Me.PropertyGridDockPanel1_Container.TabIndex = 0
+        '
+        'ReportGalleryDockPanel1
+        '
+        Me.ReportGalleryDockPanel1.Controls.Add(Me.ReportGalleryDockPanel1_Container)
+        Me.ReportGalleryDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
+        Me.ReportGalleryDockPanel1.ID = New System.Guid("7cd5b1e8-63bb-46f7-af65-af61eb851a38")
+        Me.ReportGalleryDockPanel1.Location = New System.Drawing.Point(1, 24)
+        Me.ReportGalleryDockPanel1.Name = "ReportGalleryDockPanel1"
+        Me.ReportGalleryDockPanel1.OriginalSize = New System.Drawing.Size(200, 200)
+        Me.ReportGalleryDockPanel1.Size = New System.Drawing.Size(374, 85)
+        Me.ReportGalleryDockPanel1.Text = "Report Gallery"
+        '
+        'ReportGalleryDockPanel1_Container
+        '
+        Me.ReportGalleryDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
+        Me.ReportGalleryDockPanel1_Container.Name = "ReportGalleryDockPanel1_Container"
+        Me.ReportGalleryDockPanel1_Container.Size = New System.Drawing.Size(374, 85)
+        Me.ReportGalleryDockPanel1_Container.TabIndex = 0
+        '
+        'panelContainer4
+        '
+        Me.panelContainer4.ActiveChild = Me.GroupAndSortDockPanel1
+        Me.panelContainer4.Controls.Add(Me.GroupAndSortDockPanel1)
+        Me.panelContainer4.Controls.Add(Me.ErrorListDockPanel1)
+        Me.panelContainer4.Dock = DevExpress.XtraBars.Docking.DockingStyle.Bottom
+        Me.panelContainer4.ID = New System.Guid("f831112e-f8e9-4152-8c88-098f5401aaed")
+        Me.panelContainer4.Location = New System.Drawing.Point(0, 223)
+        Me.panelContainer4.Name = "panelContainer4"
+        Me.panelContainer4.OriginalSize = New System.Drawing.Size(200, 200)
+        Me.panelContainer4.Size = New System.Drawing.Size(425, 200)
+        Me.panelContainer4.Tabbed = True
+        Me.panelContainer4.Text = "panelContainer4"
+        '
+        'GroupAndSortDockPanel1
+        '
+        Me.GroupAndSortDockPanel1.Controls.Add(Me.GroupAndSortDockPanel1_Container)
+        Me.GroupAndSortDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
+        Me.GroupAndSortDockPanel1.ID = New System.Guid("4bab159e-c495-4d67-87dc-f4e895da443e")
+        Me.GroupAndSortDockPanel1.Location = New System.Drawing.Point(0, 24)
+        Me.GroupAndSortDockPanel1.Name = "GroupAndSortDockPanel1"
+        Me.GroupAndSortDockPanel1.OriginalSize = New System.Drawing.Size(200, 200)
+        Me.GroupAndSortDockPanel1.Size = New System.Drawing.Size(425, 149)
+        Me.GroupAndSortDockPanel1.Text = "Group and Sort"
+        '
+        'GroupAndSortDockPanel1_Container
+        '
+        Me.GroupAndSortDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
+        Me.GroupAndSortDockPanel1_Container.Name = "GroupAndSortDockPanel1_Container"
+        Me.GroupAndSortDockPanel1_Container.Size = New System.Drawing.Size(425, 149)
+        Me.GroupAndSortDockPanel1_Container.TabIndex = 0
+        '
+        'ErrorListDockPanel1
+        '
+        Me.ErrorListDockPanel1.Controls.Add(Me.ErrorListDockPanel1_Container)
+        Me.ErrorListDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Fill
+        Me.ErrorListDockPanel1.ID = New System.Guid("5a9a01fd-6e95-4e81-a8c4-ac63153d7488")
+        Me.ErrorListDockPanel1.Location = New System.Drawing.Point(0, 24)
+        Me.ErrorListDockPanel1.Name = "ErrorListDockPanel1"
+        Me.ErrorListDockPanel1.OriginalSize = New System.Drawing.Size(200, 73)
+        Me.ErrorListDockPanel1.Size = New System.Drawing.Size(425, 149)
+        Me.ErrorListDockPanel1.Text = "Scripts Errors"
+        '
+        'ErrorListDockPanel1_Container
+        '
+        Me.ErrorListDockPanel1_Container.Location = New System.Drawing.Point(0, 0)
+        Me.ErrorListDockPanel1_Container.Name = "ErrorListDockPanel1_Container"
+        Me.ErrorListDockPanel1_Container.Size = New System.Drawing.Size(425, 149)
+        Me.ErrorListDockPanel1_Container.TabIndex = 0
+        '
+        'CommandBarItem17
+        '
+        Me.CommandBarItem17.Caption = "Bold"
+        Me.CommandBarItem17.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontBold
+        Me.CommandBarItem17.Enabled = False
+        Me.CommandBarItem17.Id = 20
+        Me.CommandBarItem17.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.B))
+        Me.CommandBarItem17.Name = "CommandBarItem17"
+        SuperToolTip22.FixedTooltipWidth = True
+        ToolTipTitleItem22.Text = "Bold (Ctrl+B)"
+        ToolTipItem22.LeftIndent = 6
+        ToolTipItem22.Text = "Make the selected text bold."
+        SuperToolTip22.Items.Add(ToolTipTitleItem22)
+        SuperToolTip22.Items.Add(ToolTipItem22)
+        SuperToolTip22.MaxWidth = 210
+        Me.CommandBarItem17.SuperTip = SuperToolTip22
+        '
+        'CommandBarItem18
+        '
+        Me.CommandBarItem18.Caption = "Italic"
+        Me.CommandBarItem18.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontItalic
+        Me.CommandBarItem18.Enabled = False
+        Me.CommandBarItem18.Id = 21
+        Me.CommandBarItem18.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.I))
+        Me.CommandBarItem18.Name = "CommandBarItem18"
+        SuperToolTip23.FixedTooltipWidth = True
+        ToolTipTitleItem23.Text = "Italic (Ctrl+I)"
+        ToolTipItem23.LeftIndent = 6
+        ToolTipItem23.Text = "Italicize the text."
+        SuperToolTip23.Items.Add(ToolTipTitleItem23)
+        SuperToolTip23.Items.Add(ToolTipItem23)
+        SuperToolTip23.MaxWidth = 210
+        Me.CommandBarItem18.SuperTip = SuperToolTip23
+        '
+        'CommandBarItem19
+        '
+        Me.CommandBarItem19.Caption = "Underline"
+        Me.CommandBarItem19.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontUnderline
+        Me.CommandBarItem19.Enabled = False
+        Me.CommandBarItem19.Id = 22
+        Me.CommandBarItem19.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.U))
+        Me.CommandBarItem19.Name = "CommandBarItem19"
+        SuperToolTip24.FixedTooltipWidth = True
+        ToolTipTitleItem24.Text = "Underline (Ctrl+U)"
+        ToolTipItem24.LeftIndent = 6
+        ToolTipItem24.Text = "Underline the selected text."
+        SuperToolTip24.Items.Add(ToolTipTitleItem24)
+        SuperToolTip24.Items.Add(ToolTipItem24)
+        SuperToolTip24.MaxWidth = 210
+        Me.CommandBarItem19.SuperTip = SuperToolTip24
+        '
+        'CommandColorBarItem1
+        '
+        Me.CommandColorBarItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandColorBarItem1.Caption = "Foreground Color"
+        Me.CommandColorBarItem1.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.[False]
+        Me.CommandColorBarItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ForeColor
+        Me.CommandColorBarItem1.Enabled = False
+        Me.CommandColorBarItem1.Id = 23
+        Me.CommandColorBarItem1.Name = "CommandColorBarItem1"
+        SuperToolTip25.FixedTooltipWidth = True
+        ToolTipTitleItem25.Text = "Foreground Color"
+        ToolTipItem25.LeftIndent = 6
+        ToolTipItem25.Text = "Change the text foreground color."
+        SuperToolTip25.Items.Add(ToolTipTitleItem25)
+        SuperToolTip25.Items.Add(ToolTipItem25)
+        SuperToolTip25.MaxWidth = 210
+        Me.CommandColorBarItem1.SuperTip = SuperToolTip25
+        '
+        'CommandColorBarItem2
+        '
+        Me.CommandColorBarItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandColorBarItem2.Caption = "Background Color"
+        Me.CommandColorBarItem2.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.[False]
+        Me.CommandColorBarItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BackColor
+        Me.CommandColorBarItem2.Enabled = False
+        Me.CommandColorBarItem2.Id = 24
+        Me.CommandColorBarItem2.Name = "CommandColorBarItem2"
+        SuperToolTip26.FixedTooltipWidth = True
+        ToolTipTitleItem26.Text = "Background Color"
+        ToolTipItem26.LeftIndent = 6
+        ToolTipItem26.Text = "Change the text background color."
+        SuperToolTip26.Items.Add(ToolTipTitleItem26)
+        SuperToolTip26.Items.Add(ToolTipItem26)
+        SuperToolTip26.MaxWidth = 210
+        Me.CommandColorBarItem2.SuperTip = SuperToolTip26
+        '
+        'CommandBarItem20
+        '
+        Me.CommandBarItem20.Caption = "Align Text Left"
+        Me.CommandBarItem20.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyLeft
+        Me.CommandBarItem20.Enabled = False
+        Me.CommandBarItem20.Id = 25
+        Me.CommandBarItem20.Name = "CommandBarItem20"
+        SuperToolTip27.FixedTooltipWidth = True
+        ToolTipTitleItem27.Text = "Align Text Left"
+        ToolTipItem27.LeftIndent = 6
+        ToolTipItem27.Text = "Align text to the left."
+        SuperToolTip27.Items.Add(ToolTipTitleItem27)
+        SuperToolTip27.Items.Add(ToolTipItem27)
+        SuperToolTip27.MaxWidth = 210
+        Me.CommandBarItem20.SuperTip = SuperToolTip27
+        '
+        'CommandBarItem21
+        '
+        Me.CommandBarItem21.Caption = "Center Text"
+        Me.CommandBarItem21.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyCenter
+        Me.CommandBarItem21.Enabled = False
+        Me.CommandBarItem21.Id = 26
+        Me.CommandBarItem21.Name = "CommandBarItem21"
+        SuperToolTip28.FixedTooltipWidth = True
+        ToolTipTitleItem28.Text = "Center Text"
+        ToolTipItem28.LeftIndent = 6
+        ToolTipItem28.Text = "Center text between the left and right sides."
+        SuperToolTip28.Items.Add(ToolTipTitleItem28)
+        SuperToolTip28.Items.Add(ToolTipItem28)
+        SuperToolTip28.MaxWidth = 210
+        Me.CommandBarItem21.SuperTip = SuperToolTip28
+        '
+        'CommandBarItem22
+        '
+        Me.CommandBarItem22.Caption = "Align Text Right"
+        Me.CommandBarItem22.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyRight
+        Me.CommandBarItem22.Enabled = False
+        Me.CommandBarItem22.Id = 27
+        Me.CommandBarItem22.Name = "CommandBarItem22"
+        SuperToolTip29.FixedTooltipWidth = True
+        ToolTipTitleItem29.Text = "Align Text Right"
+        ToolTipItem29.LeftIndent = 6
+        ToolTipItem29.Text = "Align text to the right."
+        SuperToolTip29.Items.Add(ToolTipTitleItem29)
+        SuperToolTip29.Items.Add(ToolTipItem29)
+        SuperToolTip29.MaxWidth = 210
+        Me.CommandBarItem22.SuperTip = SuperToolTip29
+        '
+        'CommandBarItem23
+        '
+        Me.CommandBarItem23.Caption = "Justify"
+        Me.CommandBarItem23.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.JustifyJustify
+        Me.CommandBarItem23.Enabled = False
+        Me.CommandBarItem23.Id = 28
+        Me.CommandBarItem23.Name = "CommandBarItem23"
+        SuperToolTip30.FixedTooltipWidth = True
+        ToolTipTitleItem30.Text = "Justify"
+        ToolTipItem30.LeftIndent = 6
+        ToolTipItem30.Text = "Distribute text evenly to the left and right sides."
+        SuperToolTip30.Items.Add(ToolTipTitleItem30)
+        SuperToolTip30.Items.Add(ToolTipItem30)
+        SuperToolTip30.MaxWidth = 210
+        Me.CommandBarItem23.SuperTip = SuperToolTip30
+        '
+        'CommandBarItem24
+        '
+        Me.CommandBarItem24.Caption = "Strikethrough"
+        Me.CommandBarItem24.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FontStrikeout
+        Me.CommandBarItem24.Enabled = False
+        Me.CommandBarItem24.Id = 29
+        Me.CommandBarItem24.Name = "CommandBarItem24"
+        SuperToolTip31.FixedTooltipWidth = True
+        ToolTipTitleItem31.Text = "Strikethrough"
+        ToolTipItem31.LeftIndent = 6
+        ToolTipItem31.Text = "Cross the selected text out by drawing a line through it."
+        SuperToolTip31.Items.Add(ToolTipTitleItem31)
+        SuperToolTip31.Items.Add(ToolTipItem31)
+        SuperToolTip31.MaxWidth = 210
+        Me.CommandBarItem24.SuperTip = SuperToolTip31
+        '
+        'CommandBarItem25
+        '
+        Me.CommandBarItem25.Caption = "Align Text Top"
+        Me.CommandBarItem25.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignTop
+        Me.CommandBarItem25.Enabled = False
+        Me.CommandBarItem25.Id = 30
+        Me.CommandBarItem25.Name = "CommandBarItem25"
+        SuperToolTip32.FixedTooltipWidth = True
+        ToolTipTitleItem32.Text = "Align Text Top"
+        ToolTipItem32.LeftIndent = 6
+        ToolTipItem32.Text = "Align text to the top."
+        SuperToolTip32.Items.Add(ToolTipTitleItem32)
+        SuperToolTip32.Items.Add(ToolTipItem32)
+        SuperToolTip32.MaxWidth = 210
+        Me.CommandBarItem25.SuperTip = SuperToolTip32
+        '
+        'CommandBarItem26
+        '
+        Me.CommandBarItem26.Caption = "Align Text Middle"
+        Me.CommandBarItem26.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignMiddle
+        Me.CommandBarItem26.Enabled = False
+        Me.CommandBarItem26.Id = 31
+        Me.CommandBarItem26.Name = "CommandBarItem26"
+        SuperToolTip33.FixedTooltipWidth = True
+        ToolTipTitleItem33.Text = "Align Text Middle"
+        ToolTipItem33.LeftIndent = 6
+        ToolTipItem33.Text = "Center text between the top and bottom."
+        SuperToolTip33.Items.Add(ToolTipTitleItem33)
+        SuperToolTip33.Items.Add(ToolTipItem33)
+        SuperToolTip33.MaxWidth = 210
+        Me.CommandBarItem26.SuperTip = SuperToolTip33
+        '
+        'CommandBarItem27
+        '
+        Me.CommandBarItem27.Caption = "Align Text Bottom"
+        Me.CommandBarItem27.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertAlignBottom
+        Me.CommandBarItem27.Enabled = False
+        Me.CommandBarItem27.Id = 32
+        Me.CommandBarItem27.Name = "CommandBarItem27"
+        SuperToolTip34.FixedTooltipWidth = True
+        ToolTipTitleItem34.Text = "Align Text Bottom"
+        ToolTipItem34.LeftIndent = 6
+        ToolTipItem34.Text = "Align text to the bottom."
+        SuperToolTip34.Items.Add(ToolTipTitleItem34)
+        SuperToolTip34.Items.Add(ToolTipItem34)
+        SuperToolTip34.MaxWidth = 210
+        Me.CommandBarItem27.SuperTip = SuperToolTip34
+        '
+        'CommandBarItem28
+        '
+        Me.CommandBarItem28.Caption = "Add Calculated Field"
+        Me.CommandBarItem28.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddCalculatedField
+        Me.CommandBarItem28.Enabled = False
+        Me.CommandBarItem28.Id = 33
+        Me.CommandBarItem28.Name = "CommandBarItem28"
+        Me.CommandBarItem28.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
+        SuperToolTip35.FixedTooltipWidth = True
+        ToolTipTitleItem35.Text = "Add Calculated Field"
+        ToolTipItem35.LeftIndent = 6
+        ToolTipItem35.Text = "Create a custom field whose value is evaluated using an expression based on avail" &
+    "able data fields."
+        SuperToolTip35.Items.Add(ToolTipTitleItem35)
+        SuperToolTip35.Items.Add(ToolTipItem35)
+        SuperToolTip35.MaxWidth = 210
+        Me.CommandBarItem28.SuperTip = SuperToolTip35
+        '
+        'CommandBarItem29
+        '
+        Me.CommandBarItem29.Caption = "Add Parameter"
+        Me.CommandBarItem29.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddParameter
+        Me.CommandBarItem29.Enabled = False
+        Me.CommandBarItem29.Id = 34
+        Me.CommandBarItem29.Name = "CommandBarItem29"
+        Me.CommandBarItem29.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
+        SuperToolTip36.FixedTooltipWidth = True
+        ToolTipTitleItem36.Text = "Add Parameter"
+        ToolTipItem36.LeftIndent = 6
+        ToolTipItem36.Text = "Create a new parameter to pass dynamic values to your report."
+        SuperToolTip36.Items.Add(ToolTipTitleItem36)
+        SuperToolTip36.Items.Add(ToolTipItem36)
+        SuperToolTip36.MaxWidth = 210
+        Me.CommandBarItem29.SuperTip = SuperToolTip36
+        '
+        'CommandBarItem30
+        '
+        Me.CommandBarItem30.Caption = "Add Data Source"
+        Me.CommandBarItem30.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AddNewDataSource
+        Me.CommandBarItem30.Enabled = False
+        Me.CommandBarItem30.Id = 35
+        Me.CommandBarItem30.Name = "CommandBarItem30"
+        SuperToolTip37.FixedTooltipWidth = True
+        ToolTipTitleItem37.Text = "Add Data Source"
+        ToolTipItem37.LeftIndent = 6
+        ToolTipItem37.Text = "Create and set up a new data source for your report."
+        SuperToolTip37.Items.Add(ToolTipTitleItem37)
+        SuperToolTip37.Items.Add(ToolTipItem37)
+        SuperToolTip37.MaxWidth = 210
+        Me.CommandBarItem30.SuperTip = SuperToolTip37
+        '
+        'CommandBarItem31
+        '
+        Me.CommandBarItem31.Caption = "Extract Style"
+        Me.CommandBarItem31.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ExtractStyle
+        Me.CommandBarItem31.Enabled = False
+        Me.CommandBarItem31.Id = 36
+        Me.CommandBarItem31.Name = "CommandBarItem31"
+        SuperToolTip38.FixedTooltipWidth = True
+        ToolTipTitleItem38.Text = "Extract Style"
+        ToolTipItem38.LeftIndent = 6
+        ToolTipItem38.Text = "Create a new style based on the selected control's appearance settings. Apply the" &
+    " created style from the Styles gallery to other controls in your report."
+        SuperToolTip38.Items.Add(ToolTipTitleItem38)
+        SuperToolTip38.Items.Add(ToolTipItem38)
+        SuperToolTip38.MaxWidth = 210
+        Me.CommandBarItem31.SuperTip = SuperToolTip38
+        '
+        'CommandBarItem32
+        '
+        Me.CommandBarItem32.Caption = "All Borders"
+        Me.CommandBarItem32.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BordersAll
+        Me.CommandBarItem32.Enabled = False
+        Me.CommandBarItem32.Id = 37
+        Me.CommandBarItem32.Name = "CommandBarItem32"
+        SuperToolTip39.FixedTooltipWidth = True
+        ToolTipTitleItem39.Text = "All Borders"
+        ToolTipItem39.LeftIndent = 6
+        ToolTipItem39.Text = "Add all borders to the selected controls."
+        SuperToolTip39.Items.Add(ToolTipTitleItem39)
+        SuperToolTip39.Items.Add(ToolTipItem39)
+        SuperToolTip39.MaxWidth = 210
+        Me.CommandBarItem32.SuperTip = SuperToolTip39
+        '
+        'CommandBarItem33
+        '
+        Me.CommandBarItem33.Caption = "No Border"
+        Me.CommandBarItem33.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BordersNone
+        Me.CommandBarItem33.Enabled = False
+        Me.CommandBarItem33.Id = 38
+        Me.CommandBarItem33.Name = "CommandBarItem33"
+        SuperToolTip40.FixedTooltipWidth = True
+        ToolTipTitleItem40.Text = "No Border"
+        ToolTipItem40.LeftIndent = 6
+        ToolTipItem40.Text = "Remove borders from the selected controls."
+        SuperToolTip40.Items.Add(ToolTipTitleItem40)
+        SuperToolTip40.Items.Add(ToolTipItem40)
+        SuperToolTip40.MaxWidth = 210
+        Me.CommandBarItem33.SuperTip = SuperToolTip40
+        '
+        'CommandBarItem34
+        '
+        Me.CommandBarItem34.Caption = "Left Border"
+        Me.CommandBarItem34.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderLeft
+        Me.CommandBarItem34.Enabled = False
+        Me.CommandBarItem34.Id = 39
+        Me.CommandBarItem34.Name = "CommandBarItem34"
+        SuperToolTip41.FixedTooltipWidth = True
+        ToolTipTitleItem41.Text = "Left Border"
+        ToolTipItem41.LeftIndent = 6
+        ToolTipItem41.Text = "Add the left border to the selected controls."
+        SuperToolTip41.Items.Add(ToolTipTitleItem41)
+        SuperToolTip41.Items.Add(ToolTipItem41)
+        SuperToolTip41.MaxWidth = 210
+        Me.CommandBarItem34.SuperTip = SuperToolTip41
+        '
+        'CommandBarItem35
+        '
+        Me.CommandBarItem35.Caption = "Top Border"
+        Me.CommandBarItem35.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderTop
+        Me.CommandBarItem35.Enabled = False
+        Me.CommandBarItem35.Id = 40
+        Me.CommandBarItem35.Name = "CommandBarItem35"
+        SuperToolTip42.FixedTooltipWidth = True
+        ToolTipTitleItem42.Text = "Top Border"
+        ToolTipItem42.LeftIndent = 6
+        ToolTipItem42.Text = "Add the top border to the selected controls."
+        SuperToolTip42.Items.Add(ToolTipTitleItem42)
+        SuperToolTip42.Items.Add(ToolTipItem42)
+        SuperToolTip42.MaxWidth = 210
+        Me.CommandBarItem35.SuperTip = SuperToolTip42
+        '
+        'CommandBarItem36
+        '
+        Me.CommandBarItem36.Caption = "Right Border"
+        Me.CommandBarItem36.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderRight
+        Me.CommandBarItem36.Enabled = False
+        Me.CommandBarItem36.Id = 41
+        Me.CommandBarItem36.Name = "CommandBarItem36"
+        SuperToolTip43.FixedTooltipWidth = True
+        ToolTipTitleItem43.Text = "Right Border"
+        ToolTipItem43.LeftIndent = 6
+        ToolTipItem43.Text = "Add the right border to the selected controls."
+        SuperToolTip43.Items.Add(ToolTipTitleItem43)
+        SuperToolTip43.Items.Add(ToolTipItem43)
+        SuperToolTip43.MaxWidth = 210
+        Me.CommandBarItem36.SuperTip = SuperToolTip43
+        '
+        'CommandBarItem37
+        '
+        Me.CommandBarItem37.Caption = "Bottom Border"
+        Me.CommandBarItem37.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderBottom
+        Me.CommandBarItem37.Enabled = False
+        Me.CommandBarItem37.Id = 42
+        Me.CommandBarItem37.Name = "CommandBarItem37"
+        SuperToolTip44.FixedTooltipWidth = True
+        ToolTipTitleItem44.Text = "Bottom Border"
+        ToolTipItem44.LeftIndent = 6
+        ToolTipItem44.Text = "Add the bottom border to the selected controls."
+        SuperToolTip44.Items.Add(ToolTipTitleItem44)
+        SuperToolTip44.Items.Add(ToolTipItem44)
+        SuperToolTip44.MaxWidth = 210
+        Me.CommandBarItem37.SuperTip = SuperToolTip44
+        '
+        'CommandColorBarItem3
+        '
+        Me.CommandColorBarItem3.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandColorBarItem3.Caption = "Border Color"
+        Me.CommandColorBarItem3.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.[False]
+        Me.CommandColorBarItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderColor
+        Me.CommandColorBarItem3.Enabled = False
+        Me.CommandColorBarItem3.Id = 43
+        Me.CommandColorBarItem3.Name = "CommandColorBarItem3"
+        SuperToolTip45.FixedTooltipWidth = True
+        ToolTipTitleItem45.Text = "Border Color"
+        ToolTipItem45.LeftIndent = 6
+        ToolTipItem45.Text = "Change the border color."
+        SuperToolTip45.Items.Add(ToolTipTitleItem45)
+        SuperToolTip45.Items.Add(ToolTipItem45)
+        SuperToolTip45.MaxWidth = 210
+        Me.CommandColorBarItem3.SuperTip = SuperToolTip45
+        '
+        'CommandBarItem38
+        '
+        Me.CommandBarItem38.ActAsDropDown = True
+        Me.CommandBarItem38.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem38.Caption = "Border Width"
+        Me.CommandBarItem38.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderWidth
+        Me.CommandBarItem38.Enabled = False
+        Me.CommandBarItem38.Id = 44
+        Me.CommandBarItem38.Name = "CommandBarItem38"
+        SuperToolTip46.FixedTooltipWidth = True
+        ToolTipTitleItem46.Text = "Border Width"
+        ToolTipItem46.LeftIndent = 6
+        ToolTipItem46.Text = "Change the border width."
+        SuperToolTip46.Items.Add(ToolTipTitleItem46)
+        SuperToolTip46.Items.Add(ToolTipItem46)
+        SuperToolTip46.MaxWidth = 210
+        Me.CommandBarItem38.SuperTip = SuperToolTip46
+        '
+        'CommandBarItem39
+        '
+        Me.CommandBarItem39.Caption = "Align to Grid"
+        Me.CommandBarItem39.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignToGrid
+        Me.CommandBarItem39.Enabled = False
+        Me.CommandBarItem39.Id = 45
+        Me.CommandBarItem39.Name = "CommandBarItem39"
+        SuperToolTip47.FixedTooltipWidth = True
+        ToolTipTitleItem47.Text = "Align to Grid"
+        ToolTipItem47.LeftIndent = 6
+        ToolTipItem47.Text = "Align the positions of the selected controls to the grid."
+        SuperToolTip47.Items.Add(ToolTipTitleItem47)
+        SuperToolTip47.Items.Add(ToolTipItem47)
+        SuperToolTip47.MaxWidth = 210
+        Me.CommandBarItem39.SuperTip = SuperToolTip47
+        '
+        'CommandBarItem40
+        '
+        Me.CommandBarItem40.Caption = "Align Lefts"
+        Me.CommandBarItem40.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignLeft
+        Me.CommandBarItem40.Enabled = False
+        Me.CommandBarItem40.Id = 46
+        Me.CommandBarItem40.Name = "CommandBarItem40"
+        SuperToolTip48.FixedTooltipWidth = True
+        ToolTipTitleItem48.Text = "Align Lefts"
+        ToolTipItem48.LeftIndent = 6
+        ToolTipItem48.Text = "Left align the selected controls."
+        SuperToolTip48.Items.Add(ToolTipTitleItem48)
+        SuperToolTip48.Items.Add(ToolTipItem48)
+        SuperToolTip48.MaxWidth = 210
+        Me.CommandBarItem40.SuperTip = SuperToolTip48
+        '
+        'CommandBarItem41
+        '
+        Me.CommandBarItem41.Caption = "Align Centers"
+        Me.CommandBarItem41.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignVerticalCenters
+        Me.CommandBarItem41.Enabled = False
+        Me.CommandBarItem41.Id = 47
+        Me.CommandBarItem41.Name = "CommandBarItem41"
+        SuperToolTip49.FixedTooltipWidth = True
+        ToolTipTitleItem49.Text = "Align Centers"
+        ToolTipItem49.LeftIndent = 6
+        ToolTipItem49.Text = "Align the centers of the selected controls vertically."
+        SuperToolTip49.Items.Add(ToolTipTitleItem49)
+        SuperToolTip49.Items.Add(ToolTipItem49)
+        SuperToolTip49.MaxWidth = 210
+        Me.CommandBarItem41.SuperTip = SuperToolTip49
+        '
+        'CommandBarItem42
+        '
+        Me.CommandBarItem42.Caption = "Align Rights"
+        Me.CommandBarItem42.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignRight
+        Me.CommandBarItem42.Enabled = False
+        Me.CommandBarItem42.Id = 48
+        Me.CommandBarItem42.Name = "CommandBarItem42"
+        SuperToolTip50.FixedTooltipWidth = True
+        ToolTipTitleItem50.Text = "Align Rights"
+        ToolTipItem50.LeftIndent = 6
+        ToolTipItem50.Text = "Right align the selected controls."
+        SuperToolTip50.Items.Add(ToolTipTitleItem50)
+        SuperToolTip50.Items.Add(ToolTipItem50)
+        SuperToolTip50.MaxWidth = 210
+        Me.CommandBarItem42.SuperTip = SuperToolTip50
+        '
+        'CommandBarItem43
+        '
+        Me.CommandBarItem43.Caption = "Align Tops"
+        Me.CommandBarItem43.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignTop
+        Me.CommandBarItem43.Enabled = False
+        Me.CommandBarItem43.Id = 49
+        Me.CommandBarItem43.Name = "CommandBarItem43"
+        SuperToolTip51.FixedTooltipWidth = True
+        ToolTipTitleItem51.Text = "Align Tops"
+        ToolTipItem51.LeftIndent = 6
+        ToolTipItem51.Text = "Align the tops of the selected controls."
+        SuperToolTip51.Items.Add(ToolTipTitleItem51)
+        SuperToolTip51.Items.Add(ToolTipItem51)
+        SuperToolTip51.MaxWidth = 210
+        Me.CommandBarItem43.SuperTip = SuperToolTip51
+        '
+        'CommandBarItem44
+        '
+        Me.CommandBarItem44.Caption = "Align Middles"
+        Me.CommandBarItem44.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignHorizontalCenters
+        Me.CommandBarItem44.Enabled = False
+        Me.CommandBarItem44.Id = 50
+        Me.CommandBarItem44.Name = "CommandBarItem44"
+        SuperToolTip52.FixedTooltipWidth = True
+        ToolTipTitleItem52.Text = "Align Middles"
+        ToolTipItem52.LeftIndent = 6
+        ToolTipItem52.Text = "Align the centers of the selected controls horizontally."
+        SuperToolTip52.Items.Add(ToolTipTitleItem52)
+        SuperToolTip52.Items.Add(ToolTipItem52)
+        SuperToolTip52.MaxWidth = 210
+        Me.CommandBarItem44.SuperTip = SuperToolTip52
+        '
+        'CommandBarItem45
+        '
+        Me.CommandBarItem45.Caption = "Align Bottoms"
+        Me.CommandBarItem45.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.AlignBottom
+        Me.CommandBarItem45.Enabled = False
+        Me.CommandBarItem45.Id = 51
+        Me.CommandBarItem45.Name = "CommandBarItem45"
+        SuperToolTip53.FixedTooltipWidth = True
+        ToolTipTitleItem53.Text = "Align Bottoms"
+        ToolTipItem53.LeftIndent = 6
+        ToolTipItem53.Text = "Align the bottoms of the selected controls."
+        SuperToolTip53.Items.Add(ToolTipTitleItem53)
+        SuperToolTip53.Items.Add(ToolTipItem53)
+        SuperToolTip53.MaxWidth = 210
+        Me.CommandBarItem45.SuperTip = SuperToolTip53
+        '
+        'CommandBarItem46
+        '
+        Me.CommandBarItem46.Caption = "Make Same Width"
+        Me.CommandBarItem46.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControlWidth
+        Me.CommandBarItem46.Enabled = False
+        Me.CommandBarItem46.Id = 52
+        Me.CommandBarItem46.Name = "CommandBarItem46"
+        SuperToolTip54.FixedTooltipWidth = True
+        ToolTipTitleItem54.Text = "Make Same Width"
+        ToolTipItem54.LeftIndent = 6
+        ToolTipItem54.Text = "Make the selected controls have the same width."
+        SuperToolTip54.Items.Add(ToolTipTitleItem54)
+        SuperToolTip54.Items.Add(ToolTipItem54)
+        SuperToolTip54.MaxWidth = 210
+        Me.CommandBarItem46.SuperTip = SuperToolTip54
+        '
+        'CommandBarItem47
+        '
+        Me.CommandBarItem47.Caption = "Fit Bounds to Grid"
+        Me.CommandBarItem47.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToGrid
+        Me.CommandBarItem47.Enabled = False
+        Me.CommandBarItem47.Id = 53
+        Me.CommandBarItem47.Name = "CommandBarItem47"
+        SuperToolTip55.FixedTooltipWidth = True
+        ToolTipTitleItem55.Text = "Size to Grid"
+        ToolTipItem55.LeftIndent = 6
+        ToolTipItem55.Text = "Adjust the size of the selected controls according to the grid size."
+        SuperToolTip55.Items.Add(ToolTipTitleItem55)
+        SuperToolTip55.Items.Add(ToolTipItem55)
+        SuperToolTip55.MaxWidth = 210
+        Me.CommandBarItem47.SuperTip = SuperToolTip55
+        '
+        'CommandBarItem48
+        '
+        Me.CommandBarItem48.Caption = "Make Same Height"
+        Me.CommandBarItem48.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControlHeight
+        Me.CommandBarItem48.Enabled = False
+        Me.CommandBarItem48.Id = 54
+        Me.CommandBarItem48.Name = "CommandBarItem48"
+        SuperToolTip56.FixedTooltipWidth = True
+        ToolTipTitleItem56.Text = "Make Same Height"
+        ToolTipItem56.LeftIndent = 6
+        ToolTipItem56.Text = "Make the selected controls have the same height."
+        SuperToolTip56.Items.Add(ToolTipTitleItem56)
+        SuperToolTip56.Items.Add(ToolTipItem56)
+        SuperToolTip56.MaxWidth = 210
+        Me.CommandBarItem48.SuperTip = SuperToolTip56
+        '
+        'CommandBarItem49
+        '
+        Me.CommandBarItem49.Caption = "Make Same Size"
+        Me.CommandBarItem49.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SizeToControl
+        Me.CommandBarItem49.Enabled = False
+        Me.CommandBarItem49.Id = 55
+        Me.CommandBarItem49.Name = "CommandBarItem49"
+        SuperToolTip57.FixedTooltipWidth = True
+        ToolTipTitleItem57.Text = "Make Same Size"
+        ToolTipItem57.LeftIndent = 6
+        ToolTipItem57.Text = "Make the selected controls have the same size."
+        SuperToolTip57.Items.Add(ToolTipTitleItem57)
+        SuperToolTip57.Items.Add(ToolTipItem57)
+        SuperToolTip57.MaxWidth = 210
+        Me.CommandBarItem49.SuperTip = SuperToolTip57
+        '
+        'CommandBarItem50
+        '
+        Me.CommandBarItem50.Caption = "Make Horizontal Spacing Equal"
+        Me.CommandBarItem50.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceMakeEqual
+        Me.CommandBarItem50.Enabled = False
+        Me.CommandBarItem50.Id = 56
+        Me.CommandBarItem50.Name = "CommandBarItem50"
+        SuperToolTip58.FixedTooltipWidth = True
+        ToolTipTitleItem58.Text = "Make Horizontal Spacing Equal"
+        ToolTipItem58.LeftIndent = 6
+        ToolTipItem58.Text = "Make the horizontal spacing between the selected controls equal."
+        SuperToolTip58.Items.Add(ToolTipTitleItem58)
+        SuperToolTip58.Items.Add(ToolTipItem58)
+        SuperToolTip58.MaxWidth = 210
+        Me.CommandBarItem50.SuperTip = SuperToolTip58
+        '
+        'CommandBarItem51
+        '
+        Me.CommandBarItem51.Caption = "Increase Horizontal Spacing"
+        Me.CommandBarItem51.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceIncrease
+        Me.CommandBarItem51.Enabled = False
+        Me.CommandBarItem51.Id = 57
+        Me.CommandBarItem51.Name = "CommandBarItem51"
+        SuperToolTip59.FixedTooltipWidth = True
+        ToolTipTitleItem59.Text = "Increase Horizontal Spacing"
+        ToolTipItem59.LeftIndent = 6
+        ToolTipItem59.Text = "Increase the horizontal spacing between the selected controls."
+        SuperToolTip59.Items.Add(ToolTipTitleItem59)
+        SuperToolTip59.Items.Add(ToolTipItem59)
+        SuperToolTip59.MaxWidth = 210
+        Me.CommandBarItem51.SuperTip = SuperToolTip59
+        '
+        'CommandBarItem52
+        '
+        Me.CommandBarItem52.Caption = "Decrease Horizontal Spacing"
+        Me.CommandBarItem52.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceDecrease
+        Me.CommandBarItem52.Enabled = False
+        Me.CommandBarItem52.Id = 58
+        Me.CommandBarItem52.Name = "CommandBarItem52"
+        SuperToolTip60.FixedTooltipWidth = True
+        ToolTipTitleItem60.Text = "Decrease Horizontal Spacing"
+        ToolTipItem60.LeftIndent = 6
+        ToolTipItem60.Text = "Decrease the horizontal spacing between the selected controls."
+        SuperToolTip60.Items.Add(ToolTipTitleItem60)
+        SuperToolTip60.Items.Add(ToolTipItem60)
+        SuperToolTip60.MaxWidth = 210
+        Me.CommandBarItem52.SuperTip = SuperToolTip60
+        '
+        'CommandBarItem53
+        '
+        Me.CommandBarItem53.Caption = "Remove Horizontal Spacing"
+        Me.CommandBarItem53.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.HorizSpaceConcatenate
+        Me.CommandBarItem53.Enabled = False
+        Me.CommandBarItem53.Id = 59
+        Me.CommandBarItem53.Name = "CommandBarItem53"
+        SuperToolTip61.FixedTooltipWidth = True
+        ToolTipTitleItem61.Text = "Remove Horizontal Spacing"
+        ToolTipItem61.LeftIndent = 6
+        ToolTipItem61.Text = "Remove the horizontal spacing between the selected controls."
+        SuperToolTip61.Items.Add(ToolTipTitleItem61)
+        SuperToolTip61.Items.Add(ToolTipItem61)
+        SuperToolTip61.MaxWidth = 210
+        Me.CommandBarItem53.SuperTip = SuperToolTip61
+        '
+        'CommandBarItem54
+        '
+        Me.CommandBarItem54.Caption = "Make Vertical Spacing Equal"
+        Me.CommandBarItem54.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceMakeEqual
+        Me.CommandBarItem54.Enabled = False
+        Me.CommandBarItem54.Id = 60
+        Me.CommandBarItem54.Name = "CommandBarItem54"
+        SuperToolTip62.FixedTooltipWidth = True
+        ToolTipTitleItem62.Text = "Make Vertical Spacing Equal"
+        ToolTipItem62.LeftIndent = 6
+        ToolTipItem62.Text = "Make the vertical spacing between the selected controls equal."
+        SuperToolTip62.Items.Add(ToolTipTitleItem62)
+        SuperToolTip62.Items.Add(ToolTipItem62)
+        SuperToolTip62.MaxWidth = 210
+        Me.CommandBarItem54.SuperTip = SuperToolTip62
+        '
+        'CommandBarItem55
+        '
+        Me.CommandBarItem55.Caption = "Increase Vertical Spacing"
+        Me.CommandBarItem55.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceIncrease
+        Me.CommandBarItem55.Enabled = False
+        Me.CommandBarItem55.Id = 61
+        Me.CommandBarItem55.Name = "CommandBarItem55"
+        SuperToolTip63.FixedTooltipWidth = True
+        ToolTipTitleItem63.Text = "Increase Vertical Spacing"
+        ToolTipItem63.LeftIndent = 6
+        ToolTipItem63.Text = "Increase the vertical spacing between the selected controls."
+        SuperToolTip63.Items.Add(ToolTipTitleItem63)
+        SuperToolTip63.Items.Add(ToolTipItem63)
+        SuperToolTip63.MaxWidth = 210
+        Me.CommandBarItem55.SuperTip = SuperToolTip63
+        '
+        'CommandBarItem56
+        '
+        Me.CommandBarItem56.Caption = "Decrease Vertical Spacing"
+        Me.CommandBarItem56.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceDecrease
+        Me.CommandBarItem56.Enabled = False
+        Me.CommandBarItem56.Id = 62
+        Me.CommandBarItem56.Name = "CommandBarItem56"
+        SuperToolTip64.FixedTooltipWidth = True
+        ToolTipTitleItem64.Text = "Decrease Vertical Spacing"
+        ToolTipItem64.LeftIndent = 6
+        ToolTipItem64.Text = "Decrease the vertical spacing between the selected controls."
+        SuperToolTip64.Items.Add(ToolTipTitleItem64)
+        SuperToolTip64.Items.Add(ToolTipItem64)
+        SuperToolTip64.MaxWidth = 210
+        Me.CommandBarItem56.SuperTip = SuperToolTip64
+        '
+        'CommandBarItem57
+        '
+        Me.CommandBarItem57.Caption = "Remove Vertical Spacing"
+        Me.CommandBarItem57.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.VertSpaceConcatenate
+        Me.CommandBarItem57.Enabled = False
+        Me.CommandBarItem57.Id = 63
+        Me.CommandBarItem57.Name = "CommandBarItem57"
+        SuperToolTip65.FixedTooltipWidth = True
+        ToolTipTitleItem65.Text = "Remove Vertical Spacing"
+        ToolTipItem65.LeftIndent = 6
+        ToolTipItem65.Text = "Remove the vertical spacing between the selected controls."
+        SuperToolTip65.Items.Add(ToolTipTitleItem65)
+        SuperToolTip65.Items.Add(ToolTipItem65)
+        SuperToolTip65.MaxWidth = 210
+        Me.CommandBarItem57.SuperTip = SuperToolTip65
+        '
+        'CommandBarItem58
+        '
+        Me.CommandBarItem58.Caption = "Center Horizontally"
+        Me.CommandBarItem58.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CenterHorizontally
+        Me.CommandBarItem58.Enabled = False
+        Me.CommandBarItem58.Id = 64
+        Me.CommandBarItem58.Name = "CommandBarItem58"
+        SuperToolTip66.FixedTooltipWidth = True
+        ToolTipTitleItem66.Text = "Center Horizontally"
+        ToolTipItem66.LeftIndent = 6
+        ToolTipItem66.Text = "Horizontally center the selected controls within a band."
+        SuperToolTip66.Items.Add(ToolTipTitleItem66)
+        SuperToolTip66.Items.Add(ToolTipItem66)
+        SuperToolTip66.MaxWidth = 210
+        Me.CommandBarItem58.SuperTip = SuperToolTip66
+        '
+        'CommandBarItem59
+        '
+        Me.CommandBarItem59.Caption = "Center Vertically"
+        Me.CommandBarItem59.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CenterVertically
+        Me.CommandBarItem59.Enabled = False
+        Me.CommandBarItem59.Id = 65
+        Me.CommandBarItem59.Name = "CommandBarItem59"
+        SuperToolTip67.FixedTooltipWidth = True
+        ToolTipTitleItem67.Text = "Center Vertically"
+        ToolTipItem67.LeftIndent = 6
+        ToolTipItem67.Text = "Vertically center the selected controls within a band."
+        SuperToolTip67.Items.Add(ToolTipTitleItem67)
+        SuperToolTip67.Items.Add(ToolTipItem67)
+        SuperToolTip67.MaxWidth = 210
+        Me.CommandBarItem59.SuperTip = SuperToolTip67
+        '
+        'CommandBarItem60
+        '
+        Me.CommandBarItem60.Caption = "Bring to Front"
+        Me.CommandBarItem60.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BringToFront
+        Me.CommandBarItem60.Enabled = False
+        Me.CommandBarItem60.Id = 66
+        Me.CommandBarItem60.Name = "CommandBarItem60"
+        SuperToolTip68.FixedTooltipWidth = True
+        ToolTipTitleItem68.Text = "Bring to Front"
+        ToolTipItem68.LeftIndent = 6
+        ToolTipItem68.Text = "Bring the selected controls to the front."
+        SuperToolTip68.Items.Add(ToolTipTitleItem68)
+        SuperToolTip68.Items.Add(ToolTipItem68)
+        SuperToolTip68.MaxWidth = 210
+        Me.CommandBarItem60.SuperTip = SuperToolTip68
+        '
+        'CommandBarItem61
+        '
+        Me.CommandBarItem61.Caption = "Send to Back"
+        Me.CommandBarItem61.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SendToBack
+        Me.CommandBarItem61.Enabled = False
+        Me.CommandBarItem61.Id = 67
+        Me.CommandBarItem61.Name = "CommandBarItem61"
+        SuperToolTip69.FixedTooltipWidth = True
+        ToolTipTitleItem69.Text = "Send to Back"
+        ToolTipItem69.LeftIndent = 6
+        ToolTipItem69.Text = "Move the selected controls to the back."
+        SuperToolTip69.Items.Add(ToolTipTitleItem69)
+        SuperToolTip69.Items.Add(ToolTipItem69)
+        SuperToolTip69.MaxWidth = 210
+        Me.CommandBarItem61.SuperTip = SuperToolTip69
+        '
+        'CommandBarCheckItem1
+        '
+        Me.CommandBarCheckItem1.Caption = "Snap to Grid"
+        Me.CommandBarCheckItem1.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
+        Me.CommandBarCheckItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SnapToGrid
+        Me.CommandBarCheckItem1.Enabled = False
+        Me.CommandBarCheckItem1.Id = 68
+        Me.CommandBarCheckItem1.Name = "CommandBarCheckItem1"
+        SuperToolTip70.FixedTooltipWidth = True
+        ToolTipTitleItem70.Text = "Snap to Grid"
+        ToolTipItem70.LeftIndent = 6
+        ToolTipItem70.Text = "Enable snapping to the snap grid."
+        SuperToolTip70.Items.Add(ToolTipTitleItem70)
+        SuperToolTip70.Items.Add(ToolTipItem70)
+        SuperToolTip70.MaxWidth = 210
+        Me.CommandBarCheckItem1.SuperTip = SuperToolTip70
+        '
+        'CommandBarCheckItem2
+        '
+        Me.CommandBarCheckItem2.Caption = "Snap Lines"
+        Me.CommandBarCheckItem2.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
+        Me.CommandBarCheckItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SnapLines
+        Me.CommandBarCheckItem2.Enabled = False
+        Me.CommandBarCheckItem2.Id = 69
+        Me.CommandBarCheckItem2.Name = "CommandBarCheckItem2"
+        SuperToolTip71.FixedTooltipWidth = True
+        ToolTipTitleItem71.Text = "Snap Lines"
+        ToolTipItem71.LeftIndent = 6
+        ToolTipItem71.Text = "Enable snapping to snap lines."
+        SuperToolTip71.Items.Add(ToolTipTitleItem71)
+        SuperToolTip71.Items.Add(ToolTipItem71)
+        SuperToolTip71.MaxWidth = 210
+        Me.CommandBarCheckItem2.SuperTip = SuperToolTip71
+        '
+        'CommandBarItem62
+        '
+        Me.CommandBarItem62.Caption = "Fit Bounds to Container"
+        Me.CommandBarItem62.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitBoundsToContainer
+        Me.CommandBarItem62.Enabled = False
+        Me.CommandBarItem62.Id = 70
+        Me.CommandBarItem62.Name = "CommandBarItem62"
+        SuperToolTip72.FixedTooltipWidth = True
+        ToolTipTitleItem72.Text = "Fit Bounds to Container"
+        ToolTipItem72.LeftIndent = 6
+        ToolTipItem72.Text = "Adjust the control size to occupy all the available container space."
+        SuperToolTip72.Items.Add(ToolTipTitleItem72)
+        SuperToolTip72.Items.Add(ToolTipItem72)
+        SuperToolTip72.MaxWidth = 210
+        Me.CommandBarItem62.SuperTip = SuperToolTip72
+        '
+        'CommandBarItem63
+        '
+        Me.CommandBarItem63.ActAsDropDown = True
+        Me.CommandBarItem63.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem63.Caption = "Size"
+        Me.CommandBarItem63.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageSize
+        Me.CommandBarItem63.Enabled = False
+        Me.CommandBarItem63.Id = 71
+        Me.CommandBarItem63.Name = "CommandBarItem63"
+        SuperToolTip73.FixedTooltipWidth = True
+        ToolTipTitleItem73.Text = "Choose Page Size"
+        ToolTipItem73.LeftIndent = 6
+        ToolTipItem73.Text = "Choose a commonly used paper size for a report or click More Paper Sizes to defin" &
+    "e your own size."
+        SuperToolTip73.Items.Add(ToolTipTitleItem73)
+        SuperToolTip73.Items.Add(ToolTipItem73)
+        SuperToolTip73.MaxWidth = 210
+        Me.CommandBarItem63.SuperTip = SuperToolTip73
+        '
+        'CommandBarItem64
+        '
+        Me.CommandBarItem64.ActAsDropDown = True
+        Me.CommandBarItem64.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem64.Caption = "Orientation"
+        Me.CommandBarItem64.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageOrientation
+        Me.CommandBarItem64.Enabled = False
+        Me.CommandBarItem64.Id = 72
+        Me.CommandBarItem64.Name = "CommandBarItem64"
+        SuperToolTip74.FixedTooltipWidth = True
+        ToolTipTitleItem74.Text = "Change Page Orientation"
+        ToolTipItem74.LeftIndent = 6
+        ToolTipItem74.Text = "Switch between portrait and landscape page layouts."
+        SuperToolTip74.Items.Add(ToolTipTitleItem74)
+        SuperToolTip74.Items.Add(ToolTipItem74)
+        SuperToolTip74.MaxWidth = 210
+        Me.CommandBarItem64.SuperTip = SuperToolTip74
+        '
+        'CommandBarItem65
+        '
+        Me.CommandBarItem65.ActAsDropDown = True
+        Me.CommandBarItem65.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem65.Caption = "Margins"
+        Me.CommandBarItem65.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageMargins
+        Me.CommandBarItem65.Enabled = False
+        Me.CommandBarItem65.Id = 73
+        Me.CommandBarItem65.Name = "CommandBarItem65"
+        SuperToolTip75.FixedTooltipWidth = True
+        ToolTipTitleItem75.Text = "Adjust Margins"
+        ToolTipItem75.LeftIndent = 6
+        ToolTipItem75.Text = "Set margin sizes for a report. Choose from several commonly used formats or click" &
+    " Custom Margins to define your own format."
+        SuperToolTip75.Items.Add(ToolTipTitleItem75)
+        SuperToolTip75.Items.Add(ToolTipItem75)
+        SuperToolTip75.MaxWidth = 210
+        Me.CommandBarItem65.SuperTip = SuperToolTip75
+        '
+        'CommandColorBarItem4
+        '
+        Me.CommandColorBarItem4.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandColorBarItem4.Caption = "Page Color"
+        Me.CommandColorBarItem4.CloseSubMenuOnClickMode = DevExpress.Utils.DefaultBoolean.[False]
+        Me.CommandColorBarItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageColor
+        Me.CommandColorBarItem4.Enabled = False
+        Me.CommandColorBarItem4.Id = 74
+        Me.CommandColorBarItem4.Name = "CommandColorBarItem4"
+        SuperToolTip76.FixedTooltipWidth = True
+        ToolTipTitleItem76.Text = "Choose Page Color"
+        ToolTipItem76.LeftIndent = 6
+        ToolTipItem76.Text = "Select the background color for report pages."
+        SuperToolTip76.Items.Add(ToolTipTitleItem76)
+        SuperToolTip76.Items.Add(ToolTipItem76)
+        SuperToolTip76.MaxWidth = 210
+        Me.CommandColorBarItem4.SuperTip = SuperToolTip76
+        '
+        'CommandBarItem66
+        '
+        Me.CommandBarItem66.Caption = "Watermark"
+        Me.CommandBarItem66.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PageWatermark
+        Me.CommandBarItem66.Enabled = False
+        Me.CommandBarItem66.Id = 75
+        Me.CommandBarItem66.Name = "CommandBarItem66"
+        SuperToolTip77.FixedTooltipWidth = True
+        ToolTipTitleItem77.Text = "Add Watermark"
+        ToolTipItem77.LeftIndent = 6
+        ToolTipItem77.Text = "Insert ghost text or image behind the page content to indicate that a report requ" &
+    "ires special treatment. Use the View tab to display a watermark at design time a" &
+    "nd use it as a template for a report."
+        SuperToolTip77.Items.Add(ToolTipTitleItem77)
+        SuperToolTip77.Items.Add(ToolTipItem77)
+        SuperToolTip77.MaxWidth = 210
+        Me.CommandBarItem66.SuperTip = SuperToolTip77
+        '
+        'CommandBarItem67
+        '
+        Me.CommandBarItem67.Caption = "Printing Warnings"
+        Me.CommandBarItem67.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowPrintingWarnings
+        Me.CommandBarItem67.Enabled = False
+        Me.CommandBarItem67.Id = 76
+        Me.CommandBarItem67.Name = "CommandBarItem67"
+        SuperToolTip78.FixedTooltipWidth = True
+        ToolTipTitleItem78.Text = "Show Printing Warnings"
+        ToolTipItem78.LeftIndent = 6
+        ToolTipItem78.Text = "Highlight report controls that overrun the right page margin to warn you about ex" &
+    "tra pages when printing the document."
+        SuperToolTip78.Items.Add(ToolTipTitleItem78)
+        SuperToolTip78.Items.Add(ToolTipItem78)
+        SuperToolTip78.MaxWidth = 210
+        Me.CommandBarItem67.SuperTip = SuperToolTip78
+        '
+        'CommandBarItem68
+        '
+        Me.CommandBarItem68.Caption = "Export Warnings"
+        Me.CommandBarItem68.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowExportWarnings
+        Me.CommandBarItem68.Enabled = False
+        Me.CommandBarItem68.Id = 77
+        Me.CommandBarItem68.Name = "CommandBarItem68"
+        SuperToolTip79.FixedTooltipWidth = True
+        ToolTipTitleItem79.Text = "Show Export Warnings"
+        ToolTipItem79.LeftIndent = 6
+        ToolTipItem79.Text = "Highlight intersecting report controls to warn you about the possibility of corru" &
+    "pting the document layout when exporting the document to specific formats."
+        SuperToolTip79.Items.Add(ToolTipTitleItem79)
+        SuperToolTip79.Items.Add(ToolTipItem79)
+        SuperToolTip79.MaxWidth = 210
+        Me.CommandBarItem68.SuperTip = SuperToolTip79
+        '
+        'CommandBarItem69
+        '
+        Me.CommandBarItem69.Caption = "Watermark"
+        Me.CommandBarItem69.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.DrawWatermark
+        Me.CommandBarItem69.Enabled = False
+        Me.CommandBarItem69.Id = 78
+        Me.CommandBarItem69.Name = "CommandBarItem69"
+        Me.CommandBarItem69.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
+        SuperToolTip80.FixedTooltipWidth = True
+        ToolTipTitleItem80.Text = "Show Watermark"
+        ToolTipItem80.LeftIndent = 6
+        ToolTipItem80.Text = "Display the document's watermark on the design surface for the better design expe" &
+    "rience. Specify watermark settings in the Page tab."
+        SuperToolTip80.Items.Add(ToolTipTitleItem80)
+        SuperToolTip80.Items.Add(ToolTipItem80)
+        SuperToolTip80.MaxWidth = 210
+        Me.CommandBarItem69.SuperTip = SuperToolTip80
+        '
+        'CommandBarItem70
+        '
+        Me.CommandBarItem70.Caption = "Grid Lines"
+        Me.CommandBarItem70.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.DrawGridLines
+        Me.CommandBarItem70.Enabled = False
+        Me.CommandBarItem70.Id = 79
+        Me.CommandBarItem70.Name = "CommandBarItem70"
+        Me.CommandBarItem70.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
+        SuperToolTip81.FixedTooltipWidth = True
+        ToolTipTitleItem81.Text = "Show Grid Lines"
+        ToolTipItem81.LeftIndent = 6
+        ToolTipItem81.Text = "Show gridlines on the report surface for perfect control placement."
+        SuperToolTip81.Items.Add(ToolTipTitleItem81)
+        SuperToolTip81.Items.Add(ToolTipItem81)
+        SuperToolTip81.MaxWidth = 210
+        Me.CommandBarItem70.SuperTip = SuperToolTip81
+        '
+        'CommandBarItem71
+        '
+        Me.CommandBarItem71.Caption = "Expand All"
+        Me.CommandBarItem71.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BandExpandAll
+        Me.CommandBarItem71.Enabled = False
+        Me.CommandBarItem71.Id = 80
+        Me.CommandBarItem71.Name = "CommandBarItem71"
+        SuperToolTip82.FixedTooltipWidth = True
+        ToolTipTitleItem82.Text = "Expand All Bands"
+        ToolTipItem82.LeftIndent = 6
+        ToolTipItem82.Text = "Expand all bands on the design surface."
+        SuperToolTip82.Items.Add(ToolTipTitleItem82)
+        SuperToolTip82.Items.Add(ToolTipItem82)
+        SuperToolTip82.MaxWidth = 210
+        Me.CommandBarItem71.SuperTip = SuperToolTip82
+        '
+        'CommandBarItem72
+        '
+        Me.CommandBarItem72.Caption = "Collapse All"
+        Me.CommandBarItem72.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BandCollapseAll
+        Me.CommandBarItem72.Enabled = False
+        Me.CommandBarItem72.Id = 81
+        Me.CommandBarItem72.Name = "CommandBarItem72"
+        SuperToolTip83.FixedTooltipWidth = True
+        ToolTipTitleItem83.Text = "Collapse All Bands"
+        ToolTipItem83.LeftIndent = 6
+        ToolTipItem83.Text = "Collapse all bands on the design surface."
+        SuperToolTip83.Items.Add(ToolTipTitleItem83)
+        SuperToolTip83.Items.Add(ToolTipItem83)
+        SuperToolTip83.MaxWidth = 210
+        Me.CommandBarItem72.SuperTip = SuperToolTip83
+        '
+        'CommandBarEditItem1
+        '
+        Me.CommandBarEditItem1.Caption = "Language"
+        Me.CommandBarEditItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Language
+        Me.CommandBarEditItem1.Edit = Me.RepositoryItemLookUpEdit1
+        Me.CommandBarEditItem1.EditWidth = 140
+        Me.CommandBarEditItem1.Enabled = False
+        Me.CommandBarEditItem1.Id = 82
+        Me.CommandBarEditItem1.Name = "CommandBarEditItem1"
+        SuperToolTip84.FixedTooltipWidth = True
+        ToolTipTitleItem84.Text = "Language"
+        ToolTipItem84.LeftIndent = 6
+        ToolTipItem84.Text = "Specifies the language associated with the localizable property values. Every lan" &
+    "guage can have its own set of property values."
+        SuperToolTip84.Items.Add(ToolTipTitleItem84)
+        SuperToolTip84.Items.Add(ToolTipItem84)
+        SuperToolTip84.MaxWidth = 210
+        Me.CommandBarEditItem1.SuperTip = SuperToolTip84
+        '
+        'RepositoryItemLookUpEdit1
+        '
+        Me.RepositoryItemLookUpEdit1.AutoHeight = False
+        Me.RepositoryItemLookUpEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemLookUpEdit1.Name = "RepositoryItemLookUpEdit1"
+        '
+        'CommandBarCheckItem3
+        '
+        Me.CommandBarCheckItem3.Caption = "Show Localizable Properties"
+        Me.CommandBarCheckItem3.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
+        Me.CommandBarCheckItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShowLocalizableProperties
+        Me.CommandBarCheckItem3.Enabled = False
+        Me.CommandBarCheckItem3.Id = 83
+        Me.CommandBarCheckItem3.Name = "CommandBarCheckItem3"
+        SuperToolTip85.FixedTooltipWidth = True
+        ToolTipTitleItem85.Text = "Show Localizable Properties"
+        ToolTipItem85.LeftIndent = 6
+        ToolTipItem85.Text = "Filters the Properties window to display only localizable properties."
+        SuperToolTip85.Items.Add(ToolTipTitleItem85)
+        SuperToolTip85.Items.Add(ToolTipItem85)
+        SuperToolTip85.MaxWidth = 210
+        Me.CommandBarCheckItem3.SuperTip = SuperToolTip85
+        '
+        'CommandBarItem73
+        '
+        Me.CommandBarItem73.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem73.Caption = "Zoom"
+        Me.CommandBarItem73.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.Zoom
+        Me.CommandBarItem73.Enabled = False
+        Me.CommandBarItem73.Id = 84
+        Me.CommandBarItem73.Name = "CommandBarItem73"
+        SuperToolTip86.FixedTooltipWidth = True
+        ToolTipTitleItem86.Text = "Zoom"
+        ToolTipItem86.LeftIndent = 6
+        ToolTipItem86.Text = "Change the zoom level of the document designer."
+        SuperToolTip86.Items.Add(ToolTipTitleItem86)
+        SuperToolTip86.Items.Add(ToolTipItem86)
+        SuperToolTip86.MaxWidth = 210
+        Me.CommandBarItem73.SuperTip = SuperToolTip86
+        '
+        'CommandBarItem74
+        '
+        Me.CommandBarItem74.Caption = "Zoom In"
+        Me.CommandBarItem74.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ZoomIn
+        Me.CommandBarItem74.Enabled = False
+        Me.CommandBarItem74.Id = 85
+        Me.CommandBarItem74.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Add))
+        Me.CommandBarItem74.Name = "CommandBarItem74"
+        SuperToolTip87.FixedTooltipWidth = True
+        ToolTipTitleItem87.Text = "Zoom In (Ctrl+Add)"
+        ToolTipItem87.LeftIndent = 6
+        ToolTipItem87.Text = "Zoom in to get a close-up view of the report."
+        SuperToolTip87.Items.Add(ToolTipTitleItem87)
+        SuperToolTip87.Items.Add(ToolTipItem87)
+        SuperToolTip87.MaxWidth = 210
+        Me.CommandBarItem74.SuperTip = SuperToolTip87
+        '
+        'CommandBarItem75
+        '
+        Me.CommandBarItem75.Caption = "Zoom Out"
+        Me.CommandBarItem75.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ZoomOut
+        Me.CommandBarItem75.Enabled = False
+        Me.CommandBarItem75.Id = 86
+        Me.CommandBarItem75.ItemShortcut = New DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Subtract))
+        Me.CommandBarItem75.Name = "CommandBarItem75"
+        SuperToolTip88.FixedTooltipWidth = True
+        ToolTipTitleItem88.Text = "Zoom Out (Ctrl+Subtract)"
+        ToolTipItem88.LeftIndent = 6
+        ToolTipItem88.Text = "Zoom out to see more of the report at a reduced size."
+        SuperToolTip88.Items.Add(ToolTipTitleItem88)
+        SuperToolTip88.Items.Add(ToolTipItem88)
+        SuperToolTip88.MaxWidth = 210
+        Me.CommandBarItem75.SuperTip = SuperToolTip88
+        '
+        'CommandBarItem76
+        '
+        Me.CommandBarItem76.Caption = "Validate"
+        Me.CommandBarItem76.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsValidate
+        Me.CommandBarItem76.Enabled = False
+        Me.CommandBarItem76.Id = 87
+        Me.CommandBarItem76.Name = "CommandBarItem76"
+        SuperToolTip89.FixedTooltipWidth = True
+        ToolTipTitleItem89.Text = "Validate Scripts"
+        ToolTipItem89.LeftIndent = 6
+        ToolTipItem89.Text = "Check whether report scripts contain errors. If errors are found, they are listed" &
+    " in the Scripts Errors panel."
+        SuperToolTip89.Items.Add(ToolTipTitleItem89)
+        SuperToolTip89.Items.Add(ToolTipItem89)
+        SuperToolTip89.MaxWidth = 210
+        Me.CommandBarItem76.SuperTip = SuperToolTip89
+        '
+        'CommandGalleryBarItem1
+        '
+        Me.CommandGalleryBarItem1.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.StyleName
+        Me.CommandGalleryBarItem1.Enabled = False
+        '
+        '
+        '
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.Options.UseTextOptions = True
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Disabled.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Hovered.Options.UseTextOptions = True
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Hovered.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Hovered.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Normal.Options.UseTextOptions = True
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Normal.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Normal.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Pressed.Options.UseTextOptions = True
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
+        Me.CommandGalleryBarItem1.Gallery.Appearance.ItemCaptionAppearance.Pressed.TextOptions.Trimming = DevExpress.Utils.Trimming.EllipsisCharacter
+        Me.CommandGalleryBarItem1.Gallery.ColumnCount = 7
+        Me.CommandGalleryBarItem1.Gallery.ImageSize = New System.Drawing.Size(75, 30)
+        Me.CommandGalleryBarItem1.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleCheck
+        Me.CommandGalleryBarItem1.Gallery.ShowItemText = True
+        Me.CommandGalleryBarItem1.Id = 88
+        Me.CommandGalleryBarItem1.Name = "CommandGalleryBarItem1"
+        '
+        'CommandGalleryBarItem2
+        '
+        Me.CommandGalleryBarItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeSymbology
+        Me.CommandGalleryBarItem2.Enabled = False
+        '
+        '
+        '
+        Me.CommandGalleryBarItem2.Gallery.ColumnCount = 8
+        Me.CommandGalleryBarItem2.Gallery.ImageSize = New System.Drawing.Size(100, 33)
+        Me.CommandGalleryBarItem2.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
+        Me.CommandGalleryBarItem2.Gallery.ShowItemText = True
+        Me.CommandGalleryBarItem2.Id = 89
+        Me.CommandGalleryBarItem2.Name = "CommandGalleryBarItem2"
+        '
+        'CommandGalleryBarItem3
+        '
+        Me.CommandGalleryBarItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAppearanceName
+        Me.CommandGalleryBarItem3.Enabled = False
+        '
+        '
+        '
+        Me.CommandGalleryBarItem3.Gallery.ColumnCount = 7
+        Me.CommandGalleryBarItem3.Gallery.ImageSize = New System.Drawing.Size(75, 45)
+        Me.CommandGalleryBarItem3.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
+        Me.CommandGalleryBarItem3.Id = 90
+        Me.CommandGalleryBarItem3.Name = "CommandGalleryBarItem3"
+        '
+        'CommandGalleryBarItem4
+        '
+        Me.CommandGalleryBarItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SparklineView
+        Me.CommandGalleryBarItem4.Enabled = False
+        '
+        '
+        '
+        Me.CommandGalleryBarItem4.Gallery.ColumnCount = 4
+        Me.CommandGalleryBarItem4.Gallery.ImageSize = New System.Drawing.Size(48, 48)
+        Me.CommandGalleryBarItem4.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
+        Me.CommandGalleryBarItem4.Id = 91
+        Me.CommandGalleryBarItem4.Name = "CommandGalleryBarItem4"
+        '
+        'CommandGalleryBarItem5
+        '
+        Me.CommandGalleryBarItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewTypeStyle
+        Me.CommandGalleryBarItem5.Enabled = False
+        '
+        '
+        '
+        Me.CommandGalleryBarItem5.Gallery.ColumnCount = 7
+        Me.CommandGalleryBarItem5.Gallery.ImageSize = New System.Drawing.Size(48, 48)
+        Me.CommandGalleryBarItem5.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio
+        Me.CommandGalleryBarItem5.Id = 92
+        Me.CommandGalleryBarItem5.Name = "CommandGalleryBarItem5"
+        '
+        'CommandGalleryBarItem6
+        '
+        Me.CommandGalleryBarItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShapeType
+        Me.CommandGalleryBarItem6.Enabled = False
+        '
+        '
+        '
+        Me.CommandGalleryBarItem6.Gallery.ColumnCount = 12
+        Me.CommandGalleryBarItem6.Gallery.ImageSize = New System.Drawing.Size(30, 18)
+        Me.CommandGalleryBarItem6.Id = 93
+        Me.CommandGalleryBarItem6.Name = "CommandGalleryBarItem6"
+        '
+        'CommandBarEditItem2
+        '
+        Me.CommandBarEditItem2.Caption = "Width: "
+        Me.CommandBarEditItem2.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellWidth
+        Me.CommandBarEditItem2.Edit = Me.RepositoryItemSpinEdit1
+        Me.CommandBarEditItem2.EditWidth = 50
+        Me.CommandBarEditItem2.Enabled = False
+        Me.CommandBarEditItem2.Id = 94
+        Me.CommandBarEditItem2.Name = "CommandBarEditItem2"
+        SuperToolTip90.FixedTooltipWidth = True
+        ToolTipTitleItem90.Text = "Cell Width"
+        ToolTipItem90.LeftIndent = 6
+        ToolTipItem90.Text = "Set the cell width."
+        SuperToolTip90.Items.Add(ToolTipTitleItem90)
+        SuperToolTip90.Items.Add(ToolTipItem90)
+        SuperToolTip90.MaxWidth = 210
+        Me.CommandBarEditItem2.SuperTip = SuperToolTip90
+        '
+        'RepositoryItemSpinEdit1
+        '
+        Me.RepositoryItemSpinEdit1.AutoHeight = False
+        Me.RepositoryItemSpinEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemSpinEdit1.MaxValue = New Decimal(New Integer() {-1, -1, -1, 0})
+        Me.RepositoryItemSpinEdit1.Name = "RepositoryItemSpinEdit1"
+        '
+        'CommandBarEditItem3
+        '
+        Me.CommandBarEditItem3.Caption = "Height: "
+        Me.CommandBarEditItem3.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellHeight
+        Me.CommandBarEditItem3.Edit = Me.RepositoryItemSpinEdit2
+        Me.CommandBarEditItem3.EditWidth = 50
+        Me.CommandBarEditItem3.Enabled = False
+        Me.CommandBarEditItem3.Id = 95
+        Me.CommandBarEditItem3.Name = "CommandBarEditItem3"
+        SuperToolTip91.FixedTooltipWidth = True
+        ToolTipTitleItem91.Text = "Cell Height"
+        ToolTipItem91.LeftIndent = 6
+        ToolTipItem91.Text = "Set the cell height."
+        SuperToolTip91.Items.Add(ToolTipTitleItem91)
+        SuperToolTip91.Items.Add(ToolTipItem91)
+        SuperToolTip91.MaxWidth = 210
+        Me.CommandBarEditItem3.SuperTip = SuperToolTip91
+        '
+        'RepositoryItemSpinEdit2
+        '
+        Me.RepositoryItemSpinEdit2.AutoHeight = False
+        Me.RepositoryItemSpinEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemSpinEdit2.MaxValue = New Decimal(New Integer() {-1, -1, -1, 0})
+        Me.RepositoryItemSpinEdit2.Name = "RepositoryItemSpinEdit2"
+        '
+        'CommandBarEditItem4
+        '
+        Me.CommandBarEditItem4.Caption = "Horizontal Spacing: "
+        Me.CommandBarEditItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellHorizontalSpacing
+        Me.CommandBarEditItem4.Edit = Me.RepositoryItemSpinEdit3
+        Me.CommandBarEditItem4.EditWidth = 50
+        Me.CommandBarEditItem4.Enabled = False
+        Me.CommandBarEditItem4.Id = 96
+        Me.CommandBarEditItem4.Name = "CommandBarEditItem4"
+        SuperToolTip92.FixedTooltipWidth = True
+        ToolTipTitleItem92.Text = "Cell Horizontal Spacing"
+        ToolTipItem92.LeftIndent = 6
+        ToolTipItem92.Text = "Set the horizontal spacing between adjacent cells."
+        SuperToolTip92.Items.Add(ToolTipTitleItem92)
+        SuperToolTip92.Items.Add(ToolTipItem92)
+        SuperToolTip92.MaxWidth = 210
+        Me.CommandBarEditItem4.SuperTip = SuperToolTip92
+        '
+        'RepositoryItemSpinEdit3
+        '
+        Me.RepositoryItemSpinEdit3.AutoHeight = False
+        Me.RepositoryItemSpinEdit3.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemSpinEdit3.MaxValue = New Decimal(New Integer() {-1, -1, -1, 0})
+        Me.RepositoryItemSpinEdit3.Name = "RepositoryItemSpinEdit3"
+        '
+        'CommandBarEditItem5
+        '
+        Me.CommandBarEditItem5.Caption = "Vertical Spacing: "
+        Me.CommandBarEditItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellVerticalSpacing
+        Me.CommandBarEditItem5.Edit = Me.RepositoryItemSpinEdit4
+        Me.CommandBarEditItem5.EditWidth = 50
+        Me.CommandBarEditItem5.Enabled = False
+        Me.CommandBarEditItem5.Id = 97
+        Me.CommandBarEditItem5.Name = "CommandBarEditItem5"
+        SuperToolTip93.FixedTooltipWidth = True
+        ToolTipTitleItem93.Text = "Cell Vertical Spacing"
+        ToolTipItem93.LeftIndent = 6
+        ToolTipItem93.Text = "Set the vertical spacing between adjacent cells."
+        SuperToolTip93.Items.Add(ToolTipTitleItem93)
+        SuperToolTip93.Items.Add(ToolTipItem93)
+        SuperToolTip93.MaxWidth = 210
+        Me.CommandBarEditItem5.SuperTip = SuperToolTip93
+        '
+        'RepositoryItemSpinEdit4
+        '
+        Me.RepositoryItemSpinEdit4.AutoHeight = False
+        Me.RepositoryItemSpinEdit4.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemSpinEdit4.MaxValue = New Decimal(New Integer() {-1, -1, -1, 0})
+        Me.RepositoryItemSpinEdit4.Name = "RepositoryItemSpinEdit4"
+        '
+        'CommandBarEditItem6
+        '
+        Me.CommandBarEditItem6.Caption = "Border Dash Style"
+        Me.CommandBarEditItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BorderDashStyle
+        Me.CommandBarEditItem6.Edit = Me.RepositoryItemImageComboBox1
+        Me.CommandBarEditItem6.EditWidth = 86
+        Me.CommandBarEditItem6.Enabled = False
+        Me.CommandBarEditItem6.Id = 98
+        Me.CommandBarEditItem6.Name = "CommandBarEditItem6"
+        SuperToolTip94.FixedTooltipWidth = True
+        ToolTipTitleItem94.Text = "Border Dash Style"
+        ToolTipItem94.LeftIndent = 6
+        ToolTipItem94.Text = "Change the border dash style."
+        SuperToolTip94.Items.Add(ToolTipTitleItem94)
+        SuperToolTip94.Items.Add(ToolTipItem94)
+        SuperToolTip94.MaxWidth = 210
+        Me.CommandBarEditItem6.SuperTip = SuperToolTip94
+        '
+        'RepositoryItemImageComboBox1
+        '
+        Me.RepositoryItemImageComboBox1.AutoHeight = False
+        Me.RepositoryItemImageComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemImageComboBox1.Name = "RepositoryItemImageComboBox1"
+        '
+        'CommandBarEditItem7
+        '
+        Me.CommandBarEditItem7.Caption = "Control: "
+        Me.CommandBarEditItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsSelectControl
+        Me.CommandBarEditItem7.Edit = Me.RepositoryItemLookUpEdit2
+        Me.CommandBarEditItem7.EditWidth = 300
+        Me.CommandBarEditItem7.Enabled = False
+        Me.CommandBarEditItem7.Id = 99
+        Me.CommandBarEditItem7.Name = "CommandBarEditItem7"
+        SuperToolTip95.FixedTooltipWidth = True
+        ToolTipTitleItem95.Text = "Control"
+        ToolTipItem95.LeftIndent = 6
+        ToolTipItem95.Text = "Select a required control for specifying an event."
+        SuperToolTip95.Items.Add(ToolTipTitleItem95)
+        SuperToolTip95.Items.Add(ToolTipItem95)
+        SuperToolTip95.MaxWidth = 210
+        Me.CommandBarEditItem7.SuperTip = SuperToolTip95
+        '
+        'RepositoryItemLookUpEdit2
+        '
+        Me.RepositoryItemLookUpEdit2.AutoHeight = False
+        Me.RepositoryItemLookUpEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemLookUpEdit2.Name = "RepositoryItemLookUpEdit2"
+        '
+        'CommandBarEditItem8
+        '
+        Me.CommandBarEditItem8.Caption = "Event: "
+        Me.CommandBarEditItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ScriptsSelectEvent
+        Me.CommandBarEditItem8.Edit = Me.RepositoryItemComboBox1
+        Me.CommandBarEditItem8.EditWidth = 300
+        Me.CommandBarEditItem8.Enabled = False
+        Me.CommandBarEditItem8.Id = 100
+        Me.CommandBarEditItem8.Name = "CommandBarEditItem8"
+        SuperToolTip96.FixedTooltipWidth = True
+        ToolTipTitleItem96.Text = "Event"
+        ToolTipItem96.LeftIndent = 6
+        ToolTipItem96.Text = "Select one of the available events."
+        SuperToolTip96.Items.Add(ToolTipTitleItem96)
+        SuperToolTip96.Items.Add(ToolTipItem96)
+        SuperToolTip96.MaxWidth = 210
+        Me.CommandBarEditItem8.SuperTip = SuperToolTip96
+        '
+        'RepositoryItemComboBox1
+        '
+        Me.RepositoryItemComboBox1.AutoHeight = False
+        Me.RepositoryItemComboBox1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemComboBox1.Name = "RepositoryItemComboBox1"
+        '
+        'CommandBarItem77
+        '
+        Me.CommandBarItem77.Caption = "Table"
+        Me.CommandBarItem77.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectTable
+        Me.CommandBarItem77.Enabled = False
+        Me.CommandBarItem77.Id = 101
+        Me.CommandBarItem77.Name = "CommandBarItem77"
+        SuperToolTip97.FixedTooltipWidth = True
+        ToolTipTitleItem97.Text = "Select Table"
+        ToolTipItem97.LeftIndent = 6
+        ToolTipItem97.Text = "Select the entire table."
+        SuperToolTip97.Items.Add(ToolTipTitleItem97)
+        SuperToolTip97.Items.Add(ToolTipItem97)
+        SuperToolTip97.MaxWidth = 210
+        Me.CommandBarItem77.SuperTip = SuperToolTip97
+        '
+        'CommandBarItem78
+        '
+        Me.CommandBarItem78.Caption = "Row"
+        Me.CommandBarItem78.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectRow
+        Me.CommandBarItem78.Enabled = False
+        Me.CommandBarItem78.Id = 102
+        Me.CommandBarItem78.Name = "CommandBarItem78"
+        SuperToolTip98.FixedTooltipWidth = True
+        ToolTipTitleItem98.Text = "Select Row"
+        ToolTipItem98.LeftIndent = 6
+        ToolTipItem98.Text = "Select the current row."
+        SuperToolTip98.Items.Add(ToolTipTitleItem98)
+        SuperToolTip98.Items.Add(ToolTipItem98)
+        SuperToolTip98.MaxWidth = 210
+        Me.CommandBarItem78.SuperTip = SuperToolTip98
+        '
+        'CommandBarItem79
+        '
+        Me.CommandBarItem79.Caption = "Column"
+        Me.CommandBarItem79.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSelectColumn
+        Me.CommandBarItem79.Enabled = False
+        Me.CommandBarItem79.Id = 103
+        Me.CommandBarItem79.Name = "CommandBarItem79"
+        SuperToolTip99.FixedTooltipWidth = True
+        ToolTipTitleItem99.Text = "Select Column"
+        ToolTipItem99.LeftIndent = 6
+        ToolTipItem99.Text = "Select the current column."
+        SuperToolTip99.Items.Add(ToolTipTitleItem99)
+        SuperToolTip99.Items.Add(ToolTipItem99)
+        SuperToolTip99.MaxWidth = 210
+        Me.CommandBarItem79.SuperTip = SuperToolTip99
+        '
+        'CommandBarItem80
+        '
+        Me.CommandBarItem80.Caption = "Cell"
+        Me.CommandBarItem80.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteCell
+        Me.CommandBarItem80.Enabled = False
+        Me.CommandBarItem80.Id = 104
+        Me.CommandBarItem80.Name = "CommandBarItem80"
+        SuperToolTip100.FixedTooltipWidth = True
+        ToolTipTitleItem100.Text = "Delete Cell"
+        ToolTipItem100.LeftIndent = 6
+        ToolTipItem100.Text = "Delete the current cell."
+        SuperToolTip100.Items.Add(ToolTipTitleItem100)
+        SuperToolTip100.Items.Add(ToolTipItem100)
+        SuperToolTip100.MaxWidth = 210
+        Me.CommandBarItem80.SuperTip = SuperToolTip100
+        '
+        'CommandBarItem81
+        '
+        Me.CommandBarItem81.Caption = "Row"
+        Me.CommandBarItem81.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteRow
+        Me.CommandBarItem81.Enabled = False
+        Me.CommandBarItem81.Id = 105
+        Me.CommandBarItem81.Name = "CommandBarItem81"
+        SuperToolTip101.FixedTooltipWidth = True
+        ToolTipTitleItem101.Text = "Delete Row"
+        ToolTipItem101.LeftIndent = 6
+        ToolTipItem101.Text = "Delete the current row."
+        SuperToolTip101.Items.Add(ToolTipTitleItem101)
+        SuperToolTip101.Items.Add(ToolTipItem101)
+        SuperToolTip101.MaxWidth = 210
+        Me.CommandBarItem81.SuperTip = SuperToolTip101
+        '
+        'CommandBarItem82
+        '
+        Me.CommandBarItem82.Caption = "Column"
+        Me.CommandBarItem82.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteColumn
+        Me.CommandBarItem82.Enabled = False
+        Me.CommandBarItem82.Id = 106
+        Me.CommandBarItem82.Name = "CommandBarItem82"
+        SuperToolTip102.FixedTooltipWidth = True
+        ToolTipTitleItem102.Text = "Delete Column"
+        ToolTipItem102.LeftIndent = 6
+        ToolTipItem102.Text = "Delete the current column."
+        SuperToolTip102.Items.Add(ToolTipTitleItem102)
+        SuperToolTip102.Items.Add(ToolTipItem102)
+        SuperToolTip102.MaxWidth = 210
+        Me.CommandBarItem82.SuperTip = SuperToolTip102
+        '
+        'CommandBarItem83
+        '
+        Me.CommandBarItem83.Caption = "Table"
+        Me.CommandBarItem83.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDeleteTable
+        Me.CommandBarItem83.Enabled = False
+        Me.CommandBarItem83.Id = 107
+        Me.CommandBarItem83.Name = "CommandBarItem83"
+        SuperToolTip103.FixedTooltipWidth = True
+        ToolTipTitleItem103.Text = "Delete Table"
+        ToolTipItem103.LeftIndent = 6
+        ToolTipItem103.Text = "Delete the entire table."
+        SuperToolTip103.Items.Add(ToolTipTitleItem103)
+        SuperToolTip103.Items.Add(ToolTipItem103)
+        SuperToolTip103.MaxWidth = 210
+        Me.CommandBarItem83.SuperTip = SuperToolTip103
+        '
+        'CommandBarItem84
+        '
+        Me.CommandBarItem84.Caption = "Row Above"
+        Me.CommandBarItem84.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertRowAbove
+        Me.CommandBarItem84.Enabled = False
+        Me.CommandBarItem84.Id = 108
+        Me.CommandBarItem84.Name = "CommandBarItem84"
+        SuperToolTip104.FixedTooltipWidth = True
+        ToolTipTitleItem104.Text = "Insert Row Above"
+        ToolTipItem104.LeftIndent = 6
+        ToolTipItem104.Text = "Add a new row directly above the current row."
+        SuperToolTip104.Items.Add(ToolTipTitleItem104)
+        SuperToolTip104.Items.Add(ToolTipItem104)
+        SuperToolTip104.MaxWidth = 210
+        Me.CommandBarItem84.SuperTip = SuperToolTip104
+        '
+        'CommandBarItem85
+        '
+        Me.CommandBarItem85.Caption = "Row Below"
+        Me.CommandBarItem85.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertRowBelow
+        Me.CommandBarItem85.Enabled = False
+        Me.CommandBarItem85.Id = 109
+        Me.CommandBarItem85.Name = "CommandBarItem85"
+        SuperToolTip105.FixedTooltipWidth = True
+        ToolTipTitleItem105.Text = "Insert Row Below"
+        ToolTipItem105.LeftIndent = 6
+        ToolTipItem105.Text = "Add a new row directly below the current row."
+        SuperToolTip105.Items.Add(ToolTipTitleItem105)
+        SuperToolTip105.Items.Add(ToolTipItem105)
+        SuperToolTip105.MaxWidth = 210
+        Me.CommandBarItem85.SuperTip = SuperToolTip105
+        '
+        'CommandBarItem86
+        '
+        Me.CommandBarItem86.Caption = "Column to Left"
+        Me.CommandBarItem86.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertColumnToLeft
+        Me.CommandBarItem86.Enabled = False
+        Me.CommandBarItem86.Id = 110
+        Me.CommandBarItem86.Name = "CommandBarItem86"
+        SuperToolTip106.FixedTooltipWidth = True
+        ToolTipTitleItem106.Text = "Insert Column to Left"
+        ToolTipItem106.LeftIndent = 6
+        ToolTipItem106.Text = "Add a new column directly to the left of the current column."
+        SuperToolTip106.Items.Add(ToolTipTitleItem106)
+        SuperToolTip106.Items.Add(ToolTipItem106)
+        SuperToolTip106.MaxWidth = 210
+        Me.CommandBarItem86.SuperTip = SuperToolTip106
+        '
+        'CommandBarItem87
+        '
+        Me.CommandBarItem87.Caption = "Column to Right"
+        Me.CommandBarItem87.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableInsertColumnToRight
+        Me.CommandBarItem87.Enabled = False
+        Me.CommandBarItem87.Id = 111
+        Me.CommandBarItem87.Name = "CommandBarItem87"
+        SuperToolTip107.FixedTooltipWidth = True
+        ToolTipTitleItem107.Text = "Insert Column to Right"
+        ToolTipItem107.LeftIndent = 6
+        ToolTipItem107.Text = "Add a new column directly to the right of the current column."
+        SuperToolTip107.Items.Add(ToolTipTitleItem107)
+        SuperToolTip107.Items.Add(ToolTipItem107)
+        SuperToolTip107.MaxWidth = 210
+        Me.CommandBarItem87.SuperTip = SuperToolTip107
+        '
+        'CommandBarItem88
+        '
+        Me.CommandBarItem88.Caption = "Rows"
+        Me.CommandBarItem88.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDistributeRowsEvenly
+        Me.CommandBarItem88.Enabled = False
+        Me.CommandBarItem88.Id = 112
+        Me.CommandBarItem88.Name = "CommandBarItem88"
+        SuperToolTip108.FixedTooltipWidth = True
+        ToolTipTitleItem108.Text = "Distribute Rows Evenly"
+        ToolTipItem108.LeftIndent = 6
+        ToolTipItem108.Text = "Distribute the height of the selected rows equally between them."
+        SuperToolTip108.Items.Add(ToolTipTitleItem108)
+        SuperToolTip108.Items.Add(ToolTipItem108)
+        SuperToolTip108.MaxWidth = 210
+        Me.CommandBarItem88.SuperTip = SuperToolTip108
+        '
+        'CommandBarItem89
+        '
+        Me.CommandBarItem89.Caption = "Columns"
+        Me.CommandBarItem89.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableDistributeColumnsEvenly
+        Me.CommandBarItem89.Enabled = False
+        Me.CommandBarItem89.Id = 113
+        Me.CommandBarItem89.Name = "CommandBarItem89"
+        SuperToolTip109.FixedTooltipWidth = True
+        ToolTipTitleItem109.Text = "Distribute Columns Evenly"
+        ToolTipItem109.LeftIndent = 6
+        ToolTipItem109.Text = "Distribute the width of the selected columns equally between them."
+        SuperToolTip109.Items.Add(ToolTipTitleItem109)
+        SuperToolTip109.Items.Add(ToolTipItem109)
+        SuperToolTip109.MaxWidth = 210
+        Me.CommandBarItem89.SuperTip = SuperToolTip109
+        '
+        'CommandBarItem90
+        '
+        Me.CommandBarItem90.Caption = "Merge Cells"
+        Me.CommandBarItem90.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableMergeCells
+        Me.CommandBarItem90.Enabled = False
+        Me.CommandBarItem90.Id = 114
+        Me.CommandBarItem90.Name = "CommandBarItem90"
+        SuperToolTip110.FixedTooltipWidth = True
+        ToolTipTitleItem110.Text = "Merge Cells"
+        ToolTipItem110.LeftIndent = 6
+        ToolTipItem110.Text = "Merge the selected cells into one cell."
+        SuperToolTip110.Items.Add(ToolTipTitleItem110)
+        SuperToolTip110.Items.Add(ToolTipItem110)
+        SuperToolTip110.MaxWidth = 210
+        Me.CommandBarItem90.SuperTip = SuperToolTip110
+        '
+        'CommandBarItem91
+        '
+        Me.CommandBarItem91.Caption = "Split Cells"
+        Me.CommandBarItem91.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.TableSplitCells
+        Me.CommandBarItem91.Enabled = False
+        Me.CommandBarItem91.Id = 115
+        Me.CommandBarItem91.Name = "CommandBarItem91"
+        SuperToolTip111.FixedTooltipWidth = True
+        ToolTipTitleItem111.Text = "Split Cells"
+        ToolTipItem111.LeftIndent = 6
+        ToolTipItem111.Text = "Split the selected cells into the specified number of rows or columns."
+        SuperToolTip111.Items.Add(ToolTipTitleItem111)
+        SuperToolTip111.Items.Add(ToolTipItem111)
+        SuperToolTip111.MaxWidth = 210
+        Me.CommandBarItem91.SuperTip = SuperToolTip111
+        '
+        'CommandBarItem92
+        '
+        Me.CommandBarItem92.Caption = "Run Designer"
+        Me.CommandBarItem92.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRunDesigner
+        Me.CommandBarItem92.Enabled = False
+        Me.CommandBarItem92.Id = 116
+        Me.CommandBarItem92.Name = "CommandBarItem92"
+        SuperToolTip112.FixedTooltipWidth = True
+        ToolTipTitleItem112.Text = "Run Designer"
+        ToolTipItem112.LeftIndent = 6
+        ToolTipItem112.Text = "Run the Pivot Grid Designer that allows customizing fields, the control's layout," &
+    " appearance settings and printing options."
+        SuperToolTip112.Items.Add(ToolTipTitleItem112)
+        SuperToolTip112.Items.Add(ToolTipItem112)
+        SuperToolTip112.MaxWidth = 210
+        Me.CommandBarItem92.SuperTip = SuperToolTip112
+        '
+        'CommandBarItem93
+        '
+        Me.CommandBarItem93.Caption = "Add Data Source"
+        Me.CommandBarItem93.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridAddDataSource
+        Me.CommandBarItem93.Enabled = False
+        Me.CommandBarItem93.Id = 117
+        Me.CommandBarItem93.Name = "CommandBarItem93"
+        SuperToolTip113.FixedTooltipWidth = True
+        ToolTipTitleItem113.Text = "Add Data Source"
+        ToolTipItem113.LeftIndent = 6
+        ToolTipItem113.Text = "Set up a data source for a Pivot Grid."
+        SuperToolTip113.Items.Add(ToolTipTitleItem113)
+        SuperToolTip113.Items.Add(ToolTipItem113)
+        SuperToolTip113.MaxWidth = 210
+        Me.CommandBarItem93.SuperTip = SuperToolTip113
+        '
+        'CommandBarItem94
+        '
+        Me.CommandBarItem94.Caption = "Remove Field"
+        Me.CommandBarItem94.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRemoveField
+        Me.CommandBarItem94.Enabled = False
+        Me.CommandBarItem94.Id = 118
+        Me.CommandBarItem94.Name = "CommandBarItem94"
+        SuperToolTip114.FixedTooltipWidth = True
+        ToolTipTitleItem114.Text = "Remove Field"
+        ToolTipItem114.LeftIndent = 6
+        ToolTipItem114.Text = "Remove the selected Pivot Grid field."
+        SuperToolTip114.Items.Add(ToolTipTitleItem114)
+        SuperToolTip114.Items.Add(ToolTipItem114)
+        SuperToolTip114.MaxWidth = 210
+        Me.CommandBarItem94.SuperTip = SuperToolTip114
+        '
+        'CommandBarItem95
+        '
+        Me.CommandBarItem95.ActAsDropDown = True
+        Me.CommandBarItem95.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem95.Caption = "Add Field"
+        Me.CommandBarItem95.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridAddField
+        Me.CommandBarItem95.Enabled = False
+        Me.CommandBarItem95.Id = 119
+        Me.CommandBarItem95.Name = "CommandBarItem95"
+        SuperToolTip115.FixedTooltipWidth = True
+        ToolTipTitleItem115.Text = "Add Field"
+        ToolTipItem115.LeftIndent = 6
+        ToolTipItem115.Text = "Add a new Pivot Grid field to a required header area."
+        SuperToolTip115.Items.Add(ToolTipTitleItem115)
+        SuperToolTip115.Items.Add(ToolTipItem115)
+        SuperToolTip115.MaxWidth = 210
+        Me.CommandBarItem95.SuperTip = SuperToolTip115
+        '
+        'CommandBarItem96
+        '
+        Me.CommandBarItem96.Caption = "Vertical Lines"
+        Me.CommandBarItem96.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridVerticalLines
+        Me.CommandBarItem96.Enabled = False
+        Me.CommandBarItem96.Id = 120
+        Me.CommandBarItem96.Name = "CommandBarItem96"
+        SuperToolTip116.FixedTooltipWidth = True
+        ToolTipTitleItem116.Text = "Print Vertical Lines"
+        ToolTipItem116.LeftIndent = 6
+        ToolTipItem116.Text = "Print vertical grid lines."
+        SuperToolTip116.Items.Add(ToolTipTitleItem116)
+        SuperToolTip116.Items.Add(ToolTipItem116)
+        SuperToolTip116.MaxWidth = 210
+        Me.CommandBarItem96.SuperTip = SuperToolTip116
+        '
+        'CommandBarItem97
+        '
+        Me.CommandBarItem97.Caption = "Horizontal Lines"
+        Me.CommandBarItem97.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridHorizontalLines
+        Me.CommandBarItem97.Enabled = False
+        Me.CommandBarItem97.Id = 121
+        Me.CommandBarItem97.Name = "CommandBarItem97"
+        SuperToolTip117.FixedTooltipWidth = True
+        ToolTipTitleItem117.Text = "Print Horizontal Lines"
+        ToolTipItem117.LeftIndent = 6
+        ToolTipItem117.Text = "Print horizontal grid lines."
+        SuperToolTip117.Items.Add(ToolTipTitleItem117)
+        SuperToolTip117.Items.Add(ToolTipItem117)
+        SuperToolTip117.MaxWidth = 210
+        Me.CommandBarItem97.SuperTip = SuperToolTip117
+        '
+        'CommandBarItem98
+        '
+        Me.CommandBarItem98.Caption = "Data Headers"
+        Me.CommandBarItem98.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridDataHeaders
+        Me.CommandBarItem98.Enabled = False
+        Me.CommandBarItem98.Id = 122
+        Me.CommandBarItem98.Name = "CommandBarItem98"
+        SuperToolTip118.FixedTooltipWidth = True
+        ToolTipTitleItem118.Text = "Print Data Headers"
+        ToolTipItem118.LeftIndent = 6
+        ToolTipItem118.Text = "Print data field headers."
+        SuperToolTip118.Items.Add(ToolTipTitleItem118)
+        SuperToolTip118.Items.Add(ToolTipItem118)
+        SuperToolTip118.MaxWidth = 210
+        Me.CommandBarItem98.SuperTip = SuperToolTip118
+        '
+        'CommandBarItem99
+        '
+        Me.CommandBarItem99.Caption = "Column Headers"
+        Me.CommandBarItem99.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridColumnHeaders
+        Me.CommandBarItem99.Enabled = False
+        Me.CommandBarItem99.Id = 123
+        Me.CommandBarItem99.Name = "CommandBarItem99"
+        SuperToolTip119.FixedTooltipWidth = True
+        ToolTipTitleItem119.Text = "Print Column Headers"
+        ToolTipItem119.LeftIndent = 6
+        ToolTipItem119.Text = "Print column field headers."
+        SuperToolTip119.Items.Add(ToolTipTitleItem119)
+        SuperToolTip119.Items.Add(ToolTipItem119)
+        SuperToolTip119.MaxWidth = 210
+        Me.CommandBarItem99.SuperTip = SuperToolTip119
+        '
+        'CommandBarItem100
+        '
+        Me.CommandBarItem100.Caption = "Row Headers"
+        Me.CommandBarItem100.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRowHeaders
+        Me.CommandBarItem100.Enabled = False
+        Me.CommandBarItem100.Id = 124
+        Me.CommandBarItem100.Name = "CommandBarItem100"
+        SuperToolTip120.FixedTooltipWidth = True
+        ToolTipTitleItem120.Text = "Print Row Headers"
+        ToolTipItem120.LeftIndent = 6
+        ToolTipItem120.Text = "Print row field headers."
+        SuperToolTip120.Items.Add(ToolTipTitleItem120)
+        SuperToolTip120.Items.Add(ToolTipItem120)
+        SuperToolTip120.MaxWidth = 210
+        Me.CommandBarItem100.SuperTip = SuperToolTip120
+        '
+        'CommandBarItem101
+        '
+        Me.CommandBarItem101.Caption = "Column Area On Every Page"
+        Me.CommandBarItem101.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridColumnAreaOnEveryPage
+        Me.CommandBarItem101.Enabled = False
+        Me.CommandBarItem101.Id = 125
+        Me.CommandBarItem101.Name = "CommandBarItem101"
+        Me.CommandBarItem101.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
+        SuperToolTip121.FixedTooltipWidth = True
+        ToolTipTitleItem121.Text = "Print Column Area On Every Page"
+        ToolTipItem121.LeftIndent = 6
+        ToolTipItem121.Text = "Print column area on every page."
+        SuperToolTip121.Items.Add(ToolTipTitleItem121)
+        SuperToolTip121.Items.Add(ToolTipItem121)
+        SuperToolTip121.MaxWidth = 210
+        Me.CommandBarItem101.SuperTip = SuperToolTip121
+        '
+        'CommandBarItem102
+        '
+        Me.CommandBarItem102.Caption = "Row Area On Every Page"
+        Me.CommandBarItem102.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.PivotGridRowAreaOnEveryPage
+        Me.CommandBarItem102.Enabled = False
+        Me.CommandBarItem102.Id = 126
+        Me.CommandBarItem102.Name = "CommandBarItem102"
+        Me.CommandBarItem102.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
+        SuperToolTip122.FixedTooltipWidth = True
+        ToolTipTitleItem122.Text = "Print Row Area On Every Page"
+        ToolTipItem122.LeftIndent = 6
+        ToolTipItem122.Text = "Print row area on every page."
+        SuperToolTip122.Items.Add(ToolTipTitleItem122)
+        SuperToolTip122.Items.Add(ToolTipItem122)
+        SuperToolTip122.MaxWidth = 210
+        Me.CommandBarItem102.SuperTip = SuperToolTip122
+        '
+        'CommandBarItem103
+        '
+        Me.CommandBarItem103.Caption = "Load..."
+        Me.CommandBarItem103.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartLoad
+        Me.CommandBarItem103.Enabled = False
+        Me.CommandBarItem103.Id = 127
+        Me.CommandBarItem103.Name = "CommandBarItem103"
+        Me.CommandBarItem103.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
+        SuperToolTip123.FixedTooltipWidth = True
+        ToolTipTitleItem123.Text = "Load"
+        ToolTipItem123.LeftIndent = 6
+        ToolTipItem123.Text = "Load a chart from an XML file."
+        SuperToolTip123.Items.Add(ToolTipTitleItem123)
+        SuperToolTip123.Items.Add(ToolTipItem123)
+        SuperToolTip123.MaxWidth = 210
+        Me.CommandBarItem103.SuperTip = SuperToolTip123
+        '
+        'CommandBarItem104
+        '
+        Me.CommandBarItem104.Caption = "Save..."
+        Me.CommandBarItem104.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartSave
+        Me.CommandBarItem104.Enabled = False
+        Me.CommandBarItem104.Id = 128
+        Me.CommandBarItem104.Name = "CommandBarItem104"
+        Me.CommandBarItem104.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText
+        SuperToolTip124.FixedTooltipWidth = True
+        ToolTipTitleItem124.Text = "Save"
+        ToolTipItem124.LeftIndent = 6
+        ToolTipItem124.Text = "Save a chart to an XML file."
+        SuperToolTip124.Items.Add(ToolTipTitleItem124)
+        SuperToolTip124.Items.Add(ToolTipItem124)
+        SuperToolTip124.MaxWidth = 210
+        Me.CommandBarItem104.SuperTip = SuperToolTip124
+        '
+        'CommandBarItem105
+        '
+        Me.CommandBarItem105.Caption = "Run Designer"
+        Me.CommandBarItem105.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRunDesigner
+        Me.CommandBarItem105.Enabled = False
+        Me.CommandBarItem105.Id = 129
+        Me.CommandBarItem105.Name = "CommandBarItem105"
+        SuperToolTip125.FixedTooltipWidth = True
+        ToolTipTitleItem125.Text = "Run Designer"
+        ToolTipItem125.LeftIndent = 6
+        ToolTipItem125.Text = "Run the Chart Designer that allows creating and editing properties of a chart and" &
+    " its elements."
+        SuperToolTip125.Items.Add(ToolTipTitleItem125)
+        SuperToolTip125.Items.Add(ToolTipItem125)
+        SuperToolTip125.MaxWidth = 210
+        Me.CommandBarItem105.SuperTip = SuperToolTip125
+        '
+        'CommandBarItem106
+        '
+        Me.CommandBarItem106.Caption = "Add Data Source"
+        Me.CommandBarItem106.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddDataSource
+        Me.CommandBarItem106.Enabled = False
+        Me.CommandBarItem106.Id = 130
+        Me.CommandBarItem106.Name = "CommandBarItem106"
+        SuperToolTip126.FixedTooltipWidth = True
+        ToolTipTitleItem126.Text = "Add Data Source"
+        ToolTipItem126.LeftIndent = 6
+        ToolTipItem126.Text = "Set up a data source for a chart."
+        SuperToolTip126.Items.Add(ToolTipTitleItem126)
+        SuperToolTip126.Items.Add(ToolTipItem126)
+        SuperToolTip126.MaxWidth = 210
+        Me.CommandBarItem106.SuperTip = SuperToolTip126
+        '
+        'CommandBarItem107
+        '
+        Me.CommandBarItem107.ActAsDropDown = True
+        Me.CommandBarItem107.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem107.Caption = "Palette"
+        Me.CommandBarItem107.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartPaletteName
+        Me.CommandBarItem107.Enabled = False
+        Me.CommandBarItem107.Id = 131
+        Me.CommandBarItem107.Name = "CommandBarItem107"
+        SuperToolTip127.FixedTooltipWidth = True
+        ToolTipTitleItem127.Text = "Palette"
+        ToolTipItem127.LeftIndent = 6
+        ToolTipItem127.Text = "Select a palette for painting a chart's series."
+        SuperToolTip127.Items.Add(ToolTipTitleItem127)
+        SuperToolTip127.Items.Add(ToolTipItem127)
+        SuperToolTip127.MaxWidth = 210
+        Me.CommandBarItem107.SuperTip = SuperToolTip127
+        '
+        'CommandBarItem108
+        '
+        Me.CommandBarItem108.ActAsDropDown = True
+        Me.CommandBarItem108.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem108.Caption = "Bar"
+        Me.CommandBarItem108.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewBar
+        Me.CommandBarItem108.Enabled = False
+        Me.CommandBarItem108.Id = 132
+        Me.CommandBarItem108.Name = "CommandBarItem108"
+        SuperToolTip128.FixedTooltipWidth = True
+        ToolTipTitleItem128.Text = "Bar Series"
+        ToolTipItem128.LeftIndent = 6
+        ToolTipItem128.Text = "Add a bar series to display values as vertical columns grouped by categories."
+        SuperToolTip128.Items.Add(ToolTipTitleItem128)
+        SuperToolTip128.Items.Add(ToolTipItem128)
+        SuperToolTip128.MaxWidth = 210
+        Me.CommandBarItem108.SuperTip = SuperToolTip128
+        '
+        'CommandBarItem109
+        '
+        Me.CommandBarItem109.ActAsDropDown = True
+        Me.CommandBarItem109.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem109.Caption = "Line"
+        Me.CommandBarItem109.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewLine
+        Me.CommandBarItem109.Enabled = False
+        Me.CommandBarItem109.Id = 133
+        Me.CommandBarItem109.Name = "CommandBarItem109"
+        SuperToolTip129.FixedTooltipWidth = True
+        ToolTipTitleItem129.Text = "Line Series"
+        ToolTipItem129.LeftIndent = 6
+        ToolTipItem129.Text = "Add a line series to show line trends over time or categories."
+        SuperToolTip129.Items.Add(ToolTipTitleItem129)
+        SuperToolTip129.Items.Add(ToolTipItem129)
+        SuperToolTip129.MaxWidth = 210
+        Me.CommandBarItem109.SuperTip = SuperToolTip129
+        '
+        'CommandBarItem110
+        '
+        Me.CommandBarItem110.ActAsDropDown = True
+        Me.CommandBarItem110.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem110.Caption = "Area"
+        Me.CommandBarItem110.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewArea
+        Me.CommandBarItem110.Enabled = False
+        Me.CommandBarItem110.Id = 134
+        Me.CommandBarItem110.Name = "CommandBarItem110"
+        SuperToolTip130.FixedTooltipWidth = True
+        ToolTipTitleItem130.Text = "Area Series"
+        ToolTipItem130.LeftIndent = 6
+        ToolTipItem130.Text = "Add an area series to display values as a filled area with peaks and hollows."
+        SuperToolTip130.Items.Add(ToolTipTitleItem130)
+        SuperToolTip130.Items.Add(ToolTipItem130)
+        SuperToolTip130.MaxWidth = 210
+        Me.CommandBarItem110.SuperTip = SuperToolTip130
+        '
+        'CommandBarItem111
+        '
+        Me.CommandBarItem111.ActAsDropDown = True
+        Me.CommandBarItem111.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem111.Caption = "Range"
+        Me.CommandBarItem111.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewRange
+        Me.CommandBarItem111.Enabled = False
+        Me.CommandBarItem111.Id = 135
+        Me.CommandBarItem111.Name = "CommandBarItem111"
+        SuperToolTip131.FixedTooltipWidth = True
+        ToolTipTitleItem131.Text = "Range Series"
+        ToolTipItem131.LeftIndent = 6
+        ToolTipItem131.Text = "Add a series to display a range of values with the minimum and maximum limits. "
+        SuperToolTip131.Items.Add(ToolTipTitleItem131)
+        SuperToolTip131.Items.Add(ToolTipItem131)
+        SuperToolTip131.MaxWidth = 210
+        Me.CommandBarItem111.SuperTip = SuperToolTip131
+        '
+        'CommandBarItem112
+        '
+        Me.CommandBarItem112.ActAsDropDown = True
+        Me.CommandBarItem112.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem112.Caption = "Pie and Doughnut"
+        Me.CommandBarItem112.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewPieAndDoughnut
+        Me.CommandBarItem112.Enabled = False
+        Me.CommandBarItem112.Id = 136
+        Me.CommandBarItem112.Name = "CommandBarItem112"
+        SuperToolTip132.FixedTooltipWidth = True
+        ToolTipTitleItem132.Text = "Pie And Doughnut Series"
+        ToolTipItem132.LeftIndent = 6
+        ToolTipItem132.Text = "Add a series to display the percentage values of different point arguments to com" &
+    "pare their significance."
+        SuperToolTip132.Items.Add(ToolTipTitleItem132)
+        SuperToolTip132.Items.Add(ToolTipItem132)
+        SuperToolTip132.MaxWidth = 210
+        Me.CommandBarItem112.SuperTip = SuperToolTip132
+        '
+        'CommandBarItem113
+        '
+        Me.CommandBarItem113.ActAsDropDown = True
+        Me.CommandBarItem113.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem113.Caption = "Radar and Polar"
+        Me.CommandBarItem113.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewRadarAndPolar
+        Me.CommandBarItem113.Enabled = False
+        Me.CommandBarItem113.Id = 137
+        Me.CommandBarItem113.Name = "CommandBarItem113"
+        SuperToolTip133.FixedTooltipWidth = True
+        ToolTipTitleItem133.Text = "Radar And Polar Series"
+        ToolTipItem133.LeftIndent = 6
+        ToolTipItem133.Text = "Add a series to display values as a circular graph."
+        SuperToolTip133.Items.Add(ToolTipTitleItem133)
+        SuperToolTip133.Items.Add(ToolTipItem133)
+        SuperToolTip133.MaxWidth = 210
+        Me.CommandBarItem113.SuperTip = SuperToolTip133
+        '
+        'CommandBarItem114
+        '
+        Me.CommandBarItem114.ActAsDropDown = True
+        Me.CommandBarItem114.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.CommandBarItem114.Caption = "Other Series"
+        Me.CommandBarItem114.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddSeriesViewOther
+        Me.CommandBarItem114.Enabled = False
+        Me.CommandBarItem114.Id = 138
+        Me.CommandBarItem114.Name = "CommandBarItem114"
+        SuperToolTip134.FixedTooltipWidth = True
+        ToolTipTitleItem134.Text = "Other Series"
+        ToolTipItem134.LeftIndent = 6
+        ToolTipItem134.Text = "Choose a chart type to display your data."
+        SuperToolTip134.Items.Add(ToolTipTitleItem134)
+        SuperToolTip134.Items.Add(ToolTipItem134)
+        SuperToolTip134.MaxWidth = 210
+        Me.CommandBarItem114.SuperTip = SuperToolTip134
+        '
+        'CommandBarItem115
+        '
+        Me.CommandBarItem115.Caption = "Remove Series"
+        Me.CommandBarItem115.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRemoveSeries
+        Me.CommandBarItem115.Enabled = False
+        Me.CommandBarItem115.Id = 139
+        Me.CommandBarItem115.Name = "CommandBarItem115"
+        SuperToolTip135.FixedTooltipWidth = True
+        ToolTipTitleItem135.Text = "Remove Series"
+        ToolTipItem135.LeftIndent = 6
+        ToolTipItem135.Text = "Remove the selected series."
+        SuperToolTip135.Items.Add(ToolTipTitleItem135)
+        SuperToolTip135.Items.Add(ToolTipItem135)
+        SuperToolTip135.MaxWidth = 210
+        Me.CommandBarItem115.SuperTip = SuperToolTip135
+        '
+        'CommandBarItem116
+        '
+        Me.CommandBarItem116.Caption = "Add Text Annotation"
+        Me.CommandBarItem116.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddTextAnnotation
+        Me.CommandBarItem116.Enabled = False
+        Me.CommandBarItem116.Id = 140
+        Me.CommandBarItem116.Name = "CommandBarItem116"
+        SuperToolTip136.FixedTooltipWidth = True
+        ToolTipTitleItem136.Text = "Add Text Annotation"
+        ToolTipItem136.LeftIndent = 6
+        ToolTipItem136.Text = "Add a text annotation to a chart."
+        SuperToolTip136.Items.Add(ToolTipTitleItem136)
+        SuperToolTip136.Items.Add(ToolTipItem136)
+        SuperToolTip136.MaxWidth = 210
+        Me.CommandBarItem116.SuperTip = SuperToolTip136
+        '
+        'CommandBarItem117
+        '
+        Me.CommandBarItem117.Caption = "Add Image Annotation"
+        Me.CommandBarItem117.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartAddImageAnnotation
+        Me.CommandBarItem117.Enabled = False
+        Me.CommandBarItem117.Id = 141
+        Me.CommandBarItem117.Name = "CommandBarItem117"
+        SuperToolTip137.FixedTooltipWidth = True
+        ToolTipTitleItem137.Text = "Add Image Annotation"
+        ToolTipItem137.LeftIndent = 6
+        ToolTipItem137.Text = "Add an image annotation to a chart."
+        SuperToolTip137.Items.Add(ToolTipTitleItem137)
+        SuperToolTip137.Items.Add(ToolTipItem137)
+        SuperToolTip137.MaxWidth = 210
+        Me.CommandBarItem117.SuperTip = SuperToolTip137
+        '
+        'CommandBarItem118
+        '
+        Me.CommandBarItem118.Caption = "Remove Annotation"
+        Me.CommandBarItem118.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ChartRemoveAnnotation
+        Me.CommandBarItem118.Enabled = False
+        Me.CommandBarItem118.Id = 142
+        Me.CommandBarItem118.Name = "CommandBarItem118"
+        SuperToolTip138.FixedTooltipWidth = True
+        ToolTipTitleItem138.Text = "Remove Annotation"
+        ToolTipItem138.LeftIndent = 6
+        ToolTipItem138.Text = "Remove the selected annotation."
+        SuperToolTip138.Items.Add(ToolTipTitleItem138)
+        SuperToolTip138.Items.Add(ToolTipItem138)
+        SuperToolTip138.MaxWidth = 210
+        Me.CommandBarItem118.SuperTip = SuperToolTip138
+        '
+        'CommandBarItem119
+        '
+        Me.CommandBarItem119.Caption = "Auto Module"
+        Me.CommandBarItem119.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeAutoModule
+        Me.CommandBarItem119.Enabled = False
+        Me.CommandBarItem119.Id = 143
+        Me.CommandBarItem119.Name = "CommandBarItem119"
+        SuperToolTip139.FixedTooltipWidth = True
+        ToolTipTitleItem139.Text = "Auto Module"
+        ToolTipItem139.LeftIndent = 6
+        ToolTipItem139.Text = "Automatically calculate the bar width based on bar code dimensions."
+        SuperToolTip139.Items.Add(ToolTipTitleItem139)
+        SuperToolTip139.Items.Add(ToolTipItem139)
+        SuperToolTip139.MaxWidth = 210
+        Me.CommandBarItem119.SuperTip = SuperToolTip139
+        '
+        'CommandBarItem120
+        '
+        Me.CommandBarItem120.Caption = "Show Text"
+        Me.CommandBarItem120.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.BarCodeShowText
+        Me.CommandBarItem120.Enabled = False
+        Me.CommandBarItem120.Id = 144
+        Me.CommandBarItem120.Name = "CommandBarItem120"
+        SuperToolTip140.FixedTooltipWidth = True
+        ToolTipTitleItem140.Text = "Show Text"
+        ToolTipItem140.LeftIndent = 6
+        ToolTipItem140.Text = "Display accompanying text in a bar code."
+        SuperToolTip140.Items.Add(ToolTipTitleItem140)
+        SuperToolTip140.Items.Add(ToolTipItem140)
+        SuperToolTip140.MaxWidth = 210
+        Me.CommandBarItem120.SuperTip = SuperToolTip140
+        '
+        'CommandBarItem121
+        '
+        Me.CommandBarItem121.Caption = "Fit Bounds to Text"
+        Me.CommandBarItem121.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitBoundsToText
+        Me.CommandBarItem121.Enabled = False
+        Me.CommandBarItem121.Id = 145
+        Me.CommandBarItem121.Name = "CommandBarItem121"
+        SuperToolTip141.FixedTooltipWidth = True
+        ToolTipTitleItem141.Text = "Fit Bounds to Text"
+        ToolTipItem141.LeftIndent = 6
+        ToolTipItem141.Text = "Adjust the size of the selected controls to fit their text."
+        SuperToolTip141.Items.Add(ToolTipTitleItem141)
+        SuperToolTip141.Items.Add(ToolTipItem141)
+        SuperToolTip141.MaxWidth = 210
+        Me.CommandBarItem121.SuperTip = SuperToolTip141
+        '
+        'CommandBarItem122
+        '
+        Me.CommandBarItem122.Caption = "Fit Text to Bounds"
+        Me.CommandBarItem122.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.FitTextToBounds
+        Me.CommandBarItem122.Enabled = False
+        Me.CommandBarItem122.Id = 146
+        Me.CommandBarItem122.Name = "CommandBarItem122"
+        SuperToolTip142.FixedTooltipWidth = True
+        ToolTipTitleItem142.Text = "Fit Text to Bounds"
+        ToolTipItem142.LeftIndent = 6
+        ToolTipItem142.Text = "Adjust the font size of the selected controls to fit their entire area."
+        SuperToolTip142.Items.Add(ToolTipTitleItem142)
+        SuperToolTip142.Items.Add(ToolTipItem142)
+        SuperToolTip142.MaxWidth = 210
+        Me.CommandBarItem122.SuperTip = SuperToolTip142
+        '
+        'CommandBarCheckItem4
+        '
+        Me.CommandBarCheckItem4.Caption = "Auto Width"
+        Me.CommandBarCheckItem4.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
+        Me.CommandBarCheckItem4.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelAutoWidth
+        Me.CommandBarCheckItem4.Enabled = False
+        Me.CommandBarCheckItem4.Id = 147
+        Me.CommandBarCheckItem4.Name = "CommandBarCheckItem4"
+        SuperToolTip143.FixedTooltipWidth = True
+        ToolTipTitleItem143.Text = "Auto Width"
+        ToolTipItem143.LeftIndent = 6
+        ToolTipItem143.Text = "Enable the selected controls to adjust their width to fit their content."
+        SuperToolTip143.Items.Add(ToolTipTitleItem143)
+        SuperToolTip143.Items.Add(ToolTipItem143)
+        SuperToolTip143.MaxWidth = 210
+        Me.CommandBarCheckItem4.SuperTip = SuperToolTip143
+        '
+        'CommandBarCheckItem5
+        '
+        Me.CommandBarCheckItem5.Caption = "Word Wrap"
+        Me.CommandBarCheckItem5.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
+        Me.CommandBarCheckItem5.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelWordWrap
+        Me.CommandBarCheckItem5.Enabled = False
+        Me.CommandBarCheckItem5.Id = 148
+        Me.CommandBarCheckItem5.Name = "CommandBarCheckItem5"
+        SuperToolTip144.FixedTooltipWidth = True
+        ToolTipTitleItem144.Text = "Word Wrap"
+        ToolTipItem144.LeftIndent = 6
+        ToolTipItem144.Text = "Enable the selected controls to wrap their text if it does not fit a line."
+        SuperToolTip144.Items.Add(ToolTipTitleItem144)
+        SuperToolTip144.Items.Add(ToolTipItem144)
+        SuperToolTip144.MaxWidth = 210
+        Me.CommandBarCheckItem5.SuperTip = SuperToolTip144
+        '
+        'CommandBarCheckItem6
+        '
+        Me.CommandBarCheckItem6.Caption = "Can Shrink"
+        Me.CommandBarCheckItem6.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
+        Me.CommandBarCheckItem6.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelCanShrink
+        Me.CommandBarCheckItem6.Enabled = False
+        Me.CommandBarCheckItem6.Id = 149
+        Me.CommandBarCheckItem6.Name = "CommandBarCheckItem6"
+        SuperToolTip145.FixedTooltipWidth = True
+        ToolTipTitleItem145.Text = "Can Shrink"
+        ToolTipItem145.LeftIndent = 6
+        ToolTipItem145.Text = "Enable the selected controls to decrease their height to fit their content."
+        SuperToolTip145.Items.Add(ToolTipTitleItem145)
+        SuperToolTip145.Items.Add(ToolTipItem145)
+        SuperToolTip145.MaxWidth = 210
+        Me.CommandBarCheckItem6.SuperTip = SuperToolTip145
+        '
+        'CommandBarCheckItem7
+        '
+        Me.CommandBarCheckItem7.Caption = "Can Grow"
+        Me.CommandBarCheckItem7.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
+        Me.CommandBarCheckItem7.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.LabelCanGrow
+        Me.CommandBarCheckItem7.Enabled = False
+        Me.CommandBarCheckItem7.Id = 150
+        Me.CommandBarCheckItem7.Name = "CommandBarCheckItem7"
+        SuperToolTip146.FixedTooltipWidth = True
+        ToolTipTitleItem146.Text = "Can Grow"
+        ToolTipItem146.LeftIndent = 6
+        ToolTipItem146.Text = "Enable the selected controls to increase their height to fit their content."
+        SuperToolTip146.Items.Add(ToolTipTitleItem146)
+        SuperToolTip146.Items.Add(ToolTipItem146)
+        SuperToolTip146.MaxWidth = 210
+        Me.CommandBarCheckItem7.SuperTip = SuperToolTip146
+        '
+        'CommandBarCheckItem8
+        '
+        Me.CommandBarCheckItem8.Caption = "Auto Width"
+        Me.CommandBarCheckItem8.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
+        Me.CommandBarCheckItem8.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellAutoWidth
+        Me.CommandBarCheckItem8.Enabled = False
+        Me.CommandBarCheckItem8.Id = 151
+        Me.CommandBarCheckItem8.Name = "CommandBarCheckItem8"
+        SuperToolTip147.FixedTooltipWidth = True
+        ToolTipTitleItem147.Text = "Cell Auto Width"
+        ToolTipItem147.LeftIndent = 6
+        ToolTipItem147.Text = "Automatically adjust the cell width depending on the current font size."
+        SuperToolTip147.Items.Add(ToolTipTitleItem147)
+        SuperToolTip147.Items.Add(ToolTipItem147)
+        SuperToolTip147.MaxWidth = 210
+        Me.CommandBarCheckItem8.SuperTip = SuperToolTip147
+        '
+        'CommandBarCheckItem9
+        '
+        Me.CommandBarCheckItem9.Caption = "Auto Height"
+        Me.CommandBarCheckItem9.CheckBoxVisibility = DevExpress.XtraBars.CheckBoxVisibility.BeforeText
+        Me.CommandBarCheckItem9.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.CharacterCombCellAutoHeight
+        Me.CommandBarCheckItem9.Enabled = False
+        Me.CommandBarCheckItem9.Id = 152
+        Me.CommandBarCheckItem9.Name = "CommandBarCheckItem9"
+        SuperToolTip148.FixedTooltipWidth = True
+        ToolTipTitleItem148.Text = "Cell Auto Height"
+        ToolTipItem148.LeftIndent = 6
+        ToolTipItem148.Text = "Automatically adjust the cell height depending on the current font size."
+        SuperToolTip148.Items.Add(ToolTipTitleItem148)
+        SuperToolTip148.Items.Add(ToolTipItem148)
+        SuperToolTip148.MaxWidth = 210
+        Me.CommandBarCheckItem9.SuperTip = SuperToolTip148
+        '
+        'CommandBarItem123
+        '
+        Me.CommandBarItem123.Caption = "Add Data Source"
+        Me.CommandBarItem123.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.SparklineAddDataSource
+        Me.CommandBarItem123.Enabled = False
+        Me.CommandBarItem123.Id = 153
+        Me.CommandBarItem123.Name = "CommandBarItem123"
+        SuperToolTip149.FixedTooltipWidth = True
+        ToolTipTitleItem149.Text = "Add Data Source"
+        ToolTipItem149.LeftIndent = 6
+        ToolTipItem149.Text = "Set up a data source for a sparkline."
+        SuperToolTip149.Items.Add(ToolTipTitleItem149)
+        SuperToolTip149.Items.Add(ToolTipItem149)
+        SuperToolTip149.MaxWidth = 210
+        Me.CommandBarItem123.SuperTip = SuperToolTip149
+        '
+        'CommandBarItem124
+        '
+        Me.CommandBarItem124.Caption = "Flat Light"
+        Me.CommandBarItem124.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewThemeLight
+        Me.CommandBarItem124.Enabled = False
+        Me.CommandBarItem124.Id = 154
+        Me.CommandBarItem124.Name = "CommandBarItem124"
+        SuperToolTip150.FixedTooltipWidth = True
+        ToolTipTitleItem150.Text = "Flat Light Theme"
+        ToolTipItem150.LeftIndent = 6
+        ToolTipItem150.Text = "Set the Flat Light color theme for a gauge."
+        SuperToolTip150.Items.Add(ToolTipTitleItem150)
+        SuperToolTip150.Items.Add(ToolTipItem150)
+        SuperToolTip150.MaxWidth = 210
+        Me.CommandBarItem124.SuperTip = SuperToolTip150
+        '
+        'CommandBarItem125
+        '
+        Me.CommandBarItem125.Caption = "Flat Dark"
+        Me.CommandBarItem125.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.GaugeViewThemeDark
+        Me.CommandBarItem125.Enabled = False
+        Me.CommandBarItem125.Id = 155
+        Me.CommandBarItem125.Name = "CommandBarItem125"
+        SuperToolTip151.FixedTooltipWidth = True
+        ToolTipTitleItem151.Text = "Flat Dark Theme"
+        ToolTipItem151.LeftIndent = 6
+        ToolTipItem151.Text = "Set the Flat Dark color theme for a gauge."
+        SuperToolTip151.Items.Add(ToolTipTitleItem151)
+        SuperToolTip151.Items.Add(ToolTipItem151)
+        SuperToolTip151.MaxWidth = 210
+        Me.CommandBarItem125.SuperTip = SuperToolTip151
+        '
+        'CommandBarItem126
+        '
+        Me.CommandBarItem126.Caption = "Stretch"
+        Me.CommandBarItem126.Command = DevExpress.XtraReports.UserDesigner.ReportCommand.ShapeStretch
+        Me.CommandBarItem126.Enabled = False
+        Me.CommandBarItem126.Id = 156
+        Me.CommandBarItem126.Name = "CommandBarItem126"
+        SuperToolTip152.FixedTooltipWidth = True
+        ToolTipTitleItem152.Text = "Stretch"
+        ToolTipItem152.LeftIndent = 6
+        ToolTipItem152.Text = "Stretch a shape to fill its entire area when it is rotated."
+        SuperToolTip152.Items.Add(ToolTipTitleItem152)
+        SuperToolTip152.Items.Add(ToolTipItem152)
+        SuperToolTip152.MaxWidth = 210
+        Me.CommandBarItem126.SuperTip = SuperToolTip152
+        '
+        'XrDesignBarButtonGroup1
+        '
+        Me.XrDesignBarButtonGroup1.Id = 159
+        Me.XrDesignBarButtonGroup1.ItemLinks.Add(Me.BarEditItem1)
+        Me.XrDesignBarButtonGroup1.ItemLinks.Add(Me.BarEditItem2)
+        Me.XrDesignBarButtonGroup1.Name = "XrDesignBarButtonGroup1"
+        '
+        'XrDesignBarButtonGroup2
+        '
+        Me.XrDesignBarButtonGroup2.Id = 160
+        Me.XrDesignBarButtonGroup2.ItemLinks.Add(Me.CommandBarItem17)
+        Me.XrDesignBarButtonGroup2.ItemLinks.Add(Me.CommandBarItem18)
+        Me.XrDesignBarButtonGroup2.ItemLinks.Add(Me.CommandBarItem19)
+        Me.XrDesignBarButtonGroup2.ItemLinks.Add(Me.CommandBarItem24)
+        Me.XrDesignBarButtonGroup2.Name = "XrDesignBarButtonGroup2"
+        '
+        'XrDesignBarButtonGroup3
+        '
+        Me.XrDesignBarButtonGroup3.Id = 161
+        Me.XrDesignBarButtonGroup3.ItemLinks.Add(Me.CommandColorBarItem2)
+        Me.XrDesignBarButtonGroup3.ItemLinks.Add(Me.CommandColorBarItem1)
+        Me.XrDesignBarButtonGroup3.Name = "XrDesignBarButtonGroup3"
+        '
+        'XrDesignBarButtonGroup4
+        '
+        Me.XrDesignBarButtonGroup4.Id = 162
+        Me.XrDesignBarButtonGroup4.ItemLinks.Add(Me.CommandBarItem25)
+        Me.XrDesignBarButtonGroup4.ItemLinks.Add(Me.CommandBarItem26)
+        Me.XrDesignBarButtonGroup4.ItemLinks.Add(Me.CommandBarItem27)
+        Me.XrDesignBarButtonGroup4.Name = "XrDesignBarButtonGroup4"
+        '
+        'XrDesignBarButtonGroup5
+        '
+        Me.XrDesignBarButtonGroup5.Id = 163
+        Me.XrDesignBarButtonGroup5.ItemLinks.Add(Me.CommandBarItem20)
+        Me.XrDesignBarButtonGroup5.ItemLinks.Add(Me.CommandBarItem21)
+        Me.XrDesignBarButtonGroup5.ItemLinks.Add(Me.CommandBarItem22)
+        Me.XrDesignBarButtonGroup5.ItemLinks.Add(Me.CommandBarItem23)
+        Me.XrDesignBarButtonGroup5.Name = "XrDesignBarButtonGroup5"
+        '
+        'XrDesignBarButtonGroup6
+        '
+        Me.XrDesignBarButtonGroup6.Id = 164
+        Me.XrDesignBarButtonGroup6.ItemLinks.Add(Me.CommandBarItem32)
+        Me.XrDesignBarButtonGroup6.ItemLinks.Add(Me.CommandBarItem33)
+        Me.XrDesignBarButtonGroup6.Name = "XrDesignBarButtonGroup6"
+        '
+        'XrDesignBarButtonGroup7
+        '
+        Me.XrDesignBarButtonGroup7.Id = 165
+        Me.XrDesignBarButtonGroup7.ItemLinks.Add(Me.CommandBarItem34)
+        Me.XrDesignBarButtonGroup7.ItemLinks.Add(Me.CommandBarItem35)
+        Me.XrDesignBarButtonGroup7.ItemLinks.Add(Me.CommandBarItem36)
+        Me.XrDesignBarButtonGroup7.ItemLinks.Add(Me.CommandBarItem37)
+        Me.XrDesignBarButtonGroup7.Name = "XrDesignBarButtonGroup7"
+        '
+        'XrDesignBarButtonGroup8
+        '
+        Me.XrDesignBarButtonGroup8.Id = 166
+        Me.XrDesignBarButtonGroup8.ItemLinks.Add(Me.CommandColorBarItem3)
+        Me.XrDesignBarButtonGroup8.ItemLinks.Add(Me.CommandBarItem38)
+        Me.XrDesignBarButtonGroup8.ItemLinks.Add(Me.CommandBarEditItem6)
+        Me.XrDesignBarButtonGroup8.Name = "XrDesignBarButtonGroup8"
+        '
+        'XrDesignBarButtonGroup9
+        '
+        Me.XrDesignBarButtonGroup9.Id = 167
+        Me.XrDesignBarButtonGroup9.ItemLinks.Add(Me.CommandBarItem40)
+        Me.XrDesignBarButtonGroup9.ItemLinks.Add(Me.CommandBarItem41)
+        Me.XrDesignBarButtonGroup9.ItemLinks.Add(Me.CommandBarItem42)
+        Me.XrDesignBarButtonGroup9.Name = "XrDesignBarButtonGroup9"
+        '
+        'XrDesignBarButtonGroup10
+        '
+        Me.XrDesignBarButtonGroup10.Id = 168
+        Me.XrDesignBarButtonGroup10.ItemLinks.Add(Me.CommandBarItem43)
+        Me.XrDesignBarButtonGroup10.ItemLinks.Add(Me.CommandBarItem44)
+        Me.XrDesignBarButtonGroup10.ItemLinks.Add(Me.CommandBarItem45)
+        Me.XrDesignBarButtonGroup10.Name = "XrDesignBarButtonGroup10"
+        '
+        'XrDesignBarButtonGroup11
+        '
+        Me.XrDesignBarButtonGroup11.Id = 169
+        Me.XrDesignBarButtonGroup11.ItemLinks.Add(Me.CommandBarItem50)
+        Me.XrDesignBarButtonGroup11.ItemLinks.Add(Me.CommandBarItem51)
+        Me.XrDesignBarButtonGroup11.ItemLinks.Add(Me.CommandBarItem52)
+        Me.XrDesignBarButtonGroup11.ItemLinks.Add(Me.CommandBarItem53)
+        Me.XrDesignBarButtonGroup11.Name = "XrDesignBarButtonGroup11"
+        '
+        'XrDesignBarButtonGroup12
+        '
+        Me.XrDesignBarButtonGroup12.Id = 170
+        Me.XrDesignBarButtonGroup12.ItemLinks.Add(Me.CommandBarItem46)
+        Me.XrDesignBarButtonGroup12.ItemLinks.Add(Me.CommandBarItem48)
+        Me.XrDesignBarButtonGroup12.ItemLinks.Add(Me.CommandBarItem49)
+        Me.XrDesignBarButtonGroup12.Name = "XrDesignBarButtonGroup12"
+        '
+        'XrDesignBarButtonGroup13
+        '
+        Me.XrDesignBarButtonGroup13.Id = 171
+        Me.XrDesignBarButtonGroup13.ItemLinks.Add(Me.CommandBarItem54)
+        Me.XrDesignBarButtonGroup13.ItemLinks.Add(Me.CommandBarItem55)
+        Me.XrDesignBarButtonGroup13.ItemLinks.Add(Me.CommandBarItem56)
+        Me.XrDesignBarButtonGroup13.ItemLinks.Add(Me.CommandBarItem57)
+        Me.XrDesignBarButtonGroup13.Name = "XrDesignBarButtonGroup13"
+        '
+        'XrDesignBarButtonGroup14
+        '
+        Me.XrDesignBarButtonGroup14.Id = 172
+        Me.XrDesignBarButtonGroup14.ItemLinks.Add(Me.CommandBarItem58)
+        Me.XrDesignBarButtonGroup14.ItemLinks.Add(Me.CommandBarItem59)
+        Me.XrDesignBarButtonGroup14.Name = "XrDesignBarButtonGroup14"
+        '
+        'PrintPreviewBarItem1
+        '
+        Me.PrintPreviewBarItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
+        Me.PrintPreviewBarItem1.Caption = "Editing Fields"
+        Me.PrintPreviewBarItem1.Command = DevExpress.XtraPrinting.PrintingSystemCommand.HighlightEditingFields
+        Me.PrintPreviewBarItem1.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem1.Enabled = False
+        Me.PrintPreviewBarItem1.Id = 173
+        Me.PrintPreviewBarItem1.Name = "PrintPreviewBarItem1"
+        SuperToolTip153.FixedTooltipWidth = True
+        ToolTipTitleItem153.Text = "Highlight Editing Fields"
+        ToolTipItem153.LeftIndent = 6
+        ToolTipItem153.Text = "Highlight all editing fields to quickly discover which of the document elements a" &
+    "re editable."
+        SuperToolTip153.Items.Add(ToolTipTitleItem153)
+        SuperToolTip153.Items.Add(ToolTipItem153)
+        SuperToolTip153.MaxWidth = 210
+        Me.PrintPreviewBarItem1.SuperTip = SuperToolTip153
+        '
+        'PrintPreviewBarItem2
+        '
+        Me.PrintPreviewBarItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
+        Me.PrintPreviewBarItem2.Caption = "Bookmarks"
+        Me.PrintPreviewBarItem2.Command = DevExpress.XtraPrinting.PrintingSystemCommand.DocumentMap
+        Me.PrintPreviewBarItem2.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem2.Enabled = False
+        Me.PrintPreviewBarItem2.Id = 174
+        Me.PrintPreviewBarItem2.Name = "PrintPreviewBarItem2"
+        SuperToolTip154.FixedTooltipWidth = True
+        ToolTipTitleItem154.Text = "Document Map"
+        ToolTipItem154.LeftIndent = 6
+        ToolTipItem154.Text = "Open the Document Map, which allows you to navigate through a structural view of " &
+    "the document."
+        SuperToolTip154.Items.Add(ToolTipTitleItem154)
+        SuperToolTip154.Items.Add(ToolTipItem154)
+        SuperToolTip154.MaxWidth = 210
+        Me.PrintPreviewBarItem2.SuperTip = SuperToolTip154
+        '
+        'PrintPreviewBarItem3
+        '
+        Me.PrintPreviewBarItem3.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
+        Me.PrintPreviewBarItem3.Caption = "Parameters"
+        Me.PrintPreviewBarItem3.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Parameters
+        Me.PrintPreviewBarItem3.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem3.Enabled = False
+        Me.PrintPreviewBarItem3.Id = 175
+        Me.PrintPreviewBarItem3.Name = "PrintPreviewBarItem3"
+        SuperToolTip155.FixedTooltipWidth = True
+        ToolTipTitleItem155.Text = "Parameters"
+        ToolTipItem155.LeftIndent = 6
+        ToolTipItem155.Text = "Open the Parameters pane, which allows you to enter values for report parameters." &
+    ""
+        SuperToolTip155.Items.Add(ToolTipTitleItem155)
+        SuperToolTip155.Items.Add(ToolTipItem155)
+        SuperToolTip155.MaxWidth = 210
+        Me.PrintPreviewBarItem3.SuperTip = SuperToolTip155
+        '
+        'PrintPreviewBarItem4
+        '
+        Me.PrintPreviewBarItem4.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
+        Me.PrintPreviewBarItem4.Caption = "Find"
+        Me.PrintPreviewBarItem4.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Find
+        Me.PrintPreviewBarItem4.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem4.Enabled = False
+        Me.PrintPreviewBarItem4.Id = 176
+        Me.PrintPreviewBarItem4.Name = "PrintPreviewBarItem4"
+        SuperToolTip156.FixedTooltipWidth = True
+        ToolTipTitleItem156.Text = "Find"
+        ToolTipItem156.LeftIndent = 6
+        ToolTipItem156.Text = "Show the Find dialog to find text in the document."
+        SuperToolTip156.Items.Add(ToolTipTitleItem156)
+        SuperToolTip156.Items.Add(ToolTipItem156)
+        SuperToolTip156.MaxWidth = 210
+        Me.PrintPreviewBarItem4.SuperTip = SuperToolTip156
+        '
+        'PrintPreviewBarItem5
+        '
+        Me.PrintPreviewBarItem5.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
+        Me.PrintPreviewBarItem5.Caption = "Thumbnails"
+        Me.PrintPreviewBarItem5.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Thumbnails
+        Me.PrintPreviewBarItem5.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem5.Enabled = False
+        Me.PrintPreviewBarItem5.Id = 177
+        Me.PrintPreviewBarItem5.Name = "PrintPreviewBarItem5"
+        SuperToolTip157.FixedTooltipWidth = True
+        ToolTipTitleItem157.Text = "Thumbnails"
+        ToolTipItem157.LeftIndent = 6
+        ToolTipItem157.Text = "Open the Thumbnails, which allows you to navigate through the document."
+        SuperToolTip157.Items.Add(ToolTipTitleItem157)
+        SuperToolTip157.Items.Add(ToolTipItem157)
+        SuperToolTip157.MaxWidth = 210
+        Me.PrintPreviewBarItem5.SuperTip = SuperToolTip157
+        '
+        'PrintPreviewBarItem7
+        '
+        Me.PrintPreviewBarItem7.Caption = "Print"
+        Me.PrintPreviewBarItem7.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Print
+        Me.PrintPreviewBarItem7.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem7.Enabled = False
+        Me.PrintPreviewBarItem7.Id = 179
+        Me.PrintPreviewBarItem7.Name = "PrintPreviewBarItem7"
+        SuperToolTip158.FixedTooltipWidth = True
+        ToolTipTitleItem158.Text = "Print (Ctrl+P)"
+        ToolTipItem158.LeftIndent = 6
+        ToolTipItem158.Text = "Select a printer, number of copies and other printing options before printing."
+        SuperToolTip158.Items.Add(ToolTipTitleItem158)
+        SuperToolTip158.Items.Add(ToolTipItem158)
+        SuperToolTip158.MaxWidth = 210
+        Me.PrintPreviewBarItem7.SuperTip = SuperToolTip158
+        '
+        'PrintPreviewBarItem8
+        '
+        Me.PrintPreviewBarItem8.Caption = "Quick Print"
+        Me.PrintPreviewBarItem8.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PrintDirect
+        Me.PrintPreviewBarItem8.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem8.Enabled = False
+        Me.PrintPreviewBarItem8.Id = 180
+        Me.PrintPreviewBarItem8.Name = "PrintPreviewBarItem8"
+        SuperToolTip159.FixedTooltipWidth = True
+        ToolTipTitleItem159.Text = "Quick Print"
+        ToolTipItem159.LeftIndent = 6
+        ToolTipItem159.Text = "Send the document directly to the default printer without making changes."
+        SuperToolTip159.Items.Add(ToolTipTitleItem159)
+        SuperToolTip159.Items.Add(ToolTipItem159)
+        SuperToolTip159.MaxWidth = 210
+        Me.PrintPreviewBarItem8.SuperTip = SuperToolTip159
+        '
+        'PrintPreviewBarItem9
+        '
+        Me.PrintPreviewBarItem9.Caption = "Custom Margins..."
+        Me.PrintPreviewBarItem9.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageSetup
+        Me.PrintPreviewBarItem9.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem9.Enabled = False
+        Me.PrintPreviewBarItem9.Id = 181
+        Me.PrintPreviewBarItem9.Name = "PrintPreviewBarItem9"
+        SuperToolTip160.FixedTooltipWidth = True
+        ToolTipTitleItem160.Text = "Page Setup"
+        ToolTipItem160.LeftIndent = 6
+        ToolTipItem160.Text = "Show the Page Setup dialog."
+        SuperToolTip160.Items.Add(ToolTipTitleItem160)
+        SuperToolTip160.Items.Add(ToolTipItem160)
+        SuperToolTip160.MaxWidth = 210
+        Me.PrintPreviewBarItem9.SuperTip = SuperToolTip160
+        '
+        'PrintPreviewBarItem11
+        '
+        Me.PrintPreviewBarItem11.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.PrintPreviewBarItem11.Caption = "Scale"
+        Me.PrintPreviewBarItem11.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Scale
+        Me.PrintPreviewBarItem11.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem11.Enabled = False
+        Me.PrintPreviewBarItem11.Id = 183
+        Me.PrintPreviewBarItem11.Name = "PrintPreviewBarItem11"
+        SuperToolTip161.FixedTooltipWidth = True
+        ToolTipTitleItem161.Text = "Scale"
+        ToolTipItem161.LeftIndent = 6
+        ToolTipItem161.Text = "Stretch or shrink the printed output to a percentage of its actual size."
+        SuperToolTip161.Items.Add(ToolTipTitleItem161)
+        SuperToolTip161.Items.Add(ToolTipItem161)
+        SuperToolTip161.MaxWidth = 210
+        Me.PrintPreviewBarItem11.SuperTip = SuperToolTip161
+        '
+        'PrintPreviewBarItem12
+        '
+        Me.PrintPreviewBarItem12.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
+        Me.PrintPreviewBarItem12.Caption = "Pointer"
+        Me.PrintPreviewBarItem12.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Pointer
+        Me.PrintPreviewBarItem12.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem12.Enabled = False
+        Me.PrintPreviewBarItem12.GroupIndex = 1
+        Me.PrintPreviewBarItem12.Id = 184
+        Me.PrintPreviewBarItem12.Name = "PrintPreviewBarItem12"
+        Me.PrintPreviewBarItem12.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText
+        SuperToolTip162.FixedTooltipWidth = True
+        ToolTipTitleItem162.Text = "Mouse Pointer"
+        ToolTipItem162.LeftIndent = 6
+        ToolTipItem162.Text = "Show the mouse pointer."
+        SuperToolTip162.Items.Add(ToolTipTitleItem162)
+        SuperToolTip162.Items.Add(ToolTipItem162)
+        SuperToolTip162.MaxWidth = 210
+        Me.PrintPreviewBarItem12.SuperTip = SuperToolTip162
+        '
+        'PrintPreviewBarItem13
+        '
+        Me.PrintPreviewBarItem13.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
+        Me.PrintPreviewBarItem13.Caption = "Hand Tool"
+        Me.PrintPreviewBarItem13.Command = DevExpress.XtraPrinting.PrintingSystemCommand.HandTool
+        Me.PrintPreviewBarItem13.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem13.Enabled = False
+        Me.PrintPreviewBarItem13.GroupIndex = 1
+        Me.PrintPreviewBarItem13.Id = 185
+        Me.PrintPreviewBarItem13.Name = "PrintPreviewBarItem13"
+        Me.PrintPreviewBarItem13.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText
+        SuperToolTip163.FixedTooltipWidth = True
+        ToolTipTitleItem163.Text = "Hand Tool"
+        ToolTipItem163.LeftIndent = 6
+        ToolTipItem163.Text = "Invoke the Hand tool to manually scroll through pages."
+        SuperToolTip163.Items.Add(ToolTipTitleItem163)
+        SuperToolTip163.Items.Add(ToolTipItem163)
+        SuperToolTip163.MaxWidth = 210
+        Me.PrintPreviewBarItem13.SuperTip = SuperToolTip163
+        '
+        'PrintPreviewBarItem14
+        '
+        Me.PrintPreviewBarItem14.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.Check
+        Me.PrintPreviewBarItem14.Caption = "Magnifier"
+        Me.PrintPreviewBarItem14.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Magnifier
+        Me.PrintPreviewBarItem14.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem14.Enabled = False
+        Me.PrintPreviewBarItem14.GroupIndex = 1
+        Me.PrintPreviewBarItem14.Id = 186
+        Me.PrintPreviewBarItem14.Name = "PrintPreviewBarItem14"
+        Me.PrintPreviewBarItem14.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText
+        SuperToolTip164.FixedTooltipWidth = True
+        ToolTipTitleItem164.Text = "Magnifier"
+        ToolTipItem164.LeftIndent = 6
+        ToolTipItem164.Text = "Invoke the Magnifier tool." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Clicking once on a document zooms it so that a sing" &
+    "le page becomes entirely visible, while clicking another time zooms it to 100% o" &
+    "f the normal size."
+        SuperToolTip164.Items.Add(ToolTipTitleItem164)
+        SuperToolTip164.Items.Add(ToolTipItem164)
+        SuperToolTip164.MaxWidth = 210
+        Me.PrintPreviewBarItem14.SuperTip = SuperToolTip164
+        '
+        'PrintPreviewBarItem15
+        '
+        Me.PrintPreviewBarItem15.Caption = "Zoom Out"
+        Me.PrintPreviewBarItem15.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomOut
+        Me.PrintPreviewBarItem15.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem15.Enabled = False
+        Me.PrintPreviewBarItem15.Id = 187
+        Me.PrintPreviewBarItem15.Name = "PrintPreviewBarItem15"
+        SuperToolTip165.FixedTooltipWidth = True
+        ToolTipTitleItem165.Text = "Zoom Out"
+        ToolTipItem165.LeftIndent = 6
+        ToolTipItem165.Text = "Zoom out to see more of the page at a reduced size."
+        SuperToolTip165.Items.Add(ToolTipTitleItem165)
+        SuperToolTip165.Items.Add(ToolTipItem165)
+        SuperToolTip165.MaxWidth = 210
+        Me.PrintPreviewBarItem15.SuperTip = SuperToolTip165
+        '
+        'PrintPreviewBarItem16
+        '
+        Me.PrintPreviewBarItem16.Caption = "Zoom In"
+        Me.PrintPreviewBarItem16.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ZoomIn
+        Me.PrintPreviewBarItem16.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem16.Enabled = False
+        Me.PrintPreviewBarItem16.Id = 188
+        Me.PrintPreviewBarItem16.Name = "PrintPreviewBarItem16"
+        SuperToolTip166.FixedTooltipWidth = True
+        ToolTipTitleItem166.Text = "Zoom In"
+        ToolTipItem166.LeftIndent = 6
+        ToolTipItem166.Text = "Zoom in to get a close-up view of the document."
+        SuperToolTip166.Items.Add(ToolTipTitleItem166)
+        SuperToolTip166.Items.Add(ToolTipItem166)
+        SuperToolTip166.MaxWidth = 210
+        Me.PrintPreviewBarItem16.SuperTip = SuperToolTip166
+        '
+        'PrintPreviewBarItem17
+        '
+        Me.PrintPreviewBarItem17.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.PrintPreviewBarItem17.Caption = "Zoom"
+        Me.PrintPreviewBarItem17.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Zoom
+        Me.PrintPreviewBarItem17.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem17.Enabled = False
+        Me.PrintPreviewBarItem17.Id = 189
+        Me.PrintPreviewBarItem17.Name = "PrintPreviewBarItem17"
+        SuperToolTip167.FixedTooltipWidth = True
+        ToolTipTitleItem167.Text = "Zoom"
+        ToolTipItem167.LeftIndent = 6
+        ToolTipItem167.Text = "Change the zoom level of the document preview."
+        SuperToolTip167.Items.Add(ToolTipTitleItem167)
+        SuperToolTip167.Items.Add(ToolTipItem167)
+        SuperToolTip167.MaxWidth = 210
+        Me.PrintPreviewBarItem17.SuperTip = SuperToolTip167
+        '
+        'PrintPreviewBarItem18
+        '
+        Me.PrintPreviewBarItem18.Caption = "First Page"
+        Me.PrintPreviewBarItem18.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowFirstPage
+        Me.PrintPreviewBarItem18.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem18.Enabled = False
+        Me.PrintPreviewBarItem18.Id = 190
+        Me.PrintPreviewBarItem18.Name = "PrintPreviewBarItem18"
+        SuperToolTip168.FixedTooltipWidth = True
+        ToolTipTitleItem168.Text = "First Page (Home)"
+        ToolTipItem168.LeftIndent = 6
+        ToolTipItem168.Text = "Navigate to the first page of the document."
+        SuperToolTip168.Items.Add(ToolTipTitleItem168)
+        SuperToolTip168.Items.Add(ToolTipItem168)
+        SuperToolTip168.MaxWidth = 210
+        Me.PrintPreviewBarItem18.SuperTip = SuperToolTip168
+        '
+        'PrintPreviewBarItem19
+        '
+        Me.PrintPreviewBarItem19.Caption = "Previous Page"
+        Me.PrintPreviewBarItem19.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowPrevPage
+        Me.PrintPreviewBarItem19.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem19.Enabled = False
+        Me.PrintPreviewBarItem19.Id = 191
+        Me.PrintPreviewBarItem19.Name = "PrintPreviewBarItem19"
+        SuperToolTip169.FixedTooltipWidth = True
+        ToolTipTitleItem169.Text = "Previous Page (Left Arrow)"
+        ToolTipItem169.LeftIndent = 6
+        ToolTipItem169.Text = "Navigate to the previous page of the document."
+        SuperToolTip169.Items.Add(ToolTipTitleItem169)
+        SuperToolTip169.Items.Add(ToolTipItem169)
+        SuperToolTip169.MaxWidth = 210
+        Me.PrintPreviewBarItem19.SuperTip = SuperToolTip169
+        '
+        'PrintPreviewBarItem20
+        '
+        Me.PrintPreviewBarItem20.Caption = "Next  Page "
+        Me.PrintPreviewBarItem20.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowNextPage
+        Me.PrintPreviewBarItem20.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem20.Enabled = False
+        Me.PrintPreviewBarItem20.Id = 192
+        Me.PrintPreviewBarItem20.Name = "PrintPreviewBarItem20"
+        SuperToolTip170.FixedTooltipWidth = True
+        ToolTipTitleItem170.Text = "Next Page (Right Arrow)"
+        ToolTipItem170.LeftIndent = 6
+        ToolTipItem170.Text = "Navigate to the next page of the document."
+        SuperToolTip170.Items.Add(ToolTipTitleItem170)
+        SuperToolTip170.Items.Add(ToolTipItem170)
+        SuperToolTip170.MaxWidth = 210
+        Me.PrintPreviewBarItem20.SuperTip = SuperToolTip170
+        '
+        'PrintPreviewBarItem21
+        '
+        Me.PrintPreviewBarItem21.Caption = "Last  Page "
+        Me.PrintPreviewBarItem21.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ShowLastPage
+        Me.PrintPreviewBarItem21.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem21.Enabled = False
+        Me.PrintPreviewBarItem21.Id = 193
+        Me.PrintPreviewBarItem21.Name = "PrintPreviewBarItem21"
+        SuperToolTip171.FixedTooltipWidth = True
+        ToolTipTitleItem171.Text = "Last Page (End)"
+        ToolTipItem171.LeftIndent = 6
+        ToolTipItem171.Text = "Navigate to the last page of the document."
+        SuperToolTip171.Items.Add(ToolTipTitleItem171)
+        SuperToolTip171.Items.Add(ToolTipItem171)
+        SuperToolTip171.MaxWidth = 210
+        Me.PrintPreviewBarItem21.SuperTip = SuperToolTip171
+        '
+        'PrintPreviewBarItem22
+        '
+        Me.PrintPreviewBarItem22.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.PrintPreviewBarItem22.Caption = "Many Pages"
+        Me.PrintPreviewBarItem22.Command = DevExpress.XtraPrinting.PrintingSystemCommand.MultiplePages
+        Me.PrintPreviewBarItem22.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem22.Enabled = False
+        Me.PrintPreviewBarItem22.Id = 194
+        Me.PrintPreviewBarItem22.Name = "PrintPreviewBarItem22"
+        SuperToolTip172.FixedTooltipWidth = True
+        ToolTipTitleItem172.Text = "View Many Pages"
+        ToolTipItem172.LeftIndent = 6
+        ToolTipItem172.Text = "Choose the page layout to arrange the document pages in preview."
+        SuperToolTip172.Items.Add(ToolTipTitleItem172)
+        SuperToolTip172.Items.Add(ToolTipItem172)
+        SuperToolTip172.MaxWidth = 210
+        Me.PrintPreviewBarItem22.SuperTip = SuperToolTip172
+        '
+        'PrintPreviewBarItem23
+        '
+        Me.PrintPreviewBarItem23.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.PrintPreviewBarItem23.Caption = "Page Color"
+        Me.PrintPreviewBarItem23.Command = DevExpress.XtraPrinting.PrintingSystemCommand.FillBackground
+        Me.PrintPreviewBarItem23.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem23.Enabled = False
+        Me.PrintPreviewBarItem23.Id = 195
+        Me.PrintPreviewBarItem23.Name = "PrintPreviewBarItem23"
+        SuperToolTip173.FixedTooltipWidth = True
+        ToolTipTitleItem173.Text = "Background Color"
+        ToolTipItem173.LeftIndent = 6
+        ToolTipItem173.Text = "Choose a color for the background of the document pages."
+        SuperToolTip173.Items.Add(ToolTipTitleItem173)
+        SuperToolTip173.Items.Add(ToolTipItem173)
+        SuperToolTip173.MaxWidth = 210
+        Me.PrintPreviewBarItem23.SuperTip = SuperToolTip173
+        '
+        'PrintPreviewBarItem24
+        '
+        Me.PrintPreviewBarItem24.Caption = "Watermark"
+        Me.PrintPreviewBarItem24.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Watermark
+        Me.PrintPreviewBarItem24.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem24.Enabled = False
+        Me.PrintPreviewBarItem24.Id = 196
+        Me.PrintPreviewBarItem24.Name = "PrintPreviewBarItem24"
+        SuperToolTip174.FixedTooltipWidth = True
+        ToolTipTitleItem174.Text = "Watermark"
+        ToolTipItem174.LeftIndent = 6
+        ToolTipItem174.Text = "Insert ghosted text or image behind the content of a page." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "This is often used " &
+    "to indicate that a document is to be treated specially."
+        SuperToolTip174.Items.Add(ToolTipTitleItem174)
+        SuperToolTip174.Items.Add(ToolTipItem174)
+        SuperToolTip174.MaxWidth = 210
+        Me.PrintPreviewBarItem24.SuperTip = SuperToolTip174
+        '
+        'PrintPreviewBarItem25
+        '
+        Me.PrintPreviewBarItem25.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.PrintPreviewBarItem25.Caption = "Export To"
+        Me.PrintPreviewBarItem25.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportFile
+        Me.PrintPreviewBarItem25.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem25.Enabled = False
+        Me.PrintPreviewBarItem25.Id = 197
+        Me.PrintPreviewBarItem25.Name = "PrintPreviewBarItem25"
+        SuperToolTip175.FixedTooltipWidth = True
+        ToolTipTitleItem175.Text = "Export To..."
+        ToolTipItem175.LeftIndent = 6
+        ToolTipItem175.Text = "Export the current document in one of the available formats, and save it to the f" &
+    "ile on a disk."
+        SuperToolTip175.Items.Add(ToolTipTitleItem175)
+        SuperToolTip175.Items.Add(ToolTipItem175)
+        SuperToolTip175.MaxWidth = 210
+        Me.PrintPreviewBarItem25.SuperTip = SuperToolTip175
+        '
+        'PrintPreviewBarItem26
+        '
+        Me.PrintPreviewBarItem26.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.PrintPreviewBarItem26.Caption = "E-Mail As"
+        Me.PrintPreviewBarItem26.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendFile
+        Me.PrintPreviewBarItem26.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem26.Enabled = False
+        Me.PrintPreviewBarItem26.Id = 198
+        Me.PrintPreviewBarItem26.Name = "PrintPreviewBarItem26"
+        SuperToolTip176.FixedTooltipWidth = True
+        ToolTipTitleItem176.Text = "E-Mail As..."
+        ToolTipItem176.LeftIndent = 6
+        ToolTipItem176.Text = "Export the current document in one of the available formats, and attach it to the" &
+    " e-mail."
+        SuperToolTip176.Items.Add(ToolTipTitleItem176)
+        SuperToolTip176.Items.Add(ToolTipItem176)
+        SuperToolTip176.MaxWidth = 210
+        Me.PrintPreviewBarItem26.SuperTip = SuperToolTip176
+        '
+        'PrintPreviewBarItem27
+        '
+        Me.PrintPreviewBarItem27.Caption = "Close"
+        Me.PrintPreviewBarItem27.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ClosePreview
+        Me.PrintPreviewBarItem27.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem27.Enabled = False
+        Me.PrintPreviewBarItem27.Id = 199
+        Me.PrintPreviewBarItem27.Name = "PrintPreviewBarItem27"
+        SuperToolTip177.FixedTooltipWidth = True
+        ToolTipTitleItem177.Text = "Close Print Preview"
+        ToolTipItem177.LeftIndent = 6
+        ToolTipItem177.Text = "Close Print Preview of the document."
+        SuperToolTip177.Items.Add(ToolTipTitleItem177)
+        SuperToolTip177.Items.Add(ToolTipItem177)
+        SuperToolTip177.MaxWidth = 210
+        Me.PrintPreviewBarItem27.SuperTip = SuperToolTip177
+        '
+        'PrintPreviewBarItem28
+        '
+        Me.PrintPreviewBarItem28.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.PrintPreviewBarItem28.Caption = "Orientation"
+        Me.PrintPreviewBarItem28.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageOrientation
+        Me.PrintPreviewBarItem28.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem28.Enabled = False
+        Me.PrintPreviewBarItem28.Id = 200
+        Me.PrintPreviewBarItem28.Name = "PrintPreviewBarItem28"
+        SuperToolTip178.FixedTooltipWidth = True
+        ToolTipTitleItem178.Text = "Page Orientation"
+        ToolTipItem178.LeftIndent = 6
+        ToolTipItem178.Text = "Switch the pages between portrait and landscape layouts."
+        SuperToolTip178.Items.Add(ToolTipTitleItem178)
+        SuperToolTip178.Items.Add(ToolTipItem178)
+        SuperToolTip178.MaxWidth = 210
+        Me.PrintPreviewBarItem28.SuperTip = SuperToolTip178
+        '
+        'PrintPreviewBarItem29
+        '
+        Me.PrintPreviewBarItem29.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.PrintPreviewBarItem29.Caption = "Size"
+        Me.PrintPreviewBarItem29.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PaperSize
+        Me.PrintPreviewBarItem29.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem29.Enabled = False
+        Me.PrintPreviewBarItem29.Id = 201
+        Me.PrintPreviewBarItem29.Name = "PrintPreviewBarItem29"
+        SuperToolTip179.FixedTooltipWidth = True
+        ToolTipTitleItem179.Text = "Page Size"
+        ToolTipItem179.LeftIndent = 6
+        ToolTipItem179.Text = "Choose the paper size of the document."
+        SuperToolTip179.Items.Add(ToolTipTitleItem179)
+        SuperToolTip179.Items.Add(ToolTipItem179)
+        SuperToolTip179.MaxWidth = 210
+        Me.PrintPreviewBarItem29.SuperTip = SuperToolTip179
+        '
+        'PrintPreviewBarItem30
+        '
+        Me.PrintPreviewBarItem30.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.PrintPreviewBarItem30.Caption = "Margins"
+        Me.PrintPreviewBarItem30.Command = DevExpress.XtraPrinting.PrintingSystemCommand.PageMargins
+        Me.PrintPreviewBarItem30.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem30.Enabled = False
+        Me.PrintPreviewBarItem30.Id = 202
+        Me.PrintPreviewBarItem30.Name = "PrintPreviewBarItem30"
+        SuperToolTip180.FixedTooltipWidth = True
+        ToolTipTitleItem180.Text = "Page Margins"
+        ToolTipItem180.LeftIndent = 6
+        ToolTipItem180.Text = "Select the margin sizes for the entire document." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "To apply specific margin size" &
+    "s to the document, click Custom Margins."
+        SuperToolTip180.Items.Add(ToolTipTitleItem180)
+        SuperToolTip180.Items.Add(ToolTipItem180)
+        SuperToolTip180.MaxWidth = 210
+        Me.PrintPreviewBarItem30.SuperTip = SuperToolTip180
+        '
+        'PrintPreviewBarItem31
+        '
+        Me.PrintPreviewBarItem31.Caption = "PDF File"
+        Me.PrintPreviewBarItem31.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendPdf
+        Me.PrintPreviewBarItem31.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem31.Enabled = False
+        Me.PrintPreviewBarItem31.Id = 203
+        Me.PrintPreviewBarItem31.Name = "PrintPreviewBarItem31"
+        SuperToolTip181.FixedTooltipWidth = True
+        ToolTipTitleItem181.Text = "E-Mail As PDF"
+        ToolTipItem181.LeftIndent = 6
+        ToolTipItem181.Text = "Export the document to PDF and attach it to the e-mail."
+        SuperToolTip181.Items.Add(ToolTipTitleItem181)
+        SuperToolTip181.Items.Add(ToolTipItem181)
+        SuperToolTip181.MaxWidth = 210
+        Me.PrintPreviewBarItem31.SuperTip = SuperToolTip181
+        '
+        'PrintPreviewBarItem32
+        '
+        Me.PrintPreviewBarItem32.Caption = "Text File"
+        Me.PrintPreviewBarItem32.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendTxt
+        Me.PrintPreviewBarItem32.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem32.Enabled = False
+        Me.PrintPreviewBarItem32.Id = 204
+        Me.PrintPreviewBarItem32.Name = "PrintPreviewBarItem32"
+        SuperToolTip182.FixedTooltipWidth = True
+        ToolTipTitleItem182.Text = "E-Mail As Text"
+        ToolTipItem182.LeftIndent = 6
+        ToolTipItem182.Text = "Export the document to Text and attach it to the e-mail."
+        SuperToolTip182.Items.Add(ToolTipTitleItem182)
+        SuperToolTip182.Items.Add(ToolTipItem182)
+        SuperToolTip182.MaxWidth = 210
+        Me.PrintPreviewBarItem32.SuperTip = SuperToolTip182
+        '
+        'PrintPreviewBarItem33
+        '
+        Me.PrintPreviewBarItem33.Caption = "CSV File"
+        Me.PrintPreviewBarItem33.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendCsv
+        Me.PrintPreviewBarItem33.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem33.Enabled = False
+        Me.PrintPreviewBarItem33.Id = 205
+        Me.PrintPreviewBarItem33.Name = "PrintPreviewBarItem33"
+        SuperToolTip183.FixedTooltipWidth = True
+        ToolTipTitleItem183.Text = "E-Mail As CSV"
+        ToolTipItem183.LeftIndent = 6
+        ToolTipItem183.Text = "Export the document to CSV and attach it to the e-mail."
+        SuperToolTip183.Items.Add(ToolTipTitleItem183)
+        SuperToolTip183.Items.Add(ToolTipItem183)
+        SuperToolTip183.MaxWidth = 210
+        Me.PrintPreviewBarItem33.SuperTip = SuperToolTip183
+        '
+        'PrintPreviewBarItem34
+        '
+        Me.PrintPreviewBarItem34.Caption = "MHT File"
+        Me.PrintPreviewBarItem34.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendMht
+        Me.PrintPreviewBarItem34.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem34.Enabled = False
+        Me.PrintPreviewBarItem34.Id = 206
+        Me.PrintPreviewBarItem34.Name = "PrintPreviewBarItem34"
+        SuperToolTip184.FixedTooltipWidth = True
+        ToolTipTitleItem184.Text = "E-Mail As MHT"
+        ToolTipItem184.LeftIndent = 6
+        ToolTipItem184.Text = "Export the document to MHT and attach it to the e-mail."
+        SuperToolTip184.Items.Add(ToolTipTitleItem184)
+        SuperToolTip184.Items.Add(ToolTipItem184)
+        SuperToolTip184.MaxWidth = 210
+        Me.PrintPreviewBarItem34.SuperTip = SuperToolTip184
+        '
+        'PrintPreviewBarItem35
+        '
+        Me.PrintPreviewBarItem35.Caption = "XLS File"
+        Me.PrintPreviewBarItem35.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendXls
+        Me.PrintPreviewBarItem35.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem35.Enabled = False
+        Me.PrintPreviewBarItem35.Id = 207
+        Me.PrintPreviewBarItem35.Name = "PrintPreviewBarItem35"
+        SuperToolTip185.FixedTooltipWidth = True
+        ToolTipTitleItem185.Text = "E-Mail As XLS"
+        ToolTipItem185.LeftIndent = 6
+        ToolTipItem185.Text = "Export the document to XLS and attach it to the e-mail."
+        SuperToolTip185.Items.Add(ToolTipTitleItem185)
+        SuperToolTip185.Items.Add(ToolTipItem185)
+        SuperToolTip185.MaxWidth = 210
+        Me.PrintPreviewBarItem35.SuperTip = SuperToolTip185
+        '
+        'PrintPreviewBarItem36
+        '
+        Me.PrintPreviewBarItem36.Caption = "XLSX File"
+        Me.PrintPreviewBarItem36.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendXlsx
+        Me.PrintPreviewBarItem36.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem36.Enabled = False
+        Me.PrintPreviewBarItem36.Id = 208
+        Me.PrintPreviewBarItem36.Name = "PrintPreviewBarItem36"
+        SuperToolTip186.FixedTooltipWidth = True
+        ToolTipTitleItem186.Text = "E-Mail As XLSX"
+        ToolTipItem186.LeftIndent = 6
+        ToolTipItem186.Text = "Export the document to XLSX and attach it to the e-mail."
+        SuperToolTip186.Items.Add(ToolTipTitleItem186)
+        SuperToolTip186.Items.Add(ToolTipItem186)
+        SuperToolTip186.MaxWidth = 210
+        Me.PrintPreviewBarItem36.SuperTip = SuperToolTip186
+        '
+        'PrintPreviewBarItem37
+        '
+        Me.PrintPreviewBarItem37.Caption = "RTF File"
+        Me.PrintPreviewBarItem37.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendRtf
+        Me.PrintPreviewBarItem37.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem37.Enabled = False
+        Me.PrintPreviewBarItem37.Id = 209
+        Me.PrintPreviewBarItem37.Name = "PrintPreviewBarItem37"
+        SuperToolTip187.FixedTooltipWidth = True
+        ToolTipTitleItem187.Text = "E-Mail As RTF"
+        ToolTipItem187.LeftIndent = 6
+        ToolTipItem187.Text = "Export the document to RTF and attach it to the e-mail."
+        SuperToolTip187.Items.Add(ToolTipTitleItem187)
+        SuperToolTip187.Items.Add(ToolTipItem187)
+        SuperToolTip187.MaxWidth = 210
+        Me.PrintPreviewBarItem37.SuperTip = SuperToolTip187
+        '
+        'PrintPreviewBarItem38
+        '
+        Me.PrintPreviewBarItem38.Caption = "DOCX File"
+        Me.PrintPreviewBarItem38.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendDocx
+        Me.PrintPreviewBarItem38.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem38.Enabled = False
+        Me.PrintPreviewBarItem38.Id = 210
+        Me.PrintPreviewBarItem38.Name = "PrintPreviewBarItem38"
+        SuperToolTip188.FixedTooltipWidth = True
+        ToolTipTitleItem188.Text = "E-Mail As DOCX"
+        ToolTipItem188.LeftIndent = 6
+        ToolTipItem188.Text = "Export the document to DOCX and attach it to the e-mail."
+        SuperToolTip188.Items.Add(ToolTipTitleItem188)
+        SuperToolTip188.Items.Add(ToolTipItem188)
+        SuperToolTip188.MaxWidth = 210
+        Me.PrintPreviewBarItem38.SuperTip = SuperToolTip188
+        '
+        'PrintPreviewBarItem39
+        '
+        Me.PrintPreviewBarItem39.Caption = "Image File"
+        Me.PrintPreviewBarItem39.Command = DevExpress.XtraPrinting.PrintingSystemCommand.SendGraphic
+        Me.PrintPreviewBarItem39.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem39.Enabled = False
+        Me.PrintPreviewBarItem39.Id = 211
+        Me.PrintPreviewBarItem39.Name = "PrintPreviewBarItem39"
+        SuperToolTip189.FixedTooltipWidth = True
+        ToolTipTitleItem189.Text = "E-Mail As Image"
+        ToolTipItem189.LeftIndent = 6
+        ToolTipItem189.Text = "Export the document to Image and attach it to the e-mail."
+        SuperToolTip189.Items.Add(ToolTipTitleItem189)
+        SuperToolTip189.Items.Add(ToolTipItem189)
+        SuperToolTip189.MaxWidth = 210
+        Me.PrintPreviewBarItem39.SuperTip = SuperToolTip189
+        '
+        'PrintPreviewBarItem40
+        '
+        Me.PrintPreviewBarItem40.Caption = "PDF File"
+        Me.PrintPreviewBarItem40.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportPdf
+        Me.PrintPreviewBarItem40.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem40.Enabled = False
+        Me.PrintPreviewBarItem40.Id = 212
+        Me.PrintPreviewBarItem40.Name = "PrintPreviewBarItem40"
+        SuperToolTip190.FixedTooltipWidth = True
+        ToolTipTitleItem190.Text = "Export to PDF"
+        ToolTipItem190.LeftIndent = 6
+        ToolTipItem190.Text = "Export the document to PDF and save it to the file on a disk."
+        SuperToolTip190.Items.Add(ToolTipTitleItem190)
+        SuperToolTip190.Items.Add(ToolTipItem190)
+        SuperToolTip190.MaxWidth = 210
+        Me.PrintPreviewBarItem40.SuperTip = SuperToolTip190
+        '
+        'PrintPreviewBarItem41
+        '
+        Me.PrintPreviewBarItem41.Caption = "HTML File"
+        Me.PrintPreviewBarItem41.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportHtm
+        Me.PrintPreviewBarItem41.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem41.Enabled = False
+        Me.PrintPreviewBarItem41.Id = 213
+        Me.PrintPreviewBarItem41.Name = "PrintPreviewBarItem41"
+        SuperToolTip191.FixedTooltipWidth = True
+        ToolTipTitleItem191.Text = "Export to HTML"
+        ToolTipItem191.LeftIndent = 6
+        ToolTipItem191.Text = "Export the document to HTML and save it to the file on a disk."
+        SuperToolTip191.Items.Add(ToolTipTitleItem191)
+        SuperToolTip191.Items.Add(ToolTipItem191)
+        SuperToolTip191.MaxWidth = 210
+        Me.PrintPreviewBarItem41.SuperTip = SuperToolTip191
+        '
+        'PrintPreviewBarItem42
+        '
+        Me.PrintPreviewBarItem42.Caption = "Text File"
+        Me.PrintPreviewBarItem42.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportTxt
+        Me.PrintPreviewBarItem42.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem42.Enabled = False
+        Me.PrintPreviewBarItem42.Id = 214
+        Me.PrintPreviewBarItem42.Name = "PrintPreviewBarItem42"
+        SuperToolTip192.FixedTooltipWidth = True
+        ToolTipTitleItem192.Text = "Export to Text"
+        ToolTipItem192.LeftIndent = 6
+        ToolTipItem192.Text = "Export the document to Text and save it to the file on a disk."
+        SuperToolTip192.Items.Add(ToolTipTitleItem192)
+        SuperToolTip192.Items.Add(ToolTipItem192)
+        SuperToolTip192.MaxWidth = 210
+        Me.PrintPreviewBarItem42.SuperTip = SuperToolTip192
+        '
+        'PrintPreviewBarItem43
+        '
+        Me.PrintPreviewBarItem43.Caption = "CSV File"
+        Me.PrintPreviewBarItem43.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportCsv
+        Me.PrintPreviewBarItem43.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem43.Enabled = False
+        Me.PrintPreviewBarItem43.Id = 215
+        Me.PrintPreviewBarItem43.Name = "PrintPreviewBarItem43"
+        SuperToolTip193.FixedTooltipWidth = True
+        ToolTipTitleItem193.Text = "Export to CSV"
+        ToolTipItem193.LeftIndent = 6
+        ToolTipItem193.Text = "Export the document to CSV and save it to the file on a disk."
+        SuperToolTip193.Items.Add(ToolTipTitleItem193)
+        SuperToolTip193.Items.Add(ToolTipItem193)
+        SuperToolTip193.MaxWidth = 210
+        Me.PrintPreviewBarItem43.SuperTip = SuperToolTip193
+        '
+        'PrintPreviewBarItem44
+        '
+        Me.PrintPreviewBarItem44.Caption = "MHT File"
+        Me.PrintPreviewBarItem44.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportMht
+        Me.PrintPreviewBarItem44.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem44.Enabled = False
+        Me.PrintPreviewBarItem44.Id = 216
+        Me.PrintPreviewBarItem44.Name = "PrintPreviewBarItem44"
+        SuperToolTip194.FixedTooltipWidth = True
+        ToolTipTitleItem194.Text = "Export to MHT"
+        ToolTipItem194.LeftIndent = 6
+        ToolTipItem194.Text = "Export the document to MHT and save it to the file on a disk."
+        SuperToolTip194.Items.Add(ToolTipTitleItem194)
+        SuperToolTip194.Items.Add(ToolTipItem194)
+        SuperToolTip194.MaxWidth = 210
+        Me.PrintPreviewBarItem44.SuperTip = SuperToolTip194
+        '
+        'PrintPreviewBarItem45
+        '
+        Me.PrintPreviewBarItem45.Caption = "XLS File"
+        Me.PrintPreviewBarItem45.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportXls
+        Me.PrintPreviewBarItem45.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem45.Enabled = False
+        Me.PrintPreviewBarItem45.Id = 217
+        Me.PrintPreviewBarItem45.Name = "PrintPreviewBarItem45"
+        SuperToolTip195.FixedTooltipWidth = True
+        ToolTipTitleItem195.Text = "Export to XLS"
+        ToolTipItem195.LeftIndent = 6
+        ToolTipItem195.Text = "Export the document to XLS and save it to the file on a disk."
+        SuperToolTip195.Items.Add(ToolTipTitleItem195)
+        SuperToolTip195.Items.Add(ToolTipItem195)
+        SuperToolTip195.MaxWidth = 210
+        Me.PrintPreviewBarItem45.SuperTip = SuperToolTip195
+        '
+        'PrintPreviewBarItem46
+        '
+        Me.PrintPreviewBarItem46.Caption = "XLSX File"
+        Me.PrintPreviewBarItem46.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportXlsx
+        Me.PrintPreviewBarItem46.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem46.Enabled = False
+        Me.PrintPreviewBarItem46.Id = 218
+        Me.PrintPreviewBarItem46.Name = "PrintPreviewBarItem46"
+        SuperToolTip196.FixedTooltipWidth = True
+        ToolTipTitleItem196.Text = "Export to XLSX"
+        ToolTipItem196.LeftIndent = 6
+        ToolTipItem196.Text = "Export the document to XLSX and save it to the file on a disk."
+        SuperToolTip196.Items.Add(ToolTipTitleItem196)
+        SuperToolTip196.Items.Add(ToolTipItem196)
+        SuperToolTip196.MaxWidth = 210
+        Me.PrintPreviewBarItem46.SuperTip = SuperToolTip196
+        '
+        'PrintPreviewBarItem47
+        '
+        Me.PrintPreviewBarItem47.Caption = "RTF File"
+        Me.PrintPreviewBarItem47.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportRtf
+        Me.PrintPreviewBarItem47.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem47.Enabled = False
+        Me.PrintPreviewBarItem47.Id = 219
+        Me.PrintPreviewBarItem47.Name = "PrintPreviewBarItem47"
+        SuperToolTip197.FixedTooltipWidth = True
+        ToolTipTitleItem197.Text = "Export to RTF"
+        ToolTipItem197.LeftIndent = 6
+        ToolTipItem197.Text = "Export the document to RTF and save it to the file on a disk."
+        SuperToolTip197.Items.Add(ToolTipTitleItem197)
+        SuperToolTip197.Items.Add(ToolTipItem197)
+        SuperToolTip197.MaxWidth = 210
+        Me.PrintPreviewBarItem47.SuperTip = SuperToolTip197
+        '
+        'PrintPreviewBarItem48
+        '
+        Me.PrintPreviewBarItem48.Caption = "DOCX File"
+        Me.PrintPreviewBarItem48.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportDocx
+        Me.PrintPreviewBarItem48.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem48.Enabled = False
+        Me.PrintPreviewBarItem48.Id = 220
+        Me.PrintPreviewBarItem48.Name = "PrintPreviewBarItem48"
+        SuperToolTip198.FixedTooltipWidth = True
+        ToolTipTitleItem198.Text = "Export to DOCX"
+        ToolTipItem198.LeftIndent = 6
+        ToolTipItem198.Text = "Export the document to DOCX and save it to the file on a disk."
+        SuperToolTip198.Items.Add(ToolTipTitleItem198)
+        SuperToolTip198.Items.Add(ToolTipItem198)
+        SuperToolTip198.MaxWidth = 210
+        Me.PrintPreviewBarItem48.SuperTip = SuperToolTip198
+        '
+        'PrintPreviewBarItem49
+        '
+        Me.PrintPreviewBarItem49.Caption = "Image File"
+        Me.PrintPreviewBarItem49.Command = DevExpress.XtraPrinting.PrintingSystemCommand.ExportGraphic
+        Me.PrintPreviewBarItem49.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem49.Enabled = False
+        Me.PrintPreviewBarItem49.Id = 221
+        Me.PrintPreviewBarItem49.Name = "PrintPreviewBarItem49"
+        SuperToolTip199.FixedTooltipWidth = True
+        ToolTipTitleItem199.Text = "Export to Image"
+        ToolTipItem199.LeftIndent = 6
+        ToolTipItem199.Text = "Export the document to Image and save it to the file on a disk."
+        SuperToolTip199.Items.Add(ToolTipTitleItem199)
+        SuperToolTip199.Items.Add(ToolTipItem199)
+        SuperToolTip199.MaxWidth = 210
+        Me.PrintPreviewBarItem49.SuperTip = SuperToolTip199
+        '
+        'PrintPreviewBarItem50
+        '
+        Me.PrintPreviewBarItem50.Caption = "Open"
+        Me.PrintPreviewBarItem50.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Open
+        Me.PrintPreviewBarItem50.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem50.Enabled = False
+        Me.PrintPreviewBarItem50.Id = 222
+        Me.PrintPreviewBarItem50.Name = "PrintPreviewBarItem50"
+        SuperToolTip200.FixedTooltipWidth = True
+        ToolTipTitleItem200.Text = "Open (Ctrl + O)"
+        ToolTipItem200.LeftIndent = 6
+        ToolTipItem200.Text = "Open a document."
+        SuperToolTip200.Items.Add(ToolTipTitleItem200)
+        SuperToolTip200.Items.Add(ToolTipItem200)
+        SuperToolTip200.MaxWidth = 210
+        Me.PrintPreviewBarItem50.SuperTip = SuperToolTip200
+        '
+        'PrintPreviewBarItem51
+        '
+        Me.PrintPreviewBarItem51.Caption = "Save"
+        Me.PrintPreviewBarItem51.Command = DevExpress.XtraPrinting.PrintingSystemCommand.Save
+        Me.PrintPreviewBarItem51.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem51.Enabled = False
+        Me.PrintPreviewBarItem51.Id = 223
+        Me.PrintPreviewBarItem51.Name = "PrintPreviewBarItem51"
+        SuperToolTip201.FixedTooltipWidth = True
+        ToolTipTitleItem201.Text = "Save (Ctrl + S)"
+        ToolTipItem201.LeftIndent = 6
+        ToolTipItem201.Text = "Save the document."
+        SuperToolTip201.Items.Add(ToolTipTitleItem201)
+        SuperToolTip201.Items.Add(ToolTipItem201)
+        SuperToolTip201.MaxWidth = 210
+        Me.PrintPreviewBarItem51.SuperTip = SuperToolTip201
+        '
+        'PrintPreviewStaticItem1
+        '
+        Me.PrintPreviewStaticItem1.Caption = "Nothing"
+        Me.PrintPreviewStaticItem1.Id = 224
+        Me.PrintPreviewStaticItem1.LeftIndent = 1
+        Me.PrintPreviewStaticItem1.Name = "PrintPreviewStaticItem1"
+        Me.PrintPreviewStaticItem1.RightIndent = 1
+        Me.PrintPreviewStaticItem1.Type = "PageOfPages"
+        '
+        'ProgressBarEditItem1
+        '
+        Me.ProgressBarEditItem1.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.ProgressBarEditItem1.Edit = Me.RepositoryItemProgressBar1
+        Me.ProgressBarEditItem1.EditHeight = 12
+        Me.ProgressBarEditItem1.EditWidth = 150
+        Me.ProgressBarEditItem1.Id = 225
+        Me.ProgressBarEditItem1.Name = "ProgressBarEditItem1"
+        Me.ProgressBarEditItem1.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        '
+        'RepositoryItemProgressBar1
+        '
+        Me.RepositoryItemProgressBar1.Name = "RepositoryItemProgressBar1"
+        '
+        'PrintPreviewBarItem52
+        '
+        Me.PrintPreviewBarItem52.Caption = "Stop"
+        Me.PrintPreviewBarItem52.Command = DevExpress.XtraPrinting.PrintingSystemCommand.StopPageBuilding
+        Me.PrintPreviewBarItem52.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewBarItem52.Enabled = False
+        Me.PrintPreviewBarItem52.Hint = "Stop"
+        Me.PrintPreviewBarItem52.Id = 226
+        Me.PrintPreviewBarItem52.Name = "PrintPreviewBarItem52"
+        Me.PrintPreviewBarItem52.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        '
+        'PrintPreviewStaticItem2
+        '
+        Me.PrintPreviewStaticItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
+        Me.PrintPreviewStaticItem2.AutoSize = DevExpress.XtraBars.BarStaticItemSize.None
+        Me.PrintPreviewStaticItem2.Caption = "100%"
+        Me.PrintPreviewStaticItem2.Id = 227
+        Me.PrintPreviewStaticItem2.Name = "PrintPreviewStaticItem2"
+        Me.PrintPreviewStaticItem2.Type = "ZoomFactorText"
+        '
+        'ZoomTrackBarEditItem1
+        '
+        Me.ZoomTrackBarEditItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
+        Me.ZoomTrackBarEditItem1.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.ZoomTrackBarEditItem1.Edit = Me.RepositoryItemZoomTrackBar1
+        Me.ZoomTrackBarEditItem1.EditWidth = 140
+        Me.ZoomTrackBarEditItem1.Enabled = False
+        Me.ZoomTrackBarEditItem1.Id = 228
+        Me.ZoomTrackBarEditItem1.Name = "ZoomTrackBarEditItem1"
+        Me.ZoomTrackBarEditItem1.Range = New Integer() {10, 500}
+        '
+        'RepositoryItemZoomTrackBar1
+        '
+        Me.RepositoryItemZoomTrackBar1.Alignment = DevExpress.Utils.VertAlignment.Center
+        Me.RepositoryItemZoomTrackBar1.AllowFocused = False
+        Me.RepositoryItemZoomTrackBar1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.RepositoryItemZoomTrackBar1.Maximum = 180
+        Me.RepositoryItemZoomTrackBar1.Name = "RepositoryItemZoomTrackBar1"
+        '
+        'RibbonPageCategory1
+        '
+        Me.RibbonPageCategory1.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.RibbonPageCategory1.Appearance.Options.UseBackColor = True
+        Me.RibbonPageCategory1.AutoStretchPageHeaders = True
+        Me.RibbonPageCategory1.Name = "RibbonPageCategory1"
+        Me.RibbonPageCategory1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage6})
+        Me.RibbonPageCategory1.Text = "Character Comb Tools"
+        Me.RibbonPageCategory1.Visible = False
+        '
+        'RibbonPage6
+        '
+        Me.RibbonPage6.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup20})
+        Me.RibbonPage6.Name = "RibbonPage6"
+        Me.RibbonPage6.Text = "Design"
+        Me.RibbonPage6.Visible = False
+        '
+        'XrDesignRibbonPageGroup20
+        '
+        Me.XrDesignRibbonPageGroup20.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup20.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup20.ItemLinks.Add(Me.CommandBarCheckItem8)
+        Me.XrDesignRibbonPageGroup20.ItemLinks.Add(Me.CommandBarCheckItem9)
+        Me.XrDesignRibbonPageGroup20.ItemLinks.Add(Me.CommandBarEditItem2, True)
+        Me.XrDesignRibbonPageGroup20.ItemLinks.Add(Me.CommandBarEditItem3)
+        Me.XrDesignRibbonPageGroup20.ItemLinks.Add(Me.CommandBarEditItem4, True)
+        Me.XrDesignRibbonPageGroup20.ItemLinks.Add(Me.CommandBarEditItem5)
+        Me.XrDesignRibbonPageGroup20.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.CellSize
+        Me.XrDesignRibbonPageGroup20.Name = "XrDesignRibbonPageGroup20"
+        Me.XrDesignRibbonPageGroup20.Text = "Cell Size"
+        '
+        'RibbonPageCategory2
+        '
+        Me.RibbonPageCategory2.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(203, Byte), Integer), CType(CType(29, Byte), Integer))
+        Me.RibbonPageCategory2.Appearance.Options.UseBackColor = True
+        Me.RibbonPageCategory2.AutoStretchPageHeaders = True
+        Me.RibbonPageCategory2.Name = "RibbonPageCategory2"
+        Me.RibbonPageCategory2.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage7})
+        Me.RibbonPageCategory2.Text = "Table Tools"
+        Me.RibbonPageCategory2.Visible = False
+        '
+        'RibbonPage7
+        '
+        Me.RibbonPage7.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup21, Me.XrDesignRibbonPageGroup22, Me.XrDesignRibbonPageGroup23, Me.XrDesignRibbonPageGroup24, Me.XrDesignRibbonPageGroup25})
+        Me.RibbonPage7.Name = "RibbonPage7"
+        Me.RibbonPage7.Text = "Design"
+        Me.RibbonPage7.Visible = False
+        '
+        'XrDesignRibbonPageGroup21
+        '
+        Me.XrDesignRibbonPageGroup21.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup21.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup21.ItemLinks.Add(Me.CommandBarItem78)
+        Me.XrDesignRibbonPageGroup21.ItemLinks.Add(Me.CommandBarItem79)
+        Me.XrDesignRibbonPageGroup21.ItemLinks.Add(Me.CommandBarItem77)
+        Me.XrDesignRibbonPageGroup21.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.[Select]
+        Me.XrDesignRibbonPageGroup21.Name = "XrDesignRibbonPageGroup21"
+        Me.XrDesignRibbonPageGroup21.Text = "Select"
+        '
+        'XrDesignRibbonPageGroup22
+        '
+        Me.XrDesignRibbonPageGroup22.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup22.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup22.ItemLinks.Add(Me.CommandBarItem84)
+        Me.XrDesignRibbonPageGroup22.ItemLinks.Add(Me.CommandBarItem85)
+        Me.XrDesignRibbonPageGroup22.ItemLinks.Add(Me.CommandBarItem86)
+        Me.XrDesignRibbonPageGroup22.ItemLinks.Add(Me.CommandBarItem87)
+        Me.XrDesignRibbonPageGroup22.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Insert
+        Me.XrDesignRibbonPageGroup22.Name = "XrDesignRibbonPageGroup22"
+        Me.XrDesignRibbonPageGroup22.Text = "Insert"
+        '
+        'XrDesignRibbonPageGroup23
+        '
+        Me.XrDesignRibbonPageGroup23.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup23.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup23.ItemLinks.Add(Me.CommandBarItem80)
+        Me.XrDesignRibbonPageGroup23.ItemLinks.Add(Me.CommandBarItem81)
+        Me.XrDesignRibbonPageGroup23.ItemLinks.Add(Me.CommandBarItem82)
+        Me.XrDesignRibbonPageGroup23.ItemLinks.Add(Me.CommandBarItem83)
+        Me.XrDesignRibbonPageGroup23.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Delete
+        Me.XrDesignRibbonPageGroup23.Name = "XrDesignRibbonPageGroup23"
+        Me.XrDesignRibbonPageGroup23.Text = "Delete"
+        '
+        'XrDesignRibbonPageGroup24
+        '
+        Me.XrDesignRibbonPageGroup24.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup24.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup24.ItemLinks.Add(Me.CommandBarItem90)
+        Me.XrDesignRibbonPageGroup24.ItemLinks.Add(Me.CommandBarItem91)
+        Me.XrDesignRibbonPageGroup24.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Merge
+        Me.XrDesignRibbonPageGroup24.Name = "XrDesignRibbonPageGroup24"
+        Me.XrDesignRibbonPageGroup24.Text = "Merge"
+        '
+        'XrDesignRibbonPageGroup25
+        '
+        Me.XrDesignRibbonPageGroup25.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup25.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup25.ItemLinks.Add(Me.CommandBarItem88)
+        Me.XrDesignRibbonPageGroup25.ItemLinks.Add(Me.CommandBarItem89)
+        Me.XrDesignRibbonPageGroup25.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Distribute
+        Me.XrDesignRibbonPageGroup25.Name = "XrDesignRibbonPageGroup25"
+        Me.XrDesignRibbonPageGroup25.Text = "Distribute"
+        '
+        'RibbonPageCategory3
+        '
+        Me.RibbonPageCategory3.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.RibbonPageCategory3.Appearance.Options.UseBackColor = True
+        Me.RibbonPageCategory3.AutoStretchPageHeaders = True
+        Me.RibbonPageCategory3.Name = "RibbonPageCategory3"
+        Me.RibbonPageCategory3.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage8})
+        Me.RibbonPageCategory3.Text = "Chart Tools"
+        Me.RibbonPageCategory3.Visible = False
+        '
+        'RibbonPage8
+        '
+        Me.RibbonPage8.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup26, Me.XrDesignRibbonPageGroup27, Me.XrDesignRibbonPageGroup28, Me.XrDesignRibbonPageGroup29, Me.XrDesignRibbonPageGroup30})
+        Me.RibbonPage8.Name = "RibbonPage8"
+        Me.RibbonPage8.Text = "Design"
+        Me.RibbonPage8.Visible = False
+        '
+        'XrDesignRibbonPageGroup26
+        '
+        Me.XrDesignRibbonPageGroup26.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup26.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup26.ItemLinks.Add(Me.CommandBarItem105)
+        Me.XrDesignRibbonPageGroup26.ItemLinks.Add(Me.CommandBarItem104)
+        Me.XrDesignRibbonPageGroup26.ItemLinks.Add(Me.CommandBarItem103)
+        Me.XrDesignRibbonPageGroup26.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Layout
+        Me.XrDesignRibbonPageGroup26.Name = "XrDesignRibbonPageGroup26"
+        Me.XrDesignRibbonPageGroup26.Text = "Layout"
+        '
+        'XrDesignRibbonPageGroup27
+        '
+        Me.XrDesignRibbonPageGroup27.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup27.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup27.ItemLinks.Add(Me.CommandBarItem106)
+        Me.XrDesignRibbonPageGroup27.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
+        Me.XrDesignRibbonPageGroup27.Name = "XrDesignRibbonPageGroup27"
+        Me.XrDesignRibbonPageGroup27.Text = "Data"
+        '
+        'XrDesignRibbonPageGroup28
+        '
+        Me.XrDesignRibbonPageGroup28.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup28.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[True]
+        Me.XrDesignRibbonPageGroup28.ItemLinks.Add(Me.CommandBarItem108)
+        Me.XrDesignRibbonPageGroup28.ItemLinks.Add(Me.CommandBarItem109)
+        Me.XrDesignRibbonPageGroup28.ItemLinks.Add(Me.CommandBarItem110)
+        Me.XrDesignRibbonPageGroup28.ItemLinks.Add(Me.CommandBarItem111)
+        Me.XrDesignRibbonPageGroup28.ItemLinks.Add(Me.CommandBarItem112)
+        Me.XrDesignRibbonPageGroup28.ItemLinks.Add(Me.CommandBarItem113)
+        Me.XrDesignRibbonPageGroup28.ItemLinks.Add(Me.CommandBarItem114)
+        Me.XrDesignRibbonPageGroup28.ItemLinks.Add(Me.CommandBarItem115)
+        Me.XrDesignRibbonPageGroup28.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Series
+        Me.XrDesignRibbonPageGroup28.Name = "XrDesignRibbonPageGroup28"
+        Me.XrDesignRibbonPageGroup28.Text = "Series"
+        '
+        'XrDesignRibbonPageGroup29
+        '
+        Me.XrDesignRibbonPageGroup29.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup29.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[True]
+        Me.XrDesignRibbonPageGroup29.ItemLinks.Add(Me.CommandBarItem116)
+        Me.XrDesignRibbonPageGroup29.ItemLinks.Add(Me.CommandBarItem117)
+        Me.XrDesignRibbonPageGroup29.ItemLinks.Add(Me.CommandBarItem118)
+        Me.XrDesignRibbonPageGroup29.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Annotations
+        Me.XrDesignRibbonPageGroup29.Name = "XrDesignRibbonPageGroup29"
+        Me.XrDesignRibbonPageGroup29.Text = "Annotations"
+        '
+        'XrDesignRibbonPageGroup30
+        '
+        Me.XrDesignRibbonPageGroup30.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup30.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[True]
+        Me.XrDesignRibbonPageGroup30.ItemLinks.Add(Me.CommandBarItem107)
+        Me.XrDesignRibbonPageGroup30.ItemLinks.Add(Me.CommandGalleryBarItem3)
+        Me.XrDesignRibbonPageGroup30.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Appearance
+        Me.XrDesignRibbonPageGroup30.Name = "XrDesignRibbonPageGroup30"
+        Me.XrDesignRibbonPageGroup30.Text = "Appearance"
+        '
+        'RibbonPageCategory4
+        '
+        Me.RibbonPageCategory4.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(89, Byte), Integer), CType(CType(156, Byte), Integer))
+        Me.RibbonPageCategory4.Appearance.Options.UseBackColor = True
+        Me.RibbonPageCategory4.AutoStretchPageHeaders = True
+        Me.RibbonPageCategory4.Name = "RibbonPageCategory4"
+        Me.RibbonPageCategory4.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage9})
+        Me.RibbonPageCategory4.Text = "Pivot Grid Tools"
+        Me.RibbonPageCategory4.Visible = False
+        '
+        'RibbonPage9
+        '
+        Me.RibbonPage9.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup31, Me.XrDesignRibbonPageGroup32, Me.XrDesignRibbonPageGroup33, Me.XrDesignRibbonPageGroup34})
+        Me.RibbonPage9.Name = "RibbonPage9"
+        Me.RibbonPage9.Text = "Design"
+        Me.RibbonPage9.Visible = False
+        '
+        'XrDesignRibbonPageGroup31
+        '
+        Me.XrDesignRibbonPageGroup31.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup31.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup31.ItemLinks.Add(Me.CommandBarItem92)
+        Me.XrDesignRibbonPageGroup31.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Layout
+        Me.XrDesignRibbonPageGroup31.Name = "XrDesignRibbonPageGroup31"
+        Me.XrDesignRibbonPageGroup31.Text = "Layout"
+        '
+        'XrDesignRibbonPageGroup32
+        '
+        Me.XrDesignRibbonPageGroup32.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup32.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup32.ItemLinks.Add(Me.CommandBarItem93)
+        Me.XrDesignRibbonPageGroup32.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
+        Me.XrDesignRibbonPageGroup32.Name = "XrDesignRibbonPageGroup32"
+        Me.XrDesignRibbonPageGroup32.Text = "Data"
+        '
+        'XrDesignRibbonPageGroup33
+        '
+        Me.XrDesignRibbonPageGroup33.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup33.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup33.ItemLinks.Add(Me.CommandBarItem95)
+        Me.XrDesignRibbonPageGroup33.ItemLinks.Add(Me.CommandBarItem94)
+        Me.XrDesignRibbonPageGroup33.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PivotFields
+        Me.XrDesignRibbonPageGroup33.Name = "XrDesignRibbonPageGroup33"
+        Me.XrDesignRibbonPageGroup33.Text = "Fields"
+        '
+        'XrDesignRibbonPageGroup34
+        '
+        Me.XrDesignRibbonPageGroup34.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup34.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup34.ItemLinks.Add(Me.CommandBarItem96)
+        Me.XrDesignRibbonPageGroup34.ItemLinks.Add(Me.CommandBarItem97)
+        Me.XrDesignRibbonPageGroup34.ItemLinks.Add(Me.CommandBarItem100, True)
+        Me.XrDesignRibbonPageGroup34.ItemLinks.Add(Me.CommandBarItem99)
+        Me.XrDesignRibbonPageGroup34.ItemLinks.Add(Me.CommandBarItem98)
+        Me.XrDesignRibbonPageGroup34.ItemLinks.Add(Me.CommandBarItem101, True)
+        Me.XrDesignRibbonPageGroup34.ItemLinks.Add(Me.CommandBarItem102)
+        Me.XrDesignRibbonPageGroup34.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PivotPrintOptions
+        Me.XrDesignRibbonPageGroup34.Name = "XrDesignRibbonPageGroup34"
+        Me.XrDesignRibbonPageGroup34.Text = "Print Options"
+        '
+        'RibbonPageCategory5
+        '
+        Me.RibbonPageCategory5.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.RibbonPageCategory5.Appearance.Options.UseBackColor = True
+        Me.RibbonPageCategory5.AutoStretchPageHeaders = True
+        Me.RibbonPageCategory5.Name = "RibbonPageCategory5"
+        Me.RibbonPageCategory5.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage10})
+        Me.RibbonPageCategory5.Text = "Bar Code Tools"
+        Me.RibbonPageCategory5.Visible = False
+        '
+        'RibbonPage10
+        '
+        Me.RibbonPage10.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup35, Me.XrDesignRibbonPageGroup36})
+        Me.RibbonPage10.Name = "RibbonPage10"
+        Me.RibbonPage10.Text = "Design"
+        Me.RibbonPage10.Visible = False
+        '
+        'XrDesignRibbonPageGroup35
+        '
+        Me.XrDesignRibbonPageGroup35.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup35.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup35.ItemLinks.Add(Me.CommandBarItem119)
+        Me.XrDesignRibbonPageGroup35.ItemLinks.Add(Me.CommandBarItem120)
+        Me.XrDesignRibbonPageGroup35.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
+        Me.XrDesignRibbonPageGroup35.Name = "XrDesignRibbonPageGroup35"
+        Me.XrDesignRibbonPageGroup35.Text = "View"
+        '
+        'XrDesignRibbonPageGroup36
+        '
+        Me.XrDesignRibbonPageGroup36.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup36.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup36.ItemLinks.Add(Me.CommandGalleryBarItem2)
+        Me.XrDesignRibbonPageGroup36.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Symbology
+        Me.XrDesignRibbonPageGroup36.Name = "XrDesignRibbonPageGroup36"
+        Me.XrDesignRibbonPageGroup36.Text = "Symbology"
+        '
+        'RibbonPageCategory6
+        '
+        Me.RibbonPageCategory6.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(157, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RibbonPageCategory6.Appearance.Options.UseBackColor = True
+        Me.RibbonPageCategory6.AutoStretchPageHeaders = True
+        Me.RibbonPageCategory6.Name = "RibbonPageCategory6"
+        Me.RibbonPageCategory6.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage11})
+        Me.RibbonPageCategory6.Text = "Gauge Tools"
+        Me.RibbonPageCategory6.Visible = False
+        '
+        'RibbonPage11
+        '
+        Me.RibbonPage11.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup37, Me.XrDesignRibbonPageGroup38})
+        Me.RibbonPage11.Name = "RibbonPage11"
+        Me.RibbonPage11.Text = "Design"
+        Me.RibbonPage11.Visible = False
+        '
+        'XrDesignRibbonPageGroup37
+        '
+        Me.XrDesignRibbonPageGroup37.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup37.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup37.ItemLinks.Add(Me.CommandGalleryBarItem5)
+        Me.XrDesignRibbonPageGroup37.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
+        Me.XrDesignRibbonPageGroup37.Name = "XrDesignRibbonPageGroup37"
+        Me.XrDesignRibbonPageGroup37.Text = "View"
+        '
+        'XrDesignRibbonPageGroup38
+        '
+        Me.XrDesignRibbonPageGroup38.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup38.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup38.ItemLinks.Add(Me.CommandBarItem124)
+        Me.XrDesignRibbonPageGroup38.ItemLinks.Add(Me.CommandBarItem125)
+        Me.XrDesignRibbonPageGroup38.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Theme
+        Me.XrDesignRibbonPageGroup38.Name = "XrDesignRibbonPageGroup38"
+        Me.XrDesignRibbonPageGroup38.Text = "Theme"
+        '
+        'RibbonPageCategory7
+        '
+        Me.RibbonPageCategory7.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(163, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.RibbonPageCategory7.Appearance.Options.UseBackColor = True
+        Me.RibbonPageCategory7.AutoStretchPageHeaders = True
+        Me.RibbonPageCategory7.Name = "RibbonPageCategory7"
+        Me.RibbonPageCategory7.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage12})
+        Me.RibbonPageCategory7.Text = "Sparkline Tools"
+        Me.RibbonPageCategory7.Visible = False
+        '
+        'RibbonPage12
+        '
+        Me.RibbonPage12.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup39, Me.XrDesignRibbonPageGroup40})
+        Me.RibbonPage12.Name = "RibbonPage12"
+        Me.RibbonPage12.Text = "Design"
+        Me.RibbonPage12.Visible = False
+        '
+        'XrDesignRibbonPageGroup39
+        '
+        Me.XrDesignRibbonPageGroup39.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup39.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup39.ItemLinks.Add(Me.CommandBarItem123)
+        Me.XrDesignRibbonPageGroup39.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
+        Me.XrDesignRibbonPageGroup39.Name = "XrDesignRibbonPageGroup39"
+        Me.XrDesignRibbonPageGroup39.Text = "Data"
+        '
+        'XrDesignRibbonPageGroup40
+        '
+        Me.XrDesignRibbonPageGroup40.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup40.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup40.ItemLinks.Add(Me.CommandGalleryBarItem4)
+        Me.XrDesignRibbonPageGroup40.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
+        Me.XrDesignRibbonPageGroup40.Name = "XrDesignRibbonPageGroup40"
+        Me.XrDesignRibbonPageGroup40.Text = "View"
+        '
+        'RibbonPageCategory8
+        '
+        Me.RibbonPageCategory8.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(157, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RibbonPageCategory8.Appearance.Options.UseBackColor = True
+        Me.RibbonPageCategory8.AutoStretchPageHeaders = True
+        Me.RibbonPageCategory8.Name = "RibbonPageCategory8"
+        Me.RibbonPageCategory8.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage13})
+        Me.RibbonPageCategory8.Text = "Shape Tools"
+        Me.RibbonPageCategory8.Visible = False
+        '
+        'RibbonPage13
+        '
+        Me.RibbonPage13.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup41})
+        Me.RibbonPage13.Name = "RibbonPage13"
+        Me.RibbonPage13.Text = "Design"
+        Me.RibbonPage13.Visible = False
+        '
+        'XrDesignRibbonPageGroup41
+        '
+        Me.XrDesignRibbonPageGroup41.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup41.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup41.ItemLinks.Add(Me.CommandBarItem126)
+        Me.XrDesignRibbonPageGroup41.ItemLinks.Add(Me.CommandGalleryBarItem6)
+        Me.XrDesignRibbonPageGroup41.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
+        Me.XrDesignRibbonPageGroup41.Name = "XrDesignRibbonPageGroup41"
+        Me.XrDesignRibbonPageGroup41.Text = "View"
+        '
+        'RibbonPageCategory9
+        '
+        Me.RibbonPageCategory9.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(158, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(126, Byte), Integer))
+        Me.RibbonPageCategory9.Appearance.Options.UseBackColor = True
+        Me.RibbonPageCategory9.AutoStretchPageHeaders = True
+        Me.RibbonPageCategory9.Name = "RibbonPageCategory9"
+        Me.RibbonPageCategory9.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage14})
+        Me.RibbonPageCategory9.Text = "Text Tools"
+        Me.RibbonPageCategory9.Visible = False
+        '
+        'RibbonPage14
+        '
+        Me.RibbonPage14.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup42, Me.XrDesignRibbonPageGroup43})
+        Me.RibbonPage14.Name = "RibbonPage14"
+        Me.RibbonPage14.Text = "Text"
+        Me.RibbonPage14.Visible = False
+        '
+        'XrDesignRibbonPageGroup42
+        '
+        Me.XrDesignRibbonPageGroup42.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup42.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup42.ItemLinks.Add(Me.CommandBarItem121)
+        Me.XrDesignRibbonPageGroup42.ItemLinks.Add(Me.CommandBarItem122)
+        Me.XrDesignRibbonPageGroup42.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Design
+        Me.XrDesignRibbonPageGroup42.Name = "XrDesignRibbonPageGroup42"
+        Me.XrDesignRibbonPageGroup42.Text = "Design"
+        '
+        'XrDesignRibbonPageGroup43
+        '
+        Me.XrDesignRibbonPageGroup43.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup43.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup43.ItemLinks.Add(Me.CommandBarCheckItem4)
+        Me.XrDesignRibbonPageGroup43.ItemLinks.Add(Me.CommandBarCheckItem5)
+        Me.XrDesignRibbonPageGroup43.ItemLinks.Add(Me.CommandBarCheckItem6, True)
+        Me.XrDesignRibbonPageGroup43.ItemLinks.Add(Me.CommandBarCheckItem7)
+        Me.XrDesignRibbonPageGroup43.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Behavior
+        Me.XrDesignRibbonPageGroup43.Name = "XrDesignRibbonPageGroup43"
+        Me.XrDesignRibbonPageGroup43.Text = "Behavior"
+        '
+        'RibbonPage1
+        '
+        Me.RibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup1, Me.XrDesignRibbonPageGroup2, Me.XrDesignRibbonPageGroup3, Me.XrDesignRibbonPageGroup4, Me.XrDesignRibbonPageGroup5, Me.XrDesignRibbonPageGroup6, Me.XrDesignRibbonPageGroup7})
+        Me.RibbonPage1.Name = "RibbonPage1"
+        Me.RibbonPage1.Text = "Home"
+        '
+        'XrDesignRibbonPageGroup1
+        '
+        Me.XrDesignRibbonPageGroup1.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup1.ItemLinks.Add(Me.CommandBarItem6)
+        Me.XrDesignRibbonPageGroup1.ItemLinks.Add(Me.CommandBarItem9)
+        Me.XrDesignRibbonPageGroup1.ItemLinks.Add(Me.CommandBarItem7)
+        Me.XrDesignRibbonPageGroup1.ItemLinks.Add(Me.CommandBarItem8)
+        Me.XrDesignRibbonPageGroup1.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Report
+        Me.XrDesignRibbonPageGroup1.Name = "XrDesignRibbonPageGroup1"
+        Me.XrDesignRibbonPageGroup1.Text = "Report"
+        '
+        'XrDesignRibbonPageGroup2
+        '
+        Me.XrDesignRibbonPageGroup2.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup2.ItemLinks.Add(Me.CommandBarItem30)
+        Me.XrDesignRibbonPageGroup2.ItemLinks.Add(Me.CommandBarItem28)
+        Me.XrDesignRibbonPageGroup2.ItemLinks.Add(Me.CommandBarItem29)
+        Me.XrDesignRibbonPageGroup2.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Data
+        Me.XrDesignRibbonPageGroup2.Name = "XrDesignRibbonPageGroup2"
+        Me.XrDesignRibbonPageGroup2.Text = "Data"
+        '
+        'XrDesignRibbonPageGroup3
+        '
+        Me.XrDesignRibbonPageGroup3.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup3.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup3.ItemLinks.Add(Me.CommandBarItem14)
+        Me.XrDesignRibbonPageGroup3.ItemLinks.Add(Me.CommandBarItem15)
+        Me.XrDesignRibbonPageGroup3.ItemLinks.Add(Me.CommandBarItem16)
+        Me.XrDesignRibbonPageGroup3.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Clipboard
+        Me.XrDesignRibbonPageGroup3.Name = "XrDesignRibbonPageGroup3"
+        Me.XrDesignRibbonPageGroup3.Text = "Clipboard"
+        '
+        'XrDesignRibbonPageGroup4
+        '
+        Me.XrDesignRibbonPageGroup4.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup4.ItemLinks.Add(Me.XrDesignBarButtonGroup1)
+        Me.XrDesignRibbonPageGroup4.ItemLinks.Add(Me.XrDesignBarButtonGroup2)
+        Me.XrDesignRibbonPageGroup4.ItemLinks.Add(Me.XrDesignBarButtonGroup3)
+        Me.XrDesignRibbonPageGroup4.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Font
+        Me.XrDesignRibbonPageGroup4.Name = "XrDesignRibbonPageGroup4"
+        Me.XrDesignRibbonPageGroup4.Text = "Font"
+        '
+        'XrDesignRibbonPageGroup5
+        '
+        Me.XrDesignRibbonPageGroup5.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup5.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup5.ItemLinks.Add(Me.XrDesignBarButtonGroup4)
+        Me.XrDesignRibbonPageGroup5.ItemLinks.Add(Me.XrDesignBarButtonGroup5)
+        Me.XrDesignRibbonPageGroup5.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.TextAlignment
+        Me.XrDesignRibbonPageGroup5.Name = "XrDesignRibbonPageGroup5"
+        Me.XrDesignRibbonPageGroup5.Text = "Alignment"
+        '
+        'XrDesignRibbonPageGroup6
+        '
+        Me.XrDesignRibbonPageGroup6.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup6.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup6.ItemLinks.Add(Me.XrDesignBarButtonGroup6)
+        Me.XrDesignRibbonPageGroup6.ItemLinks.Add(Me.XrDesignBarButtonGroup7)
+        Me.XrDesignRibbonPageGroup6.ItemLinks.Add(Me.XrDesignBarButtonGroup8)
+        Me.XrDesignRibbonPageGroup6.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Borders
+        Me.XrDesignRibbonPageGroup6.Name = "XrDesignRibbonPageGroup6"
+        Me.XrDesignRibbonPageGroup6.Text = "Borders"
+        '
+        'XrDesignRibbonPageGroup7
+        '
+        Me.XrDesignRibbonPageGroup7.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup7.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[True]
+        Me.XrDesignRibbonPageGroup7.ItemLinks.Add(Me.CommandBarItem31)
+        Me.XrDesignRibbonPageGroup7.ItemLinks.Add(Me.CommandGalleryBarItem1)
+        Me.XrDesignRibbonPageGroup7.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Styles
+        Me.XrDesignRibbonPageGroup7.Name = "XrDesignRibbonPageGroup7"
+        Me.XrDesignRibbonPageGroup7.Text = "Styles"
+        '
+        'RibbonPage2
+        '
+        Me.RibbonPage2.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup8, Me.XrDesignRibbonPageGroup9, Me.XrDesignRibbonPageGroup10, Me.XrDesignRibbonPageGroup11})
+        Me.RibbonPage2.Name = "RibbonPage2"
+        Me.RibbonPage2.Text = "Layout"
+        '
+        'XrDesignRibbonPageGroup8
+        '
+        Me.XrDesignRibbonPageGroup8.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup8.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup8.ItemLinks.Add(Me.XrDesignBarButtonGroup9)
+        Me.XrDesignRibbonPageGroup8.ItemLinks.Add(Me.XrDesignBarButtonGroup10)
+        Me.XrDesignRibbonPageGroup8.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Alignment
+        Me.XrDesignRibbonPageGroup8.Name = "XrDesignRibbonPageGroup8"
+        Me.XrDesignRibbonPageGroup8.Text = "Alignment"
+        '
+        'XrDesignRibbonPageGroup9
+        '
+        Me.XrDesignRibbonPageGroup9.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup9.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup9.ItemLinks.Add(Me.CommandBarItem39)
+        Me.XrDesignRibbonPageGroup9.ItemLinks.Add(Me.CommandBarItem47)
+        Me.XrDesignRibbonPageGroup9.ItemLinks.Add(Me.CommandBarItem62)
+        Me.XrDesignRibbonPageGroup9.ItemLinks.Add(Me.XrDesignBarButtonGroup11)
+        Me.XrDesignRibbonPageGroup9.ItemLinks.Add(Me.XrDesignBarButtonGroup12)
+        Me.XrDesignRibbonPageGroup9.ItemLinks.Add(Me.XrDesignBarButtonGroup13)
+        Me.XrDesignRibbonPageGroup9.ItemLinks.Add(Me.XrDesignBarButtonGroup14)
+        Me.XrDesignRibbonPageGroup9.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.SizeAndLayout
+        Me.XrDesignRibbonPageGroup9.Name = "XrDesignRibbonPageGroup9"
+        Me.XrDesignRibbonPageGroup9.Text = "Layout"
+        '
+        'XrDesignRibbonPageGroup10
+        '
+        Me.XrDesignRibbonPageGroup10.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup10.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup10.ItemLinks.Add(Me.CommandBarItem60)
+        Me.XrDesignRibbonPageGroup10.ItemLinks.Add(Me.CommandBarItem61)
+        Me.XrDesignRibbonPageGroup10.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Arranging
+        Me.XrDesignRibbonPageGroup10.Name = "XrDesignRibbonPageGroup10"
+        Me.XrDesignRibbonPageGroup10.Text = "Arranging"
+        '
+        'XrDesignRibbonPageGroup11
+        '
+        Me.XrDesignRibbonPageGroup11.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup11.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup11.ItemLinks.Add(Me.CommandBarCheckItem1)
+        Me.XrDesignRibbonPageGroup11.ItemLinks.Add(Me.CommandBarCheckItem2)
+        Me.XrDesignRibbonPageGroup11.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Snapping
+        Me.XrDesignRibbonPageGroup11.Name = "XrDesignRibbonPageGroup11"
+        Me.XrDesignRibbonPageGroup11.Text = "Snapping"
+        '
+        'RibbonPage3
+        '
+        Me.RibbonPage3.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup12, Me.XrDesignRibbonPageGroup13})
+        Me.RibbonPage3.Name = "RibbonPage3"
+        Me.RibbonPage3.Text = "Page"
+        '
+        'XrDesignRibbonPageGroup12
+        '
+        Me.XrDesignRibbonPageGroup12.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup12.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[True]
+        Me.XrDesignRibbonPageGroup12.ItemLinks.Add(Me.CommandBarItem65)
+        Me.XrDesignRibbonPageGroup12.ItemLinks.Add(Me.CommandBarItem64)
+        Me.XrDesignRibbonPageGroup12.ItemLinks.Add(Me.CommandBarItem63)
+        Me.XrDesignRibbonPageGroup12.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.PageSetup
+        Me.XrDesignRibbonPageGroup12.Name = "XrDesignRibbonPageGroup12"
+        Me.XrDesignRibbonPageGroup12.Text = "Page Setup"
+        '
+        'XrDesignRibbonPageGroup13
+        '
+        Me.XrDesignRibbonPageGroup13.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup13.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup13.ItemLinks.Add(Me.CommandColorBarItem4)
+        Me.XrDesignRibbonPageGroup13.ItemLinks.Add(Me.CommandBarItem66)
+        Me.XrDesignRibbonPageGroup13.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Appearance
+        Me.XrDesignRibbonPageGroup13.Name = "XrDesignRibbonPageGroup13"
+        Me.XrDesignRibbonPageGroup13.Text = "Appearance"
+        '
+        'RibbonPage4
+        '
+        Me.RibbonPage4.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup14, Me.XrDesignRibbonPageGroup15, Me.XrDesignRibbonPageGroup16, Me.XrDesignRibbonPageGroup17, Me.XrDesignRibbonPageGroup18})
+        Me.RibbonPage4.Name = "RibbonPage4"
+        Me.RibbonPage4.Text = "View"
+        '
+        'XrDesignRibbonPageGroup14
+        '
+        Me.XrDesignRibbonPageGroup14.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup14.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup14.ItemLinks.Add(Me.CommandBarItem67)
+        Me.XrDesignRibbonPageGroup14.ItemLinks.Add(Me.CommandBarItem68)
+        Me.XrDesignRibbonPageGroup14.ItemLinks.Add(Me.CommandBarItem69, True)
+        Me.XrDesignRibbonPageGroup14.ItemLinks.Add(Me.CommandBarItem70)
+        Me.XrDesignRibbonPageGroup14.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Show
+        Me.XrDesignRibbonPageGroup14.Name = "XrDesignRibbonPageGroup14"
+        Me.XrDesignRibbonPageGroup14.Text = "Show"
+        '
+        'XrDesignRibbonPageGroup15
+        '
+        Me.XrDesignRibbonPageGroup15.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup15.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup15.ItemLinks.Add(Me.CommandBarItem71)
+        Me.XrDesignRibbonPageGroup15.ItemLinks.Add(Me.CommandBarItem72)
+        Me.XrDesignRibbonPageGroup15.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Bands
+        Me.XrDesignRibbonPageGroup15.Name = "XrDesignRibbonPageGroup15"
+        Me.XrDesignRibbonPageGroup15.Text = "Bands"
+        '
+        'XrDesignRibbonPageGroup16
+        '
+        Me.XrDesignRibbonPageGroup16.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup16.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[True]
+        Me.XrDesignRibbonPageGroup16.ItemLinks.Add(Me.CommandBarEditItem1)
+        Me.XrDesignRibbonPageGroup16.ItemLinks.Add(Me.CommandBarCheckItem3)
+        Me.XrDesignRibbonPageGroup16.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Localization
+        Me.XrDesignRibbonPageGroup16.Name = "XrDesignRibbonPageGroup16"
+        Me.XrDesignRibbonPageGroup16.Text = "Localization"
+        '
+        'XrDesignRibbonPageGroup17
+        '
+        Me.XrDesignRibbonPageGroup17.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup17.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup17.ItemLinks.Add(Me.CommandBarItem75)
+        Me.XrDesignRibbonPageGroup17.ItemLinks.Add(Me.CommandBarItem73)
+        Me.XrDesignRibbonPageGroup17.ItemLinks.Add(Me.CommandBarItem74)
+        Me.XrDesignRibbonPageGroup17.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Zoom
+        Me.XrDesignRibbonPageGroup17.Name = "XrDesignRibbonPageGroup17"
+        Me.XrDesignRibbonPageGroup17.Text = "Zoom"
+        '
+        'XrDesignRibbonPageGroup18
+        '
+        Me.XrDesignRibbonPageGroup18.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup18.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup18.ItemLinks.Add(Me.BarDockPanelsListItem1)
+        Me.XrDesignRibbonPageGroup18.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.View
+        Me.XrDesignRibbonPageGroup18.Name = "XrDesignRibbonPageGroup18"
+        Me.XrDesignRibbonPageGroup18.Text = "View"
+        '
+        'RibbonPage5
+        '
+        Me.RibbonPage5.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.XrDesignRibbonPageGroup19})
+        Me.RibbonPage5.Name = "RibbonPage5"
+        Me.RibbonPage5.Text = "Scripts"
+        Me.RibbonPage5.Visible = False
+        '
+        'XrDesignRibbonPageGroup19
+        '
+        Me.XrDesignRibbonPageGroup19.AllowTextClipping = False
+        Me.XrDesignRibbonPageGroup19.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.XrDesignRibbonPageGroup19.ItemLinks.Add(Me.CommandBarEditItem7)
+        Me.XrDesignRibbonPageGroup19.ItemLinks.Add(Me.CommandBarEditItem8)
+        Me.XrDesignRibbonPageGroup19.ItemLinks.Add(Me.CommandBarItem76)
+        Me.XrDesignRibbonPageGroup19.Kind = DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroupKind.Edit
+        Me.XrDesignRibbonPageGroup19.Name = "XrDesignRibbonPageGroup19"
+        Me.XrDesignRibbonPageGroup19.Text = "Edit"
+        '
+        'RibbonPage15
+        '
+        Me.RibbonPage15.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.RibbonPage15.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.PrintPreviewRibbonPageGroup1, Me.PrintPreviewRibbonPageGroup2, Me.PrintPreviewRibbonPageGroup3, Me.PrintPreviewRibbonPageGroup4, Me.PrintPreviewRibbonPageGroup5, Me.PrintPreviewRibbonPageGroup6, Me.PrintPreviewRibbonPageGroup7, Me.PrintPreviewRibbonPageGroup8})
+        Me.RibbonPage15.Name = "RibbonPage15"
+        Me.RibbonPage15.Text = "Home"
+        Me.RibbonPage15.Visible = False
+        '
+        'PrintPreviewRibbonPageGroup1
+        '
+        Me.PrintPreviewRibbonPageGroup1.AllowTextClipping = False
+        Me.PrintPreviewRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.PrintPreviewRibbonPageGroup1.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewRibbonPageGroup1.ItemLinks.Add(Me.PrintPreviewBarItem50)
+        Me.PrintPreviewRibbonPageGroup1.ItemLinks.Add(Me.PrintPreviewBarItem51)
+        Me.PrintPreviewRibbonPageGroup1.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Document
+        Me.PrintPreviewRibbonPageGroup1.Name = "PrintPreviewRibbonPageGroup1"
+        Me.PrintPreviewRibbonPageGroup1.Text = "Document"
+        '
+        'PrintPreviewRibbonPageGroup2
+        '
+        Me.PrintPreviewRibbonPageGroup2.AllowTextClipping = False
+        Me.PrintPreviewRibbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.PrintPreviewRibbonPageGroup2.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewRibbonPageGroup2.ItemLinks.Add(Me.PrintPreviewBarItem7)
+        Me.PrintPreviewRibbonPageGroup2.ItemLinks.Add(Me.PrintPreviewBarItem8)
+        Me.PrintPreviewRibbonPageGroup2.ItemLinks.Add(Me.PrintPreviewBarItem3)
+        Me.PrintPreviewRibbonPageGroup2.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Print
+        Me.PrintPreviewRibbonPageGroup2.Name = "PrintPreviewRibbonPageGroup2"
+        Me.PrintPreviewRibbonPageGroup2.Text = "Print"
+        '
+        'PrintPreviewRibbonPageGroup3
+        '
+        Me.PrintPreviewRibbonPageGroup3.AllowTextClipping = False
+        Me.PrintPreviewRibbonPageGroup3.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[True]
+        Me.PrintPreviewRibbonPageGroup3.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewRibbonPageGroup3.ItemLinks.Add(Me.PrintPreviewBarItem11)
+        Me.PrintPreviewRibbonPageGroup3.ItemLinks.Add(Me.PrintPreviewBarItem30)
+        Me.PrintPreviewRibbonPageGroup3.ItemLinks.Add(Me.PrintPreviewBarItem28)
+        Me.PrintPreviewRibbonPageGroup3.ItemLinks.Add(Me.PrintPreviewBarItem29)
+        Me.PrintPreviewRibbonPageGroup3.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.PageSetup
+        Me.PrintPreviewRibbonPageGroup3.Name = "PrintPreviewRibbonPageGroup3"
+        SuperToolTip202.FixedTooltipWidth = True
+        ToolTipTitleItem202.Text = "Page Setup"
+        ToolTipItem202.LeftIndent = 6
+        ToolTipItem202.Text = "Show the Page Setup dialog."
+        SuperToolTip202.Items.Add(ToolTipTitleItem202)
+        SuperToolTip202.Items.Add(ToolTipItem202)
+        SuperToolTip202.MaxWidth = 210
+        Me.PrintPreviewRibbonPageGroup3.SuperTip = SuperToolTip202
+        Me.PrintPreviewRibbonPageGroup3.Text = "Page Setup"
+        '
+        'PrintPreviewRibbonPageGroup4
+        '
+        Me.PrintPreviewRibbonPageGroup4.AllowTextClipping = False
+        Me.PrintPreviewRibbonPageGroup4.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.PrintPreviewRibbonPageGroup4.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewRibbonPageGroup4.ItemLinks.Add(Me.PrintPreviewBarItem4)
+        Me.PrintPreviewRibbonPageGroup4.ItemLinks.Add(Me.PrintPreviewBarItem5)
+        Me.PrintPreviewRibbonPageGroup4.ItemLinks.Add(Me.PrintPreviewBarItem2)
+        Me.PrintPreviewRibbonPageGroup4.ItemLinks.Add(Me.PrintPreviewBarItem1)
+        Me.PrintPreviewRibbonPageGroup4.ItemLinks.Add(Me.PrintPreviewBarItem18, True)
+        Me.PrintPreviewRibbonPageGroup4.ItemLinks.Add(Me.PrintPreviewBarItem19)
+        Me.PrintPreviewRibbonPageGroup4.ItemLinks.Add(Me.PrintPreviewBarItem20)
+        Me.PrintPreviewRibbonPageGroup4.ItemLinks.Add(Me.PrintPreviewBarItem21)
+        Me.PrintPreviewRibbonPageGroup4.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Navigation
+        Me.PrintPreviewRibbonPageGroup4.Name = "PrintPreviewRibbonPageGroup4"
+        Me.PrintPreviewRibbonPageGroup4.Text = "Navigation"
+        '
+        'PrintPreviewRibbonPageGroup5
+        '
+        Me.PrintPreviewRibbonPageGroup5.AllowTextClipping = False
+        Me.PrintPreviewRibbonPageGroup5.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.PrintPreviewRibbonPageGroup5.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewRibbonPageGroup5.ItemLinks.Add(Me.PrintPreviewBarItem12)
+        Me.PrintPreviewRibbonPageGroup5.ItemLinks.Add(Me.PrintPreviewBarItem13)
+        Me.PrintPreviewRibbonPageGroup5.ItemLinks.Add(Me.PrintPreviewBarItem14)
+        Me.PrintPreviewRibbonPageGroup5.ItemLinks.Add(Me.PrintPreviewBarItem22)
+        Me.PrintPreviewRibbonPageGroup5.ItemLinks.Add(Me.PrintPreviewBarItem15)
+        Me.PrintPreviewRibbonPageGroup5.ItemLinks.Add(Me.PrintPreviewBarItem17)
+        Me.PrintPreviewRibbonPageGroup5.ItemLinks.Add(Me.PrintPreviewBarItem16)
+        Me.PrintPreviewRibbonPageGroup5.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Zoom
+        Me.PrintPreviewRibbonPageGroup5.Name = "PrintPreviewRibbonPageGroup5"
+        Me.PrintPreviewRibbonPageGroup5.Text = "Zoom"
+        '
+        'PrintPreviewRibbonPageGroup6
+        '
+        Me.PrintPreviewRibbonPageGroup6.AllowTextClipping = False
+        Me.PrintPreviewRibbonPageGroup6.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.PrintPreviewRibbonPageGroup6.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewRibbonPageGroup6.ItemLinks.Add(Me.PrintPreviewBarItem23)
+        Me.PrintPreviewRibbonPageGroup6.ItemLinks.Add(Me.PrintPreviewBarItem24)
+        Me.PrintPreviewRibbonPageGroup6.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Background
+        Me.PrintPreviewRibbonPageGroup6.Name = "PrintPreviewRibbonPageGroup6"
+        Me.PrintPreviewRibbonPageGroup6.Text = "Page Background"
+        '
+        'PrintPreviewRibbonPageGroup7
+        '
+        Me.PrintPreviewRibbonPageGroup7.AllowTextClipping = False
+        Me.PrintPreviewRibbonPageGroup7.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.PrintPreviewRibbonPageGroup7.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewRibbonPageGroup7.ItemLinks.Add(Me.PrintPreviewBarItem25)
+        Me.PrintPreviewRibbonPageGroup7.ItemLinks.Add(Me.PrintPreviewBarItem26)
+        Me.PrintPreviewRibbonPageGroup7.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Export
+        Me.PrintPreviewRibbonPageGroup7.Name = "PrintPreviewRibbonPageGroup7"
+        Me.PrintPreviewRibbonPageGroup7.Text = "Export"
+        '
+        'PrintPreviewRibbonPageGroup8
+        '
+        Me.PrintPreviewRibbonPageGroup8.AllowTextClipping = False
+        Me.PrintPreviewRibbonPageGroup8.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.[False]
+        Me.PrintPreviewRibbonPageGroup8.ContextSpecifier = Me.XrDesignRibbonController1
+        Me.PrintPreviewRibbonPageGroup8.ItemLinks.Add(Me.PrintPreviewBarItem27)
+        Me.PrintPreviewRibbonPageGroup8.Kind = DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroupKind.Close
+        Me.PrintPreviewRibbonPageGroup8.Name = "PrintPreviewRibbonPageGroup8"
+        Me.PrintPreviewRibbonPageGroup8.Text = "Close"
+        '
+        'RibbonStatusBar1
+        '
+        Me.RibbonStatusBar1.ItemLinks.Add(Me.PrintPreviewStaticItem1)
+        Me.RibbonStatusBar1.ItemLinks.Add(Me.ProgressBarEditItem1)
+        Me.RibbonStatusBar1.ItemLinks.Add(Me.PrintPreviewBarItem52)
+        Me.RibbonStatusBar1.ItemLinks.Add(Me.PrintPreviewStaticItem2)
+        Me.RibbonStatusBar1.ItemLinks.Add(Me.ZoomTrackBarEditItem1)
+        Me.RibbonStatusBar1.Location = New System.Drawing.Point(0, 423)
+        Me.RibbonStatusBar1.Name = "RibbonStatusBar1"
+        Me.RibbonStatusBar1.Ribbon = Me.RibbonControl1
+        Me.RibbonStatusBar1.Size = New System.Drawing.Size(800, 27)
+        '
+        'ReportDesigner1
+        '
+        Me.ReportDesigner1.ContainerControl = Nothing
+        XrDesignPanelListener1.DesignControl = Me.XrDesignRibbonController1
+        XrDesignPanelListener2.DesignControl = Me.XrDesignDockManager1
+        XrDesignPanelListener3.DesignControl = Me.FieldListDockPanel1
+        XrDesignPanelListener4.DesignControl = Me.PropertyGridDockPanel1
+        XrDesignPanelListener5.DesignControl = Me.ReportExplorerDockPanel1
+        XrDesignPanelListener6.DesignControl = Me.ReportGalleryDockPanel1
+        XrDesignPanelListener7.DesignControl = Me.GroupAndSortDockPanel1
+        XrDesignPanelListener8.DesignControl = Me.ErrorListDockPanel1
+        Me.ReportDesigner1.DesignPanelListeners.AddRange(New DevExpress.XtraReports.UserDesigner.XRDesignPanelListener() {XrDesignPanelListener1, XrDesignPanelListener2, XrDesignPanelListener3, XrDesignPanelListener4, XrDesignPanelListener5, XrDesignPanelListener6, XrDesignPanelListener7, XrDesignPanelListener8})
+        Me.ReportDesigner1.Form = Me
+        '
+        'Form2
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.panelContainer4)
+        Me.Controls.Add(Me.panelContainer1)
+        Me.Controls.Add(Me.RibbonStatusBar1)
+        Me.Controls.Add(Me.RibbonControl1)
+        Me.Name = "Form2"
+        Me.Text = "Form2"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        CType(Me.XrDesignRibbonController1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ApplicationMenu1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RecentlyUsedItemsComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DesignRepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.XrDesignDockManager1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelContainer1.ResumeLayout(False)
+        Me.panelContainer2.ResumeLayout(False)
+        Me.ReportExplorerDockPanel1.ResumeLayout(False)
+        Me.FieldListDockPanel1.ResumeLayout(False)
+        Me.panelContainer3.ResumeLayout(False)
+        Me.PropertyGridDockPanel1.ResumeLayout(False)
+        Me.ReportGalleryDockPanel1.ResumeLayout(False)
+        Me.panelContainer4.ResumeLayout(False)
+        Me.GroupAndSortDockPanel1.ResumeLayout(False)
+        Me.ErrorListDockPanel1.ResumeLayout(False)
+        CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemSpinEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemSpinEdit2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemSpinEdit3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemSpinEdit4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemImageComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemLookUpEdit2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemProgressBar1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemZoomTrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ReportDesigner1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
 
-		End Sub
+    End Sub
 
-		#End Region
-
-		Private reportDesigner1 As DevExpress.XtraReports.UserDesigner.XRDesignMdiController
-		Private xrDesignRibbonController1 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonController
-		Private ribbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
-		Private applicationMenu1 As DevExpress.XtraBars.Ribbon.ApplicationMenu
-		Private commandBarItem6 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem9 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem7 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem8 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem127 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem128 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem1 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem2 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem3 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem4 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem5 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem10 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem11 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem12 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem13 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem14 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem15 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem16 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private barEditItem1 As DevExpress.XtraBars.BarEditItem
-		Private recentlyUsedItemsComboBox1 As DevExpress.XtraReports.UserDesigner.RecentlyUsedItemsComboBox
-		Private barEditItem2 As DevExpress.XtraBars.BarEditItem
-		Private designRepositoryItemComboBox1 As DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox
-		Private barDockPanelsListItem1 As DevExpress.XtraReports.UserDesigner.BarDockPanelsListItem
-		Private commandBarItem17 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem18 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem19 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandColorBarItem1 As DevExpress.XtraReports.UserDesigner.CommandColorBarItem
-		Private commandColorBarItem2 As DevExpress.XtraReports.UserDesigner.CommandColorBarItem
-		Private commandBarItem20 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem21 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem22 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem23 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem24 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem25 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem26 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem27 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem28 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem29 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem30 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem31 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem32 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem33 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem34 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem35 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem36 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem37 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandColorBarItem3 As DevExpress.XtraReports.UserDesigner.CommandColorBarItem
-		Private commandBarItem38 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem39 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem40 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem41 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem42 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem43 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem44 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem45 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem46 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem47 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem48 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem49 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem50 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem51 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem52 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem53 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem54 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem55 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem56 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem57 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem58 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem59 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem60 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem61 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarCheckItem1 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
-		Private commandBarCheckItem2 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
-		Private commandBarItem62 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem63 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem64 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem65 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandColorBarItem4 As DevExpress.XtraReports.UserDesigner.CommandColorBarItem
-		Private commandBarItem66 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem67 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem68 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem69 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem70 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem71 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem72 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarEditItem1 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
-		Private repositoryItemLookUpEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
-		Private commandBarCheckItem3 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
-		Private commandBarItem73 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem74 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem75 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem76 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandGalleryBarItem1 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
-		Private commandGalleryBarItem2 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
-		Private commandGalleryBarItem3 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
-		Private commandGalleryBarItem4 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
-		Private commandGalleryBarItem5 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
-		Private commandGalleryBarItem6 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
-		Private commandBarEditItem2 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
-		Private repositoryItemSpinEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit
-		Private commandBarEditItem3 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
-		Private repositoryItemSpinEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit
-		Private commandBarEditItem4 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
-		Private repositoryItemSpinEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit
-		Private commandBarEditItem5 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
-		Private repositoryItemSpinEdit4 As DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit
-		Private commandBarEditItem6 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
-		Private repositoryItemImageComboBox1 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
-		Private commandBarEditItem7 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
-		Private repositoryItemLookUpEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
-		Private commandBarEditItem8 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
-		Private repositoryItemComboBox1 As DevExpress.XtraEditors.Repository.RepositoryItemComboBox
-		Private commandBarItem77 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem78 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem79 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem80 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem81 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem82 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem83 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem84 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem85 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem86 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem87 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem88 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem89 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem90 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem91 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem92 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem93 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem94 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem95 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem96 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem97 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem98 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem99 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem100 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem101 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem102 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem103 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem104 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem105 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem106 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem107 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem108 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem109 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem110 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem111 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem112 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem113 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem114 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem115 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem116 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem117 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem118 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem119 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem120 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem121 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem122 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarCheckItem4 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
-		Private commandBarCheckItem5 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
-		Private commandBarCheckItem6 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
-		Private commandBarCheckItem7 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
-		Private commandBarCheckItem8 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
-		Private commandBarCheckItem9 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
-		Private commandBarItem123 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem124 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem125 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private commandBarItem126 As DevExpress.XtraReports.UserDesigner.CommandBarItem
-		Private xrDesignBarButtonGroup1 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup2 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup3 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup4 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup5 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup6 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup7 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup8 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup9 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup10 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup11 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup12 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup13 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private xrDesignBarButtonGroup14 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
-		Private printPreviewBarItem1 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem2 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem3 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem4 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem5 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem7 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem8 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem9 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem11 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem12 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem13 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem14 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem15 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem16 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem17 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem18 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem19 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem20 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem21 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem22 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem23 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem24 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem25 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem26 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem27 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem28 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem29 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem30 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem31 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem32 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem33 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem34 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem35 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem36 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem37 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem38 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem39 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem40 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem41 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem42 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem43 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem44 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem45 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem46 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem47 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem48 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem49 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem50 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewBarItem51 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewStaticItem1 As DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem
-		Private progressBarEditItem1 As DevExpress.XtraPrinting.Preview.ProgressBarEditItem
-		Private repositoryItemProgressBar1 As DevExpress.XtraEditors.Repository.RepositoryItemProgressBar
-		Private printPreviewBarItem52 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
-		Private printPreviewStaticItem2 As DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem
-		Private zoomTrackBarEditItem1 As DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem
-		Private repositoryItemZoomTrackBar1 As DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar
-		Private ribbonPageCategory1 As DevExpress.XtraReports.UserDesigner.XRCharacterCombRibbonPageCategory
-		Private ribbonPage6 As DevExpress.XtraReports.UserDesigner.XRCharacterCombDesignContextRibbonPage
-		Private xrDesignRibbonPageGroup20 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPageCategory2 As DevExpress.XtraReports.UserDesigner.XRTableRibbonPageCategory
-		Private ribbonPage7 As DevExpress.XtraReports.UserDesigner.XRTableDesignContextRibbonPage
-		Private xrDesignRibbonPageGroup21 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup22 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup23 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup24 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup25 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPageCategory3 As DevExpress.XtraReports.UserDesigner.XRChartRibbonPageCategory
-		Private ribbonPage8 As DevExpress.XtraReports.UserDesigner.XRChartDesignContextRibbonPage
-		Private xrDesignRibbonPageGroup26 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup27 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup28 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup29 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup30 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPageCategory4 As DevExpress.XtraReports.UserDesigner.XRPivotGridRibbonPageCategory
-		Private ribbonPage9 As DevExpress.XtraReports.UserDesigner.XRPivotGridDesignContextRibbonPage
-		Private xrDesignRibbonPageGroup31 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup32 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup33 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup34 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPageCategory5 As DevExpress.XtraReports.UserDesigner.XRBarCodeRibbonPageCategory
-		Private ribbonPage10 As DevExpress.XtraReports.UserDesigner.XRBarcodeDesignContextRibbonPage
-		Private xrDesignRibbonPageGroup35 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup36 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPageCategory6 As DevExpress.XtraReports.UserDesigner.XRGaugeRibbonPageCategory
-		Private ribbonPage11 As DevExpress.XtraReports.UserDesigner.XRGaugeDesignContextRibbonPage
-		Private xrDesignRibbonPageGroup37 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup38 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPageCategory7 As DevExpress.XtraReports.UserDesigner.XRSparklineRibbonPageCategory
-		Private ribbonPage12 As DevExpress.XtraReports.UserDesigner.XRSparklineDesignContextRibbonPage
-		Private xrDesignRibbonPageGroup39 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup40 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPageCategory8 As DevExpress.XtraReports.UserDesigner.XRShapeRibbonPageCategory
-		Private ribbonPage13 As DevExpress.XtraReports.UserDesigner.XRShapeDesignContextRibbonPage
-		Private xrDesignRibbonPageGroup41 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPageCategory9 As DevExpress.XtraReports.UserDesigner.XRLabelRibbonPageCategory
-		Private ribbonPage14 As DevExpress.XtraReports.UserDesigner.XRLabelTextContextRibbonPage
-		Private xrDesignRibbonPageGroup42 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup43 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPage1 As DevExpress.XtraReports.UserDesigner.XRHomeRibbonPage
-		Private xrDesignRibbonPageGroup1 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup2 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup3 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup4 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup5 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup6 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup7 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPage2 As DevExpress.XtraReports.UserDesigner.XRLayoutRibbonPage
-		Private xrDesignRibbonPageGroup8 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup9 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup10 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup11 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPage3 As DevExpress.XtraReports.UserDesigner.XRPageRibbonPage
-		Private xrDesignRibbonPageGroup12 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup13 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPage4 As DevExpress.XtraReports.UserDesigner.XRViewRibbonPage
-		Private xrDesignRibbonPageGroup14 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup15 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup16 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup17 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private xrDesignRibbonPageGroup18 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPage5 As DevExpress.XtraReports.UserDesigner.XRScriptsRibbonPage
-		Private xrDesignRibbonPageGroup19 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
-		Private ribbonPage15 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPage
-		Private printPreviewRibbonPageGroup1 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
-		Private printPreviewRibbonPageGroup2 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
-		Private printPreviewRibbonPageGroup3 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
-		Private printPreviewRibbonPageGroup4 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
-		Private printPreviewRibbonPageGroup5 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
-		Private printPreviewRibbonPageGroup6 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
-		Private printPreviewRibbonPageGroup7 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
-		Private printPreviewRibbonPageGroup8 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
-		Private ribbonStatusBar1 As DevExpress.XtraBars.Ribbon.RibbonStatusBar
-		Private xrDesignDockManager1 As DevExpress.XtraReports.UserDesigner.XRDesignDockManager
-		Private panelContainer4 As DevExpress.XtraBars.Docking.DockPanel
-		Private groupAndSortDockPanel1 As DevExpress.XtraReports.UserDesigner.GroupAndSortDockPanel
-		Private groupAndSortDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
-		Private errorListDockPanel1 As DevExpress.XtraReports.UserDesigner.ErrorListDockPanel
-		Private errorListDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
-		Private panelContainer1 As DevExpress.XtraBars.Docking.DockPanel
-		Private panelContainer2 As DevExpress.XtraBars.Docking.DockPanel
-		Private reportExplorerDockPanel1 As DevExpress.XtraReports.UserDesigner.ReportExplorerDockPanel
-		Private reportExplorerDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
-		Private fieldListDockPanel1 As DevExpress.XtraReports.UserDesigner.FieldListDockPanel
-		Private fieldListDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
-		Private panelContainer3 As DevExpress.XtraBars.Docking.DockPanel
-		Private propertyGridDockPanel1 As DevExpress.XtraReports.UserDesigner.PropertyGridDockPanel
-		Private propertyGridDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
-		Private reportGalleryDockPanel1 As DevExpress.XtraReports.UserDesigner.ReportGalleryDockPanel
-		Private reportGalleryDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
-	End Class
-End Namespace
+    Friend WithEvents ReportDesigner1 As DevExpress.XtraReports.UserDesigner.XRDesignMdiController
+    Friend WithEvents XrDesignRibbonController1 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonController
+    Friend WithEvents RibbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
+    Friend WithEvents ApplicationMenu1 As DevExpress.XtraBars.Ribbon.ApplicationMenu
+    Friend WithEvents CommandBarItem6 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem9 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem7 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem8 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem127 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem128 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem1 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem2 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem3 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem4 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem5 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem10 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem11 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem12 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem13 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem14 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem15 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem16 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents BarEditItem1 As DevExpress.XtraBars.BarEditItem
+    Friend WithEvents RecentlyUsedItemsComboBox1 As DevExpress.XtraReports.UserDesigner.RecentlyUsedItemsComboBox
+    Friend WithEvents BarEditItem2 As DevExpress.XtraBars.BarEditItem
+    Friend WithEvents DesignRepositoryItemComboBox1 As DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox
+    Friend WithEvents BarDockPanelsListItem1 As DevExpress.XtraReports.UserDesigner.BarDockPanelsListItem
+    Friend WithEvents CommandBarItem17 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem18 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem19 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandColorBarItem1 As DevExpress.XtraReports.UserDesigner.CommandColorBarItem
+    Friend WithEvents CommandColorBarItem2 As DevExpress.XtraReports.UserDesigner.CommandColorBarItem
+    Friend WithEvents CommandBarItem20 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem21 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem22 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem23 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem24 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem25 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem26 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem27 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem28 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem29 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem30 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem31 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem32 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem33 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem34 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem35 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem36 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem37 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandColorBarItem3 As DevExpress.XtraReports.UserDesigner.CommandColorBarItem
+    Friend WithEvents CommandBarItem38 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem39 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem40 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem41 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem42 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem43 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem44 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem45 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem46 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem47 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem48 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem49 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem50 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem51 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem52 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem53 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem54 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem55 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem56 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem57 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem58 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem59 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem60 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem61 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarCheckItem1 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
+    Friend WithEvents CommandBarCheckItem2 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
+    Friend WithEvents CommandBarItem62 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem63 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem64 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem65 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandColorBarItem4 As DevExpress.XtraReports.UserDesigner.CommandColorBarItem
+    Friend WithEvents CommandBarItem66 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem67 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem68 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem69 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem70 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem71 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem72 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarEditItem1 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
+    Friend WithEvents RepositoryItemLookUpEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents CommandBarCheckItem3 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
+    Friend WithEvents CommandBarItem73 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem74 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem75 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem76 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandGalleryBarItem1 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
+    Friend WithEvents CommandGalleryBarItem2 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
+    Friend WithEvents CommandGalleryBarItem3 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
+    Friend WithEvents CommandGalleryBarItem4 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
+    Friend WithEvents CommandGalleryBarItem5 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
+    Friend WithEvents CommandGalleryBarItem6 As DevExpress.XtraReports.UserDesigner.CommandGalleryBarItem
+    Friend WithEvents CommandBarEditItem2 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
+    Friend WithEvents RepositoryItemSpinEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit
+    Friend WithEvents CommandBarEditItem3 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
+    Friend WithEvents RepositoryItemSpinEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit
+    Friend WithEvents CommandBarEditItem4 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
+    Friend WithEvents RepositoryItemSpinEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit
+    Friend WithEvents CommandBarEditItem5 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
+    Friend WithEvents RepositoryItemSpinEdit4 As DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit
+    Friend WithEvents CommandBarEditItem6 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
+    Friend WithEvents RepositoryItemImageComboBox1 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
+    Friend WithEvents CommandBarEditItem7 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
+    Friend WithEvents RepositoryItemLookUpEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents CommandBarEditItem8 As DevExpress.XtraReports.UserDesigner.CommandBarEditItem
+    Friend WithEvents RepositoryItemComboBox1 As DevExpress.XtraEditors.Repository.RepositoryItemComboBox
+    Friend WithEvents CommandBarItem77 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem78 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem79 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem80 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem81 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem82 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem83 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem84 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem85 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem86 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem87 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem88 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem89 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem90 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem91 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem92 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem93 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem94 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem95 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem96 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem97 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem98 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem99 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem100 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem101 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem102 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem103 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem104 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem105 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem106 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem107 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem108 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem109 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem110 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem111 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem112 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem113 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem114 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem115 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem116 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem117 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem118 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem119 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem120 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem121 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem122 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarCheckItem4 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
+    Friend WithEvents CommandBarCheckItem5 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
+    Friend WithEvents CommandBarCheckItem6 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
+    Friend WithEvents CommandBarCheckItem7 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
+    Friend WithEvents CommandBarCheckItem8 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
+    Friend WithEvents CommandBarCheckItem9 As DevExpress.XtraReports.UserDesigner.CommandBarCheckItem
+    Friend WithEvents CommandBarItem123 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem124 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem125 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents CommandBarItem126 As DevExpress.XtraReports.UserDesigner.CommandBarItem
+    Friend WithEvents XrDesignBarButtonGroup1 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup2 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup3 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup4 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup5 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup6 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup7 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup8 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup9 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup10 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup11 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup12 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup13 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents XrDesignBarButtonGroup14 As DevExpress.XtraReports.UserDesigner.XRDesignBarButtonGroup
+    Friend WithEvents PrintPreviewBarItem1 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem2 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem3 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem4 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem5 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem7 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem8 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem9 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem11 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem12 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem13 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem14 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem15 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem16 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem17 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem18 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem19 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem20 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem21 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem22 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem23 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem24 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem25 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem26 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem27 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem28 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem29 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem30 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem31 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem32 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem33 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem34 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem35 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem36 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem37 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem38 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem39 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem40 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem41 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem42 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem43 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem44 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem45 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem46 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem47 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem48 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem49 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem50 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewBarItem51 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewStaticItem1 As DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem
+    Friend WithEvents ProgressBarEditItem1 As DevExpress.XtraPrinting.Preview.ProgressBarEditItem
+    Friend WithEvents RepositoryItemProgressBar1 As DevExpress.XtraEditors.Repository.RepositoryItemProgressBar
+    Friend WithEvents PrintPreviewBarItem52 As DevExpress.XtraPrinting.Preview.PrintPreviewBarItem
+    Friend WithEvents PrintPreviewStaticItem2 As DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem
+    Friend WithEvents ZoomTrackBarEditItem1 As DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem
+    Friend WithEvents RepositoryItemZoomTrackBar1 As DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar
+    Friend WithEvents RibbonPageCategory1 As DevExpress.XtraReports.UserDesigner.XRCharacterCombRibbonPageCategory
+    Friend WithEvents RibbonPage6 As DevExpress.XtraReports.UserDesigner.XRCharacterCombDesignContextRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup20 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPageCategory2 As DevExpress.XtraReports.UserDesigner.XRTableRibbonPageCategory
+    Friend WithEvents RibbonPage7 As DevExpress.XtraReports.UserDesigner.XRTableDesignContextRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup21 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup22 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup23 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup24 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup25 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPageCategory3 As DevExpress.XtraReports.UserDesigner.XRChartRibbonPageCategory
+    Friend WithEvents RibbonPage8 As DevExpress.XtraReports.UserDesigner.XRChartDesignContextRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup26 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup27 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup28 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup29 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup30 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPageCategory4 As DevExpress.XtraReports.UserDesigner.XRPivotGridRibbonPageCategory
+    Friend WithEvents RibbonPage9 As DevExpress.XtraReports.UserDesigner.XRPivotGridDesignContextRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup31 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup32 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup33 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup34 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPageCategory5 As DevExpress.XtraReports.UserDesigner.XRBarCodeRibbonPageCategory
+    Friend WithEvents RibbonPage10 As DevExpress.XtraReports.UserDesigner.XRBarcodeDesignContextRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup35 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup36 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPageCategory6 As DevExpress.XtraReports.UserDesigner.XRGaugeRibbonPageCategory
+    Friend WithEvents RibbonPage11 As DevExpress.XtraReports.UserDesigner.XRGaugeDesignContextRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup37 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup38 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPageCategory7 As DevExpress.XtraReports.UserDesigner.XRSparklineRibbonPageCategory
+    Friend WithEvents RibbonPage12 As DevExpress.XtraReports.UserDesigner.XRSparklineDesignContextRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup39 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup40 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPageCategory8 As DevExpress.XtraReports.UserDesigner.XRShapeRibbonPageCategory
+    Friend WithEvents RibbonPage13 As DevExpress.XtraReports.UserDesigner.XRShapeDesignContextRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup41 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPageCategory9 As DevExpress.XtraReports.UserDesigner.XRLabelRibbonPageCategory
+    Friend WithEvents RibbonPage14 As DevExpress.XtraReports.UserDesigner.XRLabelTextContextRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup42 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup43 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPage1 As DevExpress.XtraReports.UserDesigner.XRHomeRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup1 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup2 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup3 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup4 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup5 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup6 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup7 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPage2 As DevExpress.XtraReports.UserDesigner.XRLayoutRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup8 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup9 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup10 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup11 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPage3 As DevExpress.XtraReports.UserDesigner.XRPageRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup12 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup13 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPage4 As DevExpress.XtraReports.UserDesigner.XRViewRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup14 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup15 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup16 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup17 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents XrDesignRibbonPageGroup18 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPage5 As DevExpress.XtraReports.UserDesigner.XRScriptsRibbonPage
+    Friend WithEvents XrDesignRibbonPageGroup19 As DevExpress.XtraReports.UserDesigner.XRDesignRibbonPageGroup
+    Friend WithEvents RibbonPage15 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPage
+    Friend WithEvents PrintPreviewRibbonPageGroup1 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
+    Friend WithEvents PrintPreviewRibbonPageGroup2 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
+    Friend WithEvents PrintPreviewRibbonPageGroup3 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
+    Friend WithEvents PrintPreviewRibbonPageGroup4 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
+    Friend WithEvents PrintPreviewRibbonPageGroup5 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
+    Friend WithEvents PrintPreviewRibbonPageGroup6 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
+    Friend WithEvents PrintPreviewRibbonPageGroup7 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
+    Friend WithEvents PrintPreviewRibbonPageGroup8 As DevExpress.XtraPrinting.Preview.PrintPreviewRibbonPageGroup
+    Friend WithEvents RibbonStatusBar1 As DevExpress.XtraBars.Ribbon.RibbonStatusBar
+    Friend WithEvents XrDesignDockManager1 As DevExpress.XtraReports.UserDesigner.XRDesignDockManager
+    Friend WithEvents panelContainer4 As DevExpress.XtraBars.Docking.DockPanel
+    Friend WithEvents GroupAndSortDockPanel1 As DevExpress.XtraReports.UserDesigner.GroupAndSortDockPanel
+    Friend WithEvents GroupAndSortDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
+    Friend WithEvents ErrorListDockPanel1 As DevExpress.XtraReports.UserDesigner.ErrorListDockPanel
+    Friend WithEvents ErrorListDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
+    Friend WithEvents panelContainer1 As DevExpress.XtraBars.Docking.DockPanel
+    Friend WithEvents panelContainer2 As DevExpress.XtraBars.Docking.DockPanel
+    Friend WithEvents ReportExplorerDockPanel1 As DevExpress.XtraReports.UserDesigner.ReportExplorerDockPanel
+    Friend WithEvents ReportExplorerDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
+    Friend WithEvents FieldListDockPanel1 As DevExpress.XtraReports.UserDesigner.FieldListDockPanel
+    Friend WithEvents FieldListDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
+    Friend WithEvents panelContainer3 As DevExpress.XtraBars.Docking.DockPanel
+    Friend WithEvents PropertyGridDockPanel1 As DevExpress.XtraReports.UserDesigner.PropertyGridDockPanel
+    Friend WithEvents PropertyGridDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
+    Friend WithEvents ReportGalleryDockPanel1 As DevExpress.XtraReports.UserDesigner.ReportGalleryDockPanel
+    Friend WithEvents ReportGalleryDockPanel1_Container As DevExpress.XtraReports.UserDesigner.DesignControlContainer
+End Class
