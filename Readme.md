@@ -13,7 +13,9 @@ The following custom functions are implemented:
 - The **NewLineConstant** function that allows you to insert a new line in a string. This function uses the <a href="https://msdn.microsoft.com/en-us//library/system.environment.newline(v=vs.110).aspx">Environment.NewLine</a><u> </u>constant, which returns a new line string defined for the current environment. You should enable the <a href="https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRLabel.Multiline">XRLabel.Multiline</a> option so that the label recognizes this string as a line break.
 - The **CustomFormatFunction** that formats a value with the specified format string.
 
-**See also:**
-- <a href="https://www.devexpress.com/Support/Center/p/T352441">How to use a custom function in a query expression</a></strong>
-- <a href="https://docs.devexpress.com/WindowsForms/9947/common-features/expressions/implementing-custom-functions7">Custom Functions</a>
-- <a href="https://docs.devexpress.com/XPO/5206/examples/how-to-implement-a-custom-criteria-language-function-operator">How to: Implement a Custom Criteria Language Operator</a>
+This example also demonstrates how to use the **ReportExpressionEditorCustomizationService** to hide the `Abs` function in the Expression Editor in the End-User Report Designer.
+
+For details review the following help topics:
+
+- [CustomFunction](http://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Expressions.CustomFunction)
+- [Remove a Function from the Expression Editor](http://docs.devexpress.com/XtraReports/403273)

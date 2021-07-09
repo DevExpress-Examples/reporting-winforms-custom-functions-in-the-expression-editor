@@ -15,14 +15,14 @@ Namespace CustomFunctionForExpressionEditorExample
 		End Property
 		Public Overrides ReadOnly Property Description() As String
 			Get
-				Return "CustomFormatFunction(string format, object arg0)"_
+				Return "CustomFormatFunction(string format, object arg0)" _
 				& ControlChars.CrLf & "Converts an arg0 value to a string based on a specified format"
 			End Get
 		End Property
 		Public Overrides Function IsValidOperandCount(ByVal count As Integer) As Boolean
 			Return count = 2
 		End Function
-		Public Overrides Function IsValidOperandType(ByVal operandIndex As Integer,_
+		Public Overrides Function IsValidOperandType(ByVal operandIndex As Integer,
 			ByVal operandCount As Integer, ByVal type As Type) As Boolean
 			Return True
 		End Function

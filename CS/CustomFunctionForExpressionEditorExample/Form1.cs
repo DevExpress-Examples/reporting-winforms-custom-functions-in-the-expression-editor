@@ -12,7 +12,10 @@ namespace CustomFunctionForExpressionEditorExample
         {
             DevExpress.XtraReports.Expressions.CustomFunctions.Register(new NewLineConstant());
             DevExpress.XtraReports.Expressions.CustomFunctions.Register(new CustomFormatFunction());
-            reportDesigner1.OpenReport("Reports\\XtraReport1.repx");
+            reportDesigner1.AddService(
+                typeof(DevExpress.XtraReports.UserDesigner.ReportExpressionEditorCustomizationService),
+                new CustomReportExpressionEditorCustomizationService());
+            reportDesigner1.OpenReport(new Reports.XtraReport1());
         }
     }
 }

@@ -20,8 +20,9 @@ Namespace CustomFunctionForExpressionEditorExample
 		Public Overrides Function IsValidOperandCount(ByVal count As Integer) As Boolean
 			Return count = 0
 		End Function
-		Public Overrides Function IsValidOperandType(ByVal operandIndex As Integer,_
-			ByVal operandCount As Integer, ByVal type As Type) As Boolean
+		Public Overrides Function IsValidOperandType(ByVal operandIndex As Integer,
+													 ByVal operandCount As Integer,
+													 ByVal type As Type) As Boolean
 			Return True
 		End Function
 		Public Overrides ReadOnly Property MaxOperandCount() As Integer
