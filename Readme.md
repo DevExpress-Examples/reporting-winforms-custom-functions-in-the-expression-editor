@@ -23,7 +23,7 @@ This example implements the following functions:
 
 Do the following to add a custom function to the End-User Report Designer's Expression Editor:
 
-1. Implement the [ReportCustomFunctionOperatorBase](http://docs.devexpress.devx/XtraReports/DevExpress.XtraReports.Expressions.ReportCustomFunctionOperatorBase) interface to define your new custom function.
+1. Implement the [ReportCustomFunctionOperatorBase](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Expressions.ReportCustomFunctionOperatorBase) interface to define your new custom function.
 1. Call the [CustomFunctions.Register](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.Expressions.CustomFunctions.Register(DevExpress.Data.Filtering.ICustomFunctionOperator--)) method to register the implemented interface in the Report Designer.
 
 ## Files to Look At
