@@ -40,7 +40,7 @@ Do the following to add a custom function to the End-User Report Designer's Expr
 * [Custom Functions](https://docs.devexpress.com/WindowsForms/9947/common-features/expressions/implementing-custom-functions)
 * [How to: Implement a Custom Criteria Language Function Operator](https://docs.devexpress.com/XPO/5206/examples/how-to-implement-a-custom-criteria-language-function-operator)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-winforms-custom-functions-in-the-expression-editor&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-winforms-custom-functions-in-the-expression-editor&~~~was_helpful=no)
 
